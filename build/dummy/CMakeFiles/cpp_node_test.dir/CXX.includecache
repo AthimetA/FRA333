@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/azthorax/fra333_ws/src/dummy/include/dummy/cpp_header.hpp
+
+/home/azthorax/fra333_ws/src/dummy/src/cpp_node.cpp
+dummy/cpp_header.hpp
+/home/azthorax/fra333_ws/src/dummy/src/dummy/cpp_header.hpp
+iostream
+-
+

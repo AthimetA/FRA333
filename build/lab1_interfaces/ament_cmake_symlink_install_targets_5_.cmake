@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/azthorax/fra333_ws/build/lab1_interfaces/rosidl_generator_py/lab1_interfaces/liblab1_interfaces__python.so" "TARGETS" "lab1_interfaces__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

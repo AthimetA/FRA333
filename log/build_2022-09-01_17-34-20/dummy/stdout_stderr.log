@@ -1,0 +1,44 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/azthorax/fra333_ws/build/dummy
+[35m[1mScanning dependencies of target cpp_node_test[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/cpp_node_test.dir/src/cpp_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable cpp_node_test[0m
+[100%] Built target cpp_node_test
+-- Install configuration: ""
+-- Up-to-date: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/pythonpath.sh
+-- Installing: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/pythonpath.dsv
+-- Up-to-date: /home/azthorax/fra333_ws/install/dummy/lib/python3.8/site-packages/dummy
+-- Installing: /home/azthorax/fra333_ws/install/dummy/lib/python3.8/site-packages/dummy/dummy_module.py
+-- Installing: /home/azthorax/fra333_ws/install/dummy/lib/python3.8/site-packages/dummy/__init__.py
+Listing '/home/azthorax/fra333_ws/install/dummy/lib/python3.8/site-packages/dummy'...
+Compiling '/home/azthorax/fra333_ws/install/dummy/lib/python3.8/site-packages/dummy/__init__.py'...
+Compiling '/home/azthorax/fra333_ws/install/dummy/lib/python3.8/site-packages/dummy/dummy_module.py'...
+-- Installing: /home/azthorax/fra333_ws/install/dummy/lib/dummy/dummy_script.py
+-- Installing: /home/azthorax/fra333_ws/install/dummy/lib/dummy/cpp_node_test
+-- Set runtime path of "/home/azthorax/fra333_ws/install/dummy/lib/dummy/cpp_node_test" to ""
+-- Up-to-date: /home/azthorax/fra333_ws/install/dummy/share/dummy
+-- Up-to-date: /home/azthorax/fra333_ws/install/dummy/share/ament_index/resource_index/package_run_dependencies/dummy
+-- Installing: /home/azthorax/fra333_ws/install/dummy/share/ament_index/resource_index/parent_prefix_path/dummy
+-- Up-to-date: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/ament_prefix_path.sh
+-- Installing: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/path.sh
+-- Installing: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/path.dsv
+-- Up-to-date: /home/azthorax/fra333_ws/install/dummy/share/dummy/local_setup.bash
+-- Up-to-date: /home/azthorax/fra333_ws/install/dummy/share/dummy/local_setup.sh
+-- Up-to-date: /home/azthorax/fra333_ws/install/dummy/share/dummy/local_setup.zsh
+-- Installing: /home/azthorax/fra333_ws/install/dummy/share/dummy/local_setup.dsv
+-- Installing: /home/azthorax/fra333_ws/install/dummy/share/dummy/package.dsv
+-- Up-to-date: /home/azthorax/fra333_ws/install/dummy/share/ament_index/resource_index/packages/dummy
+-- Up-to-date: /home/azthorax/fra333_ws/install/dummy/share/dummy/cmake/dummyConfig.cmake
+-- Up-to-date: /home/azthorax/fra333_ws/install/dummy/share/dummy/cmake/dummyConfig-version.cmake
+-- Installing: /home/azthorax/fra333_ws/install/dummy/share/dummy/package.xml
