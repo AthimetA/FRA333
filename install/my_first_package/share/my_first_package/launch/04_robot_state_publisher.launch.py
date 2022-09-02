@@ -1,1 +1,0 @@
-/home/azthorax/fra333_ws/src/my_first_package/launch/04_robot_state_publisher.launch.py
