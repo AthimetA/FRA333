@@ -38,15 +38,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dummy/environment" TYPE FILE FILES "/home/azthorax/fra333_ws/build/dummy/ament_cmake_environment_hooks/pythonpath.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dummy/environment" TYPE FILE FILES "/home/azthorax/fra333_ws/build/dummy/ament_cmake_environment_hooks/pythonpath.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.8/site-packages/dummy" TYPE DIRECTORY FILES "/home/azthorax/fra333_ws/src/dummy/dummy/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+  include("/home/azthorax/fra333_ws/build/dummy/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -55,93 +47,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
         "/usr/bin/python3" "-m" "compileall"
         "/home/azthorax/fra333_ws/install/dummy/lib/python3.8/site-packages/dummy"
       )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/dummy" TYPE PROGRAM FILES "/home/azthorax/fra333_ws/src/dummy/scripts/dummy_script.py")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dummy/cpp_node_test" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dummy/cpp_node_test")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dummy/cpp_node_test"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/dummy" TYPE EXECUTABLE FILES "/home/azthorax/fra333_ws/build/dummy/cpp_node_test")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dummy/cpp_node_test" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dummy/cpp_node_test")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dummy/cpp_node_test"
-         OLD_RPATH "/opt/ros/foxy/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dummy/cpp_node_test")
-    endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dummy" TYPE DIRECTORY FILES "")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/azthorax/fra333_ws/build/dummy/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dummy")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/azthorax/fra333_ws/build/dummy/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/dummy")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dummy/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dummy/environment" TYPE FILE FILES "/home/azthorax/fra333_ws/build/dummy/ament_cmake_environment_hooks/ament_prefix_path.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dummy/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dummy/environment" TYPE FILE FILES "/home/azthorax/fra333_ws/build/dummy/ament_cmake_environment_hooks/path.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dummy" TYPE FILE FILES "/home/azthorax/fra333_ws/build/dummy/ament_cmake_environment_hooks/local_setup.bash")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dummy" TYPE FILE FILES "/home/azthorax/fra333_ws/build/dummy/ament_cmake_environment_hooks/local_setup.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dummy" TYPE FILE FILES "/home/azthorax/fra333_ws/build/dummy/ament_cmake_environment_hooks/local_setup.zsh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dummy" TYPE FILE FILES "/home/azthorax/fra333_ws/build/dummy/ament_cmake_environment_hooks/local_setup.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dummy" TYPE FILE FILES "/home/azthorax/fra333_ws/build/dummy/ament_cmake_environment_hooks/package.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/azthorax/fra333_ws/build/dummy/ament_cmake_index/share/ament_index/resource_index/packages/dummy")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dummy/cmake" TYPE FILE FILES
-    "/home/azthorax/fra333_ws/build/dummy/ament_cmake_core/dummyConfig.cmake"
-    "/home/azthorax/fra333_ws/build/dummy/ament_cmake_core/dummyConfig-version.cmake"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dummy" TYPE FILE FILES "/home/azthorax/fra333_ws/src/dummy/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

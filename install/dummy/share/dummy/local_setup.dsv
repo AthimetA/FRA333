@@ -1,3 +1,1 @@
-source;share/dummy/environment/ament_prefix_path.sh
-source;share/dummy/environment/path.sh
-source;share/dummy/environment/pythonpath.sh
+/home/azthorax/fra333_ws/build/dummy/ament_cmake_environment_hooks/local_setup.dsv
