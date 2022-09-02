@@ -1,0 +1,14 @@
+{
+  "package_name": "my_first_package",
+  "non_idl_tuples": [
+    "/home/azthorax/fra333_ws/src/my_first_package:srv/RandGoal.srv",
+    "/home/azthorax/fra333_ws/src/my_first_package:srv/SetGoal.srv",
+    "/home/azthorax/fra333_ws/src/my_first_package:srv/AthSum.srv",
+    "/home/azthorax/fra333_ws/src/my_first_package:msg/Num.msg",
+    "/home/azthorax/fra333_ws/src/my_first_package:msg/Sphere.msg",
+    "/home/azthorax/fra333_ws/src/my_first_package:msg/AddBook.msg",
+    "/home/azthorax/fra333_ws/src/my_first_package:srv/AthSum3.srv",
+    "/home/azthorax/fra333_ws/src/my_first_package:srv/SetNoise.srv",
+    "/home/azthorax/fra333_ws/src/my_first_package:action/Fibonacci.action"
+  ]
+}

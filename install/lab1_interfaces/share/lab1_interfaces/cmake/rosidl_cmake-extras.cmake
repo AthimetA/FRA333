@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/build/lab1_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake
