@@ -38,8 +38,6 @@ class NoiseGenerator(Node):
 
         # additional attributes
         # variables
-        self.noise_mean = 0.0
-        self.noise_var = 1.0
         self.noise_data = 0.0
         self.mean = 0.0
         self.variance = 1.0
@@ -51,14 +49,14 @@ class NoiseGenerator(Node):
         # SetNoise.srv
         # request = float64 maean , float64 variance
         # response = None
-        self.noise_mean = request.mean.data
-        self.noise_var = request.variance.data
+        self.mean = request.mean.data
+        self.variance = request.variance.data
         return response # return response to the client
     
     def publish_noise_msg(self):
         # Generate noise and publish
         # Foat64 msg : float64 data
-        self.noise_data = np.random.normal(self.noise_mean, np.sqrt(self.noise_var))  # Gaussian noise
+        self.noise_data = np.random.normal(self.mean, np.sqrt(self.variance))  # Gaussian noise
         noise = Float64()
         noise.data = self.noise_data
         self.noise_pub.publish(noise)
