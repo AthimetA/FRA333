@@ -72,10 +72,10 @@ def generate_launch_description():
     # )
     # launch_description.add_action(pub_cmd_vel)
     
-    new_mean_linear = 2.0
-    new_variance_linear = 4.0
-    new_mean_angular = 2.0
-    new_variance_angular = 4.0
+    new_mean_linear = 1.0
+    new_variance_linear = 0.1
+    new_mean_angular = 0.0
+    new_variance_angular = 3.0
     
     srv_call_linear = ExecuteProcess(
         cmd=[[f'ros2 service call /linear/set_noise lab1_interfaces/srv/SetNoise "{{mean: {{data : {new_mean_linear}}}, variance: {{data : {new_variance_linear}}}}}"']], 
