@@ -25,7 +25,6 @@ class VelocityMux(Node):
         # Parameters
         self.declare_parameters(namespace = '',parameters=[('turtlename','turtle1')]) 
         self.turtle_name = self.get_parameter('turtlename').get_parameter_value().string_value
-        
         self.pub_rate = 1/self.rate # rate is the publishing rate defualt is 5 HZ (0.2s)
         
         # Subscribers
@@ -47,15 +46,12 @@ class VelocityMux(Node):
 
     def linear_vel_sub_callback(self,msg:Float64):
         self.cmd_vel.linear.x = msg.data
-        pass
     
     def angular_vel_sub_callback(self,msg:Float64):
         self.cmd_vel.angular.z = msg.data
-        pass
     
     def timer_callback(self):
         self.turtle_pub.publish(self.cmd_vel)
-        pass
 
 def main(args=None):
     rclpy.init(args=args)
