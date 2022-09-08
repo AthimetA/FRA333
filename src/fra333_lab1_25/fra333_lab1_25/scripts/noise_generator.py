@@ -16,7 +16,7 @@ class NoiseGenerator(Node):
     def __init__(self):
         super().__init__('noise_generator')
         # get the rate from argument or default
-        if len(sys.argv)>2: 
+        if len(sys.argv)>=2: 
             self.rate = float(sys.argv[1])
         else:
             self.rate = 5.0
@@ -28,10 +28,10 @@ class NoiseGenerator(Node):
         self.noise_rate = 1/self.rate # rate is the publishing rate defualt is 5 HZ (0.2s)
         
         # Publishers
-        self.noise_pub = self.create_publisher(Float64, f'{self.noise_type}/noise', 10)
+        self.noise_pub = self.create_publisher(Float64, 'noise', 10)
         
         # Services Server
-        self.noise_server = self.create_service(SetNoise, f'{self.noise_type}/set_noise', self.set_noise_callback)
+        self.noise_server = self.create_service(SetNoise, 'set_noise', self.set_noise_callback)
         
         # Timer
         self.timer = self.create_timer(self.noise_rate, callback=self.timer_callback)

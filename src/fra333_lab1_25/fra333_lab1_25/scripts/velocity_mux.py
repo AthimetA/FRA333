@@ -16,7 +16,7 @@ class VelocityMux(Node):
     def __init__(self):
         super().__init__('velocity_multiplexer')
         # get the rate from argument or default
-        if len(sys.argv)>2: 
+        if len(sys.argv)>=2: 
             self.rate = float(sys.argv[1])
         else:
             self.rate = 5.0
