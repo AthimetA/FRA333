@@ -85,7 +85,7 @@ class MyBeeBot(BeeBot):
     def test(self):
         print('-------*1*---------')
         print(f'self.curPos(old) =\n  {self.curPos}\n')
-        self.curPos = np.matmul(self.hTranformation2D([60],[0,np.math.sqrt(3)]),self.curPos)
+        self.curPos = np.matmul(self.hTranformation2D([0],[0,np.math.sqrt(3)]),self.curPos)
         print(f'self.curPos(New) =\n  {self.curPos}\n')
         print('-------*1*---------')
         
