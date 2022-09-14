@@ -42,9 +42,6 @@ class MyBeeBot(BeeBot):
                 break
                 
         return self.curPos
-      
-    def doTranfromation(self):
-        self.curPos = np.matmul(self.tranformationMatrix,self.curPos)
     
     def checkCollision(self, W):
         if self.curPos[0] > W[0] or self.curPos[0] < 0 or self.curPos[1] > W[1] or self.curPos[1] < 0:
@@ -72,30 +69,8 @@ class MyBeeBot(BeeBot):
         Tranformation_matrix = np.dot(Rotate_Z_matrix,Translate_matrix)
         return np.dot(Tranformation_matrix,self.tranformationMatrix)
     
-    def matrix(self,rotation, translation):
-        xC, xS = self.sinCos(rotation[0])
-        yC, yS = self.sinCos(rotation[1])
-        zC, zS = self.sinCos(rotation[2])
-        dX = translation[0]
-        dY = translation[1]
-        dZ = translation[2]
-        Translate_matrix = np.array([[1, 0, 0, dX],
-                                    [0, 1, 0, dY],
-                                    [0, 0, 1, dZ],
-                                    [0, 0, 0, 1]])
-        Rotate_X_matrix = np.array([[1, 0, 0, 0],
-                                    [0, xC, -xS, 0],
-                                    [0, xS, xC, 0],
-                                    [0, 0, 0, 1]])
-        Rotate_Y_matrix = np.array([[yC, 0, yS, 0],
-                                    [0, 1, 0, 0],
-                                    [-yS, 0, yC, 0],
-                                    [0, 0, 0, 1]])
-        Rotate_Z_matrix = np.array([[zC, -zS, 0, 0],
-                                    [zS, zC, 0, 0],
-                                    [0, 0, 1, 0],
-                                    [0, 0, 0, 1]])
-        return np.dot(Rotate_Z_matrix,np.dot(Rotate_Y_matrix,np.dot(Rotate_X_matrix,Translate_matrix)))
+    def doTranfromation(self):
+        self.curPos = np.matmul(self.tranformationMatrix,self.curPos)   
     
     def test(self):
         # dX = 1
@@ -116,13 +91,21 @@ class MyBeeBot(BeeBot):
         # RT = np.matmul(R,T)
         # print(f'{RP} \n   +  \n{RT}  \n = \n{np.sum([RP,RT],axis=0)}')
         print('-------**---------')
-        self.tranformationMatrix = self.hTranformation2D([-90],[3,0])
+        self.tranformationMatrix = self.hTranformation2D([-180],[0,0])
         print(f'self.tranformationMatrix =\n  {self.tranformationMatrix}\n')
         print(f'self.curPos =\n  {self.curPos}\n')
         self.doTranfromation()
         print(f'self.curPos(New) =\n  {self.curPos}\n')
         print('-------**---------')
-    
+        
+        print('-------**---------')
+        print(f'self.tranformationMatrix1 =\n  {self.tranformationMatrix}\n')
+        self.tranformationMatrix = self.hTranformation2D([-180],[0,0])
+        print(f'self.tranformationMatrix2 =\n  {self.tranformationMatrix}\n')
+        print(f'self.curPos =\n  {self.curPos}\n')
+        self.doTranfromation()
+        print(f'self.curPos(New) =\n  {self.curPos}\n')
+        print('-------**---------')
 
 mytest = MyBeeBot(np.array([[0,0]]))
 W = np.array([[5, 2], [5, 4]])
