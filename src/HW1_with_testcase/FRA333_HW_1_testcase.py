@@ -7,7 +7,7 @@ import math
 import json
 from FRA333_HW_1 import MyBeeBot
 
-with open('testcase.json') as f:
+with open('/home/azthorax/fra333_ws/src/HW1_with_testcase/testcase.json') as f:
     lines = f.readlines()
 testcases = json.loads(lines[0])
 i = 1
