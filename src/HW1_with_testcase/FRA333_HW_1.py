@@ -73,43 +73,6 @@ class MyBeeBot(BeeBot):
         self.curPos = np.matmul(self.tranformationMatrix,self.curPos)   
     
     def test(self):
-        # dX = 1
-        # dY = 2
-        # zC, zS = self.sinCos(-90)
-        # R = np.array([[zC, -zS, 0],
-        #             [zS, zC, 0],
-        #             [0, 0, 1]])
-        # T = np.array([[dX],
-        #             [dY],
-        #             [0]])
-        # print('-------3---------')
-        # RP = np.matmul(R,self.curPos)
-        # print(RP)
-        # print('-------4---------')
-        # print(f'{RP} \n   +  \n{T}  \n = \n{np.sum([RP,T],axis=0)}')
-        # print('-------5---------')
-        # RT = np.matmul(R,T)
-        # print(f'{RP} \n   +  \n{RT}  \n = \n{np.sum([RP,RT],axis=0)}')
-
-        
-        # print('-------**---------')
-        # print(f'self.tranformationMatrix(old) =\n  {self.tranformationMatrix}\n')
-        # self.tranformationMatrix = self.hTranformation2D([-90],[0,0])
-        # print(f'self.tranformationMatrix(new) =\n  {self.tranformationMatrix}\n')
-        # print(f'self.curPos(old) =\n  {self.curPos}\n')
-        # self.doTranfromation()
-        # print(f'self.curPos(New) =\n  {self.curPos}\n')
-        # print('-------**---------')
-        
-        # print('-------**---------')
-        # print(f'self.tranformationMatrix(old) =\n  {self.tranformationMatrix}\n')
-        # self.tranformationMatrix = self.hTranformation2D([-90],[0,0])
-        # print(f'self.tranformationMatrix(new) =\n  {self.tranformationMatrix}\n')
-        # print(f'self.curPos(old) =\n  {self.curPos}\n')
-        # self.doTranfromation()
-        # print(f'self.curPos(New) =\n  {self.curPos}\n')
-        # print('-------**---------')
-        
         print(f'self.curPos(old) =\n  {self.curPos}\n')
         self.curPos = np.matmul(self.hTranformation2D([0],[0,1]),self.curPos)
         print(f'self.curPos(New) =\n  {self.curPos}\n')
@@ -126,7 +89,6 @@ class MyBeeBot(BeeBot):
         print('-------*2*---------')
         print(f'self.curPos(old) =\n  {self.curPos}\n')
         self.curPos = np.matmul(self.hTranformation2D([-90],[0,0]),self.curPos)
-        # self.curPos = np.matmul(self.hTranformation2D([0],[0,1]),self.curPos)
         print(f'self.curPos(New) =\n  {self.curPos}\n')
         print('-------*2*---------')
         
