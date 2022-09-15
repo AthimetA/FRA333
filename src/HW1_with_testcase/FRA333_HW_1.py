@@ -31,6 +31,7 @@ class MyBeeBot(BeeBot):
         A = np.array(self.posHex)
         P = np.array(self.posCar)
         
+        # clear command '0' in com because it is not moving
         com = com.replace('0','')
         
         for c in com :
@@ -58,7 +59,7 @@ class MyBeeBot(BeeBot):
     
     def checkCollision(self, W, posCar):
         posHex = self.car2hex(posCar)
-        if any((posHex == W).all(1)):
+        if any((posHex[:, None] == W).all(-1).any(1)):
             return True
         else:
             return False
@@ -66,9 +67,9 @@ class MyBeeBot(BeeBot):
         # # ฝากไว้ก่อนนะครับ ผมยังไม่ได้ทำ
         # print('W is \n', W.T)
         # posHex = self.car2hex(posCar)
-        # print('HexPos is \n', posHex)
-        # print(any((posHex == W.T).all(1)))
-        # if any((posHex == W.T).all(1)):
+        # print('HexPos is \n', posHex.T)
+        # print(any((posHex.T == W.T).all(1)))
+        # if any((posHex.T == W.T).all(1)):
         #     return True
         # else:
         #     return False
