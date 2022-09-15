@@ -16,9 +16,9 @@ class MyBeeBot(BeeBot):
         self.posHex = np.array([[1,0,a_i[0][0]],
                                 [0,1,a_i[0][1]],
                                 [0,0,1]])
-        print(self.posHex)
-        self.posCar = self.idx2posA(self.posHex)
-        print(self.posCar)
+        print('posHex\n',self.posHex)
+        self.posCar = self.idx2posA(a_i)
+        print('posCar\n',self.posCar)
         # self.posCar = np.vstack((self.idx2pos(self.posHex[0],self.posHex[1]).reshape(2,1),[1]))
         # Our bee bot is a hexagonal grid
         # self.linearTrans = np.array([[1/3,np.sqrt(3)/3,0],[-1/3, np.sqrt(3)/3,0],[0,0,1]])
@@ -26,34 +26,33 @@ class MyBeeBot(BeeBot):
         # self.det = np.linalg.det(self.linearTrans)
         # self.rotTrans = np.array([[np.cos(np.pi/3), -np.sin(np.pi/3)],[np.sin(np.pi/3), np.cos(np.pi/3)]])
         # Defult transformation matrix is hexagonal pos (+1,+1)
-        self.tranformationMatrix = np.array([[1, 0, 0],
-                                            [0, 1, np.sqrt(3)],
-                                            [0, 0, 1]])
+        # self.tranformationMatrix = np.array([[1, 0, 0],
+        #                                     [0, 1, np.sqrt(3)],
+        #                                     [0, 0, 1]])
         
-        self.check = np.matmul(self.hTranformation2D([-60],[0,0]),self.posHex)
+        # self.check = np.matmul(self.hTranformation2D([-60],[0,0]),self.posHex)
     
     def trackBeeBot(self, com, W):
     # a_i is initial position
     # com is command {'0'->stop, '1'->forward, '2'->backward, '3'->turn right, '4'->turn left}
     # W is wall
-        for c in com :
-            if c == '0':
-                break
-            elif c == '1':
-                self.posCar = np.matmul(self.hTranformation2D([0],[0,1]),self.posCar)
-            elif c == '2':
-                self.posCar = np.matmul(self.hTranformation2D([0],[0,-1]),self.posCar)
-            elif c == '3':
-                self.posCar = np.matmul(self.hTranformation2D([90],[0,0]),self.posCar)
-            elif c == '4':
-                self.posCar = np.matmul(self.hTranformation2D([-90],[0,0]),self.posCar)
-            else:
-                print('Command Error')
-                break
-            if self.checkCollision(W):
-                print('Collision')
-                break
-                
+        # for c in com :
+        #     if c == '0':
+        #         break
+        #     elif c == '1':
+        #         self.posCar = np.matmul(self.hTranformation2D([0],[0,1]),self.posCar)
+        #     elif c == '2':
+        #         self.posCar = np.matmul(self.hTranformation2D([0],[0,-1]),self.posCar)
+        #     elif c == '3':
+        #         self.posCar = np.matmul(self.hTranformation2D([90],[0,0]),self.posCar)
+        #     elif c == '4':
+        #         self.posCar = np.matmul(self.hTranformation2D([-90],[0,0]),self.posCar)
+        #     else:
+        #         print('Command Error')
+        #         break
+        #     if self.checkCollision(W):
+        #         print('Collision')
+        #         break
         return self.posCar
     
     def checkCollision(self, W):
@@ -62,17 +61,24 @@ class MyBeeBot(BeeBot):
         else:
             return False
     
-    def pos2idx(self, posCartesian):
-        self.linearTrans = np.array([[1/3,np.sqrt(3)/3,0],[-1/3, np.sqrt(3)/3,0],[0,0,1]])
-        poshexagonal = np.matmul(self.linearTrans,posCartesian)
-        # x = posCartesian[0]
-        # y = posCartesian[1]
-        # poshexagonal = np.array([(x+np.sqrt(3)*y)/3,(-x+np.sqrt(3)*y)/3,posCartesian[2]])
+    def pos2idxA(self, posCartesian):
+        linearTrans = np.array([[1/3,np.sqrt(3)/3,0]
+                                ,[-1/3, np.sqrt(3)/3,0]
+                                ,[0,0,1]])
+        poshexagonal = np.matmul(linearTrans,posCartesian)
         return poshexagonal
     
     def idx2posA(self, posHexagonal):
-        self.linearTrans = np.array([[1/3,np.sqrt(3)/3,0],[-1/3, np.sqrt(3)/3,0],[0,0,1]])
-        return np.matmul(self.linearTrans,posHexagonal)
+        # posHexagonal is a 3x3 vector = [R , p],[0,0,0,1]
+                                        
+        linearTrans = np.array([[3/2,-3/2,0],
+                                [np.sqrt(3)/2, np.sqrt(3)/2,0]
+                                ,[0,0,1]])
+        hexagonal = np.array([[posHexagonal[0][0]],
+                              [posHexagonal[0][1]],
+                              [1]])
+        posCartesian = np.matmul(linearTrans,hexagonal)
+        return posCartesian
     
     def sinCos(self,angle):
         r = np.radians(angle)
