@@ -12,8 +12,14 @@ class MyBeeBot(BeeBot):
         # a_i is initial position
         # c is command {'0'->stop, '1'->forward, '2'->backward, '3'->turn right, '4'->turn left}
         # o is obstacle
-        self.posHex = np.vstack((np.array(a_i).transpose(),[1]))
-        self.posCar = np.vstack((self.idx2pos(self.posHex[0],self.posHex[1]).reshape(2,1),[1]))
+        # self.posHex = np.vstack((np.array(a_i).transpose(),[1]))
+        self.posHex = np.array([[1,0,a_i[0][0]],
+                                [0,1,a_i[0][1]],
+                                [0,0,1]])
+        print(self.posHex)
+        self.posCar = self.idx2posA(self.posHex)
+        print(self.posCar)
+        # self.posCar = np.vstack((self.idx2pos(self.posHex[0],self.posHex[1]).reshape(2,1),[1]))
         # Our bee bot is a hexagonal grid
         # self.linearTrans = np.array([[1/3,np.sqrt(3)/3,0],[-1/3, np.sqrt(3)/3,0],[0,0,1]])
         # self.ltransCheck = np.matmul(self.linearTrans,self.posCar)
@@ -58,10 +64,15 @@ class MyBeeBot(BeeBot):
     
     def pos2idx(self, posCartesian):
         self.linearTrans = np.array([[1/3,np.sqrt(3)/3,0],[-1/3, np.sqrt(3)/3,0],[0,0,1]])
+        poshexagonal = np.matmul(self.linearTrans,posCartesian)
         # x = posCartesian[0]
         # y = posCartesian[1]
         # poshexagonal = np.array([(x+np.sqrt(3)*y)/3,(-x+np.sqrt(3)*y)/3,posCartesian[2]])
-        return np.matmul(self.linearTrans,posCartesian)
+        return poshexagonal
+    
+    def idx2posA(self, posHexagonal):
+        self.linearTrans = np.array([[1/3,np.sqrt(3)/3,0],[-1/3, np.sqrt(3)/3,0],[0,0,1]])
+        return np.matmul(self.linearTrans,posHexagonal)
     
     def sinCos(self,angle):
         r = np.radians(angle)
@@ -128,14 +139,14 @@ mytest = MyBeeBot(np.array([[0,-5]]))
 # mytest = MyBeeBot(np.array([[1,-4]]))
 # W = np.array([[5, 2], [5, 4]])
 # mytest.test()
-print(mytest.posHex)
-print('-------*1*---------')
-print(mytest.pos2idx(mytest.posCar))
-print('-------*2*---------')
-print(mytest.posCar)
-print('-------*3*---------')
-print(mytest.tranformationMatrix)
-print('-------*4*---------')
-mytest.test()
+# print(mytest.posHex)
+# print('-------*1*---------')
+# print(mytest.pos2idx(mytest.posCar))
+# print('-------*2*---------')
+# print(mytest.posCar)
+# print('-------*3*---------')
+# print(mytest.tranformationMatrix)
+# print('-------*4*---------')
+# mytest.test()
 
 # print(mytest.idx2pos(0,-5))
