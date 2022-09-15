@@ -12,13 +12,10 @@ class MyBeeBot(BeeBot):
         # a_i is initial position
         # c is command {'0'->stop, '1'->forward, '2'->backward, '3'->turn right, '4'->turn left}
         # o is obstacle
-        # self.posHex = np.vstack((np.array(a_i).transpose(),[1]))
-        self.posHex = np.array([[1,0,a_i[0][0]],
-                                [0,1,a_i[0][1]],
-                                [0,0,1]])
+        self.posHex = 
+        print('posCer\n',self.posCar)
+        self.posHex = self.car2hex(self.posCar)
         print('posHex\n',self.posHex)
-        self.posCar = self.idx2posA(a_i)
-        print('posCar\n',self.posCar)
         # self.posCar = np.vstack((self.idx2pos(self.posHex[0],self.posHex[1]).reshape(2,1),[1]))
         # Our bee bot is a hexagonal grid
         # self.linearTrans = np.array([[1/3,np.sqrt(3)/3,0],[-1/3, np.sqrt(3)/3,0],[0,0,1]])
@@ -26,10 +23,11 @@ class MyBeeBot(BeeBot):
         # self.det = np.linalg.det(self.linearTrans)
         # self.rotTrans = np.array([[np.cos(np.pi/3), -np.sin(np.pi/3)],[np.sin(np.pi/3), np.cos(np.pi/3)]])
         # Defult transformation matrix is hexagonal pos (+1,+1)
-        # self.tranformationMatrix = np.array([[1, 0, 0],
-        #                                     [0, 1, np.sqrt(3)],
-        #                                     [0, 0, 1]])
-        
+        self.tranformationMatrix = np.array([[0,-1, 0],
+                                            [1, 0, np.sqrt(3)],
+                                            [0, 0, 1]])
+        # self.tranformationMatrix = self.Tranformation2D([90],[0,np.sqrt(3)])
+        print('tranformationMatrix\n',self.tranformationMatrix)
         # self.check = np.matmul(self.hTranformation2D([-60],[0,0]),self.posHex)
     
     def trackBeeBot(self, com, W):
@@ -61,23 +59,23 @@ class MyBeeBot(BeeBot):
         else:
             return False
     
-    def pos2idxA(self, posCartesian):
+    def car2hex(self, posCartesian):
         linearTrans = np.array([[1/3,np.sqrt(3)/3,0]
                                 ,[-1/3, np.sqrt(3)/3,0]
                                 ,[0,0,1]])
         poshexagonal = np.matmul(linearTrans,posCartesian)
         return poshexagonal
     
-    def idx2posA(self, posHexagonal):
+    def hex2car(self, posHexagonal):
         # posHexagonal is a 3x3 vector = [R , p],[0,0,0,1]
                                         
         linearTrans = np.array([[3/2,-3/2,0],
                                 [np.sqrt(3)/2, np.sqrt(3)/2,0]
                                 ,[0,0,1]])
-        hexagonal = np.array([[posHexagonal[0][0]],
-                              [posHexagonal[0][1]],
-                              [1]])
-        posCartesian = np.matmul(linearTrans,hexagonal)
+        # hexagonal = np.array([[posHexagonal[0][0]],
+        #                       [posHexagonal[0][1]],
+        #                       [1]])
+        posCartesian = np.matmul(linearTrans,posHexagonal)
         return posCartesian
     
     def sinCos(self,angle):
@@ -118,33 +116,46 @@ class MyBeeBot(BeeBot):
     def test(self):
         print('-------*1*---------')
         print(f'self.curPos(old) =\n  {self.posCar}\n')
+        print(f'self.hexPos(old) =\n  {self.posHex}\n')
         self.posCar = np.matmul(self.tranformationMatrix,self.posCar)
+        self.posHex = self.car2hex(self.posCar)
         print(f'self.tranformationMatrix =\n  {self.tranformationMatrix}\n')
         print(f'self.curPos(New) =\n  {self.posCar}\n')
-        print(f'self.hexPos(New) =\n  {self.pos2idx(self.posCar)}\n')
+        print(f'self.hexPos(New) =\n  {self.posHex}\n')
         print('-------*1*---------')
-    
-        print('-------*2*---------')
+
+        # print('-------*2*---------')
         # print(f'self.curPos(old) =\n  {self.posCar}\n')
-        zC, zS = self.sinCos(60)
-        Rotate_Z_matrix = np.array([[zC, -zS, 0],
-                                    [zS, zC, 0],
-                                    [0, 0, 1]])
-        # self.tranformationMatrix = np.matmul(self.hTranformation2D([60],[0,0]),self.tranformationMatrix)
-        print(f'self.tranformationMatrix =\n  {self.tranformationMatrix}\n')
-        self.tranformationMatrix = np.matmul(Rotate_Z_matrix,self.tranformationMatrix)
-        print(f'self.tranformationMatrix =\n  {self.tranformationMatrix}\n')
-        self.posCar = np.matmul(self.tranformationMatrix,self.posCar)
-        print(f'self.curPos(New) =\n  {self.posCar}\n')
-        # print(f'self.hexPos(New) =\n  {self.pos2idx(self.posCar)}\n')
-        print('-------*2*---------')
+        # print(f'self.hexPos(old) =\n  {self.posHex}\n')
+        # self.tranformationMatrix = np.matmul(self.tranformationMatrix,self.Tranformation2D([60],[0,0]))
+        # print(f'self.tranformationMatrix =\n  {self.tranformationMatrix}\n')
+        # self.posCar = np.matmul(self.tranformationMatrix,self.posCar)
+        # self.posHex = self.car2hex(self.posCar)
+        # print(f'self.curPos(New) =\n  {self.posCar}\n')
+        # print(f'self.hexPos(New) =\n  {self.posHex}\n')
+        # print('-------*2*---------')
+        
+        # print('-------*2*---------')
+        # # print(f'self.curPos(old) =\n  {self.posCar}\n')
+        # zC, zS = self.sinCos(60)
+        # Rotate_Z_matrix = np.array([[zC, -zS, 0],
+        #                             [zS, zC, 0],
+        #                             [0, 0, 1]])
+        # # self.tranformationMatrix = np.matmul(self.hTranformation2D([60],[0,0]),self.tranformationMatrix)
+        # print(f'self.tranformationMatrix =\n  {self.tranformationMatrix}\n')
+        # self.tranformationMatrix = np.matmul(Rotate_Z_matrix,self.tranformationMatrix)
+        # print(f'self.tranformationMatrix =\n  {self.tranformationMatrix}\n')
+        # self.posCar = np.matmul(self.tranformationMatrix,self.posCar)
+        # print(f'self.curPos(New) =\n  {self.posCar}\n')
+        # # print(f'self.hexPos(New) =\n  {self.pos2idx(self.posCar)}\n')
+        # print('-------*2*---------')
         
 
-# mytest = MyBeeBot(np.array([[7.5,-4.330127018922193]]))
-mytest = MyBeeBot(np.array([[0,-5]]))
+mytest = MyBeeBot(np.array([[7.5,-4.330127018922193]]))
+# mytest = MyBeeBot(np.array([[0,-5]]))
 # mytest = MyBeeBot(np.array([[1,-4]]))
 # W = np.array([[5, 2], [5, 4]])
-# mytest.test()
+mytest.test()
 # print(mytest.posHex)
 # print('-------*1*---------')
 # print(mytest.pos2idx(mytest.posCar))
