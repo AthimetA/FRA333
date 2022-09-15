@@ -38,7 +38,6 @@ class MyBeeBot(BeeBot):
                 self.posCar = self.posCar + self.transMatrix
                 if self.checkCollision(W, self.posCar):
                     print('Collision Detected')
-                    pass
                 else:
                     self.posHex = self.car2hex(self.posCar)
                     A = np.append(A, self.posHex, axis=1)
@@ -47,7 +46,6 @@ class MyBeeBot(BeeBot):
                 self.posCar = self.posCar - self.transMatrix
                 if self.checkCollision(W, self.posCar):
                     print('Collision Detected')
-                    pass
                 else:
                     self.posHex = self.car2hex(self.posCar)
                     A = np.append(A, self.posHex, axis=1)
@@ -60,10 +58,20 @@ class MyBeeBot(BeeBot):
     
     def checkCollision(self, W, posCar):
         posHex = self.car2hex(posCar)
-        if any((posHex[:, None] == W).all(-1).any(1)):
+        if any((posHex == W).all(1)):
             return True
         else:
             return False
+        
+        # # ฝากไว้ก่อนนะครับ ผมยังไม่ได้ทำ
+        # print('W is \n', W.T)
+        # posHex = self.car2hex(posCar)
+        # print('HexPos is \n', posHex)
+        # print(any((posHex == W.T).all(1)))
+        # if any((posHex == W.T).all(1)):
+        #     return True
+        # else:
+        #     return False
         
     
     def car2hex(self, posCartesian):
@@ -90,23 +98,15 @@ class MyBeeBot(BeeBot):
                                     [zS, zC]])
         return np.matmul(Rotate_Z_matrix,translationMatrix)
     
-    
-testBot = MyBeeBot([-5, -4])
-C = '13322432430331402441344321344124034332440312031321040223421323134024043020301410324214112200423440124'
-W = np.array([[-1, 0, -2, 0, 4, 3, 5, -3, 3, 4, 1, 5, 3, -5], [1, 0, -1, 5, -5, -1, 5, -4, 0, -1, 3, 0, 0, -4]])
+# Test Case 8
+testBot = MyBeeBot([0, 0])
+C = "10441234440243414302402101013000434202014031330420220203022123020314412243430134444402112342032140024"
+W = np.array([[-1, 0, -2, 0, -4, -5, 5, -1, -2, 2, 0, -1, 5, -2], [1, 0, -1, 5, -2, 2, -3, 5, 5, 1, 5, -1, 5, -2]])
 A, P = testBot.trackBeeBot(C, W)
 print('----------------')
 print(A)
 print('----------------')
 print(P)
-
-# testBot = MyBeeBot([0, -5])
-# C = '131'
-# W = np.array([[],[]])
-# A, P = testBot.trackBeeBot(C, W)
-# print(A)
-# print('----------------')
-# print(P)
 
 
 # A = np.array([[1,4],[2,5],[3,6]])
