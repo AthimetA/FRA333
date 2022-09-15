@@ -15,14 +15,9 @@ class MyBeeBot(BeeBot):
         # W is wall
         self.posHex = np.array(a_i).reshape(2,1)
         self.posCar = self.hex2car(self.posHex)
-        # print('HexPos is \n', self.posHex)
-        # print('CarPos is \n', self.posCar)
-        
         # translation matrix
         self.transMatrix = self.hex2car(np.array([1,1]).reshape(2,1))
-        # print('Translation Matrix is \n', self.transMatrix)
         
-    
     def trackBeeBot(self, com, W):
         # a_i is initial position   
         # com is command {'0'->stop, '1'->forward, '2'->backward, '3'->turn right, '4'->turn left}
