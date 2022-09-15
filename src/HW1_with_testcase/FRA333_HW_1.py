@@ -36,18 +36,18 @@ class MyBeeBot(BeeBot):
         
         for c in com :
             if c == '1':
-                self.posCar = self.posCar + self.transMatrix
-                if self.checkCollision(W, self.posCar):
+                if self.checkCollision(W, self.posCar + self.transMatrix):
                     print('Collision Detected')
                 else:
+                    self.posCar = self.posCar + self.transMatrix
                     self.posHex = self.car2hex(self.posCar)
                     A = np.append(A, self.posHex, axis=1)
                     P = np.append(P, self.posCar, axis=1)
             elif c == '2':
-                self.posCar = self.posCar - self.transMatrix
-                if self.checkCollision(W, self.posCar):
+                if self.checkCollision(W, self.posCar - self.transMatrix):
                     print('Collision Detected')
                 else:
+                    self.posCar = self.posCar - self.transMatrix
                     self.posHex = self.car2hex(self.posCar)
                     A = np.append(A, self.posHex, axis=1)
                     P = np.append(P, self.posCar, axis=1)
