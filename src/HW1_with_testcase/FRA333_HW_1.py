@@ -13,9 +13,10 @@ class MyBeeBot(BeeBot):
         # a_i is initial position
         # c is command {'0'->stop, '1'->forward, '2'->backward, '3'->turn right, '4'->turn left}
         # o is obstacle
-        self.curPos = np.vstack((np.array(a_i).transpose(),[1]))
-        # Defult transformation matrix is y = y+1
-        self.curVector = self.curPos
+        self.posHex = np.vstack((np.array(a_i).transpose(),[1]))
+        self.posCar = np.vstack((self.idx2pos(self.posHex[0],self.posHex[1]).reshape(2,1),[1]))
+        # Defult transformation matrix is hexagonal pos (+1,+1)
+        self.tranformationMatrix = self.idx2pos(self.hTranformation2D([60],[1,1])[0][2],self.hTranformation2D([60],[1,1])[1][2])
     
     def trackBeeBot(self, com, W):
     # a_i is initial position
@@ -25,13 +26,13 @@ class MyBeeBot(BeeBot):
             if c == '0':
                 break
             elif c == '1':
-                self.curPos = np.matmul(self.hTranformation2D([0],[0,1]),self.curPos)
+                self.posCar = np.matmul(self.hTranformation2D([0],[0,1]),self.posCar)
             elif c == '2':
-                self.curPos = np.matmul(self.hTranformation2D([0],[0,-1]),self.curPos)
+                self.posCar = np.matmul(self.hTranformation2D([0],[0,-1]),self.posCar)
             elif c == '3':
-                self.curPos = np.matmul(self.hTranformation2D([90],[0,0]),self.curPos)
+                self.posCar = np.matmul(self.hTranformation2D([90],[0,0]),self.posCar)
             elif c == '4':
-                self.curPos = np.matmul(self.hTranformation2D([-90],[0,0]),self.curPos)
+                self.posCar = np.matmul(self.hTranformation2D([-90],[0,0]),self.posCar)
             else:
                 print('Command Error')
                 break
@@ -39,13 +40,19 @@ class MyBeeBot(BeeBot):
                 print('Collision')
                 break
                 
-        return self.curPos
+        return self.posCar
     
     def checkCollision(self, W):
-        if self.curPos[0] > W[0] or self.curPos[0] < 0 or self.curPos[1] > W[1] or self.curPos[1] < 0:
+        if self.posCar[0] > W[0] or self.posCar[0] < 0 or self.posCar[1] > W[1] or self.posCar[1] < 0:
             return True
         else:
             return False
+    
+    def pos2idx(self, posCartesian):
+        x = posCartesian[0]
+        y = posCartesian[1]
+        poshexagonal = np.array([(x+np.sqrt(3)*y)/3,(-x+np.sqrt(3)*y)/3,posCartesian[2]])
+        return poshexagonal
     
     def sinCos(self,angle):
         r = np.radians(angle)
@@ -84,9 +91,9 @@ class MyBeeBot(BeeBot):
     
     def test(self):
         print('-------*1*---------')
-        print(f'self.curPos(old) =\n  {self.curPos}\n')
-        self.curPos = np.matmul(self.hTranformation2D([0],[0,np.math.sqrt(3)]),self.curPos)
-        print(f'self.curPos(New) =\n  {self.curPos}\n')
+        print(f'self.curPos(old) =\n  {self.posCar}\n')
+        self.posCar = np.matmul(self.hTranformation2D([0],[0,1]),self.posCar)
+        print(f'self.curPos(New) =\n  {self.posCar}\n')
         print('-------*1*---------')
         
         # print('-------*2*---------')
@@ -151,9 +158,14 @@ class MyBeeBot(BeeBot):
         # print(f'self.curPos(New) =\n  {self.curPos}\n')
         # print('-------*4*---------')
 
-mytest = MyBeeBot(np.array([[7.5,-4.330127018922193]]))
-# mytest = MyBeeBot(np.array([[0,-5]]))
+# mytest = MyBeeBot(np.array([[7.5,-4.330127018922193]]))
+mytest = MyBeeBot(np.array([[0,-5]]))
 W = np.array([[5, 2], [5, 4]])
-# print(mytest.matrix([0,30,0],[0,0,0]))
-mytest.test()
+# mytest.test()
+print(mytest.posHex)
+print('-------*1*---------')
+print(mytest.pos2idx(mytest.posCar))
+print('-------*2*---------')
+print(mytest.tranformationMatrix)
+
 # print(mytest.idx2pos(0,-5))

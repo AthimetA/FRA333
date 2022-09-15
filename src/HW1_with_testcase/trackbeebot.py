@@ -13,11 +13,11 @@ class BeeBot():
     def idx2pos(self, i,j):
         a = np.array([3/2,np.math.sqrt(3)/2])*self.d*(i-1)
         b = np.array([-3/2,np.math.sqrt(3)/2])*self.d*(j-1)
-        print(f'{np.array([3/2,np.math.sqrt(3)/2])} and {self.d*(i-1)} = \n {a}')
-        print(f'{np.array([-3/2,np.math.sqrt(3)/2])} and {self.d*(j-1)} = \n {b}')
-        print(f'a+b = \n {a+b}')
-        print(np.array([0,np.math.sqrt(3)]))
-        print(a+b+np.array([0,np.math.sqrt(3)]))
+        # print(f'{np.array([3/2,np.math.sqrt(3)/2])} and {self.d*(i-1)} = \n {a}')
+        # print(f'{np.array([-3/2,np.math.sqrt(3)/2])} and {self.d*(j-1)} = \n {b}')
+        # print(f'a+b = \n {a+b}')
+        # print(np.array([0,np.math.sqrt(3)]))
+        # print(a+b+np.array([0,np.math.sqrt(3)]))
         return a+b+np.array([0,np.math.sqrt(3)])
     def Hexagon(self,center,theta=0,faceColor='w'):
         x = [np.cos(math.pi/3*np.array(range(6)))+center[0]]
