@@ -109,9 +109,9 @@ class MyBeeBot(BeeBot):
     def car2hex(self, posCartesian):
         # posCartesian is a 2x1 vector = [x,y]
         # posHexagonal is a 2x1 vector = [i,j]
-        # linear transformation matrix is a 2x2 matrix = [[1/3, np.sqrt(3)/3],[-1/3, np.sqrt(3)/3]]
-        linearTrans = np.array([[1/3,np.sqrt(3)/3]
-                                ,[-1/3, np.sqrt(3)/3]])
+        # linear transformation matrix is a 2x2 matrix = [[1/3, 1/np.sqrt(3],[-1/3, 1/np.sqrt(3]]
+        linearTrans = np.array([[1/3, 1/np.sqrt(3)]
+                                ,[-1/3, 1/np.sqrt(3)]])
         # posHexagonal = linear transformation matrix * posCartesian
         poshexagonal = np.matmul(linearTrans,posCartesian)
         # round to nearest integer and convert to int
