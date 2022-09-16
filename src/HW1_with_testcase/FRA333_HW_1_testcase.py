@@ -7,7 +7,7 @@ import math
 import json
 from FRA333_HW_1 import MyBeeBot
 
-with open('/home/azthorax/fra333_ws/src/HW1_with_testcase/testcase.json') as f:
+with open('src/HW1_with_testcase/testcase.json') as f:
     lines = f.readlines()
 testcases = json.loads(lines[0])
 i = 1
@@ -31,6 +31,6 @@ for testcase in testcases["testcase"]:
     else:
         print("Testcase no. " + str(i) + " is FALSE")
     i = i + 1
-    mytest.plot_trackBeeBot(A,testcase["max"],True,W)
+    # mytest.plot_trackBeeBot(A,testcase["max"],True,W)
 
 

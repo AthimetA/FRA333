@@ -31,17 +31,13 @@ class MyBeeBot(BeeBot):
         
         for c in com :
             if c == '1':
-                if self.checkCollision(W, self.posCar + self.transMatrix):
-                    print('Collision Detected')
-                else:
+                if not self.checkCollision(W, self.posCar + self.transMatrix):
                     self.posCar = self.posCar + self.transMatrix
                     self.posHex = self.car2hex(self.posCar)
                     A = np.append(A, self.posHex, axis=1)
                     P = np.append(P, self.posCar, axis=1)
             elif c == '2':
-                if self.checkCollision(W, self.posCar - self.transMatrix):
-                    print('Collision Detected')
-                else:
+                if not self.checkCollision(W, self.posCar - self.transMatrix):
                     self.posCar = self.posCar - self.transMatrix
                     self.posHex = self.car2hex(self.posCar)
                     A = np.append(A, self.posHex, axis=1)
@@ -54,16 +50,19 @@ class MyBeeBot(BeeBot):
     
     def checkCollision(self, W, posCar):
         posHex = self.car2hex(posCar)
-        if any((posHex[:, None] == W).all(-1).any(1)):
+        print('-'*10)
+        print('posHex = \n',posHex.T[:, None])
+        print('W.T =\n', W.T)
+        print((posHex.T[:, None] == W.T).all(-1))
+        print((posHex.T[:, None] == W.T).all(-1).any())
+        print('-'*10)
+        print((posHex.T[:, None] == W.T).all(-1).any(1))
+        # 1st method
+        if (posHex.T[:, None] == W.T).all(-1).any():
             return True
         else:
             return False
-        
-        # # ฝากไว้ก่อนนะครับ ผมยังไม่ได้ทำ
-        # print('W is \n', W.T)
-        # posHex = self.car2hex(posCar)
-        # print('HexPos is \n', posHex.T)
-        # print(any((posHex.T == W.T).all(1)))
+        # 2nd method
         # if any((posHex.T == W.T).all(1)):
         #     return True
         # else:
@@ -74,6 +73,8 @@ class MyBeeBot(BeeBot):
         linearTrans = np.array([[1/3,np.sqrt(3)/3]
                                 ,[-1/3, np.sqrt(3)/3]])
         poshexagonal = np.matmul(linearTrans,posCartesian)
+        ## round to nearest integer and convert to int
+        poshexagonal = np.rint(poshexagonal).astype(int)
         return poshexagonal
     
     def hex2car(self, posHexagonal):
@@ -94,26 +95,29 @@ class MyBeeBot(BeeBot):
                                     [zS, zC]])
         return np.matmul(Rotate_Z_matrix,translationMatrix)
     
+
+# testBot = MyBeeBot([-4, 1])
+# W = np.array([[-1, 0, -2, 0, -4, -5, 5, -1, -2, 2, 0, -1, 5, -2], [1, 0, -1, 5, -2, 2, -3, 5, 5, 1, 5, -1, 5, -2]])
+# A = np.array([[1,4],[2,5],[3,6]])
+# B = np.array([[1,4],[3,6],[7,8]])
+# print('W is \n', W.T)
+# print('-'*50)
+# print('Pos is \n',testBot.posHex.T)
+# print('-'*50)
+# print('A is \n', A)
+# print('----------------')
+# print('B is \n', B)
+# print('----------------')
+# m = (A[:, None] == B).all(-1).any(-1)
+# print(m)
+
+# Test Case 6
+# testBot = MyBeeBot([-5, -4])
+# C = '13322432430331402441344321344124034332440312031321040223421323134024043020301410324214112200423440124'
+# W = np.array([[-1, 0, -2, 0, 4, 3, 5, -3, 3, 4, 1, 5, 3, -5], [1, 0, -1, 5, -5, -1, 5, -4, 0, -1, 3, 0, 0, -4]])
+# A, P = testBot.trackBeeBot(C, W)
 # Test Case 8
-testBot = MyBeeBot([0, 0])
+testBot = MyBeeBot([-4, 1])
 C = "10441234440243414302402101013000434202014031330420220203022123020314412243430134444402112342032140024"
 W = np.array([[-1, 0, -2, 0, -4, -5, 5, -1, -2, 2, 0, -1, 5, -2], [1, 0, -1, 5, -2, 2, -3, 5, 5, 1, 5, -1, 5, -2]])
 A, P = testBot.trackBeeBot(C, W)
-print('----------------')
-print(A)
-print('----------------')
-print(P)
-
-
-# A = np.array([[1,4],[2,5],[3,6]])
-# B = np.array([[1,4],[3,6],[7,8]])
-# print('W is \n', W)
-# print('-'*50)
-# print('Pos is \n',np.append(testBot.posCar, testBot.posHex, axis=1))
-# print('-'*50)
-# print('A.T is \n', A.T)
-# print('----------------')
-# print('B.T is \n', B.T)
-# print('----------------')
-# m = (A.T[:, None] == B.T).all(-1).any(1)
-# print(any(m))
