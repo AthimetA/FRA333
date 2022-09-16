@@ -50,13 +50,6 @@ class MyBeeBot(BeeBot):
     
     def checkCollision(self, W, posCar):
         posHex = self.car2hex(posCar)
-        print('-'*10)
-        print('posHex = \n',posHex.T[:, None])
-        print('W.T =\n', W.T)
-        print((posHex.T[:, None] == W.T).all(-1))
-        print((posHex.T[:, None] == W.T).all(-1).any())
-        print('-'*10)
-        print((posHex.T[:, None] == W.T).all(-1).any(1))
         # 1st method
         if (posHex.T[:, None] == W.T).all(-1).any():
             return True
@@ -68,7 +61,6 @@ class MyBeeBot(BeeBot):
         # else:
         #     return False
         
-    
     def car2hex(self, posCartesian):
         linearTrans = np.array([[1/3,np.sqrt(3)/3]
                                 ,[-1/3, np.sqrt(3)/3]])
@@ -94,30 +86,3 @@ class MyBeeBot(BeeBot):
         Rotate_Z_matrix = np.array([[zC, -zS],
                                     [zS, zC]])
         return np.matmul(Rotate_Z_matrix,translationMatrix)
-    
-
-# testBot = MyBeeBot([-4, 1])
-# W = np.array([[-1, 0, -2, 0, -4, -5, 5, -1, -2, 2, 0, -1, 5, -2], [1, 0, -1, 5, -2, 2, -3, 5, 5, 1, 5, -1, 5, -2]])
-# A = np.array([[1,4],[2,5],[3,6]])
-# B = np.array([[1,4],[3,6],[7,8]])
-# print('W is \n', W.T)
-# print('-'*50)
-# print('Pos is \n',testBot.posHex.T)
-# print('-'*50)
-# print('A is \n', A)
-# print('----------------')
-# print('B is \n', B)
-# print('----------------')
-# m = (A[:, None] == B).all(-1).any(-1)
-# print(m)
-
-# Test Case 6
-# testBot = MyBeeBot([-5, -4])
-# C = '13322432430331402441344321344124034332440312031321040223421323134024043020301410324214112200423440124'
-# W = np.array([[-1, 0, -2, 0, 4, 3, 5, -3, 3, 4, 1, 5, 3, -5], [1, 0, -1, 5, -5, -1, 5, -4, 0, -1, 3, 0, 0, -4]])
-# A, P = testBot.trackBeeBot(C, W)
-# Test Case 8
-testBot = MyBeeBot([-4, 1])
-C = "10441234440243414302402101013000434202014031330420220203022123020314412243430134444402112342032140024"
-W = np.array([[-1, 0, -2, 0, -4, -5, 5, -1, -2, 2, 0, -1, 5, -2], [1, 0, -1, 5, -2, 2, -3, 5, 5, 1, 5, -1, 5, -2]])
-A, P = testBot.trackBeeBot(C, W)
