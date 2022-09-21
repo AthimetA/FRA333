@@ -31,6 +31,6 @@ for testcase in testcases["testcase"]:
     else:
         print("Testcase no. " + str(i) + " is FALSE")
     i = i + 1
-    # mytest.plot_trackBeeBot(A,testcase["max"],True,W)
+    mytest.plot_trackBeeBot(A,testcase["max"],True,W)
 
 
