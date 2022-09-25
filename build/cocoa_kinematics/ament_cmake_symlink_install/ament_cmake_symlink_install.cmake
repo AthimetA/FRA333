@@ -315,3 +315,54 @@ ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v
 
 # install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/cocoa_kinematics/environment")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/cocoa_kinematics/environment")
+
+# install(DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics/cocoa_kinematics/" "DESTINATION" "lib/python3.8/site-packages/cocoa_kinematics" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics/cocoa_kinematics/" "DESTINATION" "lib/python3.8/site-packages/cocoa_kinematics" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+
+# install(PROGRAMS "scripts/dummy_script.py" "DESTINATION" "lib/cocoa_kinematics")
+ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" PROGRAMS "scripts/dummy_script.py" "DESTINATION" "lib/cocoa_kinematics")
+
+# install(DIRECTORY "launch" "DESTINATION" "share/cocoa_kinematics")
+ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" DIRECTORY "launch" "DESTINATION" "share/cocoa_kinematics")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cocoa_kinematics" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cocoa_kinematics" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cocoa_kinematics" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cocoa_kinematics" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+
+# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/cocoa_kinematics/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/cocoa_kinematics/environment")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/cocoa_kinematics/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/cocoa_kinematics/environment")
+
+# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/cocoa_kinematics/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/cocoa_kinematics/environment")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/cocoa_kinematics/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/cocoa_kinematics/environment")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/cocoa_kinematics")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/cocoa_kinematics")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/cocoa_kinematics")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/cocoa_kinematics")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/cocoa_kinematics")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/cocoa_kinematics")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/cocoa_kinematics")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/cocoa_kinematics")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/cocoa_kinematics")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/cocoa_kinematics")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_index/share/ament_index/resource_index/packages/cocoa_kinematics" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_index/share/ament_index/resource_index/packages/cocoa_kinematics" "DESTINATION" "share/ament_index/resource_index/packages")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_core/cocoa_kinematicsConfig.cmake" "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_core/cocoa_kinematicsConfig-version.cmake" "DESTINATION" "share/cocoa_kinematics/cmake")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_core/cocoa_kinematicsConfig.cmake" "/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_core/cocoa_kinematicsConfig-version.cmake" "DESTINATION" "share/cocoa_kinematics/cmake")
+
+# install(FILES "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics/package.xml" "DESTINATION" "share/cocoa_kinematics")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" FILES "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics/package.xml" "DESTINATION" "share/cocoa_kinematics")

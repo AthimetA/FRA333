@@ -315,3 +315,54 @@ ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v
 
 # install(FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/cocoa_description/environment")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/cocoa_description/environment")
+
+# install(DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description/cocoa_description/" "DESTINATION" "lib/python3.8/site-packages/cocoa_description" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description/cocoa_description/" "DESTINATION" "lib/python3.8/site-packages/cocoa_description" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+
+# install(PROGRAMS "scripts/dummy_script.py" "DESTINATION" "lib/cocoa_description")
+ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" PROGRAMS "scripts/dummy_script.py" "DESTINATION" "lib/cocoa_description")
+
+# install(DIRECTORY "config" "DESTINATION" "share/cocoa_description")
+ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" DIRECTORY "config" "DESTINATION" "share/cocoa_description")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cocoa_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cocoa_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cocoa_description" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cocoa_description" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+
+# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/cocoa_description/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/cocoa_description/environment")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/cocoa_description/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/cocoa_description/environment")
+
+# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/cocoa_description/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/cocoa_description/environment")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/cocoa_description/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/cocoa_description/environment")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/cocoa_description")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/cocoa_description")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/cocoa_description")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/cocoa_description")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/cocoa_description")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/cocoa_description")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/cocoa_description")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/cocoa_description")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/cocoa_description")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/cocoa_description")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_index/share/ament_index/resource_index/packages/cocoa_description" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_index/share/ament_index/resource_index/packages/cocoa_description" "DESTINATION" "share/ament_index/resource_index/packages")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_core/cocoa_descriptionConfig.cmake" "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_core/cocoa_descriptionConfig-version.cmake" "DESTINATION" "share/cocoa_description/cmake")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_core/cocoa_descriptionConfig.cmake" "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_core/cocoa_descriptionConfig-version.cmake" "DESTINATION" "share/cocoa_description/cmake")
+
+# install(FILES "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description/package.xml" "DESTINATION" "share/cocoa_description")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description/package.xml" "DESTINATION" "share/cocoa_description")
