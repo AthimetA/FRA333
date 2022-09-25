@@ -37,7 +37,7 @@ void AthSum3_Request_fini_function(void * message_memory)
   typed_message->~AthSum3_Request();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember AthSum3_Request_message_member_array[3] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember AthSum3_Request_message_member_array[2] = {
   {
     "a",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
@@ -55,28 +55,13 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember AthSum3_Reque
   },
   {
     "b",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    nullptr,  // members of sub message
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::Int64>(),  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(my_first_package::srv::AthSum3_Request, b),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "c",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(my_first_package::srv::AthSum3_Request, c),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -88,7 +73,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember AthSum3_Reque
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers AthSum3_Request_message_members = {
   "my_first_package::srv",  // message namespace
   "AthSum3_Request",  // message name
-  3,  // number of fields
+  2,  // number of fields
   sizeof(my_first_package::srv::AthSum3_Request),
   AthSum3_Request_message_member_array,  // message members
   AthSum3_Request_init_function,  // function to initialize message memory (memory has to be allocated)

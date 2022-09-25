@@ -2,15 +2,14 @@
 // with input from my_first_package/srv/AthSum3.srv
 // generated code does not contain a copyright notice
 
+#include "std_msgs/msg/Int64.idl"
 
 module my_first_package {
   module srv {
     struct AthSum3_Request {
       int64 a;
 
-      int64 b;
-
-      int64 c;
+      std_msgs::msg::Int64 b;
     };
     struct AthSum3_Response {
       int64 sum;

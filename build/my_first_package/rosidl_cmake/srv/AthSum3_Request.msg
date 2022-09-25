@@ -1,3 +1,2 @@
 int64 a
-int64 b
-int64 c
+std_msgs/Int64 b

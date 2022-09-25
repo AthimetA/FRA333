@@ -17,12 +17,15 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'b'
+#include "std_msgs/msg/detail/int64__struct.h"
+
 // Struct defined in srv/AthSum3 in the package my_first_package.
 typedef struct my_first_package__srv__AthSum3_Request
 {
   int64_t a;
-  int64_t b;
-  int64_t c;
+  std_msgs__msg__Int64 b;
 } my_first_package__srv__AthSum3_Request;
 
 // Struct for a sequence of my_first_package__srv__AthSum3_Request.

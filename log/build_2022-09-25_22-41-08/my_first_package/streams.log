@@ -1,0 +1,147 @@
+[0.054s] Invoking command in '/home/azthorax/fra333_ws/build/my_first_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/my_first_package -- -j12 -l12
+[0.089s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.090s] -- Found ament_cmake_core: 0.9.9 (/opt/ros/foxy/share/ament_cmake_core/cmake)
+[0.116s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.116s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.351s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.357s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.362s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.552s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.577s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.650s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.700s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.704s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.842s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[0.873s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.174s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.427s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.550s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.578s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.579s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.604s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.604s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.604s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.684s] -- Configuring done
+[1.792s] -- Generating done
+[1.797s] -- Build files have been written to: /home/azthorax/fra333_ws/build/my_first_package
+[1.828s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.836s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.844s] [  4%] Built target cpp_node_test
+[2.524s] [  4%] Built target my_first_package__cpp
+[2.543s] [  5%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.545s] [  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.545s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.561s] [35m[1mScanning dependencies of target my_first_package__rosidl_generator_c[0m
+[2.585s] [ 11%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_generator_c.dir/rosidl_generator_c/my_first_package/srv/detail/ath_sum__functions.c.o[0m
+[2.585s] [ 11%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_generator_c.dir/rosidl_generator_c/my_first_package/msg/detail/num__functions.c.o[0m
+[2.585s] [ 11%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_generator_c.dir/rosidl_generator_c/my_first_package/srv/detail/set_goal__functions.c.o[0m
+[2.585s] [ 11%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_generator_c.dir/rosidl_generator_c/my_first_package/msg/detail/add_book__functions.c.o[0m
+[2.586s] [ 12%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_generator_c.dir/rosidl_generator_c/my_first_package/msg/detail/sphere__functions.c.o[0m
+[2.586s] [ 13%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_generator_c.dir/rosidl_generator_c/my_first_package/srv/detail/ath_sum3__functions.c.o[0m
+[2.587s] [ 14%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_generator_c.dir/rosidl_generator_c/my_first_package/srv/detail/rand_goal__functions.c.o[0m
+[2.589s] [ 15%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_generator_c.dir/rosidl_generator_c/my_first_package/action/detail/fibonacci__functions.c.o[0m
+[2.596s] [ 16%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_generator_c.dir/rosidl_generator_c/my_first_package/srv/detail/set_noise__functions.c.o[0m
+[2.688s] [ 17%] [32m[1mLinking C shared library libmy_first_package__rosidl_generator_c.so[0m
+[2.744s] [ 17%] Built target my_first_package__rosidl_generator_c
+[2.756s] [ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.761s] [ 19%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.007s] [35m[1mScanning dependencies of target my_first_package__rosidl_typesupport_cpp[0m
+[3.025s] [ 21%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_first_package/srv/set_goal__type_support.cpp.o[0m
+[3.025s] [ 21%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_first_package/srv/rand_goal__type_support.cpp.o[0m
+[3.025s] [ 22%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_first_package/srv/ath_sum__type_support.cpp.o[0m
+[3.026s] [ 23%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_first_package/msg/sphere__type_support.cpp.o[0m
+[3.027s] [ 24%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_first_package/srv/set_noise__type_support.cpp.o[0m
+[3.029s] [ 25%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_first_package/srv/ath_sum3__type_support.cpp.o[0m
+[3.031s] [ 27%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_first_package/msg/num__type_support.cpp.o[0m
+[3.031s] [ 27%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_first_package/msg/add_book__type_support.cpp.o[0m
+[3.364s] [35m[1mScanning dependencies of target my_first_package__rosidl_typesupport_introspection_cpp[0m
+[3.388s] [ 28%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_first_package/srv/detail/rand_goal__type_support.cpp.o[0m
+[3.392s] [ 29%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_first_package/srv/detail/set_goal__type_support.cpp.o[0m
+[3.395s] [35m[1mScanning dependencies of target my_first_package__rosidl_typesupport_c[0m
+[3.398s] [ 30%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_first_package/action/fibonacci__type_support.cpp.o[0m
+[3.416s] [ 32%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_first_package/msg/detail/num__type_support.cpp.o[0m
+[3.417s] [ 32%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_first_package/srv/detail/ath_sum__type_support.cpp.o[0m
+[3.422s] [ 34%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_first_package/srv/rand_goal__type_support.cpp.o[0m
+[3.426s] [35m[1mScanning dependencies of target my_first_package__rosidl_typesupport_fastrtps_cpp[0m
+[3.438s] [ 37%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_first_package/srv/set_goal__type_support.cpp.o[0m
+[3.438s] [ 37%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_first_package/srv/ath_sum__type_support.cpp.o[0m
+[3.439s] [ 37%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_first_package/msg/num__type_support.cpp.o[0m
+[3.449s] [ 38%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_first_package/msg/detail/sphere__type_support.cpp.o[0m
+[3.460s] [ 39%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_first_package/msg/sphere__type_support.cpp.o[0m
+[3.466s] [ 40%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_first_package/srv/detail/dds_fastrtps/rand_goal__type_support.cpp.o[0m
+[3.477s] [ 42%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_first_package/msg/add_book__type_support.cpp.o[0m
+[3.477s] [ 42%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_first_package/srv/detail/dds_fastrtps/set_goal__type_support.cpp.o[0m
+[3.483s] [ 43%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_first_package/srv/detail/dds_fastrtps/ath_sum__type_support.cpp.o[0m
+[3.498s] [ 44%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_first_package/msg/detail/dds_fastrtps/num__type_support.cpp.o[0m
+[3.517s] [ 45%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_first_package/srv/ath_sum3__type_support.cpp.o[0m
+[3.558s] [ 46%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_first_package/srv/set_noise__type_support.cpp.o[0m
+[3.600s] [ 47%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_first_package/action/fibonacci__type_support.cpp.o[0m
+[3.673s] [ 48%] [32m[1mLinking CXX shared library libmy_first_package__rosidl_typesupport_c.so[0m
+[3.708s] [35m[1mScanning dependencies of target my_first_package__rosidl_typesupport_introspection_c[0m
+[3.735s] [ 48%] Built target my_first_package__rosidl_typesupport_c
+[3.740s] [ 49%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_first_package/srv/detail/rand_goal__type_support.c.o[0m
+[3.747s] [ 51%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_first_package/msg/detail/dds_fastrtps/sphere__type_support.cpp.o[0m
+[3.747s] [ 51%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_first_package/msg/detail/add_book__type_support.cpp.o[0m
+[3.765s] [ 52%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_first_package/srv/detail/ath_sum3__type_support.cpp.o[0m
+[3.780s] [ 53%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_first_package/srv/detail/set_noise__type_support.cpp.o[0m
+[3.799s] [ 54%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_first_package/srv/detail/set_goal__type_support.c.o[0m
+[3.800s] [ 55%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_first_package/srv/detail/ath_sum__type_support.c.o[0m
+[3.800s] [ 56%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_first_package/action/detail/fibonacci__type_support.cpp.o[0m
+[3.846s] [ 57%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_first_package/msg/detail/sphere__type_support.c.o[0m
+[3.846s] [ 58%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_first_package/msg/detail/num__type_support.c.o[0m
+[3.849s] [ 59%] [32m[1mLinking CXX shared library libmy_first_package__rosidl_typesupport_cpp.so[0m
+[3.889s] [ 60%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_first_package/msg/detail/add_book__type_support.c.o[0m
+[3.900s] [ 61%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_first_package/srv/detail/ath_sum3__type_support.c.o[0m
+[3.911s] [ 61%] Built target my_first_package__rosidl_typesupport_cpp
+[3.931s] [ 62%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_first_package/srv/detail/set_noise__type_support.c.o[0m
+[3.938s] [ 63%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_first_package/action/detail/fibonacci__type_support.c.o[0m
+[3.965s] [ 64%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_first_package/msg/detail/dds_fastrtps/add_book__type_support.cpp.o[0m
+[3.974s] [ 65%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_first_package/srv/detail/dds_fastrtps/ath_sum3__type_support.cpp.o[0m
+[4.001s] [ 67%] [32m[1mLinking C shared library libmy_first_package__rosidl_typesupport_introspection_c.so[0m
+[4.038s] [ 68%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_first_package/srv/detail/dds_fastrtps/set_noise__type_support.cpp.o[0m
+[4.052s] [ 68%] Built target my_first_package__rosidl_typesupport_introspection_c
+[4.063s] [ 69%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_first_package/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o[0m
+[4.257s] [ 70%] [32m[1mLinking CXX shared library libmy_first_package__rosidl_typesupport_introspection_cpp.so[0m
+[4.381s] [ 70%] Built target my_first_package__rosidl_typesupport_introspection_cpp
+[4.551s] [ 71%] [32m[1mLinking CXX shared library libmy_first_package__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.660s] [ 71%] Built target my_first_package__rosidl_typesupport_fastrtps_cpp
+[4.682s] [ 72%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.297s] [35m[1mScanning dependencies of target my_first_package__rosidl_typesupport_fastrtps_c[0m
+[5.328s] [ 73%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_first_package/srv/detail/set_goal__type_support_c.cpp.o[0m
+[5.332s] [ 76%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_first_package/srv/detail/ath_sum3__type_support_c.cpp.o[0m
+[5.333s] [ 76%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_first_package/msg/detail/sphere__type_support_c.cpp.o[0m
+[5.333s] [ 76%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_first_package/srv/detail/rand_goal__type_support_c.cpp.o[0m
+[5.333s] [ 78%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_first_package/msg/detail/add_book__type_support_c.cpp.o[0m
+[5.334s] [ 78%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_first_package/msg/detail/num__type_support_c.cpp.o[0m
+[5.334s] [ 80%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_first_package/srv/detail/set_noise__type_support_c.cpp.o[0m
+[5.334s] [ 80%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_first_package/action/detail/fibonacci__type_support_c.cpp.o[0m
+[5.334s] [ 81%] [32mBuilding CXX object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_first_package/srv/detail/ath_sum__type_support_c.cpp.o[0m
+[5.845s] [ 82%] [32m[1mLinking CXX shared library libmy_first_package__rosidl_typesupport_fastrtps_c.so[0m
+[5.951s] [ 82%] Built target my_first_package__rosidl_typesupport_fastrtps_c
+[5.980s] [ 82%] Built target my_first_package
+[6.014s] [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.416s] [ 83%] Built target my_first_package__py
+[7.437s] [35m[1mScanning dependencies of target my_first_package__python[0m
+[7.478s] [ 84%] [32mBuilding C object CMakeFiles/my_first_package__python.dir/rosidl_generator_py/my_first_package/srv/_ath_sum3_s.c.o[0m
+[7.480s] [ 85%] [32mBuilding C object CMakeFiles/my_first_package__python.dir/rosidl_generator_py/my_first_package/srv/_set_noise_s.c.o[0m
+[7.480s] [ 86%] [32mBuilding C object CMakeFiles/my_first_package__python.dir/rosidl_generator_py/my_first_package/srv/_ath_sum_s.c.o[0m
+[7.481s] [ 87%] [32mBuilding C object CMakeFiles/my_first_package__python.dir/rosidl_generator_py/my_first_package/msg/_num_s.c.o[0m
+[7.482s] [ 88%] [32mBuilding C object CMakeFiles/my_first_package__python.dir/rosidl_generator_py/my_first_package/action/_fibonacci_s.c.o[0m
+[7.482s] [ 89%] [32mBuilding C object CMakeFiles/my_first_package__python.dir/rosidl_generator_py/my_first_package/srv/_set_goal_s.c.o[0m
+[7.483s] [ 90%] [32mBuilding C object CMakeFiles/my_first_package__python.dir/rosidl_generator_py/my_first_package/msg/_sphere_s.c.o[0m
+[7.485s] [ 91%] [32mBuilding C object CMakeFiles/my_first_package__python.dir/rosidl_generator_py/my_first_package/srv/_rand_goal_s.c.o[0m
+[7.486s] [ 92%] [32mBuilding C object CMakeFiles/my_first_package__python.dir/rosidl_generator_py/my_first_package/msg/_add_book_s.c.o[0m
+[7.664s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/my_first_package/libmy_first_package__python.so[0m
+[7.721s] [ 93%] Built target my_first_package__python
+[7.736s] [35m[1mScanning dependencies of target my_first_package__rosidl_typesupport_c__pyext[0m
+[7.736s] [35m[1mScanning dependencies of target my_first_package__rosidl_typesupport_fastrtps_c__pyext[0m
+[7.737s] [35m[1mScanning dependencies of target my_first_package__rosidl_typesupport_introspection_c__pyext[0m
+[7.751s] [ 94%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_first_package/_my_first_package_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.756s] [ 96%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_first_package/_my_first_package_s.ep.rosidl_typesupport_c.c.o[0m
+[7.756s] [ 96%] [32mBuilding C object CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_first_package/_my_first_package_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.882s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/my_first_package/my_first_package_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[7.885s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/my_first_package/my_first_package_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[7.890s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/my_first_package/my_first_package_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[7.929s] [100%] Built target my_first_package__rosidl_typesupport_c__pyext
+[7.931s] [100%] Built target my_first_package__rosidl_typesupport_introspection_c__pyext
+[7.962s] [100%] Built target my_first_package__rosidl_typesupport_fastrtps_c__pyext

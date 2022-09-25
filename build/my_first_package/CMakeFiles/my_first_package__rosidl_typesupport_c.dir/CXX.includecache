@@ -398,6 +398,14 @@ cstddef
 
 /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
 
+/opt/ros/foxy/include/std_msgs/msg/detail/int64__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
 /opt/ros/foxy/include/unique_identifier_msgs/msg/detail/uuid__struct.h
 stdbool.h
 -
@@ -491,6 +499,8 @@ stddef.h
 -
 stdint.h
 -
+std_msgs/msg/detail/int64__struct.h
+rosidl_generator_c/my_first_package/srv/detail/std_msgs/msg/detail/int64__struct.h
 
 rosidl_generator_c/my_first_package/srv/detail/ath_sum__struct.h
 stdbool.h

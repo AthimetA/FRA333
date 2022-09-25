@@ -8,6 +8,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+// Include directives for member types
+// Member `b`
+#include "std_msgs/msg/detail/int64__functions.h"
+
 bool
 my_first_package__srv__AthSum3_Request__init(my_first_package__srv__AthSum3_Request * msg)
 {
@@ -16,7 +20,10 @@ my_first_package__srv__AthSum3_Request__init(my_first_package__srv__AthSum3_Requ
   }
   // a
   // b
-  // c
+  if (!std_msgs__msg__Int64__init(&msg->b)) {
+    my_first_package__srv__AthSum3_Request__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -28,7 +35,7 @@ my_first_package__srv__AthSum3_Request__fini(my_first_package__srv__AthSum3_Requ
   }
   // a
   // b
-  // c
+  std_msgs__msg__Int64__fini(&msg->b);
 }
 
 my_first_package__srv__AthSum3_Request *

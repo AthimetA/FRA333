@@ -20,32 +20,16 @@ namespace srv
 namespace builder
 {
 
-class Init_AthSum3_Request_c
-{
-public:
-  explicit Init_AthSum3_Request_c(::my_first_package::srv::AthSum3_Request & msg)
-  : msg_(msg)
-  {}
-  ::my_first_package::srv::AthSum3_Request c(::my_first_package::srv::AthSum3_Request::_c_type arg)
-  {
-    msg_.c = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::my_first_package::srv::AthSum3_Request msg_;
-};
-
 class Init_AthSum3_Request_b
 {
 public:
   explicit Init_AthSum3_Request_b(::my_first_package::srv::AthSum3_Request & msg)
   : msg_(msg)
   {}
-  Init_AthSum3_Request_c b(::my_first_package::srv::AthSum3_Request::_b_type arg)
+  ::my_first_package::srv::AthSum3_Request b(::my_first_package::srv::AthSum3_Request::_b_type arg)
   {
     msg_.b = std::move(arg);
-    return Init_AthSum3_Request_c(msg_);
+    return std::move(msg_);
   }
 
 private:

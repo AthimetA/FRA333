@@ -432,6 +432,7 @@ CMakeFiles/my_first_package__python.dir/rosidl_generator_py/my_first_package/msg
 CMakeFiles/my_first_package__python.dir/rosidl_generator_py/my_first_package/srv/_ath_sum3_s.c.o
  /home/azthorax/fra333_ws/build/my_first_package/rosidl_generator_py/my_first_package/srv/_ath_sum3_s.c
  /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
+ /opt/ros/foxy/include/std_msgs/msg/detail/int64__struct.h
  /usr/include/python3.8/Python.h
  /usr/include/python3.8/abstract.h
  /usr/include/python3.8/bltinmodule.h

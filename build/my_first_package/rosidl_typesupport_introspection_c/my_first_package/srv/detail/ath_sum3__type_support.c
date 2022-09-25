@@ -12,6 +12,12 @@
 #include "my_first_package/srv/detail/ath_sum3__struct.h"
 
 
+// Include directives for member types
+// Member `b`
+#include "std_msgs/msg/int64.h"
+// Member `b`
+#include "std_msgs/msg/detail/int64__rosidl_typesupport_introspection_c.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -31,7 +37,7 @@ void AthSum3_Request__rosidl_typesupport_introspection_c__AthSum3_Request_fini_f
   my_first_package__srv__AthSum3_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember AthSum3_Request__rosidl_typesupport_introspection_c__AthSum3_Request_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember AthSum3_Request__rosidl_typesupport_introspection_c__AthSum3_Request_message_member_array[2] = {
   {
     "a",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
@@ -49,28 +55,13 @@ static rosidl_typesupport_introspection_c__MessageMember AthSum3_Request__rosidl
   },
   {
     "b",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message
+    NULL,  // members of sub message (initialized later)
     false,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(my_first_package__srv__AthSum3_Request, b),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "c",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(my_first_package__srv__AthSum3_Request, c),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -82,7 +73,7 @@ static rosidl_typesupport_introspection_c__MessageMember AthSum3_Request__rosidl
 static const rosidl_typesupport_introspection_c__MessageMembers AthSum3_Request__rosidl_typesupport_introspection_c__AthSum3_Request_message_members = {
   "my_first_package__srv",  // message namespace
   "AthSum3_Request",  // message name
-  3,  // number of fields
+  2,  // number of fields
   sizeof(my_first_package__srv__AthSum3_Request),
   AthSum3_Request__rosidl_typesupport_introspection_c__AthSum3_Request_message_member_array,  // message members
   AthSum3_Request__rosidl_typesupport_introspection_c__AthSum3_Request_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -100,6 +91,8 @@ static rosidl_message_type_support_t AthSum3_Request__rosidl_typesupport_introsp
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_my_first_package
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, my_first_package, srv, AthSum3_Request)() {
+  AthSum3_Request__rosidl_typesupport_introspection_c__AthSum3_Request_message_member_array[1].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Int64)();
   if (!AthSum3_Request__rosidl_typesupport_introspection_c__AthSum3_Request_message_type_support_handle.typesupport_identifier) {
     AthSum3_Request__rosidl_typesupport_introspection_c__AthSum3_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

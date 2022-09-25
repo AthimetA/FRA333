@@ -16,6 +16,29 @@
 
 
 // forward declaration of message dependencies and their conversion functions
+namespace std_msgs
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const std_msgs::msg::Int64 &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  std_msgs::msg::Int64 &);
+size_t get_serialized_size(
+  const std_msgs::msg::Int64 &,
+  size_t current_alignment);
+size_t
+max_serialized_size_Int64(
+  bool & full_bounded,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace std_msgs
+
 
 namespace my_first_package
 {
@@ -35,9 +58,9 @@ cdr_serialize(
   // Member: a
   cdr << ros_message.a;
   // Member: b
-  cdr << ros_message.b;
-  // Member: c
-  cdr << ros_message.c;
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.b,
+    cdr);
   return true;
 }
 
@@ -51,10 +74,8 @@ cdr_deserialize(
   cdr >> ros_message.a;
 
   // Member: b
-  cdr >> ros_message.b;
-
-  // Member: c
-  cdr >> ros_message.c;
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.b);
 
   return true;
 }
@@ -79,17 +100,10 @@ get_serialized_size(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
   // Member: b
-  {
-    size_t item_size = sizeof(ros_message.b);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: c
-  {
-    size_t item_size = sizeof(ros_message.c);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+
+  current_alignment +=
+    std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.b, current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -121,16 +135,12 @@ max_serialized_size_AthSum3_Request(
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
 
-  // Member: c
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        std_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Int64(
+        full_bounded, current_alignment);
+    }
   }
 
   return current_alignment - initial_alignment;

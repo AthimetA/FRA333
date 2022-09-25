@@ -190,6 +190,14 @@ rosidl_runtime_c/visibility_control.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 
+/opt/ros/foxy/include/std_msgs/msg/detail/int64__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
 /opt/ros/foxy/include/unique_identifier_msgs/msg/detail/uuid__struct.h
 stdbool.h
 -
@@ -883,6 +891,8 @@ stddef.h
 -
 stdint.h
 -
+std_msgs/msg/detail/int64__struct.h
+rosidl_generator_c/my_first_package/srv/detail/std_msgs/msg/detail/int64__struct.h
 
 rosidl_generator_c/my_first_package/srv/detail/ath_sum__functions.h
 stdbool.h

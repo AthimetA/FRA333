@@ -34,8 +34,22 @@ extern "C"
 {
 #endif
 
+#include "std_msgs/msg/detail/int64__functions.h"  // b
 
 // forward declare type support functions
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_my_first_package
+size_t get_serialized_size_std_msgs__msg__Int64(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_my_first_package
+size_t max_serialized_size_std_msgs__msg__Int64(
+  bool & full_bounded,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_my_first_package
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, Int64)();
 
 
 using _AthSum3_Request__ros_msg_type = my_first_package__srv__AthSum3_Request;
@@ -56,12 +70,16 @@ static bool _AthSum3_Request__cdr_serialize(
 
   // Field name: b
   {
-    cdr << ros_message->b;
-  }
-
-  // Field name: c
-  {
-    cdr << ros_message->c;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Int64
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->b, cdr))
+    {
+      return false;
+    }
   }
 
   return true;
@@ -83,12 +101,16 @@ static bool _AthSum3_Request__cdr_deserialize(
 
   // Field name: b
   {
-    cdr >> ros_message->b;
-  }
-
-  // Field name: c
-  {
-    cdr >> ros_message->c;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Int64
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->b))
+    {
+      return false;
+    }
   }
 
   return true;
@@ -115,17 +137,9 @@ size_t get_serialized_size_my_first_package__srv__AthSum3_Request(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
   // field.name b
-  {
-    size_t item_size = sizeof(ros_message->b);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name c
-  {
-    size_t item_size = sizeof(ros_message->c);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+
+  current_alignment += get_serialized_size_std_msgs__msg__Int64(
+    &(ros_message->b), current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -161,15 +175,12 @@ size_t max_serialized_size_my_first_package__srv__AthSum3_Request(
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-  // member: c
-  {
-    size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        max_serialized_size_std_msgs__msg__Int64(
+        full_bounded, current_alignment);
+    }
   }
 
   return current_alignment - initial_alignment;

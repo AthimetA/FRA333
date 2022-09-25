@@ -16,6 +16,10 @@
 #include "my_first_package/srv/detail/ath_sum3__struct.h"
 #include "my_first_package/srv/detail/ath_sum3__functions.h"
 
+ROSIDL_GENERATOR_C_IMPORT
+bool std_msgs__msg__int64__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * std_msgs__msg__int64__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool my_first_package__srv__ath_sum3__request__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -64,17 +68,10 @@ bool my_first_package__srv__ath_sum3__request__convert_from_py(PyObject * _pymsg
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->b = PyLong_AsLongLong(field);
-    Py_DECREF(field);
-  }
-  {  // c
-    PyObject * field = PyObject_GetAttrString(_pymsg, "c");
-    if (!field) {
+    if (!std_msgs__msg__int64__convert_from_py(field, &ros_message->b)) {
+      Py_DECREF(field);
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->c = PyLong_AsLongLong(field);
     Py_DECREF(field);
   }
 
@@ -112,20 +109,12 @@ PyObject * my_first_package__srv__ath_sum3__request__convert_to_py(void * raw_ro
   }
   {  // b
     PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->b);
+    field = std_msgs__msg__int64__convert_to_py(&ros_message->b);
+    if (!field) {
+      return NULL;
+    }
     {
       int rc = PyObject_SetAttrString(_pymessage, "b", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // c
-    PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->c);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "c", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

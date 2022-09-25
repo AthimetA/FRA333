@@ -14,6 +14,10 @@
 #include <vector>
 
 
+// Include directives for member types
+// Member 'b'
+#include "std_msgs/msg/detail/int64__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__my_first_package__srv__AthSum3_Request __attribute__((deprecated))
 #else
@@ -33,25 +37,22 @@ struct AthSum3_Request_
   using Type = AthSum3_Request_<ContainerAllocator>;
 
   explicit AthSum3_Request_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : b(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->a = 0ll;
-      this->b = 0ll;
-      this->c = 0ll;
     }
   }
 
   explicit AthSum3_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : b(_alloc, _init)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->a = 0ll;
-      this->b = 0ll;
-      this->c = 0ll;
     }
   }
 
@@ -60,11 +61,8 @@ struct AthSum3_Request_
     int64_t;
   _a_type a;
   using _b_type =
-    int64_t;
+    std_msgs::msg::Int64_<ContainerAllocator>;
   _b_type b;
-  using _c_type =
-    int64_t;
-  _c_type c;
 
   // setters for named parameter idiom
   Type & set__a(
@@ -74,15 +72,9 @@ struct AthSum3_Request_
     return *this;
   }
   Type & set__b(
-    const int64_t & _arg)
+    const std_msgs::msg::Int64_<ContainerAllocator> & _arg)
   {
     this->b = _arg;
-    return *this;
-  }
-  Type & set__c(
-    const int64_t & _arg)
-  {
-    this->c = _arg;
     return *this;
   }
 
@@ -132,9 +124,6 @@ struct AthSum3_Request_
       return false;
     }
     if (this->b != other.b) {
-      return false;
-    }
-    if (this->c != other.c) {
       return false;
     }
     return true;

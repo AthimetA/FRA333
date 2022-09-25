@@ -1,0 +1,24 @@
+[0.060s] Invoking command in '/home/azthorax/fra333_ws/build/cocoa_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/azthorax/fra333_ws/install/my_first_package:/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoa_description
+[0.084s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.104s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.308s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.315s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.344s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.348s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.468s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.512s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.513s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.646s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[0.646s] CMake Error at /opt/ros/foxy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:46 (message):
+[0.646s]   ament_python_install_package() the Python package folder
+[0.647s]   '/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description/cocoa_description'
+[0.647s]   doesn't contain an '__init__.py' file
+[0.647s] Call Stack (most recent call first):
+[0.647s]   /opt/ros/foxy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:28 (_ament_cmake_python_install_package)
+[0.647s]   CMakeLists.txt:26 (ament_python_install_package)
+[0.647s] 
+[0.647s] 
+[0.648s] -- Configuring incomplete, errors occurred!
+[0.648s] See also "/home/azthorax/fra333_ws/build/cocoa_description/CMakeFiles/CMakeOutput.log".
+[0.648s] See also "/home/azthorax/fra333_ws/build/cocoa_description/CMakeFiles/CMakeError.log".
+[0.654s] Invoked command in '/home/azthorax/fra333_ws/build/cocoa_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/azthorax/fra333_ws/install/my_first_package:/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoa_description

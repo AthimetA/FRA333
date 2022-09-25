@@ -10,6 +10,10 @@
 #include <stdint.h>
 #include <type_traits>
 
+// Include directives for member types
+// Member 'b'
+#include "std_msgs/msg/detail/int64__traits.hpp"
+
 namespace rosidl_generator_traits
 {
 
@@ -27,11 +31,11 @@ inline const char * name<my_first_package::srv::AthSum3_Request>()
 
 template<>
 struct has_fixed_size<my_first_package::srv::AthSum3_Request>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, has_fixed_size<std_msgs::msg::Int64>::value> {};
 
 template<>
 struct has_bounded_size<my_first_package::srv::AthSum3_Request>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, has_bounded_size<std_msgs::msg::Int64>::value> {};
 
 template<>
 struct is_message<my_first_package::srv::AthSum3_Request>

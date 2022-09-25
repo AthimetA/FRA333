@@ -40,6 +40,10 @@ class Metaclass_AthSum3_Request(type):
             cls._TYPE_SUPPORT = module.type_support_msg__srv__ath_sum3__request
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__srv__ath_sum3__request
 
+            from std_msgs.msg import Int64
+            if Int64.__class__._TYPE_SUPPORT is None:
+                Int64.__class__.__import_type_support__()
+
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -55,19 +59,16 @@ class AthSum3_Request(metaclass=Metaclass_AthSum3_Request):
     __slots__ = [
         '_a',
         '_b',
-        '_c',
     ]
 
     _fields_and_field_types = {
         'a': 'int64',
-        'b': 'int64',
-        'c': 'int64',
+        'b': 'std_msgs/Int64',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('int64'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Int64'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -75,8 +76,8 @@ class AthSum3_Request(metaclass=Metaclass_AthSum3_Request):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.a = kwargs.get('a', int())
-        self.b = kwargs.get('b', int())
-        self.c = kwargs.get('c', int())
+        from std_msgs.msg import Int64
+        self.b = kwargs.get('b', Int64())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -111,8 +112,6 @@ class AthSum3_Request(metaclass=Metaclass_AthSum3_Request):
             return False
         if self.b != other.b:
             return False
-        if self.c != other.c:
-            return False
         return True
 
     @classmethod
@@ -143,27 +142,11 @@ class AthSum3_Request(metaclass=Metaclass_AthSum3_Request):
     @b.setter
     def b(self, value):
         if __debug__:
+            from std_msgs.msg import Int64
             assert \
-                isinstance(value, int), \
-                "The 'b' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'b' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+                isinstance(value, Int64), \
+                "The 'b' field must be a sub message of type 'Int64'"
         self._b = value
-
-    @property
-    def c(self):
-        """Message field 'c'."""
-        return self._c
-
-    @c.setter
-    def c(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, int), \
-                "The 'c' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'c' field must be an integer in [-9223372036854775808, 9223372036854775807]"
-        self._c = value
 
 
 # Import statements for member types
