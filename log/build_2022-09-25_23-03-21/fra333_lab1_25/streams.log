@@ -1,0 +1,28 @@
+[0.062s] Invoking command in '/home/azthorax/fra333_ws/build/fra333_lab1_25': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/azthorax/fra333_ws/install/my_first_package:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/fra333_lab1_25 -- -j12 -l12
+[0.101s] Invoked command in '/home/azthorax/fra333_ws/build/fra333_lab1_25' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/azthorax/fra333_ws/install/my_first_package:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/fra333_lab1_25 -- -j12 -l12
+[0.136s] Invoking command in '/home/azthorax/fra333_ws/build/fra333_lab1_25': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/azthorax/fra333_ws/install/my_first_package:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/fra333_lab1_25
+[0.151s] -- Install configuration: ""
+[0.151s] -- Execute custom install script
+[0.151s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/environment/pythonpath.sh
+[0.151s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/environment/pythonpath.dsv
+[0.151s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/lib/python3.8/site-packages/fra333_lab1_25/__init__.py
+[0.151s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/lib/fra333_lab1_25/noise_generator.py
+[0.151s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/lib/fra333_lab1_25/velocity_mux.py
+[0.151s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/launch/random_walk.launch.py
+[0.152s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/ament_index/resource_index/package_run_dependencies/fra333_lab1_25
+[0.152s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/ament_index/resource_index/parent_prefix_path/fra333_lab1_25
+[0.152s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/environment/ament_prefix_path.sh
+[0.153s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/environment/ament_prefix_path.dsv
+[0.153s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/environment/path.sh
+[0.153s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/environment/path.dsv
+[0.154s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/local_setup.bash
+[0.154s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/local_setup.sh
+[0.155s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/local_setup.zsh
+[0.155s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/local_setup.dsv
+[0.155s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/package.dsv
+[0.167s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/ament_index/resource_index/packages/fra333_lab1_25
+[0.168s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/cmake/fra333_lab1_25Config.cmake
+[0.168s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/cmake/fra333_lab1_25Config-version.cmake
+[0.168s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/package.xml
+[0.207s] Listing '/home/azthorax/fra333_ws/install/fra333_lab1_25/lib/python3.8/site-packages/fra333_lab1_25'...
+[0.257s] Invoked command in '/home/azthorax/fra333_ws/build/fra333_lab1_25' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/azthorax/fra333_ws/install/my_first_package:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/fra333_lab1_25

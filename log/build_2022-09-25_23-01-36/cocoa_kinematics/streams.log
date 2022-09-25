@@ -1,0 +1,31 @@
+[0.058s] Invoking command in '/home/azthorax/fra333_ws/build/cocoa_kinematics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/azthorax/fra333_ws/install/my_first_package:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_kinematics -- -j12 -l12
+[0.085s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.103s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.310s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.311s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.344s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.348s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.457s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.511s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.512s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.658s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[0.744s] -- Configuring done
+[0.747s] -- Generating done
+[0.749s] -- Build files have been written to: /home/azthorax/fra333_ws/build/cocoa_kinematics
+[0.782s] Invoked command in '/home/azthorax/fra333_ws/build/cocoa_kinematics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/azthorax/fra333_ws/install/my_first_package:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_kinematics -- -j12 -l12
+[0.808s] Invoking command in '/home/azthorax/fra333_ws/build/cocoa_kinematics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/azthorax/fra333_ws/install/my_first_package:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoa_kinematics
+[0.819s] -- Install configuration: ""
+[0.819s] -- Execute custom install script
+[0.820s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/environment/pythonpath.sh
+[0.833s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/environment/pythonpath.dsv
+[0.842s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics/lib/python3.8/site-packages/cocoa_kinematics/__init__.py
+[0.850s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics/lib/python3.8/site-packages/cocoa_kinematics/cocoa_module.py
+[0.857s] CMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:204 (message):
+[0.857s]   ament_cmake_symlink_install_programs() can't find
+[0.857s]   '/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics/scripts/dummy_script.py'
+[0.857s] Call Stack (most recent call first):
+[0.858s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:323 (ament_cmake_symlink_install_programs)
+[0.858s]   cmake_install.cmake:41 (include)
+[0.858s] 
+[0.858s] 
+[0.860s] Invoked command in '/home/azthorax/fra333_ws/build/cocoa_kinematics' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/azthorax/fra333_ws/install/my_first_package:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoa_kinematics

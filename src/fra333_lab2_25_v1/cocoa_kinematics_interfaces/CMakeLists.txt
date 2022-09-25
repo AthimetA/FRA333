@@ -37,8 +37,8 @@ find_package(geometry_msgs)
 find_package(std_msgs)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "srv/SolvelK.srv"
-  "srv/GetPositon.srv"
+  "srv/SolveIK.srv"
+  "srv/GetPosition.srv"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
 )

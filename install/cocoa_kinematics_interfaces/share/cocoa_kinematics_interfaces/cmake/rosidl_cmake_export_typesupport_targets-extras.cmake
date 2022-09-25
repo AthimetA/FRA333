@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake

@@ -1,0 +1,25 @@
+[100%] Built target cpp_node_test
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/pythonpath.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/lib/python3.8/site-packages/dummy/__init__.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/lib/python3.8/site-packages/dummy/dummy_module.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/lib/dummy/dummy_script.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/lib/dummy/cpp_node_test
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/ament_index/resource_index/package_run_dependencies/dummy
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/ament_index/resource_index/parent_prefix_path/dummy
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/path.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/path.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/local_setup.bash
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/local_setup.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/local_setup.zsh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/local_setup.dsv
+-- Symlinking: /home/azthorax/fra333_ws/install/dummy/share/dummy/package.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/ament_index/resource_index/packages/dummy
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/cmake/dummyConfig.cmake
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/cmake/dummyConfig-version.cmake
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/package.xml
+Listing '/home/azthorax/fra333_ws/install/dummy/lib/python3.8/site-packages/dummy'...

@@ -319,8 +319,8 @@ ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v
 # install(DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description/cocoa_description/" "DESTINATION" "lib/python3.8/site-packages/cocoa_description" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description/cocoa_description/" "DESTINATION" "lib/python3.8/site-packages/cocoa_description" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install(PROGRAMS "scripts/dummy_script.py" "DESTINATION" "lib/cocoa_description")
-ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" PROGRAMS "scripts/dummy_script.py" "DESTINATION" "lib/cocoa_description")
+# install(PROGRAMS "scripts/cocoa_script.py" "DESTINATION" "lib/cocoa_description")
+ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" PROGRAMS "scripts/cocoa_script.py" "DESTINATION" "lib/cocoa_description")
 
 # install(DIRECTORY "config" "DESTINATION" "share/cocoa_description")
 ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" DIRECTORY "config" "DESTINATION" "share/cocoa_description")

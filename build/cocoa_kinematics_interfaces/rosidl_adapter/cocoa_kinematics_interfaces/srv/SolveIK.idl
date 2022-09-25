@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from cocoa_kinematics_interfaces/srv/SolveIK.srv
+// generated code does not contain a copyright notice
+
+
+module cocoa_kinematics_interfaces {
+  module srv {
+    struct SolveIK_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct SolveIK_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

@@ -319,8 +319,8 @@ ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v
 # install(DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics/cocoa_kinematics/" "DESTINATION" "lib/python3.8/site-packages/cocoa_kinematics" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics/cocoa_kinematics/" "DESTINATION" "lib/python3.8/site-packages/cocoa_kinematics" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install(PROGRAMS "scripts/dummy_script.py" "DESTINATION" "lib/cocoa_kinematics")
-ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" PROGRAMS "scripts/dummy_script.py" "DESTINATION" "lib/cocoa_kinematics")
+# install(PROGRAMS "scripts/cocoa_script.py" "DESTINATION" "lib/cocoa_kinematics")
+ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" PROGRAMS "scripts/cocoa_script.py" "DESTINATION" "lib/cocoa_kinematics")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/cocoa_kinematics")
 ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics" DIRECTORY "launch" "DESTINATION" "share/cocoa_kinematics")
