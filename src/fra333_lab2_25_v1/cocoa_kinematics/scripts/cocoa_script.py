@@ -8,6 +8,11 @@ from cocoa_kinematics.cocoa_module import dummy_function, dummy_var
 class DummyNode(Node):
     def __init__(self):
         super().__init__('dummy_node')
+    
+    def run(self):
+        self.get_logger().info('Dummy node is running')
+        self.get_logger().info('dummy_function() = {}'.format(dummy_function()))
+        self.get_logger().info('dummy_var = {}'.format(dummy_var))
 
 def main(args=None):
     rclpy.init(args=args)
