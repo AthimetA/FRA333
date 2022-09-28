@@ -81,8 +81,8 @@
     <joint name="joint_pris_2_3" type="prismatic">
         <parent link="link_2"/>
         <child link="link_3"/>
-        <origin rpy="1.5708 0 0" xyz="0.0605 0 0.062"/>
-        <!-- <origin rpy="1.5708 0 0" xyz="0.0605 0 0"/> -->
+        <origin rpy="1.5708 0 0" xyz="0.0605 -0.062 0"/>
+        <!-- <origin rpy="1.5708 0 0" xyz="0.0605 0 0.062"/> -->
         <axis xyz="0 0 1"/>
         <limit lower="0" upper="0.134" effort="0.5" velocity="0.5"/>
     </joint>
