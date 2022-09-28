@@ -10,8 +10,11 @@ from cocoa_kinematics.cocoa_module import dummy_function, dummy_var
 
 class CocoaStatePublisher(Node):
     def __init__(self):
-        super().__init__('dummy_node')
+        super().__init__('cocoa_state_publisher')
         qos_profile = QoSProfile(depth=10)
+        
+        self.joint_pub = self.create_publisher(JointState, 'joint_states', qos_profile)
+        
     
 
 def main(args=None):

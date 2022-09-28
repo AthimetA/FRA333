@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import xacro
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node
@@ -42,7 +43,7 @@ def generate_launch_description():
     #
     # Assume that you have the correct path [robot_description_path]
     # with open(robot_description_path, 'r') as infp:
-    urdf_file_name = 'cocoa.urdf.xml'
+    urdf_file_name = 'cocoa.urdf.xacro'
     sub_folder = 'robot'
     urdf = os.path.join(
         get_package_share_directory(package_name)
@@ -55,15 +56,22 @@ def generate_launch_description():
     #
     # You must have a valid robot_description
     #
+    robot_desc_path = os.path.join(get_package_share_directory(
+                                package_name), 
+                                sub_folder,
+                                urdf_file_name)
+    robot_description = xacro.process_file(robot_desc_path).toxml()
+    
     robot_state_publisher = Node(package='robot_state_publisher',
                                   executable='robot_state_publisher',
                                   name='robot_state_publisher',
                                   output='screen',
                                   parameters=[
-                                    {'use_sim_time': 'false'},
+                                    {'use_sim_time': False},
                                     {'robot_description': robot_description}
                                   ],
     )
+    
     
     ### How to run joint_state_publisher_gui ###
     joint_state_publisher = Node(package='joint_state_publisher',
@@ -84,7 +92,7 @@ def generate_launch_description():
     launch_description = LaunchDescription()
     launch_description.add_action(rviz)
     launch_description.add_action(robot_state_publisher)
-    
+    launch_description.add_action(joint_state_publisher_gui)
     return launch_description
 
 def main(args=None):

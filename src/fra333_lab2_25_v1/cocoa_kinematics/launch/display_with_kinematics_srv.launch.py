@@ -15,21 +15,26 @@ def generate_launch_description():
     #
     # You must specify the package, folder, and the name
     #
-    # display = IncludeLaunchDescription(
-    #
-    #      PythonLaunchDescriptionSource([
-    #         PathJoinSubstitution([
-    #             FindPackageShare('package_name'),
-    #             'folder_name',
-    #             'launch_file.launch.py'
-    #         ])
-    #     ])
-    # )
+    package_name = 'cocoa_description'
+    # path_to_package = get_package_share_directory(package_name)
+    sub_folder = 'launch'
+    file_name = 'display.launch.py'
+    
+    display = IncludeLaunchDescription(
+    
+         PythonLaunchDescriptionSource([
+            PathJoinSubstitution([
+                FindPackageShare(package_name),
+                sub_folder,
+                file_name
+            ])
+        ])
+    )
     
     # Launch Description
     launch_description = LaunchDescription()
     launch_description.add_action(display)
-    launch_description.add_action(kinematics_server)
+    # launch_description.add_action(kinematics_server)
 
     return launch_description
 
