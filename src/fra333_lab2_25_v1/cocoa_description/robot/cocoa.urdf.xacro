@@ -100,7 +100,8 @@
     <joint name="joint_eff" type="fixed">
         <parent link="link_3"/>
         <child link="end_effector"/>
-        <origin rpy="1.57 0 -1.57" xyz="-0.03 0 0.0282"/>
+        <!-- <origin rpy="1.57 0 -1.57" xyz="-0.03 0 0.0282"/> -->
+        <origin rpy="1.57 -1.57 1.57" xyz="-0.03 0 0.282"/>
         <axis xyz="0 0 1"/>
     </joint>
 
