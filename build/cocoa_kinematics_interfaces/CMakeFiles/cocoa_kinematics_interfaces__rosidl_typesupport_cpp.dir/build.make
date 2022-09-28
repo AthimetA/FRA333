@@ -126,6 +126,34 @@ rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cp
 rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/BatteryState.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/CameraInfo.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/ChannelFloat32.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/CompressedImage.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/FluidPressure.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/Illuminance.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/Image.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/Imu.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/JointState.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/Joy.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/JoyFeedback.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/JoyFeedbackArray.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/LaserEcho.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/LaserScan.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/MagneticField.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/MultiDOFJointState.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/MultiEchoLaserScan.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/NavSatFix.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/NavSatStatus.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/PointCloud.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/PointCloud2.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/PointField.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/Range.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/RegionOfInterest.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/RelativeHumidity.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/Temperature.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/TimeReference.idl
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/srv/SetCameraInfo.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support dispatch for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp --generator-arguments-file /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_typesupport_cpp__arguments.json --typesupports rosidl_typesupport_fastrtps_cpp rosidl_typesupport_introspection_cpp
 
@@ -169,11 +197,16 @@ cocoa_kinematics_interfaces__rosidl_typesupport_cpp_EXTERNAL_OBJECTS =
 libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp.o
 libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.o
 libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/build.make
+libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
+libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
+libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_generator_c.so
 libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
 libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
 libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
-libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
 libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
 libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so

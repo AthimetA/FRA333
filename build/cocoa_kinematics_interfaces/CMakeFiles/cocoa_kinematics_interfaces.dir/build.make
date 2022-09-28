@@ -118,6 +118,34 @@ CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/std_msgs/msg/UInt64.
 CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/std_msgs/msg/UInt64MultiArray.idl
 CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/std_msgs/msg/UInt8.idl
 CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/BatteryState.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/CameraInfo.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/ChannelFloat32.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/CompressedImage.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/FluidPressure.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/Illuminance.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/Image.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/Imu.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/JointState.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/Joy.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/JoyFeedback.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/JoyFeedbackArray.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/LaserEcho.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/LaserScan.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/MagneticField.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/MultiDOFJointState.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/MultiEchoLaserScan.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/NavSatFix.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/NavSatStatus.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/PointCloud.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/PointCloud2.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/PointField.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/Range.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/RegionOfInterest.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/RelativeHumidity.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/Temperature.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/msg/TimeReference.idl
+CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/sensor_msgs/srv/SetCameraInfo.idl
 
 
 cocoa_kinematics_interfaces: CMakeFiles/cocoa_kinematics_interfaces

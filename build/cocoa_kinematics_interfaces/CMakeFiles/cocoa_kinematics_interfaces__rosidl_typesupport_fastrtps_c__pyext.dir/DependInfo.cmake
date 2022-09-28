@@ -37,6 +37,9 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/opt/ros/foxy/include/builtin_interfaces/msg/dds_fastrtps_c"
   "/opt/ros/foxy/include/builtin_interfaces/srv/dds_fastrtps_c"
   "/opt/ros/foxy/include/builtin_interfaces/action/dds_fastrtps_c"
+  "/opt/ros/foxy/include/sensor_msgs/msg/dds_fastrtps_c"
+  "/opt/ros/foxy/include/sensor_msgs/srv/dds_fastrtps_c"
+  "/opt/ros/foxy/include/sensor_msgs/action/dds_fastrtps_c"
   "/opt/ros/foxy/include"
   "/opt/ros/foxy/include/foonathan_memory"
   )

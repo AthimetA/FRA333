@@ -133,6 +133,34 @@ rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/sha
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/BatteryState.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/CameraInfo.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/ChannelFloat32.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/CompressedImage.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/FluidPressure.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/Illuminance.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/Image.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/Imu.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/JointState.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/Joy.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/JoyFeedback.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/JoyFeedbackArray.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/LaserEcho.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/LaserScan.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/MagneticField.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/MultiDOFJointState.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/MultiEchoLaserScan.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/NavSatFix.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/NavSatStatus.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/PointCloud.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/PointCloud2.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/PointField.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/Range.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/RegionOfInterest.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/RelativeHumidity.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/Temperature.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/msg/TimeReference.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/sensor_msgs/srv/SetCameraInfo.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c__arguments.json
 
@@ -200,11 +228,16 @@ cocoa_kinematics_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.c.o
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.o
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/build.make
+libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
+libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
+libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_generator_c.so
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
-libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
