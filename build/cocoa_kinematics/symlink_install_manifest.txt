@@ -2,7 +2,7 @@
 /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/environment/pythonpath.dsv
 /home/azthorax/fra333_ws/install/cocoa_kinematics/lib/python3.8/site-packages/cocoa_kinematics/__init__.py
 /home/azthorax/fra333_ws/install/cocoa_kinematics/lib/python3.8/site-packages/cocoa_kinematics/cocoa_module.py
-/home/azthorax/fra333_ws/install/cocoa_kinematics/lib/cocoa_kinematics/cocoa_script.py
+/home/azthorax/fra333_ws/install/cocoa_kinematics/lib/cocoa_kinematics/kinematics_server.py
 /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/launch/display_with_kinematics_srv.launch.py
 /home/azthorax/fra333_ws/install/cocoa_kinematics/share/ament_index/resource_index/package_run_dependencies/cocoa_kinematics
 /home/azthorax/fra333_ws/install/cocoa_kinematics/share/ament_index/resource_index/parent_prefix_path/cocoa_kinematics

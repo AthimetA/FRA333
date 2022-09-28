@@ -13,7 +13,7 @@
 /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/meshes/link_3.STL
 /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/robot/cocoa.urdf.xml
 /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/launch/display.launch.py
-/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/config/cocoa_kinematics.rviz
+/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/config/cocoa.rviz
 /home/azthorax/fra333_ws/install/cocoa_description/share/ament_index/resource_index/package_run_dependencies/cocoa_description
 /home/azthorax/fra333_ws/install/cocoa_description/share/ament_index/resource_index/parent_prefix_path/cocoa_description
 /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/environment/ament_prefix_path.sh
