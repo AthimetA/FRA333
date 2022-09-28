@@ -1,0 +1,50 @@
+[0.076s] Invoking command in '/home/azthorax/fra333_ws/build/cocoa_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_description -- -j12 -l12
+[0.108s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.133s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.356s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.367s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.400s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.403s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.528s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.572s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.573s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.713s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[0.786s] -- Configuring done
+[0.790s] -- Generating done
+[0.791s] -- Build files have been written to: /home/azthorax/fra333_ws/build/cocoa_description
+[0.818s] Invoked command in '/home/azthorax/fra333_ws/build/cocoa_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_description -- -j12 -l12
+[0.845s] Invoking command in '/home/azthorax/fra333_ws/build/cocoa_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoa_description
+[0.853s] -- Install configuration: ""
+[0.854s] -- Execute custom install script
+[0.854s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/environment/pythonpath.sh
+[0.854s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/environment/pythonpath.dsv
+[0.855s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/lib/python3.8/site-packages/cocoa_description/__init__.py
+[0.855s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/lib/python3.8/site-packages/cocoa_description/cocoa_module.py
+[0.855s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/lib/cocoa_description/cocoa_script.py
+[0.856s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/meshes/STL_with_orgin.zip
+[0.865s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/meshes/base_link.stl
+[0.879s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/meshes/end_effector.stl
+[0.887s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/meshes/link_0.stl
+[0.900s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/meshes/link_1.stl
+[0.909s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/meshes/link_2.stl
+[0.916s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/meshes/link_3.stl
+[0.930s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/robot/cocoa.urdf
+[0.938s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/launch/display.launch.py
+[0.953s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/config/cocoa_kinematics.rviz
+[0.953s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/ament_index/resource_index/package_run_dependencies/cocoa_description
+[0.953s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/ament_index/resource_index/parent_prefix_path/cocoa_description
+[0.954s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/environment/ament_prefix_path.sh
+[0.954s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/environment/ament_prefix_path.dsv
+[0.955s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/environment/path.sh
+[0.955s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/environment/path.dsv
+[0.956s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/local_setup.bash
+[0.956s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/local_setup.sh
+[0.957s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/local_setup.zsh
+[0.957s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/local_setup.dsv
+[0.957s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/package.dsv
+[0.978s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/ament_index/resource_index/packages/cocoa_description
+[0.979s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/cmake/cocoa_descriptionConfig.cmake
+[0.979s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/cmake/cocoa_descriptionConfig-version.cmake
+[0.980s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/package.xml
+[0.999s] Listing '/home/azthorax/fra333_ws/install/cocoa_description/lib/python3.8/site-packages/cocoa_description'...
+[1.011s] Invoked command in '/home/azthorax/fra333_ws/build/cocoa_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoa_description

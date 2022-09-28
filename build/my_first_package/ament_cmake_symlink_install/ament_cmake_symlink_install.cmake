@@ -466,8 +466,8 @@ ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/my_first_package
 # install(FILES "/home/azthorax/fra333_ws/src/my_first_package/action/Fibonacci.action" "DESTINATION" "share/my_first_package/action")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/my_first_package" FILES "/home/azthorax/fra333_ws/src/my_first_package/action/Fibonacci.action" "DESTINATION" "share/my_first_package/action")
 
-# install(DIRECTORY "launch" "urdf" "rviz" "DESTINATION" "share/my_first_package")
-ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/my_first_package" DIRECTORY "launch" "urdf" "rviz" "DESTINATION" "share/my_first_package")
+# install(DIRECTORY "meshes" "launch" "urdf" "rviz" "DESTINATION" "share/my_first_package")
+ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/my_first_package" DIRECTORY "meshes" "launch" "urdf" "rviz" "DESTINATION" "share/my_first_package")
 
 # install(FILES "/home/azthorax/fra333_ws/build/my_first_package/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_first_package" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/my_first_package" FILES "/home/azthorax/fra333_ws/build/my_first_package/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_first_package" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

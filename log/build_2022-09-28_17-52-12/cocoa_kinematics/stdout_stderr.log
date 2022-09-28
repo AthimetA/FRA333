@@ -1,0 +1,24 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/environment/pythonpath.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/lib/python3.8/site-packages/cocoa_kinematics/__init__.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/lib/python3.8/site-packages/cocoa_kinematics/cocoa_module.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/lib/cocoa_kinematics/cocoa_script.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/launch/display_with_kinematics_srv.launch.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/ament_index/resource_index/package_run_dependencies/cocoa_kinematics
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/ament_index/resource_index/parent_prefix_path/cocoa_kinematics
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/environment/path.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/environment/path.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/local_setup.bash
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/local_setup.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/local_setup.zsh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/local_setup.dsv
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/package.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/ament_index/resource_index/packages/cocoa_kinematics
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/cmake/cocoa_kinematicsConfig.cmake
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/cmake/cocoa_kinematicsConfig-version.cmake
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/package.xml
+Listing '/home/azthorax/fra333_ws/install/cocoa_kinematics/lib/python3.8/site-packages/cocoa_kinematics'...

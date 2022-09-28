@@ -322,8 +322,8 @@ ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab2_
 # install(PROGRAMS "scripts/cocoa_script.py" "DESTINATION" "lib/cocoa_description")
 ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" PROGRAMS "scripts/cocoa_script.py" "DESTINATION" "lib/cocoa_description")
 
-# install(DIRECTORY "config" "DESTINATION" "share/cocoa_description")
-ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" DIRECTORY "config" "DESTINATION" "share/cocoa_description")
+# install(DIRECTORY "meshes" "robot" "launch" "config" "DESTINATION" "share/cocoa_description")
+ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" DIRECTORY "meshes" "robot" "launch" "config" "DESTINATION" "share/cocoa_description")
 
 # install(FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cocoa_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description" FILES "/home/azthorax/fra333_ws/build/cocoa_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cocoa_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

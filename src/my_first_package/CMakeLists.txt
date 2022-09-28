@@ -81,6 +81,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 ################ INSTALL LAUNCH, ETC #################
 install(DIRECTORY
   # add directories here
+  meshes
   launch
   urdf
   rviz
