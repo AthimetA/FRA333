@@ -67,7 +67,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         end_effector:
           Alpha: 1
           Show Axes: false
@@ -82,7 +82,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         link_2:
           Alpha: 1
           Show Axes: false
@@ -108,18 +108,18 @@ Visualization Manager:
         end_effector:
           Value: false
         link_0:
-          Value: false
+          Value: true
         link_1:
           Value: true
         link_2:
-          Value: false
+          Value: true
         link_3:
-          Value: false
+          Value: true
       Marker Scale: 0.30000001192092896
       Name: TF
       Show Arrows: true
       Show Axes: true
-      Show Names: false
+      Show Names: true
       Tree:
         base_link:
           link_0:
@@ -173,25 +173,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.6404105424880981
+      Distance: 0.8264337182044983
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.04131258651614189
-        Y: 0.19101858139038086
-        Z: 0.08652587234973907
+        X: 0.10558022558689117
+        Y: 0.37472495436668396
+        Z: 0.027021057903766632
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.44539880752563477
+      Pitch: 0.3803991675376892
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.968570232391357
+      Yaw: 5.0135931968688965
     Saved: ~
 Window Geometry:
   Displays:
