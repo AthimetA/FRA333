@@ -1,0 +1,44 @@
+[0.072s] Invoking command in '/home/azthorax/fra333_ws/build/dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/dummy -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/dummy
+[0.095s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.117s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.373s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.389s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.430s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.434s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.572s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.636s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.638s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.834s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[0.935s] -- Configuring done
+[0.945s] -- Generating done
+[0.948s] -- Build files have been written to: /home/azthorax/fra333_ws/build/dummy
+[0.961s] Invoked command in '/home/azthorax/fra333_ws/build/dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/dummy -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/dummy
+[0.962s] Invoking command in '/home/azthorax/fra333_ws/build/dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/dummy -- -j12 -l12
+[1.042s] [100%] Built target cpp_node_test
+[1.055s] Invoked command in '/home/azthorax/fra333_ws/build/dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/dummy -- -j12 -l12
+[1.194s] Invoking command in '/home/azthorax/fra333_ws/build/dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/dummy
+[1.212s] -- Install configuration: ""
+[1.212s] -- Execute custom install script
+[1.212s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/pythonpath.sh
+[1.212s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/pythonpath.dsv
+[1.212s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/lib/python3.8/site-packages/dummy/__init__.py
+[1.212s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/lib/python3.8/site-packages/dummy/dummy_module.py
+[1.212s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/lib/dummy/dummy_script.py
+[1.212s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/lib/dummy/cpp_node_test
+[1.212s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/ament_index/resource_index/package_run_dependencies/dummy
+[1.212s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/ament_index/resource_index/parent_prefix_path/dummy
+[1.213s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/ament_prefix_path.sh
+[1.213s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/ament_prefix_path.dsv
+[1.213s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/path.sh
+[1.213s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/environment/path.dsv
+[1.213s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/local_setup.bash
+[1.213s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/local_setup.sh
+[1.213s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/local_setup.zsh
+[1.213s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/local_setup.dsv
+[1.213s] -- Symlinking: /home/azthorax/fra333_ws/install/dummy/share/dummy/package.dsv
+[1.225s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/ament_index/resource_index/packages/dummy
+[1.225s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/cmake/dummyConfig.cmake
+[1.226s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/cmake/dummyConfig-version.cmake
+[1.226s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/dummy/share/dummy/package.xml
+[1.275s] Listing '/home/azthorax/fra333_ws/install/dummy/lib/python3.8/site-packages/dummy'...
+[1.290s] Invoked command in '/home/azthorax/fra333_ws/build/dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/dummy
