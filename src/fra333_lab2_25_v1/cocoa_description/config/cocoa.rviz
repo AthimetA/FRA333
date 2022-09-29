@@ -8,6 +8,10 @@ Panels:
         - /RobotModel1
         - /TF1
         - /TF1/Frames1
+        - /TF1/Frames1/base_link1
+        - /TF1/Frames1/base_link1/Position1
+        - /TF1/Frames1/end_effector1
+        - /TF1/Frames1/end_effector1/Position1
       Splitter Ratio: 0.5
     Tree Height: 787
   - Class: rviz_common/Selection

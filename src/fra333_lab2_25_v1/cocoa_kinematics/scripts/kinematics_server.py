@@ -34,9 +34,10 @@ class CocoaStatePublisher(Node):
         self.joint_pub.publish(self.cocoa_joint_state)
     
     def get_joint_state_callback(self, request, response):
-        [l1,l2,l3,l4,l5,l6] = [0.1400,0.2620,0.0605,0.0620,-0.0300,0.2820]
-        self.cocoa_config = request.jointstate.position
-        [q1,q2,q3,q4] = np.radians(self.cocoa_config)
+        [l1,l2,l3,l4,l5,l6] = [0.1400,0.2620,0.0605,0.0620,0.0300,0.2820]
+        self.cocoa_config = [np.radians(request.jointstate.position[0]),np.radians(request.jointstate.position[1])
+                         ,np.radians(request.jointstate.position[2]),request.jointstate.position[3]]
+        [q1,q2,q3,q4] = self.cocoa_config
         temp = (-l2*np.sin(q2) - l3*np.sin(q2+q3) + l4*np.cos(q2+q3) + l5*np.sin(q2+q3) + l6*np.cos(q2+q3) + q4*np.cos(q2+q3))
         response.positionendeffector.x = temp*np.cos(q1)
         response.positionendeffector.y = temp*np.sin(q1)
