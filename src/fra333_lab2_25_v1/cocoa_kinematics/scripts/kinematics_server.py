@@ -35,6 +35,7 @@ class CocoaStatePublisher(Node):
     
     def get_joint_state_callback(self, request, response):
         [l1,l2,l3,l4,l5,l6] = [0.1360,0.2620,0.0605,0.0620,0.0350,0.2820]
+        # input: [q1,q2,q3] in degree and q4 in meter
         self.cocoa_config = [np.radians(request.jointstate.position[0]),np.radians(request.jointstate.position[1])
                          ,np.radians(request.jointstate.position[2]),request.jointstate.position[3]]
         [q1,q2,q3,q4] = self.cocoa_config
