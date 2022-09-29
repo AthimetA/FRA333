@@ -59,6 +59,9 @@ CMakeFiles/cocoa_kinematics_interfaces: rosidl_cmake/srv/SolveIK_Response.msg
 CMakeFiles/cocoa_kinematics_interfaces: /home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces/srv/GetPosition.srv
 CMakeFiles/cocoa_kinematics_interfaces: rosidl_cmake/srv/GetPosition_Request.msg
 CMakeFiles/cocoa_kinematics_interfaces: rosidl_cmake/srv/GetPosition_Response.msg
+CMakeFiles/cocoa_kinematics_interfaces: /home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces/srv/RobotJS.srv
+CMakeFiles/cocoa_kinematics_interfaces: rosidl_cmake/srv/RobotJS_Request.msg
+CMakeFiles/cocoa_kinematics_interfaces: rosidl_cmake/srv/RobotJS_Response.msg
 CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/cocoa_kinematics_interfaces: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl

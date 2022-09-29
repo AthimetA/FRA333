@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.c.o"
+  "CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.c.o"
   "CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_solve_ik_s.c.o"
   "rosidl_generator_py/cocoa_kinematics_interfaces/libcocoa_kinematics_interfaces__python.pdb"
   "rosidl_generator_py/cocoa_kinematics_interfaces/libcocoa_kinematics_interfaces__python.so"

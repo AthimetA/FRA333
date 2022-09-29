@@ -71,17 +71,6 @@ def generate_launch_description():
                                     {'robot_description': robot_description}
                                   ],
     )
-    
-    
-    ### How to run joint_state_publisher_gui ###
-    joint_state_publisher = Node(package='joint_state_publisher',
-                                    executable='joint_state_publisher',
-                                    name='joint_state_publisher'
-    )
-    joint_state_publisher_gui = Node(package='joint_state_publisher_gui',
-                                        executable='joint_state_publisher_gui',
-                                        name='joint_state_publisher_gui'
-    )
 
     ### How to add actions to launch description ###
     #
@@ -92,7 +81,6 @@ def generate_launch_description():
     launch_description = LaunchDescription()
     launch_description.add_action(rviz)
     launch_description.add_action(robot_state_publisher)
-    launch_description.add_action(joint_state_publisher_gui)
     return launch_description
 
 def main(args=None):

@@ -72,6 +72,7 @@ rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/sha
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: rosidl_adapter/cocoa_kinematics_interfaces/srv/SolveIK.idl
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: rosidl_adapter/cocoa_kinematics_interfaces/srv/GetPosition.idl
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: rosidl_adapter/cocoa_kinematics_interfaces/srv/RobotJS.idl
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -185,11 +186,26 @@ rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__struct.h
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.h: rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.h
 
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/robot_js.h: rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoa_kinematics_interfaces/srv/robot_js.h
+
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.h: rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.h
+
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__struct.h: rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__struct.h
+
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.h: rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.h
+
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.c: rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.c
 
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c: rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c
+
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c: rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c
 
 CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.c.o: CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.c.o: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.c
@@ -217,16 +233,31 @@ CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c -o CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.s
 
+CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.o: CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.o: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.o   -c /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c
+
+CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c > CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.i
+
+CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c -o CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.s
+
 # Object files for target cocoa_kinematics_interfaces__rosidl_generator_c
 cocoa_kinematics_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.c.o" \
-"CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.o"
+"CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.o" \
+"CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.o"
 
 # External object files for target cocoa_kinematics_interfaces__rosidl_generator_c
 cocoa_kinematics_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.c.o
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.o
+libcocoa_kinematics_interfaces__rosidl_generator_c.so: CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.o
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/build.make
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
@@ -256,7 +287,7 @@ libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librosi
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librcpputils.so
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librcutils.so
 libcocoa_kinematics_interfaces__rosidl_generator_c.so: CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libcocoa_kinematics_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libcocoa_kinematics_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -276,8 +307,13 @@ CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/depend: rosidl_ge
 CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.h
 CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__struct.h
 CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.h
+CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoa_kinematics_interfaces/srv/robot_js.h
+CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.h
+CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__struct.h
+CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.h
 CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.c
 CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c
+CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c
 	cd /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces /home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/depend
 

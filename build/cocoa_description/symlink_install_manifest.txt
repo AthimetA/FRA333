@@ -3,8 +3,6 @@
 /home/azthorax/fra333_ws/install/cocoa_description/lib/python3.8/site-packages/cocoa_description/__init__.py
 /home/azthorax/fra333_ws/install/cocoa_description/lib/python3.8/site-packages/cocoa_description/cocoa_module.py
 /home/azthorax/fra333_ws/install/cocoa_description/lib/cocoa_description/cocoa_script.py
-/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/meshes/1.zip
-/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/meshes/STL_with_orgin.zip
 /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/meshes/base_link.stl
 /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/meshes/end_effector.stl
 /home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/meshes/link_0.stl

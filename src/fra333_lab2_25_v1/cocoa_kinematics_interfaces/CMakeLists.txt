@@ -40,6 +40,7 @@ find_package(sensor_msgs)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SolveIK.srv"
   "srv/GetPosition.srv"
+  "srv/RobotJS.srv"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
   DEPENDENCIES sensor_msgs

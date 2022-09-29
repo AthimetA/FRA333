@@ -1,3 +1,0 @@
-sensor_msgs/JointState jointConfig0
----
-geometry_msgs/Point positionViabase

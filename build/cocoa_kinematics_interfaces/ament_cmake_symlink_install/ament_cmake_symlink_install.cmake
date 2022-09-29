@@ -373,6 +373,9 @@ ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v
 # install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces/srv/GetPosition.idl" "DESTINATION" "share/cocoa_kinematics_interfaces/srv")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces/srv/GetPosition.idl" "DESTINATION" "share/cocoa_kinematics_interfaces/srv")
 
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces/srv/RobotJS.idl" "DESTINATION" "share/cocoa_kinematics_interfaces/srv")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces/srv/RobotJS.idl" "DESTINATION" "share/cocoa_kinematics_interfaces/srv")
+
 # install(FILES "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces/srv/SolveIK.srv" "DESTINATION" "share/cocoa_kinematics_interfaces/srv")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces" FILES "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces/srv/SolveIK.srv" "DESTINATION" "share/cocoa_kinematics_interfaces/srv")
 
@@ -390,6 +393,15 @@ ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v
 
 # install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_cmake/srv/GetPosition_Response.msg" "DESTINATION" "share/cocoa_kinematics_interfaces/srv")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_cmake/srv/GetPosition_Response.msg" "DESTINATION" "share/cocoa_kinematics_interfaces/srv")
+
+# install(FILES "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces/srv/RobotJS.srv" "DESTINATION" "share/cocoa_kinematics_interfaces/srv")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces" FILES "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces/srv/RobotJS.srv" "DESTINATION" "share/cocoa_kinematics_interfaces/srv")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_cmake/srv/RobotJS_Request.msg" "DESTINATION" "share/cocoa_kinematics_interfaces/srv")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_cmake/srv/RobotJS_Request.msg" "DESTINATION" "share/cocoa_kinematics_interfaces/srv")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_cmake/srv/RobotJS_Response.msg" "DESTINATION" "share/cocoa_kinematics_interfaces/srv")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_cmake/srv/RobotJS_Response.msg" "DESTINATION" "share/cocoa_kinematics_interfaces/srv")
 
 # install(FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cocoa_kinematics_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cocoa_kinematics_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

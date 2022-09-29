@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.o"
+  "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.o"
   "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.c" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
@@ -28,11 +29,16 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.h" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h"
   "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__struct.h" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h"
   "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.h" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h"
+  "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h"
+  "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.h" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h"
+  "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__struct.h" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h"
+  "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.h" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h"
   "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.c" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h"
   "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.h" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h"
   "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__struct.h" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h"
   "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.h" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h"
   "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/get_position.h" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h"
+  "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/robot_js.h" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_c/cocoa_kinematics_interfaces/srv/solve_ik.h"
   )
 
 

@@ -31,10 +31,27 @@ def generate_launch_description():
         ])
     )
     
+    kinematics_server = Node(
+        package='cocoa_kinematics',
+        executable='kinematics_server.py',
+    )
+        
+    
+    ### How to run joint_state_publisher_gui ###
+    joint_state_publisher = Node(package='joint_state_publisher',
+                                    executable='joint_state_publisher',
+                                    name='joint_state_publisher'
+    )
+    joint_state_publisher_gui = Node(package='joint_state_publisher_gui',
+                                        executable='joint_state_publisher_gui',
+                                        name='joint_state_publisher_gui'
+    )
+    
     # Launch Description
     launch_description = LaunchDescription()
     launch_description.add_action(display)
-    # launch_description.add_action(kinematics_server)
+    # launch_description.add_action(joint_state_publisher_gui)
+    launch_description.add_action(kinematics_server)
 
     return launch_description
 
