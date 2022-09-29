@@ -38,10 +38,6 @@ def generate_launch_description():
         
     
     ### How to run joint_state_publisher_gui ###
-    joint_state_publisher = Node(package='joint_state_publisher',
-                                    executable='joint_state_publisher',
-                                    name='joint_state_publisher'
-    )
     joint_state_publisher_gui = Node(package='joint_state_publisher_gui',
                                         executable='joint_state_publisher_gui',
                                         name='joint_state_publisher_gui'
@@ -49,18 +45,19 @@ def generate_launch_description():
 
     # Service call to set joint values
     # ros2 service call /set_joint cocoa_kinematics_interfaces/srv/RobotJS 
-    
-    # srv_call_angular = ExecuteProcess(
-    #     cmd=[[f'ros2 service call /set_joint cocoa_kinematics_interfaces/srv/RobotJS "{{mean: {{data : {new_mean_angular}}}, variance: {{data : {new_variance_angular}}}}}"']],
-    #     shell=True
-    # )
+    [j1,j2,j3,j4]  =["joint_rev_b_0", "joint_rev_0_1", "joint_rev_1_2","joint_pris_2_3"]
+    [joint_config_q1,joint_config_q2,joint_config_q3,joint_config_q4] = [10.0,10.0,10.0,0.1]
+    srv_call_angular = ExecuteProcess(
+        cmd=[[f'ros2 service call /set_joint cocoa_kinematics_interfaces/srv/RobotJS "{{jointstate: {{name: [{j1}, {j2}, {j3}, {j4}], position: [{joint_config_q1}, {joint_config_q2}, {joint_config_q3}, {joint_config_q4}]}}}}"']],
+        shell=True
+    )
     
     # Launch Description
     launch_description = LaunchDescription()
     launch_description.add_action(display)
-    # launch_description.add_action(joint_state_publisher_gui)
     launch_description.add_action(kinematics_server)
-
+    launch_description.add_action(srv_call_angular)
+    # launch_description.add_action(joint_state_publisher_gui)
     return launch_description
 
 def main(args=None):

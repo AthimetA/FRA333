@@ -27,14 +27,14 @@ class CocoaStatePublisher(Node):
         self.set_joint_state = self.create_service(RobotJS, 'set_joint', self.get_joint_state_callback)
         
     def timer_callback(self):
-        [q1,q2,q3,q4] = self.cocoa_config
-        self.get_logger().info('q1: %f, q2: %f, q3: %f, q4: %f' % (q1,q2,q3,q4))
+        # [q1,q2,q3,q4] = self.cocoa_config
+        # self.get_logger().info('q1: %f, q2: %f, q3: %f, q4: %f' % (q1,q2,q3,q4))
         self.cocoa_joint_state.header.stamp = self.get_clock().now().to_msg()
         self.cocoa_joint_state.position = self.cocoa_config
         self.joint_pub.publish(self.cocoa_joint_state)
     
     def get_joint_state_callback(self, request, response):
-        [l1,l2,l3,l4,l5,l6] = [0.1400,0.2620,0.0605,0.0620,0.0300,0.2820]
+        [l1,l2,l3,l4,l5,l6] = [0.1360,0.2620,0.0605,0.0620,0.0350,0.2820]
         self.cocoa_config = [np.radians(request.jointstate.position[0]),np.radians(request.jointstate.position[1])
                          ,np.radians(request.jointstate.position[2]),request.jointstate.position[3]]
         [q1,q2,q3,q4] = self.cocoa_config

@@ -45,23 +45,21 @@ def generate_launch_description():
     # with open(robot_description_path, 'r') as infp:
     urdf_file_name = 'cocoa.urdf.xacro'
     sub_folder = 'robot'
-    urdf = os.path.join(
-        get_package_share_directory(package_name)
-        ,sub_folder
-        ,urdf_file_name)
-    with open(urdf, 'r') as infp:
-        robot_description = infp.read()
-    
-    ### How to run robot_state_publisher ###
-    #
-    # You must have a valid robot_description
-    #
     robot_desc_path = os.path.join(get_package_share_directory(
                                 package_name), 
                                 sub_folder,
                                 urdf_file_name)
     robot_description = xacro.process_file(robot_desc_path).toxml()
+    # urdf = os.path.join(
+    #     get_package_share_directory(package_name)
+    #     ,sub_folder
+    #     ,urdf_file_name)
+    # with open(urdf, 'r') as infp:
+    #     robot_description = infp.read()
     
+    ### How to run robot_state_publisher ###
+    #
+    # You must have a valid robot_description
     robot_state_publisher = Node(package='robot_state_publisher',
                                   executable='robot_state_publisher',
                                   name='robot_state_publisher',
