@@ -2,7 +2,7 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription,ExecuteProcess
 from launch.substitutions import PathJoinSubstitution
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
@@ -46,6 +46,14 @@ def generate_launch_description():
                                         executable='joint_state_publisher_gui',
                                         name='joint_state_publisher_gui'
     )
+
+    # Service call to set joint values
+    # ros2 service call /set_joint cocoa_kinematics_interfaces/srv/RobotJS 
+    
+    # srv_call_angular = ExecuteProcess(
+    #     cmd=[[f'ros2 service call /set_joint cocoa_kinematics_interfaces/srv/RobotJS "{{mean: {{data : {new_mean_angular}}}, variance: {{data : {new_variance_angular}}}}}"']],
+    #     shell=True
+    # )
     
     # Launch Description
     launch_description = LaunchDescription()
