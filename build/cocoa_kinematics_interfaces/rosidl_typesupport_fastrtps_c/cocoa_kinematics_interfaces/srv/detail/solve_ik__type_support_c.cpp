@@ -34,8 +34,22 @@ extern "C"
 {
 #endif
 
+#include "geometry_msgs/msg/detail/point__functions.h"  // position
 
 // forward declare type support functions
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_cocoa_kinematics_interfaces
+size_t get_serialized_size_geometry_msgs__msg__Point(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_cocoa_kinematics_interfaces
+size_t max_serialized_size_geometry_msgs__msg__Point(
+  bool & full_bounded,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_cocoa_kinematics_interfaces
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Point)();
 
 
 using _SolveIK_Request__ros_msg_type = cocoa_kinematics_interfaces__srv__SolveIK_Request;
@@ -49,9 +63,30 @@ static bool _SolveIK_Request__cdr_serialize(
     return false;
   }
   const _SolveIK_Request__ros_msg_type * ros_message = static_cast<const _SolveIK_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: structure_needs_at_least_one_member
+  // Field name: position
   {
-    cdr << ros_message->structure_needs_at_least_one_member;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Point
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->position, cdr))
+    {
+      return false;
+    }
+  }
+
+  // Field name: jointorientation
+  {
+    cdr << ros_message->jointorientation;
+  }
+
+  // Field name: r
+  {
+    size_t size = 2;
+    auto array_ptr = ros_message->r;
+    cdr.serializeArray(array_ptr, size);
   }
 
   return true;
@@ -66,9 +101,30 @@ static bool _SolveIK_Request__cdr_deserialize(
     return false;
   }
   _SolveIK_Request__ros_msg_type * ros_message = static_cast<_SolveIK_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: structure_needs_at_least_one_member
+  // Field name: position
   {
-    cdr >> ros_message->structure_needs_at_least_one_member;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Point
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->position))
+    {
+      return false;
+    }
+  }
+
+  // Field name: jointorientation
+  {
+    cdr >> ros_message->jointorientation;
+  }
+
+  // Field name: r
+  {
+    size_t size = 2;
+    auto array_ptr = ros_message->r;
+    cdr.deserializeArray(array_ptr, size);
   }
 
   return true;
@@ -88,10 +144,23 @@ size_t get_serialized_size_cocoa_kinematics_interfaces__srv__SolveIK_Request(
   (void)padding;
   (void)wchar_size;
 
-  // field.name structure_needs_at_least_one_member
+  // field.name position
+
+  current_alignment += get_serialized_size_geometry_msgs__msg__Point(
+    &(ros_message->position), current_alignment);
+  // field.name jointorientation
   {
-    size_t item_size = sizeof(ros_message->structure_needs_at_least_one_member);
+    size_t item_size = sizeof(ros_message->jointorientation);
     current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name r
+  {
+    size_t array_size = 2;
+    auto array_ptr = ros_message->r;
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -118,11 +187,30 @@ size_t max_serialized_size_cocoa_kinematics_interfaces__srv__SolveIK_Request(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: structure_needs_at_least_one_member
+  // member: position
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        max_serialized_size_geometry_msgs__msg__Point(
+        full_bounded, current_alignment);
+    }
+  }
+  // member: jointorientation
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: r
+  {
+    size_t array_size = 2;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   return current_alignment - initial_alignment;
@@ -199,8 +287,22 @@ extern "C"
 {
 #endif
 
+#include "sensor_msgs/msg/detail/joint_state__functions.h"  // jointstate
 
 // forward declare type support functions
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_cocoa_kinematics_interfaces
+size_t get_serialized_size_sensor_msgs__msg__JointState(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_cocoa_kinematics_interfaces
+size_t max_serialized_size_sensor_msgs__msg__JointState(
+  bool & full_bounded,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_cocoa_kinematics_interfaces
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, sensor_msgs, msg, JointState)();
 
 
 using _SolveIK_Response__ros_msg_type = cocoa_kinematics_interfaces__srv__SolveIK_Response;
@@ -214,9 +316,23 @@ static bool _SolveIK_Response__cdr_serialize(
     return false;
   }
   const _SolveIK_Response__ros_msg_type * ros_message = static_cast<const _SolveIK_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: structure_needs_at_least_one_member
+  // Field name: jointstate
   {
-    cdr << ros_message->structure_needs_at_least_one_member;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, sensor_msgs, msg, JointState
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->jointstate, cdr))
+    {
+      return false;
+    }
+  }
+
+  // Field name: flag
+  {
+    cdr << (ros_message->flag ? true : false);
   }
 
   return true;
@@ -231,9 +347,25 @@ static bool _SolveIK_Response__cdr_deserialize(
     return false;
   }
   _SolveIK_Response__ros_msg_type * ros_message = static_cast<_SolveIK_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: structure_needs_at_least_one_member
+  // Field name: jointstate
   {
-    cdr >> ros_message->structure_needs_at_least_one_member;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, sensor_msgs, msg, JointState
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->jointstate))
+    {
+      return false;
+    }
+  }
+
+  // Field name: flag
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->flag = tmp ? true : false;
   }
 
   return true;
@@ -253,9 +385,13 @@ size_t get_serialized_size_cocoa_kinematics_interfaces__srv__SolveIK_Response(
   (void)padding;
   (void)wchar_size;
 
-  // field.name structure_needs_at_least_one_member
+  // field.name jointstate
+
+  current_alignment += get_serialized_size_sensor_msgs__msg__JointState(
+    &(ros_message->jointstate), current_alignment);
+  // field.name flag
   {
-    size_t item_size = sizeof(ros_message->structure_needs_at_least_one_member);
+    size_t item_size = sizeof(ros_message->flag);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -283,7 +419,18 @@ size_t max_serialized_size_cocoa_kinematics_interfaces__srv__SolveIK_Response(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: structure_needs_at_least_one_member
+  // member: jointstate
+  {
+    size_t array_size = 1;
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        max_serialized_size_sensor_msgs__msg__JointState(
+        full_bounded, current_alignment);
+    }
+  }
+  // member: flag
   {
     size_t array_size = 1;
 

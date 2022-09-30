@@ -8,13 +8,25 @@
 #include <stdlib.h>
 #include <string.h>
 
+// Include directives for member types
+// Member `position`
+#include "geometry_msgs/msg/detail/point__functions.h"
+
 bool
 cocoa_kinematics_interfaces__srv__SolveIK_Request__init(cocoa_kinematics_interfaces__srv__SolveIK_Request * msg)
 {
   if (!msg) {
     return false;
   }
-  // structure_needs_at_least_one_member
+  // position
+  if (!geometry_msgs__msg__Point__init(&msg->position)) {
+    cocoa_kinematics_interfaces__srv__SolveIK_Request__fini(msg);
+    return false;
+  }
+  // jointorientation
+  // r
+  msg->r[0] = 1l;
+  msg->r[1] = 1l;
   return true;
 }
 
@@ -24,7 +36,10 @@ cocoa_kinematics_interfaces__srv__SolveIK_Request__fini(cocoa_kinematics_interfa
   if (!msg) {
     return;
   }
-  // structure_needs_at_least_one_member
+  // position
+  geometry_msgs__msg__Point__fini(&msg->position);
+  // jointorientation
+  // r
 }
 
 cocoa_kinematics_interfaces__srv__SolveIK_Request *
@@ -137,13 +152,22 @@ cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__destroy(cocoa_kinem
 }
 
 
+// Include directives for member types
+// Member `jointstate`
+#include "sensor_msgs/msg/detail/joint_state__functions.h"
+
 bool
 cocoa_kinematics_interfaces__srv__SolveIK_Response__init(cocoa_kinematics_interfaces__srv__SolveIK_Response * msg)
 {
   if (!msg) {
     return false;
   }
-  // structure_needs_at_least_one_member
+  // jointstate
+  if (!sensor_msgs__msg__JointState__init(&msg->jointstate)) {
+    cocoa_kinematics_interfaces__srv__SolveIK_Response__fini(msg);
+    return false;
+  }
+  // flag
   return true;
 }
 
@@ -153,7 +177,9 @@ cocoa_kinematics_interfaces__srv__SolveIK_Response__fini(cocoa_kinematics_interf
   if (!msg) {
     return;
   }
-  // structure_needs_at_least_one_member
+  // jointstate
+  sensor_msgs__msg__JointState__fini(&msg->jointstate);
+  // flag
 }
 
 cocoa_kinematics_interfaces__srv__SolveIK_Response *

@@ -2,14 +2,24 @@
 // with input from cocoa_kinematics_interfaces/srv/SolveIK.srv
 // generated code does not contain a copyright notice
 
+#include "geometry_msgs/msg/Point.idl"
+#include "sensor_msgs/msg/JointState.idl"
 
 module cocoa_kinematics_interfaces {
   module srv {
+    typedef int32 int32__2[2];
     struct SolveIK_Request {
-      uint8 structure_needs_at_least_one_member;
+      geometry_msgs::msg::Point position;
+
+      double jointorientation;
+
+      @default (value="(1, 1)")
+      int32__2 r;
     };
     struct SolveIK_Response {
-      uint8 structure_needs_at_least_one_member;
+      sensor_msgs::msg::JointState jointstate;
+
+      boolean flag;
     };
   };
 };

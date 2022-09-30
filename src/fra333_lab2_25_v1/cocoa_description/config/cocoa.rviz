@@ -5,11 +5,11 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Status1
-        - /RobotModel1
         - /TF1
         - /TF1/Frames1
         - /TF1/Frames1/end_effector1
         - /TF1/Frames1/end_effector1/Position1
+        - /TF1/Frames1/link_31/Position1
       Splitter Ratio: 0.5
     Tree Height: 787
   - Class: rviz_common/Selection
@@ -23,7 +23,6 @@ Panels:
   - Class: rviz_common/Views
     Expanded:
       - /Current View1
-      - /Current View1/Focal Point1
     Name: Views
     Splitter Ratio: 0.5
 Visualization Manager:
@@ -117,7 +116,7 @@ Visualization Manager:
           Value: true
         link_3:
           Value: true
-      Marker Scale: 0.30000001192092896
+      Marker Scale: 0.20000000298023224
       Name: TF
       Show Arrows: true
       Show Axes: true
@@ -175,25 +174,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.8406121134757996
+      Distance: 1.071134090423584
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.06088893115520477
-        Y: -0.018953412771224976
-        Z: 0.29942506551742554
-      Focal Shape Fixed Size: false
+        X: 0.08612877875566483
+        Y: -0.033099230378866196
+        Z: -0.14079925417900085
+      Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.45500004291534424
-      Target Frame: <Fixed Frame>
-      Value: Orbit (rviz)
-      Yaw: 0.2100135087966919
+      Pitch: 0.7597970962524414
+      Target Frame: end_effector
+      Value: Orbit (rviz_default_plugins)
+      Yaw: 5.31740140914917
     Saved: ~
 Window Geometry:
   Displays:

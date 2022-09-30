@@ -45,8 +45,8 @@ def generate_launch_description():
 
     # Service call to set joint values
     # ros2 service call /set_joint cocoa_kinematics_interfaces/srv/RobotJS 
-    [j1,j2,j3,j4]  =["joint_rev_b_0", "joint_rev_0_1", "joint_rev_1_2","joint_pris_2_3"]
-    [joint_config_q1,joint_config_q2,joint_config_q3,joint_config_q4] = [10.0,10.0,10.0,0.1]
+    [j1,j2,j3,j4]  =["joint_rev_b_0", "joint_rev_0_1", "joint_rev_1_2","joint_rev_2_3"]
+    [joint_config_q1,joint_config_q2,joint_config_q3,joint_config_q4] = [10.0,10.0,10.0,10.0]
     srv_call_set_joint = ExecuteProcess(
         cmd=[[f'ros2 service call /set_joint cocoa_kinematics_interfaces/srv/RobotJS "{{jointstate: {{name: [{j1}, {j2}, {j3}, {j4}], position: [{joint_config_q1}, {joint_config_q2}, {joint_config_q3}, {joint_config_q4}]}}}}"']],
         shell=True

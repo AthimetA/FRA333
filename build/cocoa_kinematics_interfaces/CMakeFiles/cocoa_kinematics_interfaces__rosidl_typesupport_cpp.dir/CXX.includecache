@@ -275,4 +275,8 @@ string
 -
 vector
 -
+geometry_msgs/msg/detail/point__struct.hpp
+rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/geometry_msgs/msg/detail/point__struct.hpp
+sensor_msgs/msg/detail/joint_state__struct.hpp
+rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/sensor_msgs/msg/detail/joint_state__struct.hpp
 

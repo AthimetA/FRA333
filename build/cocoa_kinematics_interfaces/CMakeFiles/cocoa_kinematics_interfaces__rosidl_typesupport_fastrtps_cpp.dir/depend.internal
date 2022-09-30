@@ -121,6 +121,7 @@ CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosi
  rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/solve_ik__type_support.cpp.o
  /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/solve_ik__type_support.cpp
+ /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp
  /opt/ros/foxy/include/fastcdr/Cdr.h
  /opt/ros/foxy/include/fastcdr/FastBuffer.h
  /opt/ros/foxy/include/fastcdr/config.h
@@ -128,6 +129,7 @@ CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosi
  /opt/ros/foxy/include/fastcdr/exceptions/Exception.h
  /opt/ros/foxy/include/fastcdr/exceptions/NotEnoughMemoryException.h
  /opt/ros/foxy/include/fastcdr/fastcdr_dll.h
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp
  /opt/ros/foxy/include/rcutils/allocator.h
  /opt/ros/foxy/include/rcutils/error_handling.h
  /opt/ros/foxy/include/rcutils/logging.h
@@ -173,6 +175,8 @@ CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosi
  /opt/ros/foxy/include/rosidl_typesupport_fastrtps_cpp/visibility_control.h
  /opt/ros/foxy/include/rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp
  /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
+ /opt/ros/foxy/include/sensor_msgs/msg/detail/joint_state__struct.hpp
+ /opt/ros/foxy/include/std_msgs/msg/detail/header__struct.hpp
  rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__struct.hpp
  rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
  rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__rosidl_typesupport_fastrtps_cpp.hpp

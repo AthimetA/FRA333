@@ -14,6 +14,10 @@
 #include <vector>
 
 
+// Include directives for member types
+// Member 'position'
+#include "geometry_msgs/msg/detail/point__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__cocoa_kinematics_interfaces__srv__SolveIK_Request __attribute__((deprecated))
 #else
@@ -33,29 +37,72 @@ struct SolveIK_Request_
   using Type = SolveIK_Request_<ContainerAllocator>;
 
   explicit SolveIK_Request_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : position(_init)
   {
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::DEFAULTS_ONLY == _init)
+    {
+      std::fill<typename std::array<int32_t, 2>::iterator, int32_t>(this->r.begin(), this->r.end(), 1l);
+    } else if (rosidl_runtime_cpp::MessageInitialization::ZERO == _init) {
+      this->jointorientation = 0.0;
+      std::fill<typename std::array<int32_t, 2>::iterator, int32_t>(this->r.begin(), this->r.end(), 0l);
+    }
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->structure_needs_at_least_one_member = 0;
+      this->jointorientation = 0.0;
     }
   }
 
   explicit SolveIK_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : position(_alloc, _init),
+    r(_alloc)
   {
-    (void)_alloc;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::DEFAULTS_ONLY == _init)
+    {
+      std::fill<typename std::array<int32_t, 2>::iterator, int32_t>(this->r.begin(), this->r.end(), 1l);
+    } else if (rosidl_runtime_cpp::MessageInitialization::ZERO == _init) {
+      this->jointorientation = 0.0;
+      std::fill<typename std::array<int32_t, 2>::iterator, int32_t>(this->r.begin(), this->r.end(), 0l);
+    }
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->structure_needs_at_least_one_member = 0;
+      this->jointorientation = 0.0;
     }
   }
 
   // field types and members
-  using _structure_needs_at_least_one_member_type =
-    uint8_t;
-  _structure_needs_at_least_one_member_type structure_needs_at_least_one_member;
+  using _position_type =
+    geometry_msgs::msg::Point_<ContainerAllocator>;
+  _position_type position;
+  using _jointorientation_type =
+    double;
+  _jointorientation_type jointorientation;
+  using _r_type =
+    std::array<int32_t, 2>;
+  _r_type r;
 
+  // setters for named parameter idiom
+  Type & set__position(
+    const geometry_msgs::msg::Point_<ContainerAllocator> & _arg)
+  {
+    this->position = _arg;
+    return *this;
+  }
+  Type & set__jointorientation(
+    const double & _arg)
+  {
+    this->jointorientation = _arg;
+    return *this;
+  }
+  Type & set__r(
+    const std::array<int32_t, 2> & _arg)
+  {
+    this->r = _arg;
+    return *this;
+  }
 
   // constant declarations
 
@@ -99,7 +146,13 @@ struct SolveIK_Request_
   // comparison operators
   bool operator==(const SolveIK_Request_ & other) const
   {
-    if (this->structure_needs_at_least_one_member != other.structure_needs_at_least_one_member) {
+    if (this->position != other.position) {
+      return false;
+    }
+    if (this->jointorientation != other.jointorientation) {
+      return false;
+    }
+    if (this->r != other.r) {
       return false;
     }
     return true;
@@ -121,6 +174,10 @@ using SolveIK_Request =
 }  // namespace cocoa_kinematics_interfaces
 
 
+// Include directives for member types
+// Member 'jointstate'
+#include "sensor_msgs/msg/detail/joint_state__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__cocoa_kinematics_interfaces__srv__SolveIK_Response __attribute__((deprecated))
 #else
@@ -140,29 +197,46 @@ struct SolveIK_Response_
   using Type = SolveIK_Response_<ContainerAllocator>;
 
   explicit SolveIK_Response_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : jointstate(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->structure_needs_at_least_one_member = 0;
+      this->flag = false;
     }
   }
 
   explicit SolveIK_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : jointstate(_alloc, _init)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->structure_needs_at_least_one_member = 0;
+      this->flag = false;
     }
   }
 
   // field types and members
-  using _structure_needs_at_least_one_member_type =
-    uint8_t;
-  _structure_needs_at_least_one_member_type structure_needs_at_least_one_member;
+  using _jointstate_type =
+    sensor_msgs::msg::JointState_<ContainerAllocator>;
+  _jointstate_type jointstate;
+  using _flag_type =
+    bool;
+  _flag_type flag;
 
+  // setters for named parameter idiom
+  Type & set__jointstate(
+    const sensor_msgs::msg::JointState_<ContainerAllocator> & _arg)
+  {
+    this->jointstate = _arg;
+    return *this;
+  }
+  Type & set__flag(
+    const bool & _arg)
+  {
+    this->flag = _arg;
+    return *this;
+  }
 
   // constant declarations
 
@@ -206,7 +280,10 @@ struct SolveIK_Response_
   // comparison operators
   bool operator==(const SolveIK_Response_ & other) const
   {
-    if (this->structure_needs_at_least_one_member != other.structure_needs_at_least_one_member) {
+    if (this->jointstate != other.jointstate) {
+      return false;
+    }
+    if (this->flag != other.flag) {
       return false;
     }
     return true;

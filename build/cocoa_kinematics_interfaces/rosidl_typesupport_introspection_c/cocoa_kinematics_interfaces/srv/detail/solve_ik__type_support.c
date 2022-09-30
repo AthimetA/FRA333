@@ -12,6 +12,12 @@
 #include "cocoa_kinematics_interfaces/srv/detail/solve_ik__struct.h"
 
 
+// Include directives for member types
+// Member `position`
+#include "geometry_msgs/msg/point.h"
+// Member `position`
+#include "geometry_msgs/msg/detail/point__rosidl_typesupport_introspection_c.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -31,16 +37,46 @@ void SolveIK_Request__rosidl_typesupport_introspection_c__SolveIK_Request_fini_f
   cocoa_kinematics_interfaces__srv__SolveIK_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember SolveIK_Request__rosidl_typesupport_introspection_c__SolveIK_Request_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember SolveIK_Request__rosidl_typesupport_introspection_c__SolveIK_Request_message_member_array[3] = {
   {
-    "structure_needs_at_least_one_member",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    "position",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(cocoa_kinematics_interfaces__srv__SolveIK_Request, position),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "jointorientation",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(cocoa_kinematics_interfaces__srv__SolveIK_Request, structure_needs_at_least_one_member),  // bytes offset in struct
+    offsetof(cocoa_kinematics_interfaces__srv__SolveIK_Request, jointorientation),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "r",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    true,  // is array
+    2,  // array size
+    false,  // is upper bound
+    offsetof(cocoa_kinematics_interfaces__srv__SolveIK_Request, r),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -52,7 +88,7 @@ static rosidl_typesupport_introspection_c__MessageMember SolveIK_Request__rosidl
 static const rosidl_typesupport_introspection_c__MessageMembers SolveIK_Request__rosidl_typesupport_introspection_c__SolveIK_Request_message_members = {
   "cocoa_kinematics_interfaces__srv",  // message namespace
   "SolveIK_Request",  // message name
-  1,  // number of fields
+  3,  // number of fields
   sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Request),
   SolveIK_Request__rosidl_typesupport_introspection_c__SolveIK_Request_message_member_array,  // message members
   SolveIK_Request__rosidl_typesupport_introspection_c__SolveIK_Request_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -70,6 +106,8 @@ static rosidl_message_type_support_t SolveIK_Request__rosidl_typesupport_introsp
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_cocoa_kinematics_interfaces
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, cocoa_kinematics_interfaces, srv, SolveIK_Request)() {
+  SolveIK_Request__rosidl_typesupport_introspection_c__SolveIK_Request_message_member_array[0].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Point)();
   if (!SolveIK_Request__rosidl_typesupport_introspection_c__SolveIK_Request_message_type_support_handle.typesupport_identifier) {
     SolveIK_Request__rosidl_typesupport_introspection_c__SolveIK_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
@@ -98,6 +136,12 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "cocoa_kinematics_interfaces/srv/detail/solve_ik__struct.h"
 
 
+// Include directives for member types
+// Member `jointstate`
+#include "sensor_msgs/msg/joint_state.h"
+// Member `jointstate`
+#include "sensor_msgs/msg/detail/joint_state__rosidl_typesupport_introspection_c.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -117,16 +161,31 @@ void SolveIK_Response__rosidl_typesupport_introspection_c__SolveIK_Response_fini
   cocoa_kinematics_interfaces__srv__SolveIK_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember SolveIK_Response__rosidl_typesupport_introspection_c__SolveIK_Response_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember SolveIK_Response__rosidl_typesupport_introspection_c__SolveIK_Response_message_member_array[2] = {
   {
-    "structure_needs_at_least_one_member",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    "jointstate",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(cocoa_kinematics_interfaces__srv__SolveIK_Response, jointstate),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "flag",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(cocoa_kinematics_interfaces__srv__SolveIK_Response, structure_needs_at_least_one_member),  // bytes offset in struct
+    offsetof(cocoa_kinematics_interfaces__srv__SolveIK_Response, flag),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -138,7 +197,7 @@ static rosidl_typesupport_introspection_c__MessageMember SolveIK_Response__rosid
 static const rosidl_typesupport_introspection_c__MessageMembers SolveIK_Response__rosidl_typesupport_introspection_c__SolveIK_Response_message_members = {
   "cocoa_kinematics_interfaces__srv",  // message namespace
   "SolveIK_Response",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Response),
   SolveIK_Response__rosidl_typesupport_introspection_c__SolveIK_Response_message_member_array,  // message members
   SolveIK_Response__rosidl_typesupport_introspection_c__SolveIK_Response_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -156,6 +215,8 @@ static rosidl_message_type_support_t SolveIK_Response__rosidl_typesupport_intros
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_cocoa_kinematics_interfaces
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, cocoa_kinematics_interfaces, srv, SolveIK_Response)() {
+  SolveIK_Response__rosidl_typesupport_introspection_c__SolveIK_Response_message_member_array[0].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, sensor_msgs, msg, JointState)();
   if (!SolveIK_Response__rosidl_typesupport_introspection_c__SolveIK_Response_message_type_support_handle.typesupport_identifier) {
     SolveIK_Response__rosidl_typesupport_introspection_c__SolveIK_Response_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

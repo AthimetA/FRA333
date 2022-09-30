@@ -17,10 +17,16 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'position'
+#include "geometry_msgs/msg/detail/point__struct.h"
+
 // Struct defined in srv/SolveIK in the package cocoa_kinematics_interfaces.
 typedef struct cocoa_kinematics_interfaces__srv__SolveIK_Request
 {
-  uint8_t structure_needs_at_least_one_member;
+  geometry_msgs__msg__Point position;
+  double jointorientation;
+  int32_t r[2];
 } cocoa_kinematics_interfaces__srv__SolveIK_Request;
 
 // Struct for a sequence of cocoa_kinematics_interfaces__srv__SolveIK_Request.
@@ -36,10 +42,15 @@ typedef struct cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'jointstate'
+#include "sensor_msgs/msg/detail/joint_state__struct.h"
+
 // Struct defined in srv/SolveIK in the package cocoa_kinematics_interfaces.
 typedef struct cocoa_kinematics_interfaces__srv__SolveIK_Response
 {
-  uint8_t structure_needs_at_least_one_member;
+  sensor_msgs__msg__JointState jointstate;
+  bool flag;
 } cocoa_kinematics_interfaces__srv__SolveIK_Response;
 
 // Struct for a sequence of cocoa_kinematics_interfaces__srv__SolveIK_Response.

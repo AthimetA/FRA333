@@ -16,6 +16,13 @@
 #include "cocoa_kinematics_interfaces/srv/detail/solve_ik__struct.h"
 #include "cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.h"
 
+#include "rosidl_runtime_c/primitives_sequence.h"
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
+
+ROSIDL_GENERATOR_C_IMPORT
+bool geometry_msgs__msg__point__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * geometry_msgs__msg__point__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool cocoa_kinematics_interfaces__srv__solve_ik__request__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -50,7 +57,50 @@ bool cocoa_kinematics_interfaces__srv__solve_ik__request__convert_from_py(PyObje
     assert(strncmp("cocoa_kinematics_interfaces.srv._solve_ik.SolveIK_Request", full_classname_dest, 57) == 0);
   }
   cocoa_kinematics_interfaces__srv__SolveIK_Request * ros_message = _ros_message;
-  ros_message->structure_needs_at_least_one_member = 0;
+  {  // position
+    PyObject * field = PyObject_GetAttrString(_pymsg, "position");
+    if (!field) {
+      return false;
+    }
+    if (!geometry_msgs__msg__point__convert_from_py(field, &ros_message->position)) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_DECREF(field);
+  }
+  {  // jointorientation
+    PyObject * field = PyObject_GetAttrString(_pymsg, "jointorientation");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->jointorientation = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // r
+    PyObject * field = PyObject_GetAttrString(_pymsg, "r");
+    if (!field) {
+      return false;
+    }
+    {
+      // TODO(dirk-thomas) use a better way to check the type before casting
+      assert(field->ob_type != NULL);
+      assert(field->ob_type->tp_name != NULL);
+      assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
+      PyArrayObject * seq_field = (PyArrayObject *)field;
+      Py_INCREF(seq_field);
+      assert(PyArray_NDIM(seq_field) == 1);
+      assert(PyArray_TYPE(seq_field) == NPY_INT32);
+      Py_ssize_t size = 2;
+      int32_t * dest = ros_message->r;
+      for (Py_ssize_t i = 0; i < size; ++i) {
+        int32_t tmp = *(npy_int32 *)PyArray_GETPTR1(seq_field, i);
+        memcpy(&dest[i], &tmp, sizeof(int32_t));
+      }
+      Py_DECREF(seq_field);
+    }
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -72,7 +122,50 @@ PyObject * cocoa_kinematics_interfaces__srv__solve_ik__request__convert_to_py(vo
       return NULL;
     }
   }
-  (void)raw_ros_message;
+  cocoa_kinematics_interfaces__srv__SolveIK_Request * ros_message = (cocoa_kinematics_interfaces__srv__SolveIK_Request *)raw_ros_message;
+  {  // position
+    PyObject * field = NULL;
+    field = geometry_msgs__msg__point__convert_to_py(&ros_message->position);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "position", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // jointorientation
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->jointorientation);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "jointorientation", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // r
+    PyObject * field = NULL;
+    field = PyObject_GetAttrString(_pymessage, "r");
+    if (!field) {
+      return NULL;
+    }
+    assert(field->ob_type != NULL);
+    assert(field->ob_type->tp_name != NULL);
+    assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
+    PyArrayObject * seq_field = (PyArrayObject *)field;
+    assert(PyArray_NDIM(seq_field) == 1);
+    assert(PyArray_TYPE(seq_field) == NPY_INT32);
+    assert(sizeof(npy_int32) == sizeof(int32_t));
+    npy_int32 * dst = (npy_int32 *)PyArray_GETPTR1(seq_field, 0);
+    int32_t * src = &(ros_message->r[0]);
+    memcpy(dst, src, 2 * sizeof(int32_t));
+    Py_DECREF(field);
+  }
 
   // ownership of _pymessage is transferred to the caller
   return _pymessage;
@@ -92,6 +185,10 @@ PyObject * cocoa_kinematics_interfaces__srv__solve_ik__request__convert_to_py(vo
 // already included above
 // #include "cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.h"
 
+ROSIDL_GENERATOR_C_IMPORT
+bool sensor_msgs__msg__joint_state__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * sensor_msgs__msg__joint_state__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool cocoa_kinematics_interfaces__srv__solve_ik__response__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -126,7 +223,26 @@ bool cocoa_kinematics_interfaces__srv__solve_ik__response__convert_from_py(PyObj
     assert(strncmp("cocoa_kinematics_interfaces.srv._solve_ik.SolveIK_Response", full_classname_dest, 58) == 0);
   }
   cocoa_kinematics_interfaces__srv__SolveIK_Response * ros_message = _ros_message;
-  ros_message->structure_needs_at_least_one_member = 0;
+  {  // jointstate
+    PyObject * field = PyObject_GetAttrString(_pymsg, "jointstate");
+    if (!field) {
+      return false;
+    }
+    if (!sensor_msgs__msg__joint_state__convert_from_py(field, &ros_message->jointstate)) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_DECREF(field);
+  }
+  {  // flag
+    PyObject * field = PyObject_GetAttrString(_pymsg, "flag");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->flag = (Py_True == field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -148,7 +264,32 @@ PyObject * cocoa_kinematics_interfaces__srv__solve_ik__response__convert_to_py(v
       return NULL;
     }
   }
-  (void)raw_ros_message;
+  cocoa_kinematics_interfaces__srv__SolveIK_Response * ros_message = (cocoa_kinematics_interfaces__srv__SolveIK_Response *)raw_ros_message;
+  {  // jointstate
+    PyObject * field = NULL;
+    field = sensor_msgs__msg__joint_state__convert_to_py(&ros_message->jointstate);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "jointstate", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // flag
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->flag ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "flag", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
 
   // ownership of _pymessage is transferred to the caller
   return _pymessage;

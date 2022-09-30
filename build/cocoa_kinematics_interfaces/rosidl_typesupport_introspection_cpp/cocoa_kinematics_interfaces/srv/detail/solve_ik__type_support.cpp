@@ -37,20 +37,70 @@ void SolveIK_Request_fini_function(void * message_memory)
   typed_message->~SolveIK_Request();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember SolveIK_Request_message_member_array[1] = {
+size_t size_function__SolveIK_Request__r(const void * untyped_member)
+{
+  (void)untyped_member;
+  return 2;
+}
+
+const void * get_const_function__SolveIK_Request__r(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::array<int32_t, 2> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__SolveIK_Request__r(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::array<int32_t, 2> *>(untyped_member);
+  return &member[index];
+}
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMember SolveIK_Request_message_member_array[3] = {
   {
-    "structure_needs_at_least_one_member",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    "position",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<geometry_msgs::msg::Point>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(cocoa_kinematics_interfaces::srv::SolveIK_Request, position),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "jointorientation",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(cocoa_kinematics_interfaces::srv::SolveIK_Request, structure_needs_at_least_one_member),  // bytes offset in struct
+    offsetof(cocoa_kinematics_interfaces::srv::SolveIK_Request, jointorientation),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
     nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "r",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    true,  // is array
+    2,  // array size
+    false,  // is upper bound
+    offsetof(cocoa_kinematics_interfaces::srv::SolveIK_Request, r),  // bytes offset in struct
+    nullptr,  // default value
+    size_function__SolveIK_Request__r,  // size() function pointer
+    get_const_function__SolveIK_Request__r,  // get_const(index) function pointer
+    get_function__SolveIK_Request__r,  // get(index) function pointer
     nullptr  // resize(index) function pointer
   }
 };
@@ -58,7 +108,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember SolveIK_Reque
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers SolveIK_Request_message_members = {
   "cocoa_kinematics_interfaces::srv",  // message namespace
   "SolveIK_Request",  // message name
-  1,  // number of fields
+  3,  // number of fields
   sizeof(cocoa_kinematics_interfaces::srv::SolveIK_Request),
   SolveIK_Request_message_member_array,  // message members
   SolveIK_Request_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -154,16 +204,31 @@ void SolveIK_Response_fini_function(void * message_memory)
   typed_message->~SolveIK_Response();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember SolveIK_Response_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember SolveIK_Response_message_member_array[2] = {
   {
-    "structure_needs_at_least_one_member",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    "jointstate",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<sensor_msgs::msg::JointState>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(cocoa_kinematics_interfaces::srv::SolveIK_Response, jointstate),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "flag",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(cocoa_kinematics_interfaces::srv::SolveIK_Response, structure_needs_at_least_one_member),  // bytes offset in struct
+    offsetof(cocoa_kinematics_interfaces::srv::SolveIK_Response, flag),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -175,7 +240,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember SolveIK_Respo
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers SolveIK_Response_message_members = {
   "cocoa_kinematics_interfaces::srv",  // message namespace
   "SolveIK_Response",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(cocoa_kinematics_interfaces::srv::SolveIK_Response),
   SolveIK_Response_message_member_array,  // message members
   SolveIK_Response_init_function,  // function to initialize message memory (memory has to be allocated)

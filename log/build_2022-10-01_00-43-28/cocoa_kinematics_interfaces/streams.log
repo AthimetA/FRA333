@@ -1,0 +1,139 @@
+[0.072s] Invoking command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces -- -j12 -l12
+[0.135s] [  2%] Built target cocoa_kinematics_interfaces__cpp
+[0.139s] [ 12%] Built target cocoa_kinematics_interfaces__rosidl_generator_c
+[0.173s] [ 23%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp
+[0.173s] [ 34%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_cpp
+[0.176s] [ 44%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.181s] [ 55%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c
+[0.187s] [ 65%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_c
+[0.221s] [ 76%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c
+[0.250s] [ 76%] Built target cocoa_kinematics_interfaces
+[0.273s] [ 78%] Built target cocoa_kinematics_interfaces__py
+[0.307s] [ 87%] Built target cocoa_kinematics_interfaces__python
+[0.338s] [ 91%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_c__pyext
+[0.338s] [100%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.338s] [100%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.389s] Invoked command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces -- -j12 -l12
+[0.482s] Invoking command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces
+[0.497s] -- Install configuration: ""
+[0.498s] -- Execute custom install script
+[0.498s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/ament_index/resource_index/rosidl_interfaces/cocoa_kinematics_interfaces
+[0.500s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.501s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/get_position__functions.h
+[0.501s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/get_position__struct.h
+[0.502s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.h
+[0.503s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.h
+[0.503s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_js__struct.h
+[0.503s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.h
+[0.504s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_tf__functions.h
+[0.504s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_tf__struct.h
+[0.505s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_tf__type_support.h
+[0.505s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.h
+[0.505s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__struct.h
+[0.505s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.h
+[0.505s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/get_position.h
+[0.506s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/robot_js.h
+[0.506s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/robot_tf.h
+[0.506s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/solve_ik.h
+[0.506s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/library_path.sh
+[0.506s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/library_path.dsv
+[0.506s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.506s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/get_position__rosidl_typesupport_fastrtps_c.h
+[0.506s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_js__rosidl_typesupport_fastrtps_c.h
+[0.506s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_tf__rosidl_typesupport_fastrtps_c.h
+[0.506s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__rosidl_typesupport_fastrtps_c.h
+[0.506s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.507s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.507s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/get_position__rosidl_typesupport_fastrtps_cpp.hpp
+[0.507s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_js__rosidl_typesupport_fastrtps_cpp.hpp
+[0.507s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_tf__rosidl_typesupport_fastrtps_cpp.hpp
+[0.507s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__rosidl_typesupport_fastrtps_cpp.hpp
+[0.507s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.508s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.508s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/get_position__rosidl_typesupport_introspection_c.h
+[0.508s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_js__rosidl_typesupport_introspection_c.h
+[0.508s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_tf__rosidl_typesupport_introspection_c.h
+[0.508s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__rosidl_typesupport_introspection_c.h
+[0.509s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/get_position__builder.hpp
+[0.509s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/get_position__struct.hpp
+[0.509s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/get_position__traits.hpp
+[0.510s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_js__builder.hpp
+[0.510s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_js__struct.hpp
+[0.510s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_js__traits.hpp
+[0.511s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_tf__builder.hpp
+[0.511s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_tf__struct.hpp
+[0.511s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_tf__traits.hpp
+[0.512s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__builder.hpp
+[0.512s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__struct.hpp
+[0.512s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__traits.hpp
+[0.513s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/get_position.hpp
+[0.513s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/robot_js.hpp
+[0.513s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/robot_tf.hpp
+[0.513s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/solve_ik.hpp
+[0.514s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/get_position__rosidl_typesupport_introspection_cpp.hpp
+[0.514s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_js__rosidl_typesupport_introspection_cpp.hpp
+[0.514s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/robot_tf__rosidl_typesupport_introspection_cpp.hpp
+[0.515s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__rosidl_typesupport_introspection_cpp.hpp
+[0.515s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/pythonpath.sh
+[0.515s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/pythonpath.dsv
+[0.516s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/__init__.py
+[0.516s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/srv/__init__.py
+[0.516s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/srv/_get_position.py
+[0.517s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/srv/_robot_js.py
+[0.517s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/srv/_robot_tf.py
+[0.517s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/srv/_solve_ik.py
+[0.518s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/cocoa_kinematics_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[0.518s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/cocoa_kinematics_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[0.518s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/cocoa_kinematics_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[0.518s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__python.so
+[0.519s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/SolveIK.idl
+[0.519s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/GetPosition.idl
+[0.519s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/RobotJS.idl
+[0.519s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/SolveIK.srv
+[0.519s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/SolveIK_Request.msg
+[0.520s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/SolveIK_Response.msg
+[0.520s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/GetPosition.srv
+[0.520s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/GetPosition_Request.msg
+[0.520s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/GetPosition_Response.msg
+[0.520s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/RobotJS.srv
+[0.521s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/RobotJS_Request.msg
+[0.521s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/RobotJS_Response.msg
+[0.521s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/ament_index/resource_index/package_run_dependencies/cocoa_kinematics_interfaces
+[0.522s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/ament_index/resource_index/parent_prefix_path/cocoa_kinematics_interfaces
+[0.522s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/ament_prefix_path.sh
+[0.522s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/ament_prefix_path.dsv
+[0.522s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/path.sh
+[0.522s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/path.dsv
+[0.523s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/local_setup.bash
+[0.523s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/local_setup.sh
+[0.523s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/local_setup.zsh
+[0.523s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/local_setup.dsv
+[0.524s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/package.dsv
+[0.534s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/ament_index/resource_index/packages/cocoa_kinematics_interfaces
+[0.535s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.535s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.535s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.535s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.536s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.536s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.536s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.537s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfacesConfig.cmake
+[0.537s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfacesConfig-version.cmake
+[0.537s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/package.xml
+[0.537s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_generator_c.so
+[0.538s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.so
+[0.538s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_c.so
+[0.538s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.539s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so
+[0.588s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_generator_cExport.cmake
+[0.589s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_generator_cExport-noconfig.cmake
+[0.589s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.590s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.590s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_cExport.cmake
+[0.590s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[0.590s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_generator_cppExport.cmake
+[0.590s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.591s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.591s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_cppExport.cmake
+[0.595s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[0.600s] Invoked command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces
