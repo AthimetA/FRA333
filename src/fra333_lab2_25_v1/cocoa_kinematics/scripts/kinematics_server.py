@@ -33,7 +33,7 @@ class CocoaStatePublisher(Node):
         self.cocoa_joint_state.position = self.cocoa_config
         self.joint_pub.publish(self.cocoa_joint_state)
     
-    def get_joint_state_callback(self, request, response):
+    def get_joint_state_callback(self, request: RobotJS.Request, response : RobotJS.Response):
         [l1,l2,l3,l4,l5,l6] = [0.1360,0.2620,0.0605,0.0620,0.0350,0.2820]
         # input: [q1,q2,q3] in degree and q4 in meter
         self.cocoa_config = [np.radians(request.jointstate.position[0]),np.radians(request.jointstate.position[1])
