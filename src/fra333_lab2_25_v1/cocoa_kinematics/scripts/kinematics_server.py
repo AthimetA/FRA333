@@ -2,6 +2,7 @@
 
 from cmath import cos, sin
 import sys
+from tabnanny import check
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
@@ -29,8 +30,8 @@ class CocoaStatePublisher(Node):
         self.set_robot_IK = self.create_service(SolveIK, 'slove_ik', self.set_inverse_kinematics_callback)
         
     def timer_callback(self):
-        [q1,q2,q3,q4] = self.cocoa_config
-        self.get_logger().info('q1: %f, q2: %f, q3: %f, q4: %f' % (q1,q2,q3,q4))
+        # [q1,q2,q3,q4] = self.cocoa_config
+        # self.get_logger().info('q1: %f, q2: %f, q3: %f, q4: %f' % (q1,q2,q3,q4))
         self.cocoa_joint_state.header.stamp = self.get_clock().now().to_msg()
         self.cocoa_joint_state.position = self.cocoa_config
         self.joint_pub.publish(self.cocoa_joint_state)
@@ -51,26 +52,39 @@ class CocoaStatePublisher(Node):
         [l1,l2,l3,l4] = [0.1360,0.2620,0.18575,0.1700]
         [x,y,z] = [request.position.x,request.position.y,request.position.z]
         phi = np.radians(request.jointorientation)
-        [r1,r2] = request.r.data
-        # input: [x,y,z] in meter orientation in degree
-        # solve for q1
-        q1 = np.arctan2(y/r1,x/r1)
-        # solve for q2
+        [r1,r2] = request.r
+        if(self.check_IK_solution_exist(x, y, z, phi, r1, r2)):
+            response.flag = True
+            # input: [x,y,z] in meter orientation in degree
+            # solve for q1
+            A2 = (r1*np.sqrt(x**2+y**2))-(l4*np.cos(phi))
+            A3 = z-l1-(l4*np.sin(phi))
+            q1 = np.arctan2(y/r1,x/r1)
+            # solve for q2
+            sin_q3 = (A2**2+A3**2-l2**2-l3**2)/(2*l2*l3)
+            cos_q3 = r2*np.sqrt(1-sin_q3**2)
+            q3 = np.arctan2(sin_q3,cos_q3)
+            # solve for q3
+            sin_q2 = (-A2*(l2+l3*sin_q3)) + A3*l3*cos_q3
+            cos_q2 = A2*l3*cos_q3 + (A3*(l2+l3*sin_q3))
+            q2 = np.arctan2(sin_q2,cos_q2)
+            # solve for q4
+            q4 = phi - q2 - q3
+            self.cocoa_config = [q1,q2,q3,q4]
+            self.get_logger().info('q1: %f, q2: %f, q3: %f, q4: %f phi: %f' % (q1,q2,q3,q4,np.q2+q3+q4))
+            response.jointstate.position = self.cocoa_config
+        else:
+            response.flag = False
+        return response
+    
+    def check_IK_solution_exist(self, x, y, z, phi, r1, r2):
+        [l1,l2,l3,l4] = [0.1360,0.2620,0.18575,0.1700]
         A2 = (r1*np.sqrt(x**2+y**2))-(l4*np.cos(phi))
         A3 = z-l1-(l4*np.sin(phi))
-        sin_q3 = (A2**2+A3**2-l2**2-l3**2)/(2*l2*l3)
-        cos_q3 = r2*np.sqrt(1-sin_q3**2)
-        q3 = np.arctan2(sin_q3,cos_q3)
-        # solve for q3
-        sin_q2 = (-A2*(l2+l3*sin_q3)) + A3*l3*cos_q3
-        cos_q2 = A2*l3*cos_q3 + (A3*(l2+l3*sin_q3))
-        q2 = np.arctan2(sin_q2,cos_q2)
-        # solve for q4
-        q4 = phi - q2 - q3
-        self.cocoa_config = [q1,q2,q3,q4]
-        response.jointstate.position = self.cocoa_config
-        response.flag = True
-        return response
+        if (l2-l3 < np.sqrt(A2**2+A3**2) < l2+l3):
+            return True
+        else:
+            return False
 
 def main(args=None):
     rclpy.init(args=args)
