@@ -89,14 +89,13 @@ class CocoaStatePublisher(Node):
         # self.get_logger().info('***********************************************')        
         # self.get_logger().info('Dxy: %f, Dz: %f' % (Dxy,Dz))
         # self.get_logger().info('***********************************************')
-        if (Dxy+Dz)>= l4 and Dxy*Dz*2 > 0 :
-            if(Dxy+Dz-np.sqrt(2*Dxy*Dz))>=l4 : 
-                if (l2-l3 < np.sqrt(A2**2+A3**2) < l2+l3):
-                    return True
-        if (Dxy+Dz)<= l4 and Dxy*Dz*2 > 0:
-            if(Dxy+Dz+np.sqrt(2*Dxy*Dz))<=l4 : 
-                if (l2-l3 < np.sqrt(A2**2+A3**2) < l2+l3):
-                    return True
+        if (l2-l3 < np.sqrt(A2**2+A3**2) < l2+l3):
+            if (Dxy+Dz)>= l4 and Dxy*Dz*2 > 0 :
+                if(Dxy+Dz-np.sqrt(2*Dxy*Dz))>=l4 : 
+                        return True
+            if (Dxy+Dz)<= l4 and Dxy*Dz*2 > 0:
+                if(Dxy+Dz+np.sqrt(2*Dxy*Dz))<=l4 : 
+                        return True
         return False
 
 def main(args=None):
