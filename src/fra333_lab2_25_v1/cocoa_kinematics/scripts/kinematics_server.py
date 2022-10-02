@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 from cmath import cos, sin
+from math import sqrt
 import sys
 from tabnanny import check
 import rclpy
@@ -30,8 +31,6 @@ class CocoaStatePublisher(Node):
         self.set_robot_IK = self.create_service(SolveIK, 'slove_ik', self.set_inverse_kinematics_callback)
         
     def timer_callback(self):
-        # [q1,q2,q3,q4] = self.cocoa_config
-        # self.get_logger().info('q1: %f, q2: %f, q3: %f, q4: %f' % (q1,q2,q3,q4))
         self.cocoa_joint_state.header.stamp = self.get_clock().now().to_msg()
         self.cocoa_joint_state.position = self.cocoa_config
         self.joint_pub.publish(self.cocoa_joint_state)
@@ -71,9 +70,13 @@ class CocoaStatePublisher(Node):
             # solve for q4
             q4 = phi - q2 - q3
             self.cocoa_config = [q1,q2,q3,q4]
-            self.get_logger().info('q1: %f, q2: %f, q3: %f, q4: %f phi: %f' % (q1,q2,q3,q4,np.q2+q3+q4))
+            # self.get_logger().info('-----------------------------------------------')
+            # self.get_logger().info('A2**2 : %f, A3**2 : %f, sqrt : %f' % (A2**2,A3**2,np.sqrt(A2**2+A3**2)))
+            # self.get_logger().info('q1: %f, q2: %f, q3: %f, q4: %f phi: %f' % (q1,q2,q3,q4,q2+q3+q4))
+            # self.get_logger().info('-----------------------------------------------')
             response.jointstate.position = self.cocoa_config
         else:
+            self.cocoa_config = [0.0,0.0,0.0,0.0]
             response.flag = False
         return response
     
@@ -81,10 +84,20 @@ class CocoaStatePublisher(Node):
         [l1,l2,l3,l4] = [0.1360,0.2620,0.18575,0.1700]
         A2 = (r1*np.sqrt(x**2+y**2))-(l4*np.cos(phi))
         A3 = z-l1-(l4*np.sin(phi))
-        if (l2-l3 < np.sqrt(A2**2+A3**2) < l2+l3):
-            return True
-        else:
-            return False
+        Dxy = r1*np.sqrt(x**2+y**2)*np.cos(phi)
+        Dz = (z-l1) * np.sin(phi)
+        # self.get_logger().info('***********************************************')        
+        # self.get_logger().info('Dxy: %f, Dz: %f' % (Dxy,Dz))
+        # self.get_logger().info('***********************************************')
+        if (Dxy+Dz)>= l4 and Dxy*Dz*2 > 0 :
+            if(Dxy+Dz-np.sqrt(2*Dxy*Dz))>=l4 : 
+                if (l2-l3 < np.sqrt(A2**2+A3**2) < l2+l3):
+                    return True
+        if (Dxy+Dz)<= l4 and Dxy*Dz*2 > 0:
+            if(Dxy+Dz+np.sqrt(2*Dxy*Dz))<=l4 : 
+                if (l2-l3 < np.sqrt(A2**2+A3**2) < l2+l3):
+                    return True
+        return False
 
 def main(args=None):
     rclpy.init(args=args)
