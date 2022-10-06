@@ -1,0 +1,12 @@
+[0.052s] Invoking command in '/home/azthorax/fra333_ws/build/lab1_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/lab1_interfaces -- -j12 -l12
+[0.102s] [  3%] Built target lab1_interfaces__cpp
+[0.104s] [ 12%] Built target lab1_interfaces__rosidl_generator_c
+[0.122s] make[2]: *** No rule to make target '/opt/ros/foxy/lib/libfastrtps.so.2.1.1', needed by 'liblab1_interfaces__rosidl_typesupport_fastrtps_cpp.so'.  Stop.
+[0.122s] make[1]: *** [CMakeFiles/Makefile2:413: CMakeFiles/lab1_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[0.122s] make[1]: *** Waiting for unfinished jobs....
+[0.134s] [ 22%] Built target lab1_interfaces__rosidl_typesupport_introspection_cpp
+[0.135s] [ 32%] Built target lab1_interfaces__rosidl_typesupport_cpp
+[0.137s] [ 41%] Built target lab1_interfaces__rosidl_typesupport_c
+[0.143s] [ 51%] Built target lab1_interfaces__rosidl_typesupport_introspection_c
+[0.144s] make: *** [Makefile:141: all] Error 2
+[0.151s] Invoked command in '/home/azthorax/fra333_ws/build/lab1_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/lab1_interfaces -- -j12 -l12

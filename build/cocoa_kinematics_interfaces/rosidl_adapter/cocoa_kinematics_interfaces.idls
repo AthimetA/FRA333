@@ -1,3 +1,2 @@
 /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces:srv/SolveIK.idl
-/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces:srv/GetPosition.idl
-/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces:srv/RobotJS.idl
+/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces:srv/RobotFK.idl

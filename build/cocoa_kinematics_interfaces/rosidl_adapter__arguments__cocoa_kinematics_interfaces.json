@@ -2,7 +2,6 @@
   "package_name": "cocoa_kinematics_interfaces",
   "non_idl_tuples": [
     "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces:srv/SolveIK.srv",
-    "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces:srv/GetPosition.srv",
-    "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces:srv/RobotJS.srv"
+    "/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces:srv/RobotFK.srv"
   ]
 }

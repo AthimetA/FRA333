@@ -4,8 +4,7 @@
   "template_dir": "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
     "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces:srv/SolveIK.idl",
-    "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces:srv/GetPosition.idl",
-    "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces:srv/RobotJS.idl"
+    "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces:srv/RobotFK.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/foxy/share/geometry_msgs/msg/Accel.idl",
@@ -113,8 +112,7 @@
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
     "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces/srv/SolveIK.idl",
-    "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces/srv/GetPosition.idl",
-    "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces/srv/RobotJS.idl",
+    "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_adapter/cocoa_kinematics_interfaces/srv/RobotFK.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl",

@@ -57,14 +57,10 @@ CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinemati
 CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__builder.hpp
 CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__struct.hpp
 CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__traits.hpp
-CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/get_position.hpp
-CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__builder.hpp
-CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__struct.hpp
-CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__traits.hpp
-CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/robot_js.hpp
-CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__builder.hpp
-CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__struct.hpp
-CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__traits.hpp
+CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/robot_fk.hpp
+CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__builder.hpp
+CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__struct.hpp
+CMakeFiles/cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__traits.hpp
 
 
 rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp: /opt/ros/foxy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -83,8 +79,7 @@ rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp: /opt/ros/foxy
 rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp: rosidl_adapter/cocoa_kinematics_interfaces/srv/SolveIK.idl
-rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp: rosidl_adapter/cocoa_kinematics_interfaces/srv/GetPosition.idl
-rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp: rosidl_adapter/cocoa_kinematics_interfaces/srv/RobotJS.idl
+rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp: rosidl_adapter/cocoa_kinematics_interfaces/srv/RobotFK.idl
 rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -186,43 +181,27 @@ rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__struct.hpp
 rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__traits.hpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__traits.hpp
 
-rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/get_position.hpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/get_position.hpp
+rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/robot_fk.hpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/robot_fk.hpp
 
-rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__builder.hpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__builder.hpp
+rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__builder.hpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__builder.hpp
 
-rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__struct.hpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__struct.hpp
+rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__struct.hpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__struct.hpp
 
-rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__traits.hpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__traits.hpp
-
-rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/robot_js.hpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/robot_js.hpp
-
-rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__builder.hpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__builder.hpp
-
-rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__struct.hpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__struct.hpp
-
-rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__traits.hpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__traits.hpp
+rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__traits.hpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__traits.hpp
 
 cocoa_kinematics_interfaces__cpp: CMakeFiles/cocoa_kinematics_interfaces__cpp
 cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/solve_ik.hpp
 cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__builder.hpp
 cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__struct.hpp
 cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__traits.hpp
-cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/get_position.hpp
-cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__builder.hpp
-cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__struct.hpp
-cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__traits.hpp
-cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/robot_js.hpp
-cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__builder.hpp
-cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__struct.hpp
-cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__traits.hpp
+cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/robot_fk.hpp
+cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__builder.hpp
+cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__struct.hpp
+cocoa_kinematics_interfaces__cpp: rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__traits.hpp
 cocoa_kinematics_interfaces__cpp: CMakeFiles/cocoa_kinematics_interfaces__cpp.dir/build.make
 
 .PHONY : cocoa_kinematics_interfaces__cpp

@@ -50,12 +50,6 @@ def generate_launch_description():
                                 sub_folder,
                                 urdf_file_name)
     robot_description = xacro.process_file(robot_desc_path).toxml()
-    # urdf = os.path.join(
-    #     get_package_share_directory(package_name)
-    #     ,sub_folder
-    #     ,urdf_file_name)
-    # with open(urdf, 'r') as infp:
-    #     robot_description = infp.read()
     
     ### How to run robot_state_publisher ###
     #

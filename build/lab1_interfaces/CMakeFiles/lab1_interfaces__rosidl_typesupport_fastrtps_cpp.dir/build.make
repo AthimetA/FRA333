@@ -130,7 +130,7 @@ liblab1_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/foxy/lib/librmw
 liblab1_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/foxy/lib/librosidl_typesupport_fastrtps_cpp.so
 liblab1_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 liblab1_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
-liblab1_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/foxy/lib/libfastrtps.so.2.1.1
+liblab1_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/foxy/lib/libfastrtps.so.2.1.2
 liblab1_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/foxy/lib/libfastcdr.so.1.0.13
 liblab1_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 liblab1_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so

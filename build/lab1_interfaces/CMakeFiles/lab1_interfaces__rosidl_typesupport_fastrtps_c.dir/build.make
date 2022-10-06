@@ -152,7 +152,7 @@ liblab1_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/librosid
 liblab1_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 liblab1_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/librcpputils.so
 liblab1_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/librcutils.so
-liblab1_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libfastrtps.so.2.1.1
+liblab1_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libfastrtps.so.2.1.2
 liblab1_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libfoonathan_memory-0.7.1.a
 liblab1_interfaces__rosidl_typesupport_fastrtps_c.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
 liblab1_interfaces__rosidl_typesupport_fastrtps_c.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so

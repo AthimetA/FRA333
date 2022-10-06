@@ -375,59 +375,32 @@ cocoa_kinematics_interfaces__py/fast:
 	$(MAKE) -f cocoa_kinematics_interfaces__py/CMakeFiles/cocoa_kinematics_interfaces__py.dir/build.make cocoa_kinematics_interfaces__py/CMakeFiles/cocoa_kinematics_interfaces__py.dir/build
 .PHONY : cocoa_kinematics_interfaces__py/fast
 
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.o: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.o
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.o: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.c.o
 
-.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.o
-
-# target to build an object file
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.o
-.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.o
-
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.i: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.i
-
-.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.i
-.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.i
-
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.s: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.s
-
-.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.s
-.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.c.s
-
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.o: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.o
-
-.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.o
+.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.o
 
 # target to build an object file
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.o
-.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.o
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.c.o:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.c.o
+.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.c.o
 
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.i: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.i
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.i: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.c.i
 
-.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.i
+.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.i
 
 # target to preprocess a source file
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.i
-.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.i
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.c.i:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.c.i
+.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.c.i
 
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.s: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.s
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.s: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.c.s
 
-.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.s
+.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.s
 
 # target to generate assembly for a file
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.s
-.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.c.s
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.c.s:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.c.s
+.PHONY : rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.c.s
 
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.o: rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.c.o
 
@@ -537,59 +510,32 @@ rosidl_generator_py/cocoa_kinematics_interfaces/_cocoa_kinematics_interfaces_s.e
 	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cocoa_kinematics_interfaces/_cocoa_kinematics_interfaces_s.ep.rosidl_typesupport_introspection_c.c.s
 .PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/_cocoa_kinematics_interfaces_s.ep.rosidl_typesupport_introspection_c.c.s
 
-rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.o: rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.c.o
+rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.o: rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.c.o
 
-.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.o
-
-# target to build an object file
-rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.c.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__python.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.c.o
-.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.c.o
-
-rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.i: rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.c.i
-
-.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.i
-
-# target to preprocess a source file
-rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.c.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__python.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.c.i
-.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.c.i
-
-rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.s: rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.c.s
-
-.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.s
-
-# target to generate assembly for a file
-rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.c.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__python.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.c.s
-.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.c.s
-
-rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.o: rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.c.o
-
-.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.o
+.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.o
 
 # target to build an object file
-rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.c.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__python.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.c.o
-.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.c.o
+rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.c.o:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__python.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.c.o
+.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.c.o
 
-rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.i: rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.c.i
+rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.i: rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.c.i
 
-.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.i
+.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.i
 
 # target to preprocess a source file
-rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.c.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__python.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.c.i
-.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.c.i
+rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.c.i:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__python.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.c.i
+.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.c.i
 
-rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.s: rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.c.s
+rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.s: rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.c.s
 
-.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.s
+.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.s
 
 # target to generate assembly for a file
-rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.c.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__python.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.c.s
-.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.c.s
+rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.c.s:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__python.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.c.s
+.PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.c.s
 
 rosidl_generator_py/cocoa_kinematics_interfaces/srv/_solve_ik_s.o: rosidl_generator_py/cocoa_kinematics_interfaces/srv/_solve_ik_s.c.o
 
@@ -618,59 +564,32 @@ rosidl_generator_py/cocoa_kinematics_interfaces/srv/_solve_ik_s.c.s:
 	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__python.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_solve_ik_s.c.s
 .PHONY : rosidl_generator_py/cocoa_kinematics_interfaces/srv/_solve_ik_s.c.s
 
-rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.o: rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.o
+rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.o: rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.o
 
-.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.o
-
-rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.i: rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.i
-
-.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.i
-
-rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.s: rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.s
-
-.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.s
-
-rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.o: rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.o
-
-.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.o
+.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.o
 
 # target to build an object file
-rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.o
+rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.o
 
-rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.i: rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.i
+rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.i: rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.i
 
-.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.i
+.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.i
+rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.i
 
-rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.s: rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.s
+rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.s: rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.s
 
-.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.s
+.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.s
+rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.s
 
 rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/solve_ik__type_support.o: rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp.o
 
@@ -699,59 +618,32 @@ rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp.
 	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp.s
 
-rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.o: rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.o
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.o: rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.o
 
-.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.o
-
-rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.i: rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.i
-
-.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.i
-
-rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.s: rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.s
-
-.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.cpp.s
-
-rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.o: rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.o
-
-.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.o
+.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.o
 
 # target to build an object file
-rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.o
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.o
 
-rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.i: rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.i
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.i: rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.i
 
-.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.i
+.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.i
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.i
 
-rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.s: rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.s
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.s: rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.s
 
-.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.s
+.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.cpp.s
+rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp.s
 
 rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.o: rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp.o
 
@@ -780,59 +672,32 @@ rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cp
 	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp.s
 
-rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.o: rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.cpp.o
+rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.o: rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.cpp.o
 
-.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.i: rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.cpp.i
-
-.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.s: rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.cpp.s
-
-.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.o: rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.cpp.o
-
-.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.o
+.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.o
 
 # target to build an object file
-rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.cpp.o
+rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.cpp.o
 
-rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.i: rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.cpp.i
+rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.i: rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.cpp.i
 
-.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.i
+.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.i
 
 # target to preprocess a source file
-rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.cpp.i
+rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.cpp.i
 
-rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.s: rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.cpp.s
+rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.s: rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.cpp.s
 
-.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.s
+.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.s
 
 # target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.cpp.s
+rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support_c.o: rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support_c.cpp.o
 
@@ -861,59 +726,32 @@ rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__t
 	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support_c.cpp.s
 
-rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.o: rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.o
+rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.o: rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.cpp.o
 
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.i: rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.i
-
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.s: rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.s
-
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.o: rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.cpp.o
-
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.o
 
 # target to build an object file
-rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.cpp.o
+rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.cpp.o
 
-rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.i: rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.cpp.i
+rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.i: rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.cpp.i
 
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.cpp.i
+rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.cpp.i
 
-rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.s: rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.cpp.s
+rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.s: rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.cpp.s
 
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.cpp.s
+rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/solve_ik__type_support.o: rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/solve_ik__type_support.cpp.o
 
@@ -942,59 +780,32 @@ rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastr
 	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/solve_ik__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/solve_ik__type_support.cpp.s
 
-rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.o: rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.c.o
+rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.o: rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.c.o
 
-.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.c.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.c.o
-
-rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.i: rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.c.i
-
-.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.c.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.c.i
-
-rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.s: rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.c.s
-
-.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.c.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.c.s
-
-rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.o: rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.c.o
-
-.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.o
+.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.o
 
 # target to build an object file
-rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.c.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.c.o
+rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.c.o:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.c.o
 
-rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.i: rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.c.i
+rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.i: rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.c.i
 
-.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.i
+.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.c.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.c.i
+rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.c.i:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.c.i
 
-rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.s: rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.c.s
+rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.s: rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.c.s
 
-.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.s
+.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.c.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.c.s
+rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.c.s:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.c.s
 
 rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.o: rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.c.o
 
@@ -1023,59 +834,32 @@ rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/solve_
 	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.c.s
 
-rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.o: rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.cpp.o
+rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.o: rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.cpp.o
 
-.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.i: rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.cpp.i
-
-.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.s: rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.cpp.s
-
-.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.o: rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.cpp.o
-
-.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.o
+.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.o
 
 # target to build an object file
-rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.cpp.o
+rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.cpp.o
 
-rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.i: rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.cpp.i
+rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.i: rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.cpp.i
 
-.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.i
+.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.cpp.i
+rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.cpp.i
 
-rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.s: rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.cpp.s
+rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.s: rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.cpp.s
 
-.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.s
+.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.cpp.s
+rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.o: rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.cpp.o
 
@@ -1133,12 +917,9 @@ help:
 	@echo "... uninstall"
 	@echo "... cocoa_kinematics_interfaces__python"
 	@echo "... cocoa_kinematics_interfaces__py"
-	@echo "... rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.o"
-	@echo "... rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.i"
-	@echo "... rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/get_position__functions.s"
-	@echo "... rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.o"
-	@echo "... rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.i"
-	@echo "... rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_js__functions.s"
+	@echo "... rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.o"
+	@echo "... rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.i"
+	@echo "... rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.s"
 	@echo "... rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.o"
 	@echo "... rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.i"
 	@echo "... rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.s"
@@ -1151,66 +932,45 @@ help:
 	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/_cocoa_kinematics_interfaces_s.ep.rosidl_typesupport_introspection_c.o"
 	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/_cocoa_kinematics_interfaces_s.ep.rosidl_typesupport_introspection_c.i"
 	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/_cocoa_kinematics_interfaces_s.ep.rosidl_typesupport_introspection_c.s"
-	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.o"
-	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.i"
-	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/srv/_get_position_s.s"
-	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.o"
-	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.i"
-	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_js_s.s"
+	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.o"
+	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.i"
+	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.s"
 	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/srv/_solve_ik_s.o"
 	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/srv/_solve_ik_s.i"
 	@echo "... rosidl_generator_py/cocoa_kinematics_interfaces/srv/_solve_ik_s.s"
-	@echo "... rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.o"
-	@echo "... rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.i"
-	@echo "... rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/get_position__type_support.s"
-	@echo "... rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.o"
-	@echo "... rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.i"
-	@echo "... rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_js__type_support.s"
+	@echo "... rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.o"
+	@echo "... rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.i"
+	@echo "... rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/robot_fk__type_support.s"
 	@echo "... rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/solve_ik__type_support.o"
 	@echo "... rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/solve_ik__type_support.i"
 	@echo "... rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/solve_ik__type_support.s"
-	@echo "... rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.o"
-	@echo "... rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.i"
-	@echo "... rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/get_position__type_support.s"
-	@echo "... rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.o"
-	@echo "... rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.i"
-	@echo "... rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_js__type_support.s"
+	@echo "... rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.o"
+	@echo "... rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.i"
+	@echo "... rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.s"
 	@echo "... rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.o"
 	@echo "... rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.i"
 	@echo "... rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/get_position__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_js__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/robot_fk__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/solve_ik__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/solve_ik__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/solve_ik__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/get_position__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_js__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.s"

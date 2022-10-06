@@ -1,0 +1,15 @@
+[0.068s] Invoking command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces -- -j12 -l12
+[0.126s] [  2%] Built target cocoa_kinematics_interfaces__cpp
+[0.135s] [ 12%] Built target cocoa_kinematics_interfaces__rosidl_generator_c
+[0.158s] [ 23%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_cpp
+[0.166s] [ 33%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp
+[0.168s] [ 43%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_c
+[0.169s] [ 53%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.175s] [ 64%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c
+[0.210s] [ 74%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c
+[0.237s] [ 74%] Built target cocoa_kinematics_interfaces
+[0.261s] [ 76%] Built target cocoa_kinematics_interfaces__py
+[0.293s] [ 84%] Built target cocoa_kinematics_interfaces__python
+[0.321s] [ 89%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_c__pyext
+[0.328s] [ 94%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.329s] [100%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c__pyext

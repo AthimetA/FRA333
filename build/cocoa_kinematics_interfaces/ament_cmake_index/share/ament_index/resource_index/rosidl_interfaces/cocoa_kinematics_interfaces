@@ -1,11 +1,7 @@
-srv/GetPosition.idl
-srv/GetPosition.srv
-srv/GetPosition_Request.msg
-srv/GetPosition_Response.msg
-srv/RobotJS.idl
-srv/RobotJS.srv
-srv/RobotJS_Request.msg
-srv/RobotJS_Response.msg
+srv/RobotFK.idl
+srv/RobotFK.srv
+srv/RobotFK_Request.msg
+srv/RobotFK_Response.msg
 srv/SolveIK.idl
 srv/SolveIK.srv
 srv/SolveIK_Request.msg

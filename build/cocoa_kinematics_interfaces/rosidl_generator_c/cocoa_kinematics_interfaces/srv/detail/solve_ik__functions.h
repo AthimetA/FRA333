@@ -66,6 +66,32 @@ ROSIDL_GENERATOR_C_PUBLIC_cocoa_kinematics_interfaces
 void
 cocoa_kinematics_interfaces__srv__SolveIK_Request__destroy(cocoa_kinematics_interfaces__srv__SolveIK_Request * msg);
 
+/// Check for srv/SolveIK message equality.
+/**
+ * \param[in] lhs The message on the left hand size of the equality operator.
+ * \param[in] rhs The message on the right hand size of the equality operator.
+ * \return true if messages are equal, otherwise false.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_cocoa_kinematics_interfaces
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Request__are_equal(const cocoa_kinematics_interfaces__srv__SolveIK_Request * lhs, const cocoa_kinematics_interfaces__srv__SolveIK_Request * rhs);
+
+/// Copy a srv/SolveIK message.
+/**
+ * This functions performs a deep copy, as opposed to the shallow copy that
+ * plain assignment yields.
+ *
+ * \param[in] input The source message pointer.
+ * \param[out] output The target message pointer, which must
+ *   have been initialized before calling this function.
+ * \return true if successful, or false if either pointer is null
+ *   or memory allocation fails.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_cocoa_kinematics_interfaces
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Request__copy(
+  const cocoa_kinematics_interfaces__srv__SolveIK_Request * input,
+  cocoa_kinematics_interfaces__srv__SolveIK_Request * output);
 
 /// Initialize array of srv/SolveIK messages.
 /**
@@ -117,6 +143,33 @@ ROSIDL_GENERATOR_C_PUBLIC_cocoa_kinematics_interfaces
 void
 cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__destroy(cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence * array);
 
+/// Check for srv/SolveIK message array equality.
+/**
+ * \param[in] lhs The message array on the left hand size of the equality operator.
+ * \param[in] rhs The message array on the right hand size of the equality operator.
+ * \return true if message arrays are equal in size and content, otherwise false.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_cocoa_kinematics_interfaces
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__are_equal(const cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence * lhs, const cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence * rhs);
+
+/// Copy an array of srv/SolveIK messages.
+/**
+ * This functions performs a deep copy, as opposed to the shallow copy that
+ * plain assignment yields.
+ *
+ * \param[in] input The source array pointer.
+ * \param[out] output The target array pointer, which must
+ *   have been initialized before calling this function.
+ * \return true if successful, or false if either pointer
+ *   is null or memory allocation fails.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_cocoa_kinematics_interfaces
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__copy(
+  const cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence * input,
+  cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence * output);
+
 /// Initialize srv/SolveIK message.
 /**
  * If the init function is called twice for the same message without
@@ -165,6 +218,32 @@ ROSIDL_GENERATOR_C_PUBLIC_cocoa_kinematics_interfaces
 void
 cocoa_kinematics_interfaces__srv__SolveIK_Response__destroy(cocoa_kinematics_interfaces__srv__SolveIK_Response * msg);
 
+/// Check for srv/SolveIK message equality.
+/**
+ * \param[in] lhs The message on the left hand size of the equality operator.
+ * \param[in] rhs The message on the right hand size of the equality operator.
+ * \return true if messages are equal, otherwise false.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_cocoa_kinematics_interfaces
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Response__are_equal(const cocoa_kinematics_interfaces__srv__SolveIK_Response * lhs, const cocoa_kinematics_interfaces__srv__SolveIK_Response * rhs);
+
+/// Copy a srv/SolveIK message.
+/**
+ * This functions performs a deep copy, as opposed to the shallow copy that
+ * plain assignment yields.
+ *
+ * \param[in] input The source message pointer.
+ * \param[out] output The target message pointer, which must
+ *   have been initialized before calling this function.
+ * \return true if successful, or false if either pointer is null
+ *   or memory allocation fails.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_cocoa_kinematics_interfaces
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Response__copy(
+  const cocoa_kinematics_interfaces__srv__SolveIK_Response * input,
+  cocoa_kinematics_interfaces__srv__SolveIK_Response * output);
 
 /// Initialize array of srv/SolveIK messages.
 /**
@@ -215,6 +294,33 @@ cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__create(size_t size
 ROSIDL_GENERATOR_C_PUBLIC_cocoa_kinematics_interfaces
 void
 cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__destroy(cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence * array);
+
+/// Check for srv/SolveIK message array equality.
+/**
+ * \param[in] lhs The message array on the left hand size of the equality operator.
+ * \param[in] rhs The message array on the right hand size of the equality operator.
+ * \return true if message arrays are equal in size and content, otherwise false.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_cocoa_kinematics_interfaces
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__are_equal(const cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence * lhs, const cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence * rhs);
+
+/// Copy an array of srv/SolveIK messages.
+/**
+ * This functions performs a deep copy, as opposed to the shallow copy that
+ * plain assignment yields.
+ *
+ * \param[in] input The source array pointer.
+ * \param[out] output The target array pointer, which must
+ *   have been initialized before calling this function.
+ * \return true if successful, or false if either pointer
+ *   is null or memory allocation fails.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_cocoa_kinematics_interfaces
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__copy(
+  const cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence * input,
+  cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence * output);
 
 #ifdef __cplusplus
 }

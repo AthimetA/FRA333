@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-from cmath import cos, sin
-from math import sqrt
 import sys
 from tabnanny import check
 import rclpy
@@ -9,7 +7,7 @@ from rclpy.node import Node
 from rclpy.qos import QoSProfile
 from sensor_msgs.msg import JointState
 from cocoa_kinematics.cocoa_module import dummy_function, dummy_var
-from cocoa_kinematics_interfaces.srv import RobotJS, SolveIK
+from cocoa_kinematics_interfaces.srv import RobotFK, SolveIK
 import numpy as np
 
 class CocoaStatePublisher(Node):
@@ -26,7 +24,7 @@ class CocoaStatePublisher(Node):
         self.timer = self.create_timer(1/self.rate, self.timer_callback)
         
         # Create a service to get the robot joint state
-        self.set_joint_state = self.create_service(RobotJS, 'set_joint', self.get_joint_state_callback)
+        self.set_joint_state = self.create_service(RobotFK, 'set_joint', self.get_joint_state_callback)
         # Create a service to set the robot position and orientation
         self.set_robot_IK = self.create_service(SolveIK, 'slove_ik', self.set_inverse_kinematics_callback)
         
@@ -35,7 +33,7 @@ class CocoaStatePublisher(Node):
         self.cocoa_joint_state.position = self.cocoa_config
         self.joint_pub.publish(self.cocoa_joint_state)
     
-    def get_joint_state_callback(self, request: RobotJS.Request, response : RobotJS.Response):
+    def get_joint_state_callback(self, request: RobotFK.Request, response : RobotFK.Response):
         [l1,l2,l3,l4] = [0.1360,0.2620,0.18575,0.1700]
         # input: [q1,q2,q3,q3] in degree
         self.cocoa_config = [np.radians(request.jointstate.position[0]),np.radians(request.jointstate.position[1])
@@ -69,11 +67,11 @@ class CocoaStatePublisher(Node):
             q2 = np.arctan2(sin_q2,cos_q2)
             # solve for q4
             q4 = phi - q2 - q3
-            self.cocoa_config = [q1,q2,q3,q4]
-            # self.get_logger().info('-----------------------------------------------')
-            # self.get_logger().info('A2**2 : %f, A3**2 : %f, sqrt : %f' % (A2**2,A3**2,np.sqrt(A2**2+A3**2)))
-            # self.get_logger().info('q1: %f, q2: %f, q3: %f, q4: %f phi: %f' % (q1,q2,q3,q4,q2+q3+q4))
-            # self.get_logger().info('-----------------------------------------------')
+            if(self.check_IK_joint_limit(q1, q2, q3, q4)):
+                self.cocoa_config = [q1,q2,q3,q4]
+            else :
+                self.cocoa_config = [0.0,0.0,0.0,0.0]
+                response.flag = False
             response.jointstate.position = self.cocoa_config
         else:
             self.cocoa_config = [0.0,0.0,0.0,0.0]
@@ -82,21 +80,23 @@ class CocoaStatePublisher(Node):
     
     def check_IK_solution_exist(self, x, y, z, phi, r1, r2):
         [l1,l2,l3,l4] = [0.1360,0.2620,0.18575,0.1700]
-        A2 = (r1*np.sqrt(x**2+y**2))-(l4*np.cos(phi))
-        A3 = z-l1-(l4*np.sin(phi))
         Dxy = r1*np.sqrt(x**2+y**2)*np.cos(phi)
         Dz = (z-l1) * np.sin(phi)
-        # self.get_logger().info('***********************************************')        
-        # self.get_logger().info('Dxy: %f, Dz: %f' % (Dxy,Dz))
-        # self.get_logger().info('***********************************************')
-        if (l2-l3 < np.sqrt(A2**2+A3**2) < l2+l3):
-            if (Dxy+Dz)>= l4 and Dxy*Dz*2 > 0 :
-                if(Dxy+Dz-np.sqrt(2*Dxy*Dz))>=l4 : 
-                        return True
-            if (Dxy+Dz)<= l4 and Dxy*Dz*2 > 0:
-                if(Dxy+Dz+np.sqrt(2*Dxy*Dz))<=l4 : 
-                        return True
+        if (Dxy+Dz)>= l4 and Dxy*Dz*2 > 0 :
+            if(Dxy+Dz-np.sqrt(2*Dxy*Dz))>=l4 : 
+                    return True
+        if (Dxy+Dz)<= l4 and Dxy*Dz*2 > 0:
+            if(Dxy+Dz+np.sqrt(2*Dxy*Dz))<=l4 : 
+                    return True
+        self.get_logger().info('IK solution does not exist')
         return False
+    
+    def check_IK_joint_limit(self, q1, q2, q3, q4):
+        if (-np.pi<= q1 <= np.pi) and (-np.pi/6 <= q2 <= np.pi/6) and (-np.pi/3 <= q3 <= np.pi/2) and (-np.pi/2 <= q4 <= np.pi/6):
+            return True
+        else:
+            self.get_logger().info('IK joint limit exceed')
+            return False
 
 def main(args=None):
     rclpy.init(args=args)

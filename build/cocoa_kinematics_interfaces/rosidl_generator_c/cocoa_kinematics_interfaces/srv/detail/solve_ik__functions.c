@@ -8,6 +8,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "rcutils/allocator.h"
+
 // Include directives for member types
 // Member `position`
 #include "geometry_msgs/msg/detail/point__functions.h"
@@ -42,17 +44,66 @@ cocoa_kinematics_interfaces__srv__SolveIK_Request__fini(cocoa_kinematics_interfa
   // r
 }
 
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Request__are_equal(const cocoa_kinematics_interfaces__srv__SolveIK_Request * lhs, const cocoa_kinematics_interfaces__srv__SolveIK_Request * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // position
+  if (!geometry_msgs__msg__Point__are_equal(
+      &(lhs->position), &(rhs->position)))
+  {
+    return false;
+  }
+  // jointorientation
+  if (lhs->jointorientation != rhs->jointorientation) {
+    return false;
+  }
+  // r
+  for (size_t i = 0; i < 2; ++i) {
+    if (lhs->r[i] != rhs->r[i]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Request__copy(
+  const cocoa_kinematics_interfaces__srv__SolveIK_Request * input,
+  cocoa_kinematics_interfaces__srv__SolveIK_Request * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // position
+  if (!geometry_msgs__msg__Point__copy(
+      &(input->position), &(output->position)))
+  {
+    return false;
+  }
+  // jointorientation
+  output->jointorientation = input->jointorientation;
+  // r
+  for (size_t i = 0; i < 2; ++i) {
+    output->r[i] = input->r[i];
+  }
+  return true;
+}
+
 cocoa_kinematics_interfaces__srv__SolveIK_Request *
 cocoa_kinematics_interfaces__srv__SolveIK_Request__create()
 {
-  cocoa_kinematics_interfaces__srv__SolveIK_Request * msg = (cocoa_kinematics_interfaces__srv__SolveIK_Request *)malloc(sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Request));
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  cocoa_kinematics_interfaces__srv__SolveIK_Request * msg = (cocoa_kinematics_interfaces__srv__SolveIK_Request *)allocator.allocate(sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Request), allocator.state);
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Request));
   bool success = cocoa_kinematics_interfaces__srv__SolveIK_Request__init(msg);
   if (!success) {
-    free(msg);
+    allocator.deallocate(msg, allocator.state);
     return NULL;
   }
   return msg;
@@ -61,10 +112,11 @@ cocoa_kinematics_interfaces__srv__SolveIK_Request__create()
 void
 cocoa_kinematics_interfaces__srv__SolveIK_Request__destroy(cocoa_kinematics_interfaces__srv__SolveIK_Request * msg)
 {
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     cocoa_kinematics_interfaces__srv__SolveIK_Request__fini(msg);
   }
-  free(msg);
+  allocator.deallocate(msg, allocator.state);
 }
 
 
@@ -74,9 +126,11 @@ cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__init(cocoa_kinemati
   if (!array) {
     return false;
   }
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   cocoa_kinematics_interfaces__srv__SolveIK_Request * data = NULL;
+
   if (size) {
-    data = (cocoa_kinematics_interfaces__srv__SolveIK_Request *)calloc(size, sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Request));
+    data = (cocoa_kinematics_interfaces__srv__SolveIK_Request *)allocator.zero_allocate(size, sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Request), allocator.state);
     if (!data) {
       return false;
     }
@@ -93,7 +147,7 @@ cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__init(cocoa_kinemati
       for (; i > 0; --i) {
         cocoa_kinematics_interfaces__srv__SolveIK_Request__fini(&data[i - 1]);
       }
-      free(data);
+      allocator.deallocate(data, allocator.state);
       return false;
     }
   }
@@ -109,6 +163,8 @@ cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__fini(cocoa_kinemati
   if (!array) {
     return;
   }
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -116,7 +172,7 @@ cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__fini(cocoa_kinemati
     for (size_t i = 0; i < array->capacity; ++i) {
       cocoa_kinematics_interfaces__srv__SolveIK_Request__fini(&array->data[i]);
     }
-    free(array->data);
+    allocator.deallocate(array->data, allocator.state);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -130,13 +186,14 @@ cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__fini(cocoa_kinemati
 cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence *
 cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__create(size_t size)
 {
-  cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence * array = (cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence *)malloc(sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence));
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence * array = (cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence *)allocator.allocate(sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence), allocator.state);
   if (!array) {
     return NULL;
   }
   bool success = cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__init(array, size);
   if (!success) {
-    free(array);
+    allocator.deallocate(array, allocator.state);
     return NULL;
   }
   return array;
@@ -145,10 +202,68 @@ cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__create(size_t size)
 void
 cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__destroy(cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence * array)
 {
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__fini(array);
   }
-  free(array);
+  allocator.deallocate(array, allocator.state);
+}
+
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__are_equal(const cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence * lhs, const cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!cocoa_kinematics_interfaces__srv__SolveIK_Request__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence__copy(
+  const cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence * input,
+  cocoa_kinematics_interfaces__srv__SolveIK_Request__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Request);
+    cocoa_kinematics_interfaces__srv__SolveIK_Request * data =
+      (cocoa_kinematics_interfaces__srv__SolveIK_Request *)realloc(output->data, allocation_size);
+    if (!data) {
+      return false;
+    }
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!cocoa_kinematics_interfaces__srv__SolveIK_Request__init(&data[i])) {
+        /* free currently allocated and return false */
+        for (; i-- > output->capacity; ) {
+          cocoa_kinematics_interfaces__srv__SolveIK_Request__fini(&data[i]);
+        }
+        free(data);
+        return false;
+      }
+    }
+    output->data = data;
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!cocoa_kinematics_interfaces__srv__SolveIK_Request__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
 }
 
 
@@ -182,17 +297,56 @@ cocoa_kinematics_interfaces__srv__SolveIK_Response__fini(cocoa_kinematics_interf
   // flag
 }
 
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Response__are_equal(const cocoa_kinematics_interfaces__srv__SolveIK_Response * lhs, const cocoa_kinematics_interfaces__srv__SolveIK_Response * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // jointstate
+  if (!sensor_msgs__msg__JointState__are_equal(
+      &(lhs->jointstate), &(rhs->jointstate)))
+  {
+    return false;
+  }
+  // flag
+  if (lhs->flag != rhs->flag) {
+    return false;
+  }
+  return true;
+}
+
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Response__copy(
+  const cocoa_kinematics_interfaces__srv__SolveIK_Response * input,
+  cocoa_kinematics_interfaces__srv__SolveIK_Response * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // jointstate
+  if (!sensor_msgs__msg__JointState__copy(
+      &(input->jointstate), &(output->jointstate)))
+  {
+    return false;
+  }
+  // flag
+  output->flag = input->flag;
+  return true;
+}
+
 cocoa_kinematics_interfaces__srv__SolveIK_Response *
 cocoa_kinematics_interfaces__srv__SolveIK_Response__create()
 {
-  cocoa_kinematics_interfaces__srv__SolveIK_Response * msg = (cocoa_kinematics_interfaces__srv__SolveIK_Response *)malloc(sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Response));
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  cocoa_kinematics_interfaces__srv__SolveIK_Response * msg = (cocoa_kinematics_interfaces__srv__SolveIK_Response *)allocator.allocate(sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Response), allocator.state);
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Response));
   bool success = cocoa_kinematics_interfaces__srv__SolveIK_Response__init(msg);
   if (!success) {
-    free(msg);
+    allocator.deallocate(msg, allocator.state);
     return NULL;
   }
   return msg;
@@ -201,10 +355,11 @@ cocoa_kinematics_interfaces__srv__SolveIK_Response__create()
 void
 cocoa_kinematics_interfaces__srv__SolveIK_Response__destroy(cocoa_kinematics_interfaces__srv__SolveIK_Response * msg)
 {
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     cocoa_kinematics_interfaces__srv__SolveIK_Response__fini(msg);
   }
-  free(msg);
+  allocator.deallocate(msg, allocator.state);
 }
 
 
@@ -214,9 +369,11 @@ cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__init(cocoa_kinemat
   if (!array) {
     return false;
   }
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   cocoa_kinematics_interfaces__srv__SolveIK_Response * data = NULL;
+
   if (size) {
-    data = (cocoa_kinematics_interfaces__srv__SolveIK_Response *)calloc(size, sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Response));
+    data = (cocoa_kinematics_interfaces__srv__SolveIK_Response *)allocator.zero_allocate(size, sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Response), allocator.state);
     if (!data) {
       return false;
     }
@@ -233,7 +390,7 @@ cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__init(cocoa_kinemat
       for (; i > 0; --i) {
         cocoa_kinematics_interfaces__srv__SolveIK_Response__fini(&data[i - 1]);
       }
-      free(data);
+      allocator.deallocate(data, allocator.state);
       return false;
     }
   }
@@ -249,6 +406,8 @@ cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__fini(cocoa_kinemat
   if (!array) {
     return;
   }
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -256,7 +415,7 @@ cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__fini(cocoa_kinemat
     for (size_t i = 0; i < array->capacity; ++i) {
       cocoa_kinematics_interfaces__srv__SolveIK_Response__fini(&array->data[i]);
     }
-    free(array->data);
+    allocator.deallocate(array->data, allocator.state);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -270,13 +429,14 @@ cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__fini(cocoa_kinemat
 cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence *
 cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__create(size_t size)
 {
-  cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence * array = (cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence *)malloc(sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence));
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence * array = (cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence *)allocator.allocate(sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence), allocator.state);
   if (!array) {
     return NULL;
   }
   bool success = cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__init(array, size);
   if (!success) {
-    free(array);
+    allocator.deallocate(array, allocator.state);
     return NULL;
   }
   return array;
@@ -285,8 +445,66 @@ cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__create(size_t size
 void
 cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__destroy(cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence * array)
 {
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__fini(array);
   }
-  free(array);
+  allocator.deallocate(array, allocator.state);
+}
+
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__are_equal(const cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence * lhs, const cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!cocoa_kinematics_interfaces__srv__SolveIK_Response__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence__copy(
+  const cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence * input,
+  cocoa_kinematics_interfaces__srv__SolveIK_Response__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(cocoa_kinematics_interfaces__srv__SolveIK_Response);
+    cocoa_kinematics_interfaces__srv__SolveIK_Response * data =
+      (cocoa_kinematics_interfaces__srv__SolveIK_Response *)realloc(output->data, allocation_size);
+    if (!data) {
+      return false;
+    }
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!cocoa_kinematics_interfaces__srv__SolveIK_Response__init(&data[i])) {
+        /* free currently allocated and return false */
+        for (; i-- > output->capacity; ) {
+          cocoa_kinematics_interfaces__srv__SolveIK_Response__fini(&data[i]);
+        }
+        free(data);
+        return false;
+      }
+    }
+    output->data = data;
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!cocoa_kinematics_interfaces__srv__SolveIK_Response__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
 }

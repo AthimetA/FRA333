@@ -1,0 +1,7 @@
+[  1%] Built target my_first_package__cpp
+[ 12%] Built target my_first_package__rosidl_generator_c
+[ 14%] Built target cpp_node_test
+[ 37%] Built target my_first_package__rosidl_typesupport_cpp
+[ 37%] Built target my_first_package__rosidl_typesupport_introspection_cpp
+[ 48%] Built target my_first_package__rosidl_typesupport_c
+[ 59%] Built target my_first_package__rosidl_typesupport_introspection_c

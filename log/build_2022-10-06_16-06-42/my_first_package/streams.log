@@ -1,0 +1,13 @@
+[0.054s] Invoking command in '/home/azthorax/fra333_ws/build/my_first_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/my_first_package -- -j12 -l12
+[0.116s] [  2%] Built target cpp_node_test
+[0.126s] [ 13%] Built target my_first_package__rosidl_generator_c
+[0.127s] [ 14%] Built target my_first_package__cpp
+[0.147s] make[2]: *** No rule to make target '/opt/ros/foxy/lib/libfastrtps.so.2.1.1', needed by 'libmy_first_package__rosidl_typesupport_fastrtps_cpp.so'.  Stop.
+[0.150s] make[1]: *** [CMakeFiles/Makefile2:381: CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[0.151s] make[1]: *** Waiting for unfinished jobs....
+[0.153s] [ 25%] Built target my_first_package__rosidl_typesupport_c
+[0.158s] [ 37%] Built target my_first_package__rosidl_typesupport_introspection_cpp
+[0.159s] [ 48%] Built target my_first_package__rosidl_typesupport_introspection_c
+[0.167s] [ 59%] Built target my_first_package__rosidl_typesupport_cpp
+[0.168s] make: *** [Makefile:141: all] Error 2
+[0.170s] Invoked command in '/home/azthorax/fra333_ws/build/my_first_package' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/my_first_package -- -j12 -l12
