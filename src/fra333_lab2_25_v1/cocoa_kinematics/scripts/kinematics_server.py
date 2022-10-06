@@ -16,12 +16,13 @@ class CocoaStatePublisher(Node):
         qos_profile = QoSProfile(depth=10)
         # Cocoa link length in meter
         self.link_length = [0.1360,0.2620,0.18575,0.1700]
+        self.home_config = [0.0,0.0,0.0,0.0] # [q1,q2,q3,q4]
 
         # Create a timer to update the robot state
         self.timer = self.create_timer(1/self.rate, self.timer_callback)
         # Create a publisher for the joint state
         self.cocoa_joint_state = JointState()
-        self.cocoa_config = [0.0,0.0,0.0,0.0] # [q1,q2,q3,q4]
+        self.cocoa_config = self.home_config 
         self.cocoa_joint_state.name = ["joint_rev_b_0", "joint_rev_0_1", "joint_rev_1_2","joint_rev_2_3"]
         self.joint_pub = self.create_publisher(JointState, 'joint_states', qos_profile)
         
@@ -53,7 +54,6 @@ class CocoaStatePublisher(Node):
         phi = np.radians(request.jointorientation)
         [r1,r2] = request.r
         if(self.check_IK_solution_exist(x, y, z, phi, r1, r2)):
-            response.flag = True
             # input: [x,y,z] in meter orientation in degree
             # solve for q1
             A2 = (r1*np.sqrt(x**2+y**2))-(l4*np.cos(phi))
@@ -70,35 +70,32 @@ class CocoaStatePublisher(Node):
             # solve for q4
             q4 = phi - q2 - q3
             if(self.check_IK_joint_limit(q1, q2, q3, q4)):
+                response.flag = True
                 self.cocoa_config = [q1,q2,q3,q4]
             else :
-                self.cocoa_config = [0.0,0.0,0.0,0.0]
-                response.flag = False
-            response.jointstate.position = self.cocoa_config
+                response.flag = False   
+                self.cocoa_config = self.home_config
         else:
-            self.cocoa_config = [0.0,0.0,0.0,0.0]
             response.flag = False
+            self.cocoa_config = self.home_config
+        response.jointstate.position = self.cocoa_config
         return response
     
     def check_IK_solution_exist(self, x, y, z, phi, r1, r2):
         [l1,l2,l3,l4] = self.link_length
-        Dxy = r1*np.sqrt(x**2+y**2)*np.cos(phi)
-        Dz = (z-l1) * np.sin(phi)
-        if (Dxy+Dz)>= l4 and Dxy*Dz*2 > 0 :
-            if(Dxy+Dz-np.sqrt(2*Dxy*Dz))>=l4 : 
-                    return True
-        if (Dxy+Dz)<= l4 and Dxy*Dz*2 > 0:
-            if(Dxy+Dz+np.sqrt(2*Dxy*Dz))<=l4 : 
-                    return True
+        A0 = (x**2)+(y**2)+((z-l1)**2)+(l4**2)
+        A1 = 2*l4*((r1*np.cos(phi)*np.sqrt(x**2+y**2))+((z-l4)*np.sin(phi)))
+        A = A0-A1
+        if (l2-l3) <= np.sqrt(A) <= (l2+l3) and A >= 0:  
+            return True
         self.get_logger().info('IK solution does not exist')
         return False
     
     def check_IK_joint_limit(self, q1, q2, q3, q4):
         if (-np.pi<= q1 <= np.pi) and (-np.pi/6 <= q2 <= np.pi/6) and (-np.pi/3 <= q3 <= np.pi/2) and (-np.pi/2 <= q4 <= np.pi/6):
             return True
-        else:
-            self.get_logger().info('IK joint limit exceed')
-            return False
+        self.get_logger().info('IK joint limit exceed')
+        return False
 
 def main(args=None):
     rclpy.init(args=args)
