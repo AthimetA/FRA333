@@ -11,6 +11,7 @@ import numpy as np
 class CocoaStatePublisher(Node):
     def __init__(self):
         super().__init__('cocoa_state_publisher')
+        # define publisher rate
         self.rate = 10
         qos_profile = QoSProfile(depth=10)
         # Cocoa link length in meter
