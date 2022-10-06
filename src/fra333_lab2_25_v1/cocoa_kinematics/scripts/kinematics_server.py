@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 
 import sys
-from tabnanny import check
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
 from sensor_msgs.msg import JointState
-from cocoa_kinematics.cocoa_module import dummy_function, dummy_var
-from cocoa_kinematics_interfaces.srv import RobotFK, SolveIK
+from cocoa_kinematics_interfaces.srv import CocoaFK, SolveIK
 import numpy as np
 
 class CocoaStatePublisher(Node):
@@ -15,16 +13,19 @@ class CocoaStatePublisher(Node):
         super().__init__('cocoa_state_publisher')
         self.rate = 10
         qos_profile = QoSProfile(depth=10)
+        # Cocoa link length in meter
+        self.link_length = [0.1360,0.2620,0.18575,0.1700]
 
         # Create a timer to update the robot state
+        self.timer = self.create_timer(1/self.rate, self.timer_callback)
+        # Create a publisher for the joint state
         self.cocoa_joint_state = JointState()
         self.cocoa_config = [0.0,0.0,0.0,0.0] # [q1,q2,q3,q4]
         self.cocoa_joint_state.name = ["joint_rev_b_0", "joint_rev_0_1", "joint_rev_1_2","joint_rev_2_3"]
         self.joint_pub = self.create_publisher(JointState, 'joint_states', qos_profile)
-        self.timer = self.create_timer(1/self.rate, self.timer_callback)
         
         # Create a service to get the robot joint state
-        self.set_joint_state = self.create_service(RobotFK, 'set_joint', self.get_joint_state_callback)
+        self.set_joint_state = self.create_service(CocoaFK, 'set_joint', self.get_joint_state_callback)
         # Create a service to set the robot position and orientation
         self.set_robot_IK = self.create_service(SolveIK, 'slove_ik', self.set_inverse_kinematics_callback)
         
@@ -33,8 +34,8 @@ class CocoaStatePublisher(Node):
         self.cocoa_joint_state.position = self.cocoa_config
         self.joint_pub.publish(self.cocoa_joint_state)
     
-    def get_joint_state_callback(self, request: RobotFK.Request, response : RobotFK.Response):
-        [l1,l2,l3,l4] = [0.1360,0.2620,0.18575,0.1700]
+    def get_joint_state_callback(self, request: CocoaFK.Request, response : CocoaFK.Response):
+        [l1,l2,l3,l4] = self.link_length
         # input: [q1,q2,q3,q3] in degree
         self.cocoa_config = [np.radians(request.jointstate.position[0]),np.radians(request.jointstate.position[1])
                          ,np.radians(request.jointstate.position[2]),np.radians(request.jointstate.position[3])]
@@ -46,7 +47,7 @@ class CocoaStatePublisher(Node):
         return response
     
     def set_inverse_kinematics_callback(self, request: SolveIK.Request, response : SolveIK.Response):
-        [l1,l2,l3,l4] = [0.1360,0.2620,0.18575,0.1700]
+        [l1,l2,l3,l4] = self.link_length
         [x,y,z] = [request.position.x,request.position.y,request.position.z]
         phi = np.radians(request.jointorientation)
         [r1,r2] = request.r
@@ -79,7 +80,7 @@ class CocoaStatePublisher(Node):
         return response
     
     def check_IK_solution_exist(self, x, y, z, phi, r1, r2):
-        [l1,l2,l3,l4] = [0.1360,0.2620,0.18575,0.1700]
+        [l1,l2,l3,l4] = self.link_length
         Dxy = r1*np.sqrt(x**2+y**2)*np.cos(phi)
         Dz = (z-l1) * np.sin(phi)
         if (Dxy+Dz)>= l4 and Dxy*Dz*2 > 0 :

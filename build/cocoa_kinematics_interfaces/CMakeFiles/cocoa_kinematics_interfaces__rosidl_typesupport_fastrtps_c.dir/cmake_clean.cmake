@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.cpp.o"
+  "CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__type_support_c.cpp.o"
   "CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support_c.cpp.o"
   "libcocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.pdb"
   "libcocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.so"
-  "rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__rosidl_typesupport_fastrtps_c.h"
-  "rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support_c.cpp"
 )

@@ -102,9 +102,9 @@ CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir
  /usr/include/python3.8/warnings.h
  /usr/include/python3.8/weakrefobject.h
  rosidl_generator_c/cocoa_kinematics_interfaces/msg/rosidl_generator_c__visibility_control.h
- rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.h
- rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__struct.h
- rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__type_support.h
+ rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__functions.h
+ rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__struct.h
+ rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__type_support.h
  rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.h
  rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__struct.h
  rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.h

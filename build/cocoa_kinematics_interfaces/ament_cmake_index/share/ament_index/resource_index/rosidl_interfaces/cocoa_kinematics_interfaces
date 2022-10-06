@@ -1,7 +1,7 @@
-srv/RobotFK.idl
-srv/RobotFK.srv
-srv/RobotFK_Request.msg
-srv/RobotFK_Response.msg
+srv/CocoaFK.idl
+srv/CocoaFK.srv
+srv/CocoaFK_Request.msg
+srv/CocoaFK_Response.msg
 srv/SolveIK.idl
 srv/SolveIK.srv
 srv/SolveIK_Request.msg

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_robot_fk_s.c
+/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_cocoa_fk_s.c
 Python.h
 -
 stdbool.h
@@ -15,10 +15,10 @@ numpy/ndarrayobject.h
 /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_py/cocoa_kinematics_interfaces/srv/numpy/ndarrayobject.h
 rosidl_runtime_c/visibility_control.h
 /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_py/cocoa_kinematics_interfaces/srv/rosidl_runtime_c/visibility_control.h
-cocoa_kinematics_interfaces/srv/detail/robot_fk__struct.h
-/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_py/cocoa_kinematics_interfaces/srv/cocoa_kinematics_interfaces/srv/detail/robot_fk__struct.h
-cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.h
-/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_py/cocoa_kinematics_interfaces/srv/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.h
+cocoa_kinematics_interfaces/srv/detail/cocoa_fk__struct.h
+/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_py/cocoa_kinematics_interfaces/srv/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__struct.h
+cocoa_kinematics_interfaces/srv/detail/cocoa_fk__functions.h
+/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_py/cocoa_kinematics_interfaces/srv/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__functions.h
 
 /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_solve_ik_s.c
 Python.h
@@ -680,7 +680,7 @@ cpython/unicodeobject.h
 
 rosidl_generator_c/cocoa_kinematics_interfaces/msg/rosidl_generator_c__visibility_control.h
 
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__functions.h
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__functions.h
 stdbool.h
 -
 stdlib.h
@@ -689,10 +689,10 @@ rosidl_runtime_c/visibility_control.h
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/rosidl_runtime_c/visibility_control.h
 cocoa_kinematics_interfaces/msg/rosidl_generator_c__visibility_control.h
 rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/cocoa_kinematics_interfaces/msg/rosidl_generator_c__visibility_control.h
-cocoa_kinematics_interfaces/srv/detail/robot_fk__struct.h
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/cocoa_kinematics_interfaces/srv/detail/robot_fk__struct.h
+cocoa_kinematics_interfaces/srv/detail/cocoa_fk__struct.h
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__struct.h
 
-rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/robot_fk__struct.h
+rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__struct.h
 stdbool.h
 -
 stddef.h

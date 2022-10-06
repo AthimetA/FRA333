@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/robot_fk__type_support.cpp
+/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/cocoa_fk__type_support.cpp
 cstddef
 /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/cstddef
 rosidl_runtime_c/message_type_support_struct.h
 /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/rosidl_runtime_c/message_type_support_struct.h
-cocoa_kinematics_interfaces/srv/detail/robot_fk__struct.hpp
-/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/cocoa_kinematics_interfaces/srv/detail/robot_fk__struct.hpp
+cocoa_kinematics_interfaces/srv/detail/cocoa_fk__struct.hpp
+/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__struct.hpp
 rosidl_typesupport_cpp/identifier.hpp
 /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/rosidl_typesupport_cpp/identifier.hpp
 rosidl_typesupport_cpp/message_type_support.hpp
@@ -198,7 +198,7 @@ vector
 builtin_interfaces/msg/detail/time__struct.hpp
 /opt/ros/foxy/include/std_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.hpp
 
-rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/robot_fk__struct.hpp
+rosidl_generator_cpp/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
