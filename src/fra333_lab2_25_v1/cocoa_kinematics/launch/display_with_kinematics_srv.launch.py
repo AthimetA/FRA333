@@ -17,7 +17,7 @@ def generate_launch_description():
     #
     package_name = 'cocoa_description'
     # path_to_package = get_package_share_directory(package_name)
-    sub_folder = 'launch'
+    sub_folder = 'launch'    # launch_description.add_action(joint_state_publisher_gui)
     file_name = 'display.launch.py'
     
     display = IncludeLaunchDescription(
@@ -35,13 +35,11 @@ def generate_launch_description():
         package='cocoa_kinematics',
         executable='kinematics_server.py',
     )
-        
     
-    ### How to run joint_state_publisher_gui ###
-    joint_state_publisher_gui = Node(package='joint_state_publisher_gui',
-                                        executable='joint_state_publisher_gui',
-                                        name='joint_state_publisher_gui'
-    )
+    # Launch Description
+    launch_description = LaunchDescription()
+    launch_description.add_action(display)
+    launch_description.add_action(kinematics_server)
 
     # Service call to set joint values
     # ros2 service call /set_joint cocoa_kinematics_interfaces/srv/RobotJS 
@@ -52,12 +50,7 @@ def generate_launch_description():
         shell=True
     )
     
-    # Launch Description
-    launch_description = LaunchDescription()
-    launch_description.add_action(display)
-    launch_description.add_action(kinematics_server)
     # launch_description.add_action(srv_call_set_joint)
-    # launch_description.add_action(joint_state_publisher_gui)
     return launch_description
 
 def main(args=None):
