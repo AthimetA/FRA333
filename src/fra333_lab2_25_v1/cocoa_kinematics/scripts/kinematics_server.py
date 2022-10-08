@@ -59,11 +59,11 @@ class CocoaStatePublisher(Node):
             A2 = (r1*np.sqrt(x**2+y**2))-(l4*np.cos(phi))
             A3 = z-l1-(l4*np.sin(phi))
             q1 = np.arctan2(y/r1,x/r1)
-            # solve for q2
+            # solve for q3
             sin_q3 = (A2**2+A3**2-l2**2-l3**2)/(2*l2*l3)
             cos_q3 = r2*np.sqrt(1-sin_q3**2)
             q3 = np.arctan2(sin_q3,cos_q3)
-            # solve for q3
+            # solve for q2
             sin_q2 = (-A2*(l2+l3*sin_q3)) + A3*l3*cos_q3
             cos_q2 = A2*l3*cos_q3 + (A3*(l2+l3*sin_q3))
             q2 = np.arctan2(sin_q2,cos_q2)
