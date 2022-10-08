@@ -29,7 +29,7 @@ class CocoaStatePublisher(Node):
         # Create a service to get the robot joint state
         self.set_joint_state = self.create_service(CocoaFK, 'set_joint', self.get_joint_state_callback)
         # Create a service to set the robot position and orientation
-        self.set_robot_IK = self.create_service(SolveIK, 'slove_ik', self.set_inverse_kinematics_callback)
+        self.set_robot_IK = self.create_service(SolveIK, 'solve_ik', self.set_inverse_kinematics_callback)
         
     def timer_callback(self):
         self.cocoa_joint_state.header.stamp = self.get_clock().now().to_msg()
