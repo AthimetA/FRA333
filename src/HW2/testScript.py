@@ -14,9 +14,17 @@ def import_file():
             print("source code file: " + file)
             exec("from {} import endEffectorJacobianHW2, checkSingularityHW2, computeEffortHW2".format(file[:-3]), globals())
             
+# def load_json():
+#     data_json = {}
+#     with open('testCase.json','r') as f:
+#         data_json = json.load(f)
+#     return data_json
+
 def load_json():
     data_json = {}
-    with open('testCase.json','r') as f:
+    path = os.path.dirname(os.path.abspath(__file__))
+    testcasefile = os.path.join(path, "testCase.json")
+    with open(testcasefile,'r') as f:
         data_json = json.load(f)
     return data_json
 
