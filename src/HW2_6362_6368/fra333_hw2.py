@@ -43,14 +43,14 @@ def endEffectorJacobianHW2(q):
         [[111. 112. 113.]
         [121. 122. 123.]
         [131. 132. 133.]]
-    '''
-    # Since all the joints are revolute, the Jacobian p = 1
-    rho = [1,1,1]
-    
+    '''    
     # Pick the rotation matrix of each joint (Frame[i]) via GlobalFrame
     R0_1 = R[:,:,0] # Frame[1] via GlobalFrame
     R0_2 = R[:,:,1] # Frame[2] via GlobalFrame
     R0_3 = R[:,:,2] # Frame[3] via GlobalFrame
+
+    # Since all the joints are revolute, the Jacobian p = 1
+    rho = [1,1,1]
     
     # Find the Jacobian matrix of angular velocity for End Effector
     Z = np.array([[0],[0],[1]]) # Z axis of Local Frame [3x1]
