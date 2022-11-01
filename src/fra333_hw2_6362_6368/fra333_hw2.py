@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from concurrent.futures import thread
 import numpy as np
 import math
 from HW2_utils import FKHW2
@@ -7,7 +6,7 @@ from HW2_utils import FKHW2
 '''
     Name:   Athimet Aiewcharoen 63340500068
             Siwatchanat Khamhongsa 63340500062
-    Date:   30/10/2022
+    Date:   2/11/2022
     Description: Homework 2
 '''
 
