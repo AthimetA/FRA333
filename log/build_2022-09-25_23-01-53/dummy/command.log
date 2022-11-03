@@ -1,4 +1,0 @@
-Invoking command in '/home/azthorax/fra333_ws/build/dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/azthorax/fra333_ws/install/my_first_package:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/dummy -- -j12 -l12
-Invoked command in '/home/azthorax/fra333_ws/build/dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/azthorax/fra333_ws/install/my_first_package:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/dummy -- -j12 -l12
-Invoking command in '/home/azthorax/fra333_ws/build/dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/azthorax/fra333_ws/install/my_first_package:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/dummy
-Invoked command in '/home/azthorax/fra333_ws/build/dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/azthorax/fra333_ws/install/my_first_package:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/dummy

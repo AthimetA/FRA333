@@ -1,1 +1,0 @@
-/home/azthorax/fra333_ws/src/my_first_package/launch/02_via_point_follower.launch.py

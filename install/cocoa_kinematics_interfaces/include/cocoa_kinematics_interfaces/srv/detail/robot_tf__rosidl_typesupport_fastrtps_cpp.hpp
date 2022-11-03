@@ -1,1 +1,0 @@
-/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/robot_tf__rosidl_typesupport_fastrtps_cpp.hpp

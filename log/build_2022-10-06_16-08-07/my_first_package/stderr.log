@@ -1,4 +1,0 @@
-make[2]: *** No rule to make target '/opt/ros/foxy/lib/libfastrtps.so.2.1.1', needed by 'libmy_first_package__rosidl_typesupport_fastrtps_cpp.so'.  Stop.
-make[1]: *** [CMakeFiles/Makefile2:381: CMakeFiles/my_first_package__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
-make[1]: *** Waiting for unfinished jobs....
-make: *** [Makefile:141: all] Error 2

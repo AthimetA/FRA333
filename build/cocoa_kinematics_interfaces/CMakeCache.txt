@@ -444,12 +444,6 @@ foonathan_memory_DIR:PATH=/opt/ros/foxy/lib/foonathan_memory/cmake
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/foxy/share/geometry_msgs/cmake
 
-//The directory containing a CMake configuration file for libstatistics_collector.
-libstatistics_collector_DIR:PATH=/opt/ros/foxy/share/libstatistics_collector/cmake
-
-//The directory containing a CMake configuration file for libyaml_vendor.
-libyaml_vendor_DIR:PATH=/opt/ros/foxy/share/libyaml_vendor/cmake
-
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
 
@@ -459,24 +453,6 @@ pkgcfg_lib__OPENSSL_ssl:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
 //The directory containing a CMake configuration file for python_cmake_module.
 python_cmake_module_DIR:PATH=/opt/ros/foxy/share/python_cmake_module/cmake
 
-//The directory containing a CMake configuration file for rcl.
-rcl_DIR:PATH=/opt/ros/foxy/share/rcl/cmake
-
-//The directory containing a CMake configuration file for rcl_interfaces.
-rcl_interfaces_DIR:PATH=/opt/ros/foxy/share/rcl_interfaces/cmake
-
-//The directory containing a CMake configuration file for rcl_logging_spdlog.
-rcl_logging_spdlog_DIR:PATH=/opt/ros/foxy/share/rcl_logging_spdlog/cmake
-
-//The directory containing a CMake configuration file for rcl_yaml_param_parser.
-rcl_yaml_param_parser_DIR:PATH=/opt/ros/foxy/share/rcl_yaml_param_parser/cmake
-
-//The directory containing a CMake configuration file for rclcpp.
-rclcpp_DIR:PATH=/opt/ros/foxy/share/rclcpp/cmake
-
-//The directory containing a CMake configuration file for rclpy.
-rclpy_DIR:PATH=/opt/ros/foxy/share/rclpy/cmake
-
 //The directory containing a CMake configuration file for rcpputils.
 rcpputils_DIR:PATH=/opt/ros/foxy/share/rcpputils/cmake
 
@@ -485,15 +461,6 @@ rcutils_DIR:PATH=/opt/ros/foxy/share/rcutils/cmake
 
 //The directory containing a CMake configuration file for rmw.
 rmw_DIR:PATH=/opt/ros/foxy/share/rmw/cmake
-
-//The directory containing a CMake configuration file for rmw_implementation.
-rmw_implementation_DIR:PATH=/opt/ros/foxy/share/rmw_implementation/cmake
-
-//The directory containing a CMake configuration file for rmw_implementation_cmake.
-rmw_implementation_cmake_DIR:PATH=/opt/ros/foxy/share/rmw_implementation_cmake/cmake
-
-//The directory containing a CMake configuration file for rosgraph_msgs.
-rosgraph_msgs_DIR:PATH=/opt/ros/foxy/share/rosgraph_msgs/cmake
 
 //The directory containing a CMake configuration file for rosidl_adapter.
 rosidl_adapter_DIR:PATH=/opt/ros/foxy/share/rosidl_adapter/cmake
@@ -546,26 +513,11 @@ rosidl_typesupport_introspection_cpp_DIR:PATH=/opt/ros/foxy/share/rosidl_typesup
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/foxy/share/sensor_msgs/cmake
 
-//The directory containing a CMake configuration file for spdlog.
-spdlog_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/spdlog
-
-//The directory containing a CMake configuration file for spdlog_vendor.
-spdlog_vendor_DIR:PATH=/opt/ros/foxy/share/spdlog_vendor/cmake
-
-//The directory containing a CMake configuration file for statistics_msgs.
-statistics_msgs_DIR:PATH=/opt/ros/foxy/share/statistics_msgs/cmake
-
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/foxy/share/std_msgs/cmake
 
-//The directory containing a CMake configuration file for tracetools.
-tracetools_DIR:PATH=/opt/ros/foxy/share/tracetools/cmake
-
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint
-
-//The directory containing a CMake configuration file for yaml.
-yaml_DIR:PATH=/opt/ros/foxy/cmake
 
 
 ########################
@@ -650,14 +602,6 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
-//Test CMAKE_HAVE_LIBC_PTHREAD
-CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
-//Have library pthreads
-CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
-//Have library pthread
-CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
-//Have include pthread.h
-CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces
@@ -733,8 +677,6 @@ FIND_PACKAGE_MESSAGE_DETAILS_PythonExtra:INTERNAL=[.so][/usr/include/python3.8][
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.8.10(3.5)]
 //Details about finding PythonLibs
 FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython3.8.so][/usr/include/python3.8][v3.8.10(3.5)]
-//Details about finding Threads
-FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
 OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_INCLUDE_DIR

@@ -1,9 +1,0 @@
-/home/azthorax/fra333_ws/build/my_first_package/rosidl_adapter/my_first_package:srv/RandGoal.idl
-/home/azthorax/fra333_ws/build/my_first_package/rosidl_adapter/my_first_package:srv/SetGoal.idl
-/home/azthorax/fra333_ws/build/my_first_package/rosidl_adapter/my_first_package:srv/AthSum.idl
-/home/azthorax/fra333_ws/build/my_first_package/rosidl_adapter/my_first_package:msg/Num.idl
-/home/azthorax/fra333_ws/build/my_first_package/rosidl_adapter/my_first_package:msg/Sphere.idl
-/home/azthorax/fra333_ws/build/my_first_package/rosidl_adapter/my_first_package:msg/AddBook.idl
-/home/azthorax/fra333_ws/build/my_first_package/rosidl_adapter/my_first_package:srv/AthSum3.idl
-/home/azthorax/fra333_ws/build/my_first_package/rosidl_adapter/my_first_package:srv/SetNoise.idl
-/home/azthorax/fra333_ws/build/my_first_package/rosidl_adapter/my_first_package:action/Fibonacci.idl

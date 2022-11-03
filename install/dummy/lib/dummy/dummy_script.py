@@ -1,1 +1,0 @@
-/home/azthorax/fra333_ws/src/dummy/scripts/dummy_script.py

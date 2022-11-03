@@ -1,8 +1,0 @@
-CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
-  rosidl_generate_interfaces() the passed file 'srv/SetPose.srv' doesn't
-  exist relative to the CMAKE_CURRENT_SOURCE_DIR
-  '/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces'
-Call Stack (most recent call first):
-  CMakeLists.txt:39 (rosidl_generate_interfaces)
-
-
