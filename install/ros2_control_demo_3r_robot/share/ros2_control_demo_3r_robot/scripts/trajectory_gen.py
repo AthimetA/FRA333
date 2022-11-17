@@ -1,1 +1,1 @@
-/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot/scripts/trajectory_gen.py
+/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main/scripts/trajectory_gen.py

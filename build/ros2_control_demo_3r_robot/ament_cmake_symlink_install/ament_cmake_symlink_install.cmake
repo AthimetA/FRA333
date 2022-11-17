@@ -311,58 +311,58 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
 
 # install(FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
 
-# install(DIRECTORY "/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot/ros2_control_demo_3r_robot/" "DESTINATION" "lib/python3.8/site-packages/ros2_control_demo_3r_robot" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" DIRECTORY "/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot/ros2_control_demo_3r_robot/" "DESTINATION" "lib/python3.8/site-packages/ros2_control_demo_3r_robot" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main/ros2_control_demo_3r_robot/" "DESTINATION" "lib/python3.8/site-packages/ros2_control_demo_3r_robot" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" DIRECTORY "/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main/ros2_control_demo_3r_robot/" "DESTINATION" "lib/python3.8/site-packages/ros2_control_demo_3r_robot" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
 # install(PROGRAMS "scripts/trajectory_gen.py" "DESTINATION" "lib/ros2_control_demo_3r_robot")
-ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" PROGRAMS "scripts/trajectory_gen.py" "DESTINATION" "lib/ros2_control_demo_3r_robot")
+ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" PROGRAMS "scripts/trajectory_gen.py" "DESTINATION" "lib/ros2_control_demo_3r_robot")
 
 # install(DIRECTORY "description" "launch" "config" "scripts" "meshes" "DESTINATION" "share/ros2_control_demo_3r_robot")
-ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" DIRECTORY "description" "launch" "config" "scripts" "meshes" "DESTINATION" "share/ros2_control_demo_3r_robot")
+ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" DIRECTORY "description" "launch" "config" "scripts" "meshes" "DESTINATION" "share/ros2_control_demo_3r_robot")
 
 # install(FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros2_control_demo_3r_robot" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros2_control_demo_3r_robot" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros2_control_demo_3r_robot" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
 # install(FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ros2_control_demo_3r_robot" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ros2_control_demo_3r_robot" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ros2_control_demo_3r_robot" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
 
 # install(FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
 
 # install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
 
 # install(FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot/environment")
 
 # install(FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ros2_control_demo_3r_robot")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ros2_control_demo_3r_robot")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ros2_control_demo_3r_robot")
 
 # install(FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ros2_control_demo_3r_robot")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ros2_control_demo_3r_robot")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ros2_control_demo_3r_robot")
 
 # install(FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ros2_control_demo_3r_robot")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ros2_control_demo_3r_robot")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ros2_control_demo_3r_robot")
 
 # install(FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot")
 
 # install(FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ros2_control_demo_3r_robot")
 
 # install(FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_index/share/ament_index/resource_index/packages/ros2_control_demo_3r_robot" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_index/share/ament_index/resource_index/packages/ros2_control_demo_3r_robot" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_index/share/ament_index/resource_index/packages/ros2_control_demo_3r_robot" "DESTINATION" "share/ament_index/resource_index/packages")
 
 # install(FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_core/ros2_control_demo_3r_robotConfig.cmake" "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_core/ros2_control_demo_3r_robotConfig-version.cmake" "DESTINATION" "share/ros2_control_demo_3r_robot/cmake")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_core/ros2_control_demo_3r_robotConfig.cmake" "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_core/ros2_control_demo_3r_robotConfig-version.cmake" "DESTINATION" "share/ros2_control_demo_3r_robot/cmake")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_core/ros2_control_demo_3r_robotConfig.cmake" "/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot/ament_cmake_core/ros2_control_demo_3r_robotConfig-version.cmake" "DESTINATION" "share/ros2_control_demo_3r_robot/cmake")
 
-# install(FILES "/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot/package.xml" "DESTINATION" "share/ros2_control_demo_3r_robot")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot" FILES "/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot/package.xml" "DESTINATION" "share/ros2_control_demo_3r_robot")
+# install(FILES "/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main/package.xml" "DESTINATION" "share/ros2_control_demo_3r_robot")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main" FILES "/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main/package.xml" "DESTINATION" "share/ros2_control_demo_3r_robot")

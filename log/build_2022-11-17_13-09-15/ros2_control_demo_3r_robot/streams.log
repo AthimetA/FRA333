@@ -1,0 +1,80 @@
+[0.049s] Invoking command in '/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot
+[0.118s] -- The C compiler identification is GNU 9.4.0
+[0.176s] -- The CXX compiler identification is GNU 9.4.0
+[0.182s] -- Check for working C compiler: /usr/bin/cc
+[0.263s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.265s] -- Detecting C compiler ABI info
+[0.349s] -- Detecting C compiler ABI info - done
+[0.364s] -- Detecting C compile features
+[0.364s] -- Detecting C compile features - done
+[0.367s] -- Check for working CXX compiler: /usr/bin/c++
+[0.456s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.458s] -- Detecting CXX compiler ABI info
+[0.554s] -- Detecting CXX compiler ABI info - done
+[0.570s] -- Detecting CXX compile features
+[0.571s] -- Detecting CXX compile features - done
+[0.573s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.574s] -- Found ament_cmake_core: 0.9.11 (/opt/ros/foxy/share/ament_cmake_core/cmake)
+[0.605s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.605s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.886s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.890s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.897s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.022s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.055s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.141s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.168s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.253s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.303s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.305s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.306s] -- Looking for pthread.h
+[1.400s] -- Looking for pthread.h - found
+[1.400s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.488s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.488s] -- Looking for pthread_create in pthreads
+[1.550s] -- Looking for pthread_create in pthreads - not found
+[1.550s] -- Looking for pthread_create in pthread
+[1.616s] -- Looking for pthread_create in pthread - found
+[1.617s] -- Found Threads: TRUE  
+[1.798s] -- Found rclpy: 1.0.11 (/opt/ros/foxy/share/rclpy/cmake)
+[1.914s] -- Configuring done
+[1.919s] -- Generating done
+[1.920s] -- Build files have been written to: /home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot
+[1.931s] Invoked command in '/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot
+[1.932s] Invoking command in '/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot -- -j12 -l12
+[1.983s] Invoked command in '/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot -- -j12 -l12
+[2.014s] Invoking command in '/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot
+[2.232s] -- Install configuration: ""
+[2.233s] -- Execute custom install script
+[2.234s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/environment/pythonpath.sh
+[2.235s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/environment/pythonpath.dsv
+[2.235s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/lib/python3.8/site-packages/ros2_control_demo_3r_robot/__init__.py
+[2.235s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/lib/ros2_control_demo_3r_robot/trajectory_gen.py
+[2.236s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/description/example_gazebo.xacro
+[2.236s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/description/example_include.xacro
+[2.236s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/description/example_robot.urdf.xacro
+[2.236s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/launch/dummy_gazebo.launch.py
+[2.236s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/config/myrobot_controllers.yaml
+[2.236s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/scripts/trajectory_gen.py
+[2.236s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/meshes/link_0.stl
+[2.236s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/meshes/link_1.stl
+[2.236s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/meshes/link_2.stl
+[2.236s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/meshes/link_3.stl
+[2.236s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ament_index/resource_index/package_run_dependencies/ros2_control_demo_3r_robot
+[2.240s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ament_index/resource_index/parent_prefix_path/ros2_control_demo_3r_robot
+[2.240s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/environment/ament_prefix_path.sh
+[2.240s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/environment/ament_prefix_path.dsv
+[2.241s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/environment/path.sh
+[2.242s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/environment/path.dsv
+[2.252s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/local_setup.bash
+[2.262s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/local_setup.sh
+[2.275s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/local_setup.zsh
+[2.281s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/local_setup.dsv
+[2.293s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/package.dsv
+[2.305s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ament_index/resource_index/packages/ros2_control_demo_3r_robot
+[2.317s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/cmake/ros2_control_demo_3r_robotConfig.cmake
+[2.329s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/cmake/ros2_control_demo_3r_robotConfig-version.cmake
+[2.341s] -- Symlinking: /home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/package.xml
+[2.384s] Listing '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/lib/python3.8/site-packages/ros2_control_demo_3r_robot'...
+[2.385s] Compiling '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/lib/python3.8/site-packages/ros2_control_demo_3r_robot/__init__.py'...
+[2.422s] Invoked command in '/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot

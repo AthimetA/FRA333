@@ -386,7 +386,7 @@ rmw_implementation_cmake_DIR:PATH=/opt/ros/foxy/share/rmw_implementation_cmake/c
 ros2_control_demo_3r_robot_BINARY_DIR:STATIC=/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot
 
 //Value Computed by CMake
-ros2_control_demo_3r_robot_SOURCE_DIR:STATIC=/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot
+ros2_control_demo_3r_robot_SOURCE_DIR:STATIC=/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/foxy/share/rosgraph_msgs/cmake
@@ -550,7 +550,7 @@ CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

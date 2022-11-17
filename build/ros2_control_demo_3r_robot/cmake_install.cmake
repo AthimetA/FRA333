@@ -1,4 +1,4 @@
-# Install script for directory: /home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot
+# Install script for directory: /home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot-main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
