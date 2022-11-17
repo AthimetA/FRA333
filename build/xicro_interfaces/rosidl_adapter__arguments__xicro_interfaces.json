@@ -1,0 +1,30 @@
+{
+  "package_name": "xicro_interfaces",
+  "non_idl_tuples": [
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Bool.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Uint8.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Uint16.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Uint32.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Uint64.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Int8.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Int16.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Int32.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Int64.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Float32.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Imu.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/BatteryState.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/JointState.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Temperature.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Point.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Pose.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/PoseWithCovariance.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Quaternion.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Pose2D.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Twist.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/DemoInput.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/DemoOutput.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Vector3.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Time.msg",
+    "/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces:msg/Header.msg"
+  ]
+}

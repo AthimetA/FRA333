@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/build/xicro_interfaces/ament_cmake_environment_hooks/local_setup.bash

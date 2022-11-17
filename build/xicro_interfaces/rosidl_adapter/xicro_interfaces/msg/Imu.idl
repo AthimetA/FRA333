@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from xicro_interfaces/msg/Imu.msg
+// generated code does not contain a copyright notice
+
+#include "xicro_interfaces/msg/Header.idl"
+#include "xicro_interfaces/msg/Quaternion.idl"
+#include "xicro_interfaces/msg/Vector3.idl"
+
+module xicro_interfaces {
+  module msg {
+    typedef float float__9[9];
+    struct Imu {
+      xicro_interfaces::msg::Header header;
+
+      xicro_interfaces::msg::Quaternion orientation;
+
+      float__9 orientation_covariance;
+
+      xicro_interfaces::msg::Vector3 angular_velocity;
+
+      float__9 angular_velocity_covariance;
+
+      xicro_interfaces::msg::Vector3 linear_acceleration;
+
+      float__9 linear_acceleration_covariance;
+    };
+  };
+};

@@ -1,0 +1,4 @@
+source;share/ros2_control_demo_3r_robot/local_setup.bash
+source;share/ros2_control_demo_3r_robot/local_setup.dsv
+source;share/ros2_control_demo_3r_robot/local_setup.sh
+source;share/ros2_control_demo_3r_robot/local_setup.zsh

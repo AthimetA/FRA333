@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/build/package_name/ament_cmake_core/package_nameConfig-version.cmake

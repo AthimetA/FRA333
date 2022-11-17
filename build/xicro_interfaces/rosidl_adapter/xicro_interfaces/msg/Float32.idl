@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from xicro_interfaces/msg/Float32.msg
+// generated code does not contain a copyright notice
+
+
+module xicro_interfaces {
+  module msg {
+    struct Float32 {
+      float data;
+    };
+  };
+};

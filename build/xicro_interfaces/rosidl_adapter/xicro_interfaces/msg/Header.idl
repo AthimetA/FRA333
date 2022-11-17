@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from xicro_interfaces/msg/Header.msg
+// generated code does not contain a copyright notice
+
+#include "xicro_interfaces/msg/Time.idl"
+
+module xicro_interfaces {
+  module msg {
+    struct Header {
+      xicro_interfaces::msg::Time stamp;
+
+      string frame_id;
+    };
+  };
+};

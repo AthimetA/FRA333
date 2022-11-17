@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/build/xicro_interfaces/rosidl_generator_cpp/xicro_interfaces/msg/detail/battery_state__builder.hpp

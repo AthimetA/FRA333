@@ -1,0 +1,28 @@
+[0.072s] Invoking command in '/home/azthorax/fra333_ws/build/package_name': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/package_name -- -j12 -l12
+[0.136s] [100%] Built target cpp_node_test
+[0.157s] Invoked command in '/home/azthorax/fra333_ws/build/package_name' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/package_name -- -j12 -l12
+[0.199s] Invoking command in '/home/azthorax/fra333_ws/build/package_name': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/package_name
+[0.209s] -- Install configuration: ""
+[0.209s] -- Execute custom install script
+[0.211s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/package_name/environment/pythonpath.sh
+[0.211s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/package_name/environment/pythonpath.dsv
+[0.214s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/lib/python3.8/site-packages/package_name/__init__.py
+[0.214s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/lib/package_name/dummy.py
+[0.214s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/lib/package_name/cpp_node_test
+[0.216s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/ament_index/resource_index/package_run_dependencies/package_name
+[0.217s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/ament_index/resource_index/parent_prefix_path/package_name
+[0.217s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/package_name/environment/ament_prefix_path.sh
+[0.217s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/package_name/environment/ament_prefix_path.dsv
+[0.217s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/package_name/environment/path.sh
+[0.217s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/package_name/environment/path.dsv
+[0.217s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/package_name/local_setup.bash
+[0.217s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/package_name/local_setup.sh
+[0.218s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/package_name/local_setup.zsh
+[0.218s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/package_name/local_setup.dsv
+[0.218s] -- Symlinking: /home/azthorax/fra333_ws/install/package_name/share/package_name/package.dsv
+[0.222s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/ament_index/resource_index/packages/package_name
+[0.222s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/package_name/cmake/package_nameConfig.cmake
+[0.222s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/package_name/cmake/package_nameConfig-version.cmake
+[0.223s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/package_name/share/package_name/package.xml
+[0.257s] Listing '/home/azthorax/fra333_ws/install/package_name/lib/python3.8/site-packages/package_name'...
+[0.320s] Invoked command in '/home/azthorax/fra333_ws/build/package_name' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/package_name

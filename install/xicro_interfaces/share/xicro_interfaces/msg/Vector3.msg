@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces/msg/Vector3.msg

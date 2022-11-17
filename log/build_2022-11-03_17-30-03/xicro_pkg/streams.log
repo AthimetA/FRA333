@@ -1,0 +1,36 @@
+[0.070s] Invoking command in '/home/azthorax/fra333_ws/build/xicro_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/xicro_pkg -- -j12 -l12
+[0.133s] Invoked command in '/home/azthorax/fra333_ws/build/xicro_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/xicro_pkg -- -j12 -l12
+[0.192s] Invoking command in '/home/azthorax/fra333_ws/build/xicro_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/xicro_pkg
+[0.201s] -- Install configuration: ""
+[0.201s] -- Execute custom install script
+[0.202s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/environment/pythonpath.sh
+[0.202s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/environment/pythonpath.dsv
+[0.202s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/lib/python3.8/site-packages/xicro_pkg/__init__.py
+[0.202s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/lib/xicro_pkg/gui_xicro.py
+[0.203s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/lib/xicro_pkg/generate_library.py
+[0.203s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/lib/xicro_pkg/generate_xicro_node.py
+[0.203s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/lib/xicro_pkg/fake_Imu_node.py
+[0.203s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/lib/xicro_pkg/xicro_node_read_imu_ID_3_arduino.py
+[0.203s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/config/.Xicro_node_preSetup.txt
+[0.203s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/config/.arduino_cpp_preSetup.txt
+[0.203s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/config/.arduino_h_preSetup.txt
+[0.203s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/config/.stm32_cpp_preSetup.txt
+[0.204s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/config/.stm32_h_preSetup.txt
+[0.205s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/config/setup_xicro.yaml
+[0.207s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/ament_index/resource_index/package_run_dependencies/xicro_pkg
+[0.208s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/ament_index/resource_index/parent_prefix_path/xicro_pkg
+[0.208s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/environment/ament_prefix_path.sh
+[0.208s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/environment/ament_prefix_path.dsv
+[0.208s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/environment/path.sh
+[0.208s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/environment/path.dsv
+[0.208s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/local_setup.bash
+[0.208s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/local_setup.sh
+[0.209s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/local_setup.zsh
+[0.210s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/local_setup.dsv
+[0.210s] -- Symlinking: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/package.dsv
+[0.216s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/ament_index/resource_index/packages/xicro_pkg
+[0.218s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/cmake/xicro_pkgConfig.cmake
+[0.218s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/cmake/xicro_pkgConfig-version.cmake
+[0.220s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/package.xml
+[0.246s] Listing '/home/azthorax/fra333_ws/install/xicro_pkg/lib/python3.8/site-packages/xicro_pkg'...
+[0.338s] Invoked command in '/home/azthorax/fra333_ws/build/xicro_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/xicro_pkg
