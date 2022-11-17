@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+
+  <!-- This is an example of a URDF. -->
+  <!-- As we move through the file, new things to note will be pointed out. -->
+  <!-- It's not meant an example of GOOD design, but an example of some of the various features of URDF/xacro. -->
+
+
+
+  <!-- This will include all the contents of example_include.xacro first. Go check it out! -->
+  <xacro:include filename="cocoa_include.xacro" />
+
+  <!-- This first link called "world" is empty -->
+  <link name="world"></link>
+
+  <!-- A simple fixed joint from our empty world link, to our base. -->
+  <!-- The base origin is offset from the world origin. -->
+  <joint name="world_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="world"/>
+      <child link="link_0"/>        
+  </joint>
+
+  <link name="link_0">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///$(find fra333_lab3_25_v1)/meshes/link_0.stl"/>
+      </geometry>
+      <material name="Grey"/>
+    </visual>
+    <collision>
+        <origin xyz="${link_0_c_offset_x} ${link_0_c_offset_y} ${link_0_c_offset_z}" rpy="0 0 0"/>
+        <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
+        <geometry>
+            <mesh filename="file:///$(find fra333_lab3_25_v1)/meshes/link_0.stl"/>
+            <!-- <cylinder radius="1" length="0.5"/> -->
+        </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <mass value="120" />
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0" />
+    </inertial>
+  </link>
+
+  <joint name="joint_rev_0_1" type="revolute">
+    <parent link="link_0"/>
+    <child link="link_1"/>
+    <origin rpy="0 0 0" xyz="0 0 0.136"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.14" upper="3.14" effort="0.5" velocity="0.5"/>
+  </joint>
+
+  <link name="link_1">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///$(find fra333_lab3_25_v1)/meshes/link_1.stl"/>
+      </geometry>
+      <material name="Orange"/>
+    </visual>
+    <collision>
+        <origin xyz="${link_1_c_offset_x} ${link_1_c_offset_y} ${link_1_c_offset_z}" rpy="0 0 0"/>
+        <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
+        <geometry>
+            <mesh filename="file:///$(find fra333_lab3_25_v1)/meshes/link_1.stl"/>
+            <!-- <box size="2.5 1.5 0.1" /> -->
+        </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <mass value="120" />
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0" />
+    </inertial>
+  </link>
+
+  <joint name="joint_rev_1_2" type="revolute">
+    <parent link="link_1"/>
+    <child link="link_2"/>
+    <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.523" upper="0.523" effort="0.5" velocity="0.5"/>
+  </joint>
+
+  <link name="link_2">
+    <visual>
+      <origin rpy="${link_2_c_offset_x} ${link_2_c_offset_y} ${link_2_c_offset_z}" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///$(find fra333_lab3_25_v1)/meshes/link_2.stl"/>
+      </geometry>
+      <material name="Orange"/>
+    </visual>
+    <collision>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
+        <geometry>
+            <mesh filename="file:///$(find fra333_lab3_25_v1)/meshes/link_2.stl"/>
+            <!-- <box size="2.5 1.5 0.1" /> -->
+        </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <mass value="120" />
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0" />
+    </inertial>
+  </link>
+  
+  <joint name="joint_rev_2_3" type="revolute">
+    <parent link="link_2"/>
+    <child link="link_3"/>
+    <origin rpy="0 0 0" xyz="0 0.261 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.0472" upper="1.5708" effort="0.5" velocity="0.5"/>
+  </joint>
+
+  <link name="link_3">
+    <visual>
+      <origin rpy="${link_3_c_offset_x} ${link_3_c_offset_y} ${link_3_c_offset_z}" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///$(find fra333_lab3_25_v1)/meshes/link_3.stl"/>
+      </geometry>
+      <material name="Blue"/>
+    </visual>
+    <collision>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
+        <geometry>
+            <mesh filename="file:///$(find fra333_lab3_25_v1)/meshes/link_3.stl"/>
+            <!-- <box size="2.5 1.5 0.1" /> -->
+        </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <mass value="120" />
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0" />
+    </inertial>
+  </link>
+
+  <joint name="joint_eff" type="fixed">
+    <parent link="link_3"/>
+    <child link="end_effector"/>
+    <origin rpy="-1.57 0 0" xyz="0.170 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <link name="end_effector">
+  </link>
+
+  <xacro:include filename="cocoa_gazebo.xacro" />
+
+</robot>

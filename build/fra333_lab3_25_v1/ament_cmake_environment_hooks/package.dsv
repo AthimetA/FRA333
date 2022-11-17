@@ -1,0 +1,4 @@
+source;share/fra333_lab3_25_v1/local_setup.bash
+source;share/fra333_lab3_25_v1/local_setup.dsv
+source;share/fra333_lab3_25_v1/local_setup.sh
+source;share/fra333_lab3_25_v1/local_setup.zsh

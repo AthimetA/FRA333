@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/build/fra333_lab3_25_v1/ament_cmake_environment_hooks/pythonpath.sh

@@ -1,0 +1,81 @@
+[0.076s] Invoking command in '/home/azthorax/fra333_ws/build/fra333_lab3_25_v1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab3_25_v1 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/fra333_lab3_25_v1
+[0.144s] -- The C compiler identification is GNU 9.4.0
+[0.221s] -- The CXX compiler identification is GNU 9.4.0
+[0.227s] -- Check for working C compiler: /usr/bin/cc
+[0.331s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.332s] -- Detecting C compiler ABI info
+[0.447s] -- Detecting C compiler ABI info - done
+[0.462s] -- Detecting C compile features
+[0.463s] -- Detecting C compile features - done
+[0.469s] -- Check for working CXX compiler: /usr/bin/c++
+[0.593s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.594s] -- Detecting CXX compiler ABI info
+[0.702s] -- Detecting CXX compiler ABI info - done
+[0.717s] -- Detecting CXX compile features
+[0.717s] -- Detecting CXX compile features - done
+[0.720s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.721s] -- Found ament_cmake_core: 0.9.11 (/opt/ros/foxy/share/ament_cmake_core/cmake)
+[0.759s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.759s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.065s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.070s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.079s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.222s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.260s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.359s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.395s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.499s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.557s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.559s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.560s] -- Looking for pthread.h
+[1.654s] -- Looking for pthread.h - found
+[1.654s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.757s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.757s] -- Looking for pthread_create in pthreads
+[1.826s] -- Looking for pthread_create in pthreads - not found
+[1.826s] -- Looking for pthread_create in pthread
+[1.924s] -- Looking for pthread_create in pthread - found
+[1.925s] -- Found Threads: TRUE  
+[2.103s] -- Found rclpy: 1.0.11 (/opt/ros/foxy/share/rclpy/cmake)
+[2.237s] -- Configuring done
+[2.237s] -- Generating done
+[2.239s] -- Build files have been written to: /home/azthorax/fra333_ws/build/fra333_lab3_25_v1
+[2.251s] Invoked command in '/home/azthorax/fra333_ws/build/fra333_lab3_25_v1' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab3_25_v1 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/fra333_lab3_25_v1
+[2.254s] Invoking command in '/home/azthorax/fra333_ws/build/fra333_lab3_25_v1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/fra333_lab3_25_v1 -- -j12 -l12
+[2.322s] Invoked command in '/home/azthorax/fra333_ws/build/fra333_lab3_25_v1' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/fra333_lab3_25_v1 -- -j12 -l12
+[2.351s] Invoking command in '/home/azthorax/fra333_ws/build/fra333_lab3_25_v1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/fra333_lab3_25_v1
+[2.375s] -- Install configuration: ""
+[2.375s] -- Execute custom install script
+[2.379s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/environment/pythonpath.sh
+[2.379s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/environment/pythonpath.dsv
+[2.382s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/lib/python3.8/site-packages/fra333_lab3_25_v1/__init__.py
+[2.394s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/lib/fra333_lab3_25_v1/trajectory_gen.py
+[2.411s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/example_1.zip
+[2.420s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/example_gazebo.xacro
+[2.432s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/example_include.xacro
+[2.443s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/example_robot.urdf.xacro
+[2.456s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/launch/dummy_gazebo.launch.py
+[2.468s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/config/myrobot_controllers.yaml
+[2.480s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/scripts/trajectory_gen.py
+[2.492s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/link_0.stl
+[2.504s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/link_1.stl
+[2.515s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/link_2.stl
+[2.523s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/link_3.stl
+[2.538s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/ament_index/resource_index/package_run_dependencies/fra333_lab3_25_v1
+[2.549s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/ament_index/resource_index/parent_prefix_path/fra333_lab3_25_v1
+[2.562s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/environment/ament_prefix_path.sh
+[2.573s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/environment/ament_prefix_path.dsv
+[2.584s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/environment/path.sh
+[2.597s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/environment/path.dsv
+[2.609s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/local_setup.bash
+[2.622s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/local_setup.sh
+[2.635s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/local_setup.zsh
+[2.651s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/local_setup.dsv
+[2.662s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/package.dsv
+[2.675s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/ament_index/resource_index/packages/fra333_lab3_25_v1
+[2.686s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/cmake/fra333_lab3_25_v1Config.cmake
+[2.701s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/cmake/fra333_lab3_25_v1Config-version.cmake
+[2.718s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/package.xml
+[2.756s] Listing '/home/azthorax/fra333_ws/install/fra333_lab3_25_v1/lib/python3.8/site-packages/fra333_lab3_25_v1'...
+[2.756s] Compiling '/home/azthorax/fra333_ws/install/fra333_lab3_25_v1/lib/python3.8/site-packages/fra333_lab3_25_v1/__init__.py'...
+[2.819s] Invoked command in '/home/azthorax/fra333_ws/build/fra333_lab3_25_v1' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/fra333_lab3_25_v1
