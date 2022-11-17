@@ -1,0 +1,214 @@
+[0.075s] Invoking command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces
+[0.168s] -- The C compiler identification is GNU 9.4.0
+[0.247s] -- The CXX compiler identification is GNU 9.4.0
+[0.253s] -- Check for working C compiler: /usr/bin/cc
+[0.337s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.338s] -- Detecting C compiler ABI info
+[0.412s] -- Detecting C compiler ABI info - done
+[0.426s] -- Detecting C compile features
+[0.427s] -- Detecting C compile features - done
+[0.430s] -- Check for working CXX compiler: /usr/bin/c++
+[0.524s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.525s] -- Detecting CXX compiler ABI info
+[0.617s] -- Detecting CXX compiler ABI info - done
+[0.636s] -- Detecting CXX compile features
+[0.637s] -- Detecting CXX compile features - done
+[0.639s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.664s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.664s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.938s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.962s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.039s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.042s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.048s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.148s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.181s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.265s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.295s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.378s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.487s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.696s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[2.055s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.248s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.282s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[2.285s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[2.324s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[2.324s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.324s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[2.324s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[2.350s] -- Found PythonExtra: .so  
+[2.488s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.490s] -- Added test 'lint_cmake' to check CMake code style
+[2.493s] -- Added test 'xmllint' to check XML markup files
+[2.504s] -- Configuring done
+[2.586s] -- Generating done
+[2.589s] -- Build files have been written to: /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces
+[2.602s] Invoked command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces
+[2.605s] Invoking command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces -- -j12 -l12
+[2.646s] [35m[1mScanning dependencies of target cocoa_kinematics_interfaces__cpp[0m
+[2.649s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.656s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.006s] [35m[1mScanning dependencies of target cocoa_kinematics_interfaces__rosidl_generator_c[0m
+[3.027s] [  7%] [32mBuilding C object CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__functions.c.o[0m
+[3.027s] [ 10%] [32mBuilding C object CMakeFiles/cocoa_kinematics_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.c.o[0m
+[3.075s] [ 10%] Built target cocoa_kinematics_interfaces__cpp
+[3.086s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.087s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.087s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.090s] [ 20%] [32m[1mLinking C shared library libcocoa_kinematics_interfaces__rosidl_generator_c.so[0m
+[3.132s] [ 20%] Built target cocoa_kinematics_interfaces__rosidl_generator_c
+[3.141s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.143s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.361s] [35m[1mScanning dependencies of target cocoa_kinematics_interfaces__rosidl_typesupport_cpp[0m
+[3.375s] [ 28%] [32mBuilding CXX object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp.o[0m
+[3.379s] [ 30%] [32mBuilding CXX object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoa_kinematics_interfaces/srv/cocoa_fk__type_support.cpp.o[0m
+[3.396s] [35m[1mScanning dependencies of target cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp[0m
+[3.416s] [ 33%] [32mBuilding CXX object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.cpp.o[0m
+[3.418s] [ 35%] [32mBuilding CXX object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__type_support.cpp.o[0m
+[3.485s] [35m[1mScanning dependencies of target cocoa_kinematics_interfaces__rosidl_typesupport_c[0m
+[3.504s] [ 38%] [32mBuilding CXX object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/solve_ik__type_support.cpp.o[0m
+[3.517s] [ 41%] [32mBuilding CXX object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoa_kinematics_interfaces/srv/cocoa_fk__type_support.cpp.o[0m
+[3.543s] [35m[1mScanning dependencies of target cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[3.569s] [ 43%] [32mBuilding CXX object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/solve_ik__type_support.cpp.o[0m
+[3.569s] [ 46%] [32mBuilding CXX object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoa_kinematics_interfaces/srv/detail/dds_fastrtps/cocoa_fk__type_support.cpp.o[0m
+[3.575s] [ 48%] [32m[1mLinking CXX shared library libcocoa_kinematics_interfaces__rosidl_typesupport_c.so[0m
+[3.586s] [35m[1mScanning dependencies of target cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c[0m
+[3.613s] [ 51%] [32mBuilding C object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__type_support.c.o[0m
+[3.623s] [ 53%] [32mBuilding C object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.c.o[0m
+[3.655s] [ 53%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_c
+[3.710s] [ 56%] [32m[1mLinking C shared library libcocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.so[0m
+[3.764s] [ 56%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c
+[3.775s] [ 58%] [32m[1mLinking CXX shared library libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so[0m
+[3.841s] [ 58%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_cpp
+[3.860s] [ 61%] [32m[1mLinking CXX shared library libcocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[4.017s] [ 61%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp
+[4.176s] [ 64%] [32m[1mLinking CXX shared library libcocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.345s] [ 64%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp
+[4.368s] [ 66%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.666s] [35m[1mScanning dependencies of target cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c[0m
+[4.708s] [ 69%] [32mBuilding CXX object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support_c.cpp.o[0m
+[4.708s] [ 71%] [32mBuilding CXX object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__type_support_c.cpp.o[0m
+[5.149s] [ 74%] [32m[1mLinking CXX shared library libcocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[5.335s] [ 74%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c
+[5.387s] [35m[1mScanning dependencies of target cocoa_kinematics_interfaces[0m
+[5.481s] [ 74%] Built target cocoa_kinematics_interfaces
+[5.539s] [35m[1mScanning dependencies of target cocoa_kinematics_interfaces__py[0m
+[5.572s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.569s] [ 76%] Built target cocoa_kinematics_interfaces__py
+[6.591s] [35m[1mScanning dependencies of target cocoa_kinematics_interfaces__python[0m
+[6.648s] [ 82%] [32mBuilding C object CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_solve_ik_s.c.o[0m
+[6.648s] [ 82%] [32mBuilding C object CMakeFiles/cocoa_kinematics_interfaces__python.dir/rosidl_generator_py/cocoa_kinematics_interfaces/srv/_cocoa_fk_s.c.o[0m
+[6.833s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/cocoa_kinematics_interfaces/libcocoa_kinematics_interfaces__python.so[0m
+[6.967s] [ 84%] Built target cocoa_kinematics_interfaces__python
+[6.998s] [35m[1mScanning dependencies of target cocoa_kinematics_interfaces__rosidl_typesupport_c__pyext[0m
+[7.002s] [35m[1mScanning dependencies of target cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[7.019s] [35m[1mScanning dependencies of target cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[7.054s] [ 87%] [32mBuilding C object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/cocoa_kinematics_interfaces/_cocoa_kinematics_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.064s] [ 89%] [32mBuilding C object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/cocoa_kinematics_interfaces/_cocoa_kinematics_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[7.075s] [ 92%] [32mBuilding C object CMakeFiles/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cocoa_kinematics_interfaces/_cocoa_kinematics_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.194s] [ 94%] [32m[1mLinking CXX shared library rosidl_generator_py/cocoa_kinematics_interfaces/cocoa_kinematics_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[7.212s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/cocoa_kinematics_interfaces/cocoa_kinematics_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[7.295s] [100%] [32m[1mLinking C shared library rosidl_generator_py/cocoa_kinematics_interfaces/cocoa_kinematics_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[7.322s] [100%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_c__pyext
+[7.393s] [100%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[7.423s] [100%] Built target cocoa_kinematics_interfaces__rosidl_typesupport_introspection_c__pyext
+[7.463s] Invoked command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces -- -j12 -l12
+[8.032s] Invoking command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces
+[8.060s] -- Install configuration: ""
+[8.060s] -- Execute custom install script
+[8.060s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/ament_index/resource_index/rosidl_interfaces/cocoa_kinematics_interfaces
+[8.090s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/msg/rosidl_generator_c__visibility_control.h
+[8.107s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/cocoa_fk.h
+[8.127s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__functions.h
+[8.173s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__struct.h
+[8.217s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__type_support.h
+[8.239s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__functions.h
+[8.258s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__struct.h
+[8.275s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__type_support.h
+[8.286s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/solve_ik.h
+[8.300s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/library_path.sh
+[8.314s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/library_path.dsv
+[8.329s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.356s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__rosidl_typesupport_fastrtps_c.h
+[8.368s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__rosidl_typesupport_fastrtps_c.h
+[8.380s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_c.so
+[8.393s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.411s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__rosidl_typesupport_fastrtps_cpp.hpp
+[8.423s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__rosidl_typesupport_fastrtps_cpp.hpp
+[8.443s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[8.455s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.491s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__rosidl_typesupport_introspection_c.h
+[8.513s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__rosidl_typesupport_introspection_c.h
+[8.526s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/cocoa_fk.hpp
+[8.544s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__builder.hpp
+[8.570s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__struct.hpp
+[8.610s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__traits.hpp
+[8.638s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__builder.hpp
+[8.656s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__struct.hpp
+[8.680s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__traits.hpp
+[8.692s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/solve_ik.hpp
+[8.716s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/cocoa_fk__rosidl_typesupport_introspection_cpp.hpp
+[8.738s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/include/cocoa_kinematics_interfaces/srv/detail/solve_ik__rosidl_typesupport_introspection_cpp.hpp
+[8.759s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/pythonpath.sh
+[8.826s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/pythonpath.dsv
+[8.843s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/__init__.py
+[8.861s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/srv/__init__.py
+[8.873s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/srv/_cocoa_fk.py
+[8.885s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/srv/_solve_ik.py
+[8.898s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/cocoa_kinematics_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[8.916s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/cocoa_kinematics_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[8.929s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/cocoa_kinematics_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[8.941s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__python.so
+[8.959s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/SolveIK.idl
+[8.971s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/CocoaFK.idl
+[8.984s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/SolveIK.srv
+[8.997s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/SolveIK_Request.msg
+[9.011s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/SolveIK_Response.msg
+[9.025s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/CocoaFK.srv
+[9.035s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/CocoaFK_Request.msg
+[9.043s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/srv/CocoaFK_Response.msg
+[9.052s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/ament_index/resource_index/package_run_dependencies/cocoa_kinematics_interfaces
+[9.060s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/ament_index/resource_index/parent_prefix_path/cocoa_kinematics_interfaces
+[9.068s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/ament_prefix_path.sh
+[9.076s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/ament_prefix_path.dsv
+[9.085s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/path.sh
+[9.095s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/environment/path.dsv
+[9.105s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/local_setup.bash
+[9.113s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/local_setup.sh
+[9.122s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/local_setup.zsh
+[9.130s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/local_setup.dsv
+[9.137s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/package.dsv
+[9.145s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/ament_index/resource_index/packages/cocoa_kinematics_interfaces
+[9.152s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/rosidl_cmake-extras.cmake
+[9.159s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.167s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[9.174s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[9.181s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.189s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.196s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.203s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfacesConfig.cmake
+[9.211s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfacesConfig-version.cmake
+[9.218s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/package.xml
+[9.226s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_generator_c.so
+[9.226s] -- Set runtime path of "/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_generator_c.so" to ""
+[9.226s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.so
+[9.227s] -- Set runtime path of "/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[9.227s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_c.so
+[9.227s] -- Set runtime path of "/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_c.so" to ""
+[9.227s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.so
+[9.228s] -- Set runtime path of "/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[9.228s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so
+[9.228s] -- Set runtime path of "/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/libcocoa_kinematics_interfaces__rosidl_typesupport_cpp.so" to ""
+[9.254s] Compiling '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages/cocoa_kinematics_interfaces/__init__.py'...
+[9.258s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_generator_cExport.cmake
+[9.258s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_generator_cExport-noconfig.cmake
+[9.258s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[9.258s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.258s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_cExport.cmake
+[9.258s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[9.259s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_generator_cppExport.cmake
+[9.259s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[9.259s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.259s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_cppExport.cmake
+[9.259s] -- Installing: /home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/cmake/cocoa_kinematics_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[9.264s] Invoked command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces

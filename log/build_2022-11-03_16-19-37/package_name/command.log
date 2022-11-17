@@ -1,6 +1,0 @@
-Invoking command in '/home/azthorax/fra333_ws/build/package_name': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/lab3/ROS2_package_cpp_python-main/package_name -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/package_name
-Invoked command in '/home/azthorax/fra333_ws/build/package_name' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/lab3/ROS2_package_cpp_python-main/package_name -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/package_name
-Invoking command in '/home/azthorax/fra333_ws/build/package_name': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/package_name -- -j12 -l12
-Invoked command in '/home/azthorax/fra333_ws/build/package_name' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/package_name -- -j12 -l12
-Invoking command in '/home/azthorax/fra333_ws/build/package_name': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/package_name
-Invoked command in '/home/azthorax/fra333_ws/build/package_name' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/package_name
