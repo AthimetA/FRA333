@@ -11,9 +11,10 @@
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/example_robot.urdf.xacro
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/launch/dummy_gazebo.launch.py
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/config/myrobot_controllers.yaml
+/home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/scripts/cal.ipynb
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/scripts/trajectory_gen.py
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/CocoaV4_STL.zip
-/home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/end_effector.STL
+/home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/end_effector.stl
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/link_0.stl
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/link_1.stl
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/link_2.stl

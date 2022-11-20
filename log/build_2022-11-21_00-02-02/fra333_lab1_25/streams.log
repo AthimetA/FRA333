@@ -1,0 +1,72 @@
+[0.070s] Invoking command in '/home/azthorax/fra333_ws/build/fra333_lab1_25': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/fra333_lab1_25
+[0.141s] -- The C compiler identification is GNU 9.4.0
+[0.227s] -- The CXX compiler identification is GNU 9.4.0
+[0.232s] -- Check for working C compiler: /usr/bin/cc
+[0.329s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.330s] -- Detecting C compiler ABI info
+[0.441s] -- Detecting C compiler ABI info - done
+[0.451s] -- Detecting C compile features
+[0.452s] -- Detecting C compile features - done
+[0.455s] -- Check for working CXX compiler: /usr/bin/c++
+[0.605s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.606s] -- Detecting CXX compiler ABI info
+[0.718s] -- Detecting CXX compiler ABI info - done
+[0.734s] -- Detecting CXX compile features
+[0.735s] -- Detecting CXX compile features - done
+[0.739s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.739s] -- Found ament_cmake_core: 0.9.11 (/opt/ros/foxy/share/ament_cmake_core/cmake)
+[0.764s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.764s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.057s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.063s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.073s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.232s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.271s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.374s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.410s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.515s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.572s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.573s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.575s] -- Looking for pthread.h
+[1.692s] -- Looking for pthread.h - found
+[1.692s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.790s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.791s] -- Looking for pthread_create in pthreads
+[1.888s] -- Looking for pthread_create in pthreads - not found
+[1.888s] -- Looking for pthread_create in pthread
+[1.974s] -- Looking for pthread_create in pthread - found
+[1.976s] -- Found Threads: TRUE  
+[2.143s] -- Found rclpy: 1.0.11 (/opt/ros/foxy/share/rclpy/cmake)
+[2.281s] -- Configuring done
+[2.284s] -- Generating done
+[2.286s] -- Build files have been written to: /home/azthorax/fra333_ws/build/fra333_lab1_25
+[2.302s] Invoked command in '/home/azthorax/fra333_ws/build/fra333_lab1_25' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/fra333_lab1_25
+[2.310s] Invoking command in '/home/azthorax/fra333_ws/build/fra333_lab1_25': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/fra333_lab1_25 -- -j12 -l12
+[2.372s] Invoked command in '/home/azthorax/fra333_ws/build/fra333_lab1_25' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/fra333_lab1_25 -- -j12 -l12
+[2.416s] Invoking command in '/home/azthorax/fra333_ws/build/fra333_lab1_25': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/fra333_lab1_25
+[2.430s] -- Install configuration: ""
+[2.432s] -- Execute custom install script
+[2.432s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/environment/pythonpath.sh
+[2.441s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/environment/pythonpath.dsv
+[2.454s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/lib/python3.8/site-packages/fra333_lab1_25/__init__.py
+[2.472s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/lib/fra333_lab1_25/noise_generator.py
+[2.484s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/lib/fra333_lab1_25/velocity_mux.py
+[2.494s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/launch/random_walk.launch.py
+[2.508s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/ament_index/resource_index/package_run_dependencies/fra333_lab1_25
+[2.522s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/ament_index/resource_index/parent_prefix_path/fra333_lab1_25
+[2.537s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/environment/ament_prefix_path.sh
+[2.553s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/environment/ament_prefix_path.dsv
+[2.566s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/environment/path.sh
+[2.578s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/environment/path.dsv
+[2.589s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/local_setup.bash
+[2.601s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/local_setup.sh
+[2.616s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/local_setup.zsh
+[2.629s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/local_setup.dsv
+[2.647s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/package.dsv
+[2.664s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/ament_index/resource_index/packages/fra333_lab1_25
+[2.676s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/cmake/fra333_lab1_25Config.cmake
+[2.688s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/cmake/fra333_lab1_25Config-version.cmake
+[2.702s] -- Symlinking: /home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/package.xml
+[2.760s] Listing '/home/azthorax/fra333_ws/install/fra333_lab1_25/lib/python3.8/site-packages/fra333_lab1_25'...
+[2.760s] Compiling '/home/azthorax/fra333_ws/install/fra333_lab1_25/lib/python3.8/site-packages/fra333_lab1_25/__init__.py'...
+[2.787s] Invoked command in '/home/azthorax/fra333_ws/build/fra333_lab1_25' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/fra333_lab1_25

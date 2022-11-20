@@ -17,7 +17,7 @@ class Trajectory_publisher(Node):
         self.trajectory_publihser = self.create_publisher(JointTrajectory,publish_topic, 10)
         timer_period = 0.1
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.joints = ['joint_1','joint_2','joint_3']
+        self.joints = ['joint_rev_0_1','joint_rev_1_2','joint_rev_2_3']
         self.start_positions = [0.0,0.0,0.0]
         self.goal_positions = [0.5,0.50,0.5]
         self.setpoint_position = self.start_positions

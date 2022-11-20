@@ -1,1 +1,0 @@
-/home/azthorax/fra333_ws/src/lab3/ROS2_package_cpp_python-main/package_name/scripts/dummy.py
