@@ -26,19 +26,20 @@
 
     <xacro:property name="link_0_c_offset_x" value="0.0"/>
     <xacro:property name="link_0_c_offset_y" value="0.0"/>
-    <xacro:property name="link_0_c_offset_z" value="0.0"/>
+    <xacro:property name="link_0_c_offset_z" value="0.009962"/>
 
-    <xacro:property name="link_1_c_offset_x" value="0.0"/>
-    <xacro:property name="link_1_c_offset_y" value="0.0"/>
-    <xacro:property name="link_1_c_offset_z" value="0.0"/>
+    <xacro:property name="link_1_c_offset_x" value="-0.027383"/>
+    <xacro:property name="link_1_c_offset_y" value="0.002656"/>
+    <xacro:property name="link_1_c_offset_z" value="-0.067605"/>
+    <!-- <xacro:property name="link_1_c_offset_z" value="1"/> -->
 
-    <xacro:property name="link_2_c_offset_x" value="0.0"/>
-    <xacro:property name="link_2_c_offset_y" value="0.0"/>
-    <xacro:property name="link_2_c_offset_z" value="0.0"/>
+    <xacro:property name="link_2_c_offset_x" value="-0.010935"/>
+    <xacro:property name="link_2_c_offset_y" value="0.099891"/>
+    <xacro:property name="link_2_c_offset_z" value="-0.003837"/>
 
-    <xacro:property name="link_3_c_offset_x" value="0.0"/>
-    <xacro:property name="link_3_c_offset_y" value="0.0"/>
-    <xacro:property name="link_3_c_offset_z" value="0.0"/>
+    <xacro:property name="link_3_c_offset_x" value="0.077878"/>
+    <xacro:property name="link_3_c_offset_y" value="0.054699"/>
+    <xacro:property name="link_3_c_offset_z" value="0.000125"/>
 
     <xacro:property name="end_c_offset_x" value="0.0"/>
     <xacro:property name="end_c_offset_y" value="0.0"/>
