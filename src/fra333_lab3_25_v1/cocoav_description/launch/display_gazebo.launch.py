@@ -19,7 +19,6 @@ def generate_launch_description():
     pkg_name = 'cocoav_description'
     file_subpath = 'robot/cocoav_robot.urdf.xacro'
 
-
     # Use xacro to process the file
     xacro_file = os.path.join(get_package_share_directory(pkg_name),file_subpath)
     print(xacro_file)
@@ -56,11 +55,27 @@ def generate_launch_description():
         executable="spawner.py",
         arguments=["joint_trajectory_position_controller", "--controller-manager", "/controller_manager"],
     )
-
+    
+    #
+    ## With -d rviz_file_path, you can load the previous setting of rviz
+    #
+    package_name = 'cocoav_description'
+    path_to_package = get_package_share_directory(package_name)
+    sub_folder = 'config'
+    file_name = 'cocoav.rviz'
+    rviz_file_path = os.path.join(path_to_package,sub_folder,file_name) 
+    print(rviz_file_path)
+    rviz = Node(
+       package='rviz2',
+       executable='rviz2',
+       name='rviz',
+       arguments=['-d', rviz_file_path],
+       output='screen')
+    
 
     # Run the node
     return LaunchDescription([
-
+        rviz,
         gazebo,
         node_robot_state_publisher,
         spawn_entity,

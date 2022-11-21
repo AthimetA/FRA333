@@ -1,8 +1,8 @@
-srv/CocoaFK.idl
-srv/CocoaFK.srv
-srv/CocoaFK_Request.msg
-srv/CocoaFK_Response.msg
-srv/SolveIK.idl
-srv/SolveIK.srv
-srv/SolveIK_Request.msg
-srv/SolveIK_Response.msg
+srv/CocoaVFK.idl
+srv/CocoaVFK.srv
+srv/CocoaVFK_Request.msg
+srv/CocoaVFK_Response.msg
+srv/CocoaVIK.idl
+srv/CocoaVIK.srv
+srv/CocoaVIK_Request.msg
+srv/CocoaVIK_Response.msg

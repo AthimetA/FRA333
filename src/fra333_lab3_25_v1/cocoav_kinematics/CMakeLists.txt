@@ -27,7 +27,8 @@ ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
 install(PROGRAMS
-  scripts/kinematics_server.py
+  scripts/fk_ik_server.py
+  scripts/trajectory_gen.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

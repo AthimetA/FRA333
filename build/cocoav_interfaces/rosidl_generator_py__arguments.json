@@ -3,8 +3,8 @@
   "output_dir": "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces",
   "template_dir": "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces:srv/SolveIK.idl",
-    "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces:srv/CocoaFK.idl"
+    "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces:srv/CocoaVIK.idl",
+    "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces:srv/CocoaVFK.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/foxy/share/geometry_msgs/msg/Accel.idl",
@@ -111,8 +111,8 @@
     "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/srv/SolveIK.idl",
-    "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/srv/CocoaFK.idl",
+    "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/srv/CocoaVIK.idl",
+    "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/srv/CocoaVFK.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl",

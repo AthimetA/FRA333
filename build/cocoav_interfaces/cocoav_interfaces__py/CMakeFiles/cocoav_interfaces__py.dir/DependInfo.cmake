@@ -8,10 +8,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_c.c" "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_introspection_c.c" "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/srv/__init__.py" "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
-  "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/srv/_cocoa_fk.py" "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
-  "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/srv/_cocoa_fk_s.c" "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
-  "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/srv/_solve_ik.py" "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
-  "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/srv/_solve_ik_s.c" "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vfk.py" "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vfk_s.c" "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vik.py" "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vik_s.c" "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

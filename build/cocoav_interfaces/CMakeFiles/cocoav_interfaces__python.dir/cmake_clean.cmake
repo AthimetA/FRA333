@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cocoav_interfaces__python.dir/rosidl_generator_py/cocoav_interfaces/srv/_cocoa_fk_s.c.o"
-  "CMakeFiles/cocoav_interfaces__python.dir/rosidl_generator_py/cocoav_interfaces/srv/_solve_ik_s.c.o"
+  "CMakeFiles/cocoav_interfaces__python.dir/rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vfk_s.c.o"
+  "CMakeFiles/cocoav_interfaces__python.dir/rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vik_s.c.o"
   "rosidl_generator_py/cocoav_interfaces/libcocoav_interfaces__python.pdb"
   "rosidl_generator_py/cocoav_interfaces/libcocoav_interfaces__python.so"
 )

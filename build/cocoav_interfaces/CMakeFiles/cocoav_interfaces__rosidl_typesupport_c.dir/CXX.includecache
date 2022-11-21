@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/cocoa_fk__type_support.cpp
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/cocoa_vfk__type_support.cpp
 cstddef
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/cstddef
 rosidl_runtime_c/message_type_support_struct.h
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/rosidl_runtime_c/message_type_support_struct.h
 cocoav_interfaces/msg/rosidl_typesupport_c__visibility_control.h
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/cocoav_interfaces/msg/rosidl_typesupport_c__visibility_control.h
-cocoav_interfaces/srv/detail/cocoa_fk__struct.h
-/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/cocoav_interfaces/srv/detail/cocoa_fk__struct.h
+cocoav_interfaces/srv/detail/cocoa_vfk__struct.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/cocoav_interfaces/srv/detail/cocoa_vfk__struct.h
 rosidl_typesupport_c/identifier.h
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/rosidl_typesupport_c/identifier.h
 rosidl_typesupport_c/message_type_support_dispatch.h
@@ -30,15 +30,15 @@ rosidl_runtime_c/service_type_support_struct.h
 rosidl_typesupport_c/service_type_support_dispatch.h
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/rosidl_typesupport_c/service_type_support_dispatch.h
 
-/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/solve_ik__type_support.cpp
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/cocoa_vik__type_support.cpp
 cstddef
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/cstddef
 rosidl_runtime_c/message_type_support_struct.h
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/rosidl_runtime_c/message_type_support_struct.h
 cocoav_interfaces/msg/rosidl_typesupport_c__visibility_control.h
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/cocoav_interfaces/msg/rosidl_typesupport_c__visibility_control.h
-cocoav_interfaces/srv/detail/solve_ik__struct.h
-/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/cocoav_interfaces/srv/detail/solve_ik__struct.h
+cocoav_interfaces/srv/detail/cocoa_vik__struct.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/cocoav_interfaces/srv/detail/cocoa_vik__struct.h
 rosidl_typesupport_c/identifier.h
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/rosidl_typesupport_c/identifier.h
 rosidl_typesupport_c/message_type_support_dispatch.h
@@ -148,7 +148,7 @@ builtin_interfaces/msg/detail/time__struct.h
 rosidl_runtime_c/string.h
 /opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/string.h
 
-rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_fk__struct.h
+rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vfk__struct.h
 stdbool.h
 -
 stddef.h
@@ -160,7 +160,7 @@ rosidl_generator_c/cocoav_interfaces/srv/detail/sensor_msgs/msg/detail/joint_sta
 geometry_msgs/msg/detail/point__struct.h
 rosidl_generator_c/cocoav_interfaces/srv/detail/geometry_msgs/msg/detail/point__struct.h
 
-rosidl_generator_c/cocoav_interfaces/srv/detail/solve_ik__struct.h
+rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vik__struct.h
 stdbool.h
 -
 stddef.h

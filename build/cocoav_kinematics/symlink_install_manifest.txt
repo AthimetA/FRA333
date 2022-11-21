@@ -1,9 +1,9 @@
 /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/pythonpath.sh
 /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/pythonpath.dsv
 /home/azthorax/fra333_ws/install/cocoav_kinematics/lib/python3.8/site-packages/cocoav_kinematics/__init__.py
-/home/azthorax/fra333_ws/install/cocoav_kinematics/lib/python3.8/site-packages/cocoav_kinematics/cocoa_module.py
-/home/azthorax/fra333_ws/install/cocoav_kinematics/lib/cocoav_kinematics/kinematics_server.py
-/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/launch/display_with_kinematics_srv.launch.py
+/home/azthorax/fra333_ws/install/cocoav_kinematics/lib/cocoav_kinematics/fk_ik_server.py
+/home/azthorax/fra333_ws/install/cocoav_kinematics/lib/cocoav_kinematics/trajectory_gen.py
+/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/launch/display_with_kinematic.launch.py
 /home/azthorax/fra333_ws/install/cocoav_kinematics/share/ament_index/resource_index/package_run_dependencies/cocoav_kinematics
 /home/azthorax/fra333_ws/install/cocoav_kinematics/share/ament_index/resource_index/parent_prefix_path/cocoav_kinematics
 /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/ament_prefix_path.sh

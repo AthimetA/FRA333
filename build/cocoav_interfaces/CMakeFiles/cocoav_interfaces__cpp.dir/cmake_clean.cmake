@@ -1,13 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cocoav_interfaces__cpp"
-  "rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_fk.hpp"
-  "rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_fk__builder.hpp"
-  "rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_fk__struct.hpp"
-  "rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_fk__traits.hpp"
-  "rosidl_generator_cpp/cocoav_interfaces/srv/detail/solve_ik__builder.hpp"
-  "rosidl_generator_cpp/cocoav_interfaces/srv/detail/solve_ik__struct.hpp"
-  "rosidl_generator_cpp/cocoav_interfaces/srv/detail/solve_ik__traits.hpp"
-  "rosidl_generator_cpp/cocoav_interfaces/srv/solve_ik.hpp"
+  "rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vfk.hpp"
+  "rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp"
+  "rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vfk__builder.hpp"
+  "rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vfk__struct.hpp"
+  "rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vfk__traits.hpp"
+  "rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vik__builder.hpp"
+  "rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vik__struct.hpp"
+  "rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vik__traits.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

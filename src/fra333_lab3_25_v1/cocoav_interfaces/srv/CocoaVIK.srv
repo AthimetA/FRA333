@@ -1,0 +1,5 @@
+geometry_msgs/Point position 
+int32[2] r [1,1]
+---
+sensor_msgs/JointState jointstate
+bool flag

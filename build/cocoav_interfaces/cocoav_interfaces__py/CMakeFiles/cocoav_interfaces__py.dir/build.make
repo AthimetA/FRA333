@@ -56,11 +56,11 @@ include cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py.dir/progress.make
 cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_c.c
-cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_solve_ik.py
-cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_cocoa_fk.py
+cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vik.py
+cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vfk.py
 cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/__init__.py
-cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_solve_ik_s.c
-cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_cocoa_fk_s.c
+cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vik_s.c
+cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vfk_s.c
 
 
 rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/lib/rosidl_generator_py/rosidl_generator_py
@@ -76,8 +76,8 @@ rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport
 rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_msg.py.em
 rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv.py.em
-rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/cocoav_interfaces/srv/SolveIK.idl
-rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/cocoav_interfaces/srv/CocoaFK.idl
+rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/cocoav_interfaces/srv/CocoaVIK.idl
+rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/cocoav_interfaces/srv/CocoaVFK.idl
 rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -176,30 +176,30 @@ rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport
 rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_c.c
 
-rosidl_generator_py/cocoav_interfaces/srv/_solve_ik.py: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoav_interfaces/srv/_solve_ik.py
+rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vik.py: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vik.py
 
-rosidl_generator_py/cocoav_interfaces/srv/_cocoa_fk.py: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoav_interfaces/srv/_cocoa_fk.py
+rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vfk.py: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vfk.py
 
 rosidl_generator_py/cocoav_interfaces/srv/__init__.py: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoav_interfaces/srv/__init__.py
 
-rosidl_generator_py/cocoav_interfaces/srv/_solve_ik_s.c: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoav_interfaces/srv/_solve_ik_s.c
+rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vik_s.c: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vik_s.c
 
-rosidl_generator_py/cocoav_interfaces/srv/_cocoa_fk_s.c: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoav_interfaces/srv/_cocoa_fk_s.c
+rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vfk_s.c: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vfk_s.c
 
 cocoav_interfaces__py: cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py
 cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_c.c
-cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_solve_ik.py
-cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_cocoa_fk.py
+cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vik.py
+cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vfk.py
 cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/__init__.py
-cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_solve_ik_s.c
-cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_cocoa_fk_s.c
+cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vik_s.c
+cocoav_interfaces__py: rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vfk_s.c
 cocoav_interfaces__py: cocoav_interfaces__py/CMakeFiles/cocoav_interfaces__py.dir/build.make
 
 .PHONY : cocoav_interfaces__py
