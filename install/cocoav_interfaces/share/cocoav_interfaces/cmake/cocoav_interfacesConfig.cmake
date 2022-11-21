@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/build/cocoav_interfaces/ament_cmake_core/cocoav_interfacesConfig.cmake

@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_cmake/srv/CocoaFK_Request.msg

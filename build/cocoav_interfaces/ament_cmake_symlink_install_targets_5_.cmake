@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/libcocoav_interfaces__python.so" "TARGETS" "cocoav_interfaces__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
