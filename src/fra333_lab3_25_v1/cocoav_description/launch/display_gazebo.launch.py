@@ -13,6 +13,8 @@ from launch.substitutions import Command, FindExecutable, PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
 from launch.event_handlers import OnProcessExit
 
+import sys
+
 def generate_launch_description():
 
     # Specify the name of the package and path to xacro file within the package
@@ -73,12 +75,32 @@ def generate_launch_description():
        output='screen')
     
 
-    # Run the node
-    return LaunchDescription([
-        rviz,
-        gazebo,
-        node_robot_state_publisher,
-        spawn_entity,
-        joint_state_broadcaster_spawner,
-        robot_controller_spawner
-    ])
+    # # Run the node
+    # return LaunchDescription([
+    #     rviz,
+    #     gazebo,
+    #     node_robot_state_publisher,
+    #     spawn_entity,
+    #     joint_state_broadcaster_spawner,
+    #     robot_controller_spawner
+    # ])
+
+
+    launch_description = LaunchDescription()
+    launch_description.add_action(rviz)
+    # launch_description.add_action(gazebo)
+    launch_description.add_action(node_robot_state_publisher)
+    # launch_description.add_action(spawn_entity)
+    # launch_description.add_action(joint_state_broadcaster_spawner)
+    # launch_description.add_action(robot_controller_spawner)
+    return launch_description
+
+def main(args=None):
+    try:
+        generate_launch_description()
+    except KeyboardInterrupt:
+        # quit
+        sys.exit()
+
+if __name__ == '__main__':
+    main()

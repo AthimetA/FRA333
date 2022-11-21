@@ -15,7 +15,7 @@ class CocoaVKinematic(Node):
         self.rate = 10
         qos_profile = QoSProfile(depth=10)
         # Cocoa link length in meter
-        self.link_length = [0.1360,0.26179,0.200]
+        self.link_length = [0.1360,0.262,0.200]
         self.home_config = [0.0,0.0,0.0] # [q1,q2,q3]
 
         # Create a timer to update the robot state
@@ -36,42 +36,49 @@ class CocoaVKinematic(Node):
         self.cocoa_joint_state.position = self.cocoa_config
         self.joint_pub.publish(self.cocoa_joint_state)
     
-    def get_joint_state_callback(self, request: CocoaFK.Request, response : CocoaFK.Response):
-        [l1,l2,l3,l4] = self.link_length
-        # input: [q1,q2,q3,q3] in degree
-        self.cocoa_config = [np.radians(request.jointstate.position[0]),np.radians(request.jointstate.position[1])
-                         ,np.radians(request.jointstate.position[2]),np.radians(request.jointstate.position[3])]
-        [q1,q2,q3,q4] = self.cocoa_config
-        temp = ((-l2*np.sin(q2))+(l3*np.cos(q2+q3))+(l4*np.cos(q2+q3+q4)))
+    def get_joint_state_callback(self, request: CocoaVFK.Request, response : CocoaVFK.Response):
+        [l1,l2,l3] = self.link_length
+        # input: [q1,q2,q3] in degree
+        self.cocoa_config = [np.radians(request.jointstate.position[0]),
+                             np.radians(request.jointstate.position[1]),
+                             np.radians(request.jointstate.position[2]),]
+        [q1,q2,q3] = self.cocoa_config
+        temp = ((-l2*np.sin(q2))+(l3*np.cos(q2+q3)))
         response.positionendeffector.x = temp*np.cos(q1)
         response.positionendeffector.y = temp*np.sin(q1)
-        response.positionendeffector.z = l1 + (l2*np.cos(q2)) + (l3*np.sin(q2+q3)) + (l4*np.sin(q2+q3+q4))
+        response.positionendeffector.z = l1 + (l2*np.cos(q2)) + (l3*np.sin(q2+q3))
         return response
     
-    def set_inverse_kinematics_callback(self, request: SolveIK.Request, response : SolveIK.Response):
-        [l1,l2,l3,l4] = self.link_length
+    def set_inverse_kinematics_callback(self, request: CocoaVIK.Request, response : CocoaVIK.Response):
+        [l1,l2,l3] = self.link_length
         [x,y,z] = [request.position.x,request.position.y,request.position.z]
-        phi = np.radians(request.jointorientation)
         [r1,r2] = request.r
-        if(self.check_IK_solution_exist(x, y, z, phi, r1, r2)):
-            # input: [x,y,z] in meter orientation in degree
+        if(self.check_IK_solution_exist(x, y, z, r1, r2)):
+            # input: [x,y,z] in meter
             # solve for q1
-            A2 = (r1*np.sqrt(x**2+y**2))-(l4*np.cos(phi))
-            A3 = z-l1-(l4*np.sin(phi))
+            self.get_logger().info('x: %f, y: %f, z: %f' % (x,y,z))
             q1 = np.arctan2(y/r1,x/r1)
+            self.get_logger().info('q1: %f' % q1)
             # solve for q3
-            sin_q3 = (A2**2+A3**2-l2**2-l3**2)/(2*l2*l3)
-            cos_q3 = r2*np.sqrt(1-sin_q3**2)
+            sin_q3 = (((z-l1)**2) + (x*x)+(y*y) - (l2*l2) - (l3*l3))/(2*l2*l3)
+            self.get_logger().info('1: %f' % ((z-l1)**2))
+            self.get_logger().info('2: %f' % ((x**2)+(y**2)))
+            self.get_logger().info('3: %f' % (l2*l2))
+            self.get_logger().info('4: %f' % (l3*l3))
+            self.get_logger().info('5: %f' % (2*l2*l3))
+            cos_q3 = r2*np.sqrt(1-(sin_q3**2))
+            self.get_logger().info('sin_q3: %f, cos_q3: %f' % (sin_q3,cos_q3))
             q3 = np.arctan2(sin_q3,cos_q3)
+            self.get_logger().info('q3: %f' % q3)
             # solve for q2
-            sin_q2 = (-A2*(l2+l3*sin_q3)) + A3*l3*cos_q3
-            cos_q2 = A2*l3*cos_q3 + (A3*(l2+l3*sin_q3))
+            temp_q2 = (l2**2 + l3**2 + 2*l2*l3*np.sin(q3))
+            sin_q2 = ((l3*(z-l1)*np.cos(q3)) + (r1*np.sqrt(x**2+y**2)*(l2+l3*np.sin(q3))))/temp_q2
+            cos_q2 = ((-l1*l2)-(l1*l3*np.sin(q3))+(l2*z)+(l3*r1*np.sqrt(x**2+y**2)*np.cos(q3))+(l3*z*np.sin(q3)))/temp_q2
             q2 = np.arctan2(sin_q2,cos_q2)
-            # solve for q4
-            q4 = phi - q2 - q3
-            if(self.check_IK_joint_limit(q1, q2, q3, q4)):
+            self.get_logger().info('q2: %f' % q2)
+            if(self.check_IK_joint_limit(q1, q2, q3)):
                 response.flag = True
-                self.cocoa_config = [q1,q2,q3,q4]
+                self.cocoa_config = [q1,q2,q3]
             else :
                 response.flag = False   
                 self.cocoa_config = self.home_config
@@ -81,21 +88,21 @@ class CocoaVKinematic(Node):
         response.jointstate.position = self.cocoa_config
         return response
     
-    def check_IK_solution_exist(self, x, y, z, phi, r1, r2):
-        [l1,l2,l3,l4] = self.link_length
-        A0 = (x**2)+(y**2)+((z-l1)**2)+(l4**2)
-        A1 = 2*l4*((r1*np.cos(phi)*np.sqrt(x**2+y**2))+((z-l4)*np.sin(phi)))
+    def check_IK_solution_exist(self, x, y, z, r1, r2):
+        [l1,l2,l3] = self.link_length
+        A0 = (x**2)+(y**2)+(z**2)+(l1**2)
+        A1 = 2*z*l1
         A = A0-A1
         if (l2-l3) <= np.sqrt(A) <= (l2+l3) and A >= 0:  
             return True
         self.get_logger().info('IK solution does not exist')
         return False
     
-    def check_IK_joint_limit(self, q1, q2, q3, q4):
-        if (-np.pi<= q1 <= np.pi) and (-np.pi/6 <= q2 <= np.pi/6) and (-np.pi/3 <= q3 <= np.pi/2) and (-np.pi/2 <= q4 <= np.pi/6):
+    def check_IK_joint_limit(self, q1, q2, q3):
+        if (-np.pi<= q1 <= np.pi) and (-np.pi/6 <= q2 <= np.pi/6) and (-np.pi/3 <= q3 <= np.pi/2):
             return True
         self.get_logger().info('IK joint limit exceed')
-        return False
+        return True
 
 def main(args=None):
     rclpy.init(args=args)
