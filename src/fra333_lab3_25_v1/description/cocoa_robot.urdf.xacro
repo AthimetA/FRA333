@@ -5,10 +5,9 @@
   <!-- As we move through the file, new things to note will be pointed out. -->
   <!-- It's not meant an example of GOOD design, but an example of some of the various features of URDF/xacro. -->
 
-
-
   <!-- This will include all the contents of example_include.xacro first. Go check it out! -->
   <xacro:include filename="cocoa_include.xacro" />
+  <xacro:include filename="cocoa_gazebo.xacro" />
 
   <!-- This first link called "world" is empty -->
   <link name="world"></link>
@@ -26,17 +25,15 @@
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="file:///$(find fra333_lab3_25_v1)/meshes/link_0.stl"/>
-        <!-- <cylinder radius="0.21" length="0.020"/> -->
       </geometry>
       <material name="Grey"/>
     </visual>
 
     <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
-        <contact_coefficients mu="0" kp="1.0" kd="1.0"/>
+        <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
         <geometry>
             <mesh filename="file:///$(find fra333_lab3_25_v1)/meshes/link_0.stl"/>
-            <!-- <cylinder radius="0.21" length="0.020"/> -->
         </geometry>
     </collision>
 
@@ -52,7 +49,7 @@
     <child link="link_1"/>
     <origin rpy="0 0 0" xyz="0 0 0.136"/>
     <axis xyz="0 0 1"/>
-    <limit lower="-3.14" upper="3.14" effort="0.5" velocity="0.5"/>
+    <limit lower="-3.14" upper="3.14" effort="1.0" velocity="1.0"/>
   </joint>
 
   <link name="link_1">
@@ -66,10 +63,9 @@
 
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <contact_coefficients mu="0" kp="1.0" kd="1.0"/>
+      <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
       <geometry>
           <mesh filename="file:///$(find fra333_lab3_25_v1)/meshes/link_1.stl"/>
-          <!-- <box size="2.5 1.5 0.1" /> -->
       </geometry>
     </collision>
 
@@ -85,7 +81,7 @@
     <child link="link_2"/>
     <origin rpy="1.5708 -1.5708 0" xyz="0 0 0"/>
     <axis xyz="0 0 1"/>
-    <limit lower="-0.523" upper="0.523" effort="0.5" velocity="0.5"/>
+    <limit lower="-0.523" upper="0.523" effort="1.0" velocity="1.0"/>
   </joint>
 
   <link name="link_2">
@@ -99,10 +95,9 @@
 
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <contact_coefficients mu="0" kp="1.0" kd="1.0"/>
+      <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
       <geometry>
           <mesh filename="file:///$(find fra333_lab3_25_v1)/meshes/link_2.stl"/>
-          <!-- <box size="2.5 1.5 0.1" /> -->
       </geometry>
     </collision>
 
@@ -116,9 +111,9 @@
   <joint name="joint_rev_2_3" type="revolute">
     <parent link="link_2"/>
     <child link="link_3"/>
-    <origin rpy="0 0 0" xyz="0.261 0 0"/>
+    <origin rpy="0 0 0" xyz="0.26179 0 0"/>
     <axis xyz="0 0 1"/>
-    <limit lower="-1.0472" upper="1.5708" effort="0.5" velocity="0.5"/>
+    <limit lower="-1.0472" upper="1.5708" effort="1.0" velocity="1.0"/>
   </joint>
 
   <link name="link_3">
@@ -132,10 +127,9 @@
 
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <contact_coefficients mu="0" kp="1.0" kd="1.0"/>
+      <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
       <geometry>
           <mesh filename="file:///$(find fra333_lab3_25_v1)/meshes/link_3.stl"/>
-          <!-- <box size="2.5 1.5 0.1" /> -->
       </geometry>
     </collision>
 
@@ -146,6 +140,20 @@
     </inertial>
   </link>
 
-  <xacro:include filename="cocoa_gazebo.xacro" />
+  <joint name="joint_eff" type="fixed">
+    <parent link="link_3"/>
+    <child link="end_effector"/>
+    <origin rpy="-1.5708 0 -1.5708" xyz="0 -0.200 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
 
+  <link name="end_effector">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///$(find fra333_lab3_25_v1)/meshes/end_effector.stl"/>
+      </geometry>
+      <material name="Blue"/>
+    </visual>
+  </link>
 </robot>

@@ -110,7 +110,7 @@
     <gazebo reference="link_1">
         <mu1>0.2</mu1>
         <mu2>0.2</mu2>
-        <material>Gazebo/Green</material>
+        <material>Gazebo/Orange</material>
     </gazebo>
 
     <gazebo reference="link_2">
@@ -122,7 +122,7 @@
     <gazebo reference="link_3">
         <mu1>0.2</mu1>
         <mu2>0.2</mu2>
-        <material>Gazebo/Black</material>
+        <material>Gazebo/Blue</material>
     </gazebo>
 
     <!-- The next section shows an example of adding a sensor, in this case a depth camera. -->

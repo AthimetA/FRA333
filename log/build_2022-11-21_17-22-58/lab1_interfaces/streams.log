@@ -1,0 +1,188 @@
+[0.070s] Invoking command in '/home/azthorax/fra333_ws/build/lab1_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab1_25/lab1_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/lab1_interfaces
+[0.149s] -- The C compiler identification is GNU 9.4.0
+[0.226s] -- The CXX compiler identification is GNU 9.4.0
+[0.233s] -- Check for working C compiler: /usr/bin/cc
+[0.330s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.332s] -- Detecting C compiler ABI info
+[0.434s] -- Detecting C compiler ABI info - done
+[0.442s] -- Detecting C compile features
+[0.442s] -- Detecting C compile features - done
+[0.445s] -- Check for working CXX compiler: /usr/bin/c++
+[0.562s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.563s] -- Detecting CXX compiler ABI info
+[0.673s] -- Detecting CXX compiler ABI info - done
+[0.692s] -- Detecting CXX compile features
+[0.692s] -- Detecting CXX compile features - done
+[0.695s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.728s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.728s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.968s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.003s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.101s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.107s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.116s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.235s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.270s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.371s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.400s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[1.467s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.601s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.858s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.949s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.982s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.984s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[2.019s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[2.019s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.019s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[2.019s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[2.049s] -- Found PythonExtra: .so  
+[2.138s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.140s] -- Added test 'lint_cmake' to check CMake code style
+[2.142s] -- Added test 'xmllint' to check XML markup files
+[2.152s] -- Configuring done
+[2.209s] -- Generating done
+[2.212s] -- Build files have been written to: /home/azthorax/fra333_ws/build/lab1_interfaces
+[2.251s] Invoked command in '/home/azthorax/fra333_ws/build/lab1_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab1_25/lab1_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/lab1_interfaces
+[2.256s] Invoking command in '/home/azthorax/fra333_ws/build/lab1_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/lab1_interfaces -- -j12 -l12
+[2.311s] [35m[1mScanning dependencies of target lab1_interfaces__cpp[0m
+[2.318s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.326s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.671s] [  6%] Built target lab1_interfaces__cpp
+[2.685s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.695s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.701s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.716s] [35m[1mScanning dependencies of target lab1_interfaces__rosidl_generator_c[0m
+[2.739s] [ 19%] [32mBuilding C object CMakeFiles/lab1_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lab1_interfaces/srv/detail/set_noise__functions.c.o[0m
+[2.826s] [ 22%] [32m[1mLinking C shared library liblab1_interfaces__rosidl_generator_c.so[0m
+[2.883s] [ 22%] Built target lab1_interfaces__rosidl_generator_c
+[2.893s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.894s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.952s] [35m[1mScanning dependencies of target lab1_interfaces__rosidl_typesupport_cpp[0m
+[2.970s] [ 32%] [32mBuilding CXX object CMakeFiles/lab1_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lab1_interfaces/srv/set_noise__type_support.cpp.o[0m
+[2.996s] [35m[1mScanning dependencies of target lab1_interfaces__rosidl_typesupport_introspection_cpp[0m
+[3.014s] [ 35%] [32mBuilding CXX object CMakeFiles/lab1_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab1_interfaces/srv/detail/set_noise__type_support.cpp.o[0m
+[3.017s] [35m[1mScanning dependencies of target lab1_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[3.049s] [ 38%] [32mBuilding CXX object CMakeFiles/lab1_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab1_interfaces/srv/detail/dds_fastrtps/set_noise__type_support.cpp.o[0m
+[3.199s] [35m[1mScanning dependencies of target lab1_interfaces__rosidl_typesupport_c[0m
+[3.227s] [ 41%] [32mBuilding CXX object CMakeFiles/lab1_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lab1_interfaces/srv/set_noise__type_support.cpp.o[0m
+[3.227s] [35m[1mScanning dependencies of target lab1_interfaces__rosidl_typesupport_introspection_c[0m
+[3.253s] [ 45%] [32mBuilding C object CMakeFiles/lab1_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lab1_interfaces/srv/detail/set_noise__type_support.c.o[0m
+[3.278s] [ 48%] [32m[1mLinking CXX shared library liblab1_interfaces__rosidl_typesupport_c.so[0m
+[3.306s] [ 51%] [32m[1mLinking C shared library liblab1_interfaces__rosidl_typesupport_introspection_c.so[0m
+[3.310s] [ 54%] [32m[1mLinking CXX shared library liblab1_interfaces__rosidl_typesupport_cpp.so[0m
+[3.329s] [ 58%] [32m[1mLinking CXX shared library liblab1_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[3.340s] [ 58%] Built target lab1_interfaces__rosidl_typesupport_c
+[3.345s] [ 58%] Built target lab1_interfaces__rosidl_typesupport_introspection_c
+[3.367s] [ 58%] Built target lab1_interfaces__rosidl_typesupport_cpp
+[3.438s] [ 58%] Built target lab1_interfaces__rosidl_typesupport_introspection_cpp
+[3.576s] [ 61%] [32m[1mLinking CXX shared library liblab1_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.746s] [ 61%] Built target lab1_interfaces__rosidl_typesupport_fastrtps_cpp
+[3.761s] [ 64%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.148s] [35m[1mScanning dependencies of target lab1_interfaces__rosidl_typesupport_fastrtps_c[0m
+[4.179s] [ 67%] [32mBuilding CXX object CMakeFiles/lab1_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab1_interfaces/srv/detail/set_noise__type_support_c.cpp.o[0m
+[4.665s] [ 70%] [32m[1mLinking CXX shared library liblab1_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[4.877s] [ 70%] Built target lab1_interfaces__rosidl_typesupport_fastrtps_c
+[4.905s] [35m[1mScanning dependencies of target lab1_interfaces[0m
+[4.919s] [ 70%] Built target lab1_interfaces
+[4.931s] [35m[1mScanning dependencies of target lab1_interfaces__py[0m
+[4.944s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.390s] [ 74%] Built target lab1_interfaces__py
+[5.400s] [35m[1mScanning dependencies of target lab1_interfaces__python[0m
+[5.436s] [ 77%] [32mBuilding C object CMakeFiles/lab1_interfaces__python.dir/rosidl_generator_py/lab1_interfaces/srv/_set_noise_s.c.o[0m
+[5.542s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/lab1_interfaces/liblab1_interfaces__python.so[0m
+[5.589s] [ 80%] Built target lab1_interfaces__python
+[5.601s] [35m[1mScanning dependencies of target lab1_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[5.601s] [35m[1mScanning dependencies of target lab1_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[5.614s] [35m[1mScanning dependencies of target lab1_interfaces__rosidl_typesupport_c__pyext[0m
+[5.630s] [ 83%] [32mBuilding C object CMakeFiles/lab1_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lab1_interfaces/_lab1_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.633s] [ 87%] [32mBuilding C object CMakeFiles/lab1_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lab1_interfaces/_lab1_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.663s] [ 90%] [32mBuilding C object CMakeFiles/lab1_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lab1_interfaces/_lab1_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[5.741s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/lab1_interfaces/lab1_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.757s] [ 96%] [32m[1mLinking CXX shared library rosidl_generator_py/lab1_interfaces/lab1_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.809s] [100%] [32m[1mLinking C shared library rosidl_generator_py/lab1_interfaces/lab1_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.810s] [100%] Built target lab1_interfaces__rosidl_typesupport_introspection_c__pyext
+[5.890s] [100%] Built target lab1_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[5.921s] [100%] Built target lab1_interfaces__rosidl_typesupport_c__pyext
+[5.963s] Invoked command in '/home/azthorax/fra333_ws/build/lab1_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/lab1_interfaces -- -j12 -l12
+[6.314s] Invoking command in '/home/azthorax/fra333_ws/build/lab1_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/lab1_interfaces
+[6.341s] -- Install configuration: ""
+[6.344s] -- Execute custom install script
+[6.344s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/ament_index/resource_index/rosidl_interfaces/lab1_interfaces
+[6.359s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/msg/rosidl_generator_c__visibility_control.h
+[6.385s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/srv/detail/set_noise__functions.h
+[6.412s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/srv/detail/set_noise__struct.h
+[6.445s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/srv/detail/set_noise__type_support.h
+[6.466s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/srv/set_noise.h
+[6.484s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/environment/library_path.sh
+[6.496s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/environment/library_path.dsv
+[6.509s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.522s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/srv/detail/set_noise__rosidl_typesupport_fastrtps_c.h
+[6.542s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/lib/liblab1_interfaces__rosidl_typesupport_fastrtps_c.so
+[6.578s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.620s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/srv/detail/set_noise__rosidl_typesupport_fastrtps_cpp.hpp
+[6.654s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/lib/liblab1_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[6.675s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.691s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/srv/detail/set_noise__rosidl_typesupport_introspection_c.h
+[6.711s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/srv/detail/set_noise__builder.hpp
+[6.725s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/srv/detail/set_noise__struct.hpp
+[6.740s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/srv/detail/set_noise__traits.hpp
+[6.773s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/srv/set_noise.hpp
+[6.803s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/include/lab1_interfaces/srv/detail/set_noise__rosidl_typesupport_introspection_cpp.hpp
+[6.820s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/environment/pythonpath.sh
+[6.838s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/environment/pythonpath.dsv
+[6.870s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/lib/python3.8/site-packages/lab1_interfaces/__init__.py
+[6.890s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/lib/python3.8/site-packages/lab1_interfaces/srv/__init__.py
+[6.904s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/lib/python3.8/site-packages/lab1_interfaces/srv/_set_noise.py
+[6.946s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/lib/python3.8/site-packages/lab1_interfaces/lab1_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[6.963s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/lib/python3.8/site-packages/lab1_interfaces/lab1_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[6.981s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/lib/python3.8/site-packages/lab1_interfaces/lab1_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[7.005s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/lib/liblab1_interfaces__python.so
+[7.024s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/srv/SetNoise.idl
+[7.050s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/srv/SetNoise.srv
+[7.062s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/srv/SetNoise_Request.msg
+[7.081s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/srv/SetNoise_Response.msg
+[7.105s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/ament_index/resource_index/package_run_dependencies/lab1_interfaces
+[7.121s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/ament_index/resource_index/parent_prefix_path/lab1_interfaces
+[7.160s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/environment/ament_prefix_path.sh
+[7.174s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/environment/ament_prefix_path.dsv
+[7.190s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/environment/path.sh
+[7.213s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/environment/path.dsv
+[7.230s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/local_setup.bash
+[7.245s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/local_setup.sh
+[7.280s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/local_setup.zsh
+[7.327s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/local_setup.dsv
+[7.357s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/package.dsv
+[7.371s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/ament_index/resource_index/packages/lab1_interfaces
+[7.389s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/rosidl_cmake-extras.cmake
+[7.412s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.433s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[7.450s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[7.484s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.500s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.515s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.534s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/lab1_interfacesConfig.cmake
+[7.556s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/lab1_interfacesConfig-version.cmake
+[7.570s] -- Symlinking: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/package.xml
+[7.595s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/lib/liblab1_interfaces__rosidl_generator_c.so
+[7.596s] -- Set runtime path of "/home/azthorax/fra333_ws/install/lab1_interfaces/lib/liblab1_interfaces__rosidl_generator_c.so" to ""
+[7.596s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/lib/liblab1_interfaces__rosidl_typesupport_introspection_c.so
+[7.597s] -- Set runtime path of "/home/azthorax/fra333_ws/install/lab1_interfaces/lib/liblab1_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[7.597s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/lib/liblab1_interfaces__rosidl_typesupport_c.so
+[7.598s] -- Set runtime path of "/home/azthorax/fra333_ws/install/lab1_interfaces/lib/liblab1_interfaces__rosidl_typesupport_c.so" to ""
+[7.598s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/lib/liblab1_interfaces__rosidl_typesupport_introspection_cpp.so
+[7.599s] -- Set runtime path of "/home/azthorax/fra333_ws/install/lab1_interfaces/lib/liblab1_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[7.599s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/lib/liblab1_interfaces__rosidl_typesupport_cpp.so
+[7.600s] -- Set runtime path of "/home/azthorax/fra333_ws/install/lab1_interfaces/lib/liblab1_interfaces__rosidl_typesupport_cpp.so" to ""
+[7.661s] Compiling '/home/azthorax/fra333_ws/install/lab1_interfaces/lib/python3.8/site-packages/lab1_interfaces/__init__.py'...
+[7.674s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/lab1_interfaces__rosidl_generator_cExport.cmake
+[7.674s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/lab1_interfaces__rosidl_generator_cExport-noconfig.cmake
+[7.674s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/lab1_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[7.675s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/lab1_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.675s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/lab1_interfaces__rosidl_typesupport_cExport.cmake
+[7.675s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/lab1_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[7.675s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/lab1_interfaces__rosidl_generator_cppExport.cmake
+[7.676s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/lab1_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[7.676s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/lab1_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.676s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/lab1_interfaces__rosidl_typesupport_cppExport.cmake
+[7.677s] -- Installing: /home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/cmake/lab1_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[7.680s] Invoked command in '/home/azthorax/fra333_ws/build/lab1_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/lab1_interfaces

@@ -40,10 +40,6 @@
     <xacro:property name="link_3_c_offset_y" value="-0.077878"/>
     <xacro:property name="link_3_c_offset_z" value="0.000125"/>
 
-    <xacro:property name="end_c_offset_x" value="0.0"/>
-    <xacro:property name="end_c_offset_y" value="0.0"/>
-    <xacro:property name="end_c_offset_z" value="0.0"/>
-
     <!-- Specify some standard inertial calculations https://en.wikipedia.org/wiki/List_of_moments_of_inertia -->
     <!-- These make use of xacro's mathematical functionality -->
 

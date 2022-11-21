@@ -4,12 +4,15 @@
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/lib/fra333_lab3_25_v1/trajectory_gen.py
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/cocoa_gazebo.xacro
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/cocoa_include.xacro
+/home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/cocoa_new.urdf.xacro
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/cocoa_robot.urdf.xacro
-/home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/cocoa_set.zip
+/home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/cocoa_setting.zip
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/example_gazebo.xacro
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/example_include.xacro
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/example_robot.urdf.xacro
+/home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/description/test.urdf.xacro
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/launch/dummy_gazebo.launch.py
+/home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/config/cocoa_controllers.yaml
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/config/myrobot_controllers.yaml
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/scripts/cal.ipynb
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/scripts/trajectory_gen.py
@@ -17,8 +20,10 @@
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/end_effector.stl
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/link_0.stl
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/link_1.stl
+/home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/link_1O.stl
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/link_2.stl
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/link_3.stl
+/home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/meshes/link_3O.stl
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/ament_index/resource_index/package_run_dependencies/fra333_lab3_25_v1
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/ament_index/resource_index/parent_prefix_path/fra333_lab3_25_v1
 /home/azthorax/fra333_ws/install/fra333_lab3_25_v1/share/fra333_lab3_25_v1/environment/ament_prefix_path.sh

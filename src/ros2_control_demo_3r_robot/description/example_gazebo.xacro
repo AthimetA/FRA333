@@ -92,12 +92,12 @@
       </ros2_control>
 
     
-    <!-- <gazebo>
+    <gazebo>
         <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
             <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
           <parameters>$(find ros2_control_demo_3r_robot)/config/myrobot_controllers.yaml</parameters>
         </plugin>
-    </gazebo> -->
+    </gazebo>
 
 
     <gazebo reference="link0">
