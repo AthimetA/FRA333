@@ -12,7 +12,7 @@ from cocoav_interfaces.msg import CocoaVIMU
 
 class CocoaVCalibrator(Node):
     def __init__(self):
-        super().__init__('cocoav_calibrator')
+        super().__init__('cocoav_calibrator_node')
         
         # define rate
         self.rate = 10
@@ -22,6 +22,7 @@ class CocoaVCalibrator(Node):
         self.time_rate = 1/self.rate 
         
         # Subscribers
+        self.time_ms = 0
         self.angular_velocity = [0.0,0.0,0.0]
         self.linear_acceleration = [0.0,0.0,0.0]
         self.imu_sub = self.create_subscription(CocoaVIMU, '/cocoav_imu_arduino', self.imu_sub_callback, qos_profile)
@@ -33,11 +34,13 @@ class CocoaVCalibrator(Node):
         self.timer_callback = self.create_timer(self.time_rate, callback=self.timer_callback)
     
     def imu_sub_callback(self, msg:CocoaVIMU):
+        self.time_ms = msg.time_ms
         self.angular_velocity = msg.angular_velocity
         self.linear_acceleration = msg.linear_acceleration
     
     def imu_calibrate(self):
         imu = CocoaVIMU()
+        imu.time_ms = self.time_ms
         imu.angular_velocity = self.angular_velocity
         imu.linear_acceleration = self.linear_acceleration
         self.imu_pub.publish(imu)

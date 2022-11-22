@@ -17,6 +17,7 @@ cocoav_interfaces__msg__CocoaVIMU__init(cocoav_interfaces__msg__CocoaVIMU * msg)
   if (!msg) {
     return false;
   }
+  // time_ms
   // angular_velocity
   // linear_acceleration
   return true;
@@ -28,6 +29,7 @@ cocoav_interfaces__msg__CocoaVIMU__fini(cocoav_interfaces__msg__CocoaVIMU * msg)
   if (!msg) {
     return;
   }
+  // time_ms
   // angular_velocity
   // linear_acceleration
 }
@@ -36,6 +38,10 @@ bool
 cocoav_interfaces__msg__CocoaVIMU__are_equal(const cocoav_interfaces__msg__CocoaVIMU * lhs, const cocoav_interfaces__msg__CocoaVIMU * rhs)
 {
   if (!lhs || !rhs) {
+    return false;
+  }
+  // time_ms
+  if (lhs->time_ms != rhs->time_ms) {
     return false;
   }
   // angular_velocity
@@ -61,6 +67,8 @@ cocoav_interfaces__msg__CocoaVIMU__copy(
   if (!input || !output) {
     return false;
   }
+  // time_ms
+  output->time_ms = input->time_ms;
   // angular_velocity
   for (size_t i = 0; i < 3; ++i) {
     output->angular_velocity[i] = input->angular_velocity[i];

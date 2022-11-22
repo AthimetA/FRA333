@@ -57,16 +57,19 @@ class CocoaVIMU(metaclass=Metaclass_CocoaVIMU):
     """Message class 'CocoaVIMU'."""
 
     __slots__ = [
+        '_time_ms',
         '_angular_velocity',
         '_linear_acceleration',
     ]
 
     _fields_and_field_types = {
+        'time_ms': 'int64',
         'angular_velocity': 'float[3]',
         'linear_acceleration': 'float[3]',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 3),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 3),  # noqa: E501
     )
@@ -75,6 +78,7 @@ class CocoaVIMU(metaclass=Metaclass_CocoaVIMU):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.time_ms = kwargs.get('time_ms', int())
         if 'angular_velocity' not in kwargs:
             self.angular_velocity = numpy.zeros(3, dtype=numpy.float32)
         else:
@@ -115,6 +119,8 @@ class CocoaVIMU(metaclass=Metaclass_CocoaVIMU):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.time_ms != other.time_ms:
+            return False
         if all(self.angular_velocity != other.angular_velocity):
             return False
         if all(self.linear_acceleration != other.linear_acceleration):
@@ -125,6 +131,21 @@ class CocoaVIMU(metaclass=Metaclass_CocoaVIMU):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
+
+    @property
+    def time_ms(self):
+        """Message field 'time_ms'."""
+        return self._time_ms
+
+    @time_ms.setter
+    def time_ms(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'time_ms' field must be of type 'int'"
+            assert value >= -9223372036854775808 and value < 9223372036854775808, \
+                "The 'time_ms' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+        self._time_ms = value
 
     @property
     def angular_velocity(self):

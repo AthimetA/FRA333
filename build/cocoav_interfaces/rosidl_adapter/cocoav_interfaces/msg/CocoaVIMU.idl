@@ -7,6 +7,8 @@ module cocoav_interfaces {
   module msg {
     typedef float float__3[3];
     struct CocoaVIMU {
+      int64 time_ms;
+
       float__3 angular_velocity;
 
       float__3 linear_acceleration;

@@ -30,6 +30,8 @@ install(PROGRAMS
   scripts/fk_ik_server.py
   scripts/trajectory_gen.py
   scripts/cocoav_imu_calibration.py
+  scripts/cocoav_trajectory_generator.py
+  scripts/testnode.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

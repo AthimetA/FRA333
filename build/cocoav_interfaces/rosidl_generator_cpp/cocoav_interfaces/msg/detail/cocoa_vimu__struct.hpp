@@ -37,6 +37,7 @@ struct CocoaVIMU_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->time_ms = 0ll;
       std::fill<typename std::array<float, 3>::iterator, float>(this->angular_velocity.begin(), this->angular_velocity.end(), 0.0f);
       std::fill<typename std::array<float, 3>::iterator, float>(this->linear_acceleration.begin(), this->linear_acceleration.end(), 0.0f);
     }
@@ -49,12 +50,16 @@ struct CocoaVIMU_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->time_ms = 0ll;
       std::fill<typename std::array<float, 3>::iterator, float>(this->angular_velocity.begin(), this->angular_velocity.end(), 0.0f);
       std::fill<typename std::array<float, 3>::iterator, float>(this->linear_acceleration.begin(), this->linear_acceleration.end(), 0.0f);
     }
   }
 
   // field types and members
+  using _time_ms_type =
+    int64_t;
+  _time_ms_type time_ms;
   using _angular_velocity_type =
     std::array<float, 3>;
   _angular_velocity_type angular_velocity;
@@ -63,6 +68,12 @@ struct CocoaVIMU_
   _linear_acceleration_type linear_acceleration;
 
   // setters for named parameter idiom
+  Type & set__time_ms(
+    const int64_t & _arg)
+  {
+    this->time_ms = _arg;
+    return *this;
+  }
   Type & set__angular_velocity(
     const std::array<float, 3> & _arg)
   {
@@ -118,6 +129,9 @@ struct CocoaVIMU_
   // comparison operators
   bool operator==(const CocoaVIMU_ & other) const
   {
+    if (this->time_ms != other.time_ms) {
+      return false;
+    }
     if (this->angular_velocity != other.angular_velocity) {
       return false;
     }

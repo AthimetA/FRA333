@@ -77,7 +77,22 @@ void * get_function__CocoaVIMU__linear_acceleration(void * untyped_member, size_
   return &member[index];
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember CocoaVIMU_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember CocoaVIMU_message_member_array[3] = {
+  {
+    "time_ms",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(cocoav_interfaces::msg::CocoaVIMU, time_ms),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
   {
     "angular_velocity",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
@@ -113,7 +128,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember CocoaVIMU_mes
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers CocoaVIMU_message_members = {
   "cocoav_interfaces::msg",  // message namespace
   "CocoaVIMU",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(cocoav_interfaces::msg::CocoaVIMU),
   CocoaVIMU_message_member_array,  // message members
   CocoaVIMU_init_function,  // function to initialize message memory (memory has to be allocated)

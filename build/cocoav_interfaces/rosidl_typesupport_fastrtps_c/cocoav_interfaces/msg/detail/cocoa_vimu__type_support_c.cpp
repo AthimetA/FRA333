@@ -49,6 +49,11 @@ static bool _CocoaVIMU__cdr_serialize(
     return false;
   }
   const _CocoaVIMU__ros_msg_type * ros_message = static_cast<const _CocoaVIMU__ros_msg_type *>(untyped_ros_message);
+  // Field name: time_ms
+  {
+    cdr << ros_message->time_ms;
+  }
+
   // Field name: angular_velocity
   {
     size_t size = 3;
@@ -75,6 +80,11 @@ static bool _CocoaVIMU__cdr_deserialize(
     return false;
   }
   _CocoaVIMU__ros_msg_type * ros_message = static_cast<_CocoaVIMU__ros_msg_type *>(untyped_ros_message);
+  // Field name: time_ms
+  {
+    cdr >> ros_message->time_ms;
+  }
+
   // Field name: angular_velocity
   {
     size_t size = 3;
@@ -106,6 +116,12 @@ size_t get_serialized_size_cocoav_interfaces__msg__CocoaVIMU(
   (void)padding;
   (void)wchar_size;
 
+  // field.name time_ms
+  {
+    size_t item_size = sizeof(ros_message->time_ms);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // field.name angular_velocity
   {
     size_t array_size = 3;
@@ -148,6 +164,13 @@ size_t max_serialized_size_cocoav_interfaces__msg__CocoaVIMU(
   (void)wchar_size;
   (void)full_bounded;
 
+  // member: time_ms
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
   // member: angular_velocity
   {
     size_t array_size = 3;

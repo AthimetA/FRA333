@@ -20,6 +20,7 @@ extern "C"
 // Struct defined in msg/CocoaVIMU in the package cocoav_interfaces.
 typedef struct cocoav_interfaces__msg__CocoaVIMU
 {
+  int64_t time_ms;
   float angular_velocity[3];
   float linear_acceleration[3];
 } cocoav_interfaces__msg__CocoaVIMU;

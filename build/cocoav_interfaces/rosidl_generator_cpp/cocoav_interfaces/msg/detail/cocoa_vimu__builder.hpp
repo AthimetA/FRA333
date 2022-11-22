@@ -39,13 +39,29 @@ private:
 class Init_CocoaVIMU_angular_velocity
 {
 public:
-  Init_CocoaVIMU_angular_velocity()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_CocoaVIMU_angular_velocity(::cocoav_interfaces::msg::CocoaVIMU & msg)
+  : msg_(msg)
   {}
   Init_CocoaVIMU_linear_acceleration angular_velocity(::cocoav_interfaces::msg::CocoaVIMU::_angular_velocity_type arg)
   {
     msg_.angular_velocity = std::move(arg);
     return Init_CocoaVIMU_linear_acceleration(msg_);
+  }
+
+private:
+  ::cocoav_interfaces::msg::CocoaVIMU msg_;
+};
+
+class Init_CocoaVIMU_time_ms
+{
+public:
+  Init_CocoaVIMU_time_ms()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_CocoaVIMU_angular_velocity time_ms(::cocoav_interfaces::msg::CocoaVIMU::_time_ms_type arg)
+  {
+    msg_.time_ms = std::move(arg);
+    return Init_CocoaVIMU_angular_velocity(msg_);
   }
 
 private:
@@ -63,7 +79,7 @@ template<>
 inline
 auto build<::cocoav_interfaces::msg::CocoaVIMU>()
 {
-  return cocoav_interfaces::msg::builder::Init_CocoaVIMU_angular_velocity();
+  return cocoav_interfaces::msg::builder::Init_CocoaVIMU_time_ms();
 }
 
 }  // namespace cocoav_interfaces

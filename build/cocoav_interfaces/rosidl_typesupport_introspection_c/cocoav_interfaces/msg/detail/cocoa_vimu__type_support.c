@@ -31,7 +31,22 @@ void CocoaVIMU__rosidl_typesupport_introspection_c__CocoaVIMU_fini_function(void
   cocoav_interfaces__msg__CocoaVIMU__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember CocoaVIMU__rosidl_typesupport_introspection_c__CocoaVIMU_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember CocoaVIMU__rosidl_typesupport_introspection_c__CocoaVIMU_message_member_array[3] = {
+  {
+    "time_ms",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(cocoav_interfaces__msg__CocoaVIMU, time_ms),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
   {
     "angular_velocity",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
@@ -67,7 +82,7 @@ static rosidl_typesupport_introspection_c__MessageMember CocoaVIMU__rosidl_types
 static const rosidl_typesupport_introspection_c__MessageMembers CocoaVIMU__rosidl_typesupport_introspection_c__CocoaVIMU_message_members = {
   "cocoav_interfaces__msg",  // message namespace
   "CocoaVIMU",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(cocoav_interfaces__msg__CocoaVIMU),
   CocoaVIMU__rosidl_typesupport_introspection_c__CocoaVIMU_message_member_array,  // message members
   CocoaVIMU__rosidl_typesupport_introspection_c__CocoaVIMU_init_function,  // function to initialize message memory (memory has to be allocated)

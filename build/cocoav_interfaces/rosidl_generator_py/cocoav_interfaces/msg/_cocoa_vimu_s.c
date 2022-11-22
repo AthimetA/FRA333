@@ -53,6 +53,15 @@ bool cocoav_interfaces__msg__cocoa_vimu__convert_from_py(PyObject * _pymsg, void
     assert(strncmp("cocoav_interfaces.msg._cocoa_vimu.CocoaVIMU", full_classname_dest, 43) == 0);
   }
   cocoav_interfaces__msg__CocoaVIMU * ros_message = _ros_message;
+  {  // time_ms
+    PyObject * field = PyObject_GetAttrString(_pymsg, "time_ms");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->time_ms = PyLong_AsLongLong(field);
+    Py_DECREF(field);
+  }
   {  // angular_velocity
     PyObject * field = PyObject_GetAttrString(_pymsg, "angular_velocity");
     if (!field) {
@@ -123,6 +132,17 @@ PyObject * cocoav_interfaces__msg__cocoa_vimu__convert_to_py(void * raw_ros_mess
     }
   }
   cocoav_interfaces__msg__CocoaVIMU * ros_message = (cocoav_interfaces__msg__CocoaVIMU *)raw_ros_message;
+  {  // time_ms
+    PyObject * field = NULL;
+    field = PyLong_FromLongLong(ros_message->time_ms);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "time_ms", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // angular_velocity
     PyObject * field = NULL;
     field = PyObject_GetAttrString(_pymessage, "angular_velocity");

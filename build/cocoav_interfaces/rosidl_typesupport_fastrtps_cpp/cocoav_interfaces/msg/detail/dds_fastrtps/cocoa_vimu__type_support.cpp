@@ -32,6 +32,8 @@ cdr_serialize(
   const cocoav_interfaces::msg::CocoaVIMU & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  // Member: time_ms
+  cdr << ros_message.time_ms;
   // Member: angular_velocity
   {
     cdr << ros_message.angular_velocity;
@@ -49,6 +51,9 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   cocoav_interfaces::msg::CocoaVIMU & ros_message)
 {
+  // Member: time_ms
+  cdr >> ros_message.time_ms;
+
   // Member: angular_velocity
   {
     cdr >> ros_message.angular_velocity;
@@ -75,6 +80,12 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
+  // Member: time_ms
+  {
+    size_t item_size = sizeof(ros_message.time_ms);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // Member: angular_velocity
   {
     size_t array_size = 3;
@@ -107,6 +118,14 @@ max_serialized_size_CocoaVIMU(
   (void)wchar_size;
   (void)full_bounded;
 
+
+  // Member: time_ms
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
 
   // Member: angular_velocity
   {
