@@ -47,6 +47,7 @@ void read_imu_Sendros2()
 }
 void loop() {
   Serial.println(ax);
+  // HI
   // put your main code here, to run repeatedly:
   xicro.Spin_node();
 }
