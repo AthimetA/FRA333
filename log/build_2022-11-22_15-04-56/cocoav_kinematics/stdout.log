@@ -1,0 +1,25 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/pythonpath.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/lib/python3.8/site-packages/cocoav_kinematics/__init__.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/lib/cocoav_kinematics/fk_ik_server.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/lib/cocoav_kinematics/trajectory_gen.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/lib/cocoav_kinematics/cocoav_imu_calibration.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/launch/display_with_kinematic.launch.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/ament_index/resource_index/package_run_dependencies/cocoav_kinematics
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/ament_index/resource_index/parent_prefix_path/cocoav_kinematics
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/path.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/path.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/local_setup.bash
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/local_setup.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/local_setup.zsh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/local_setup.dsv
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/package.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/ament_index/resource_index/packages/cocoav_kinematics
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/cmake/cocoav_kinematicsConfig.cmake
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/cmake/cocoav_kinematicsConfig-version.cmake
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/package.xml
+Listing '/home/azthorax/fra333_ws/install/cocoav_kinematics/lib/python3.8/site-packages/cocoav_kinematics'...

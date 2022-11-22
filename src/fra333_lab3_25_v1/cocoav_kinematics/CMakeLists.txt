@@ -29,6 +29,7 @@ ament_python_install_package(${PROJECT_NAME})
 install(PROGRAMS
   scripts/fk_ik_server.py
   scripts/trajectory_gen.py
+  scripts/cocoav_imu_calibration.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

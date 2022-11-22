@@ -379,8 +379,8 @@ ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab3_25_v
 # install(FILES "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/msg/CocoaTest.idl" "DESTINATION" "share/cocoav_interfaces/msg")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/msg/CocoaTest.idl" "DESTINATION" "share/cocoav_interfaces/msg")
 
-# install(FILES "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/msg/CocoaIMU.idl" "DESTINATION" "share/cocoav_interfaces/msg")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/msg/CocoaIMU.idl" "DESTINATION" "share/cocoav_interfaces/msg")
+# install(FILES "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/msg/CocoaVIMU.idl" "DESTINATION" "share/cocoav_interfaces/msg")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/msg/CocoaVIMU.idl" "DESTINATION" "share/cocoav_interfaces/msg")
 
 # install(FILES "/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces/srv/CocoaVIK.srv" "DESTINATION" "share/cocoav_interfaces/srv")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces" FILES "/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces/srv/CocoaVIK.srv" "DESTINATION" "share/cocoav_interfaces/srv")
@@ -403,8 +403,8 @@ ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab3_25_v
 # install(FILES "/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces/msg/CocoaTest.msg" "DESTINATION" "share/cocoav_interfaces/msg")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces" FILES "/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces/msg/CocoaTest.msg" "DESTINATION" "share/cocoav_interfaces/msg")
 
-# install(FILES "/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces/msg/CocoaIMU.msg" "DESTINATION" "share/cocoav_interfaces/msg")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces" FILES "/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces/msg/CocoaIMU.msg" "DESTINATION" "share/cocoav_interfaces/msg")
+# install(FILES "/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces/msg/CocoaVIMU.msg" "DESTINATION" "share/cocoav_interfaces/msg")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces" FILES "/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces/msg/CocoaVIMU.msg" "DESTINATION" "share/cocoav_interfaces/msg")
 
 # install(FILES "/home/azthorax/fra333_ws/build/cocoav_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cocoav_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoav_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cocoav_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

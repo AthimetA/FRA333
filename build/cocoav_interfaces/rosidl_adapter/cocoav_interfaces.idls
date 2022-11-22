@@ -1,4 +1,4 @@
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces:srv/CocoaVIK.idl
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces:srv/CocoaVFK.idl
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces:msg/CocoaTest.idl
-/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces:msg/CocoaIMU.idl
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces:msg/CocoaVIMU.idl

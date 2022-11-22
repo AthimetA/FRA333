@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cocoav_interfaces/msg/CocoaVIMU.msg
+// generated code does not contain a copyright notice
+
+
+module cocoav_interfaces {
+  module msg {
+    typedef float float__3[3];
+    struct CocoaVIMU {
+      float__3 angular_velocity;
+
+      float__3 linear_acceleration;
+    };
+  };
+};

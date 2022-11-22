@@ -6,15 +6,8 @@ Xicro xicro;
 float ax, ay, az;  
 float gx, gy, gz;  
 
-float orientation[4]={0};
-float orientation_covariance[9]={1,0,0,0,1,0,0,0,1};
 float angular_velocity[3]={0};
-float angular_velocity_covariance[9]={1,0,0,0,1,0,0,0,1};
 float linear_acceleration[3]={0};
-float linear_acceleration_covariance[9]={1,0,0,0,1,0,0,0,1};
-
-float testmsg = 2.0;
-
 
 void setup() 
 {
@@ -41,17 +34,14 @@ void read_imu_Sendros2()
       linear_acceleration[0]=gx*(9.80665);
       linear_acceleration[1]=gy*(9.80665);
       linear_acceleration[2]=gz*(-9.80665);
-      xicro.publish_Imu_arduino((int32_t)micros() / 1000000.00, (uint32_t)micros() / 1000000.00, (String)"from arduino" 
-      ,orientation[0],orientation[1],orientation[2],orientation[3],orientation_covariance 
-      ,angular_velocity[0],angular_velocity[1],angular_velocity[2],angular_velocity_covariance 
-      ,linear_acceleration[0],linear_acceleration[1],linear_acceleration[2] ,linear_acceleration_covariance );
-      xicro.publish_test_topic_7(testmsg);
+
+      xicro.publish_cocoav_imu_arduino(angular_velocity,
+                                       linear_acceleration);
   }
 
 }
 void loop() {
-  Serial.println(ax);
-  // HI
+//  Serial.println(ax);
   // put your main code here, to run repeatedly:
   xicro.Spin_node();
 }

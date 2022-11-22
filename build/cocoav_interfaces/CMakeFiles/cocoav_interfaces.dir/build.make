@@ -60,7 +60,7 @@ CMakeFiles/cocoav_interfaces: /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/coc
 CMakeFiles/cocoav_interfaces: rosidl_cmake/srv/CocoaVFK_Request.msg
 CMakeFiles/cocoav_interfaces: rosidl_cmake/srv/CocoaVFK_Response.msg
 CMakeFiles/cocoav_interfaces: /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces/msg/CocoaTest.msg
-CMakeFiles/cocoav_interfaces: /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces/msg/CocoaIMU.msg
+CMakeFiles/cocoav_interfaces: /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces/msg/CocoaVIMU.msg
 CMakeFiles/cocoav_interfaces: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/cocoav_interfaces: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/cocoav_interfaces: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl

@@ -6,7 +6,7 @@
     "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces:srv/CocoaVIK.idl",
     "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces:srv/CocoaVFK.idl",
     "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces:msg/CocoaTest.idl",
-    "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces:msg/CocoaIMU.idl"
+    "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces:msg/CocoaVIMU.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/foxy/share/geometry_msgs/msg/Accel.idl",
@@ -118,7 +118,7 @@
     "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/srv/CocoaVIK.idl",
     "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/srv/CocoaVFK.idl",
     "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/msg/CocoaTest.idl",
-    "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/msg/CocoaIMU.idl",
+    "/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_adapter/cocoav_interfaces/msg/CocoaVIMU.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl",
