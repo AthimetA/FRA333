@@ -15,18 +15,19 @@ class CocoaVCalibrator(Node):
         super().__init__('cocoav_calibrator')
         
         # define rate
-        self.rate = 5
+        self.rate = 10
         qos_profile = QoSProfile(depth=10)
         
         # Parameters
-        self.time_rate = 1/self.rate # rate is the publishing rate defualt is 5 HZ (0.2s)
+        self.time_rate = 1/self.rate 
         
         # Subscribers
-        self.angular_velocity = []
-        self.linear_acceleration = []
+        self.angular_velocity = [0.0,0.0,0.0]
+        self.linear_acceleration = [0.0,0.0,0.0]
         self.imu_sub = self.create_subscription(CocoaVIMU, '/cocoav_imu_arduino', self.imu_sub_callback, qos_profile)
         
         # Publisher
+        self.imu_pub = self.create_publisher(CocoaVIMU, '/cocoav_imu_calibrated', qos_profile)
         
         # Timer
         self.timer_callback = self.create_timer(self.time_rate, callback=self.timer_callback)
@@ -34,18 +35,31 @@ class CocoaVCalibrator(Node):
     def imu_sub_callback(self, msg:CocoaVIMU):
         self.angular_velocity = msg.angular_velocity
         self.linear_acceleration = msg.linear_acceleration
-        self.get_logger().info('Angular Velocity: %s' % self.angular_velocity)
-        self.get_logger().info('Linear Acceleration: %s' % self.linear_acceleration)
+    
+    def imu_calibrate(self):
+        imu = CocoaVIMU()
+        imu.angular_velocity = self.angular_velocity
+        imu.linear_acceleration = self.linear_acceleration
+        self.imu_pub.publish(imu)
     
     def timer_callback(self):
-        pass
+        self.imu_calibrate()
 
 def main(args=None):
     rclpy.init(args=args)
-    A1A = CocoaVCalibrator()
-    rclpy.spin(A1A)
-    A1A.destroy_node()
-    rclpy.shutdown()
+    calibrate_obj = CocoaVCalibrator()
+    try:
+        while rclpy.ok():
+            rclpy.spin_once(calibrate_obj)
+    except KeyboardInterrupt:
+        print('repeater stopped cleanly')
+    except BaseException:
+        print('exception in repeater:', file=sys.stderr)
+        raise
+    finally:
+        calibrate_obj.destroy_node()
+        rclpy.shutdown() 
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     main()
