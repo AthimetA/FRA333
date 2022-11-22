@@ -73,26 +73,14 @@ def generate_launch_description():
        name='rviz',
        arguments=['-d', rviz_file_path],
        output='screen')
-    
-
-    # # Run the node
-    # return LaunchDescription([
-    #     rviz,
-    #     gazebo,
-    #     node_robot_state_publisher,
-    #     spawn_entity,
-    #     joint_state_broadcaster_spawner,
-    #     robot_controller_spawner
-    # ])
-
 
     launch_description = LaunchDescription()
     launch_description.add_action(rviz)
-    # launch_description.add_action(gazebo)
+    launch_description.add_action(gazebo)
     launch_description.add_action(node_robot_state_publisher)
-    # launch_description.add_action(spawn_entity)
-    # launch_description.add_action(joint_state_broadcaster_spawner)
-    # launch_description.add_action(robot_controller_spawner)
+    launch_description.add_action(spawn_entity)
+    launch_description.add_action(joint_state_broadcaster_spawner)
+    launch_description.add_action(robot_controller_spawner)
     return launch_description
 
 def main(args=None):

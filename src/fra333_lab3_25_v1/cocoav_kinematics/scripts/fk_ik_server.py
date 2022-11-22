@@ -15,7 +15,7 @@ class CocoaVKinematic(Node):
         self.rate = 10
         qos_profile = QoSProfile(depth=10)
         # Cocoa link length in meter
-        self.link_length = [0.1360,0.262,0.200]
+        self.link_length = [0.1360,0.26179,0.200]
         self.home_config = [0.0,0.0,0.0] # [q1,q2,q3]
 
         # Create a timer to update the robot state
@@ -54,28 +54,18 @@ class CocoaVKinematic(Node):
         [x,y,z] = [request.position.x,request.position.y,request.position.z]
         [r1,r2] = request.r
         if(self.check_IK_solution_exist(x, y, z, r1, r2)):
+            xy = r1*np.sqrt((x**2)+(y**2))
             # input: [x,y,z] in meter
             # solve for q1
-            self.get_logger().info('x: %f, y: %f, z: %f' % (x,y,z))
             q1 = np.arctan2(y/r1,x/r1)
-            self.get_logger().info('q1: %f' % q1)
             # solve for q3
             sin_q3 = (((z-l1)**2) + (x*x)+(y*y) - (l2*l2) - (l3*l3))/(2*l2*l3)
-            self.get_logger().info('1: %f' % ((z-l1)**2))
-            self.get_logger().info('2: %f' % ((x**2)+(y**2)))
-            self.get_logger().info('3: %f' % (l2*l2))
-            self.get_logger().info('4: %f' % (l3*l3))
-            self.get_logger().info('5: %f' % (2*l2*l3))
             cos_q3 = r2*np.sqrt(1-(sin_q3**2))
-            self.get_logger().info('sin_q3: %f, cos_q3: %f' % (sin_q3,cos_q3))
             q3 = np.arctan2(sin_q3,cos_q3)
-            self.get_logger().info('q3: %f' % q3)
             # solve for q2
-            temp_q2 = (l2**2 + l3**2 + 2*l2*l3*np.sin(q3))
-            sin_q2 = ((l3*(z-l1)*np.cos(q3)) + (r1*np.sqrt(x**2+y**2)*(l2+l3*np.sin(q3))))/temp_q2
-            cos_q2 = ((-l1*l2)-(l1*l3*np.sin(q3))+(l2*z)+(l3*r1*np.sqrt(x**2+y**2)*np.cos(q3))+(l3*z*np.sin(q3)))/temp_q2
+            sin_q2 = ((l3*(z-l1)*np.cos(q3)) - (r1*np.sqrt(x**2+y**2)*(l2+l3*np.sin(q3))))
+            cos_q2 = ((-l1*l2)-(l1*l3*np.sin(q3))+(l2*z)+(l3*r1*np.sqrt(x**2+y**2)*np.cos(q3))+(l3*z*np.sin(q3)))
             q2 = np.arctan2(sin_q2,cos_q2)
-            self.get_logger().info('q2: %f' % q2)
             if(self.check_IK_joint_limit(q1, q2, q3)):
                 response.flag = True
                 self.cocoa_config = [q1,q2,q3]
@@ -102,7 +92,7 @@ class CocoaVKinematic(Node):
         if (-np.pi<= q1 <= np.pi) and (-np.pi/6 <= q2 <= np.pi/6) and (-np.pi/3 <= q3 <= np.pi/2):
             return True
         self.get_logger().info('IK joint limit exceed')
-        return True
+        return False
 
 def main(args=None):
     rclpy.init(args=args)

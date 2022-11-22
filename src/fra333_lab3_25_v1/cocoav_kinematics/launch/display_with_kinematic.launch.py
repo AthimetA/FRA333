@@ -33,7 +33,7 @@ def generate_launch_description():
     
     traject_test = Node(
         package='cocoav_kinematics',
-        executable='fk_ik_server.py',
+        executable='trajectory_gen.py',
     )
     
     # Launch Description
