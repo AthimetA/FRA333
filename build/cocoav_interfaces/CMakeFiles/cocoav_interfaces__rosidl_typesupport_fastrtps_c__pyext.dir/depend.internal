@@ -102,6 +102,9 @@ CMakeFiles/cocoav_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_ge
  /usr/include/python3.8/unicodeobject.h
  /usr/include/python3.8/warnings.h
  /usr/include/python3.8/weakrefobject.h
+ rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.h
+ rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__struct.h
+ rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__type_support.h
  rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.h
  rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__struct.h
  rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.h

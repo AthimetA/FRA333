@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/msg/_cocoa_imu_s.c
+Python.h
+-
+stdbool.h
+-
+numpy/ndarrayobject.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/msg/numpy/ndarrayobject.h
+rosidl_runtime_c/visibility_control.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/msg/rosidl_runtime_c/visibility_control.h
+cocoav_interfaces/msg/detail/cocoa_imu__struct.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/msg/cocoav_interfaces/msg/detail/cocoa_imu__struct.h
+cocoav_interfaces/msg/detail/cocoa_imu__functions.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/msg/cocoav_interfaces/msg/detail/cocoa_imu__functions.h
+rosidl_runtime_c/primitives_sequence.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/msg/rosidl_runtime_c/primitives_sequence.h
+rosidl_runtime_c/primitives_sequence_functions.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/msg/rosidl_runtime_c/primitives_sequence_functions.h
+
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/msg/_cocoa_test_s.c
 Python.h
 -
@@ -699,6 +717,26 @@ cpython/unicodeobject.h
 /usr/include/python3.8/warnings.h
 
 /usr/include/python3.8/weakrefobject.h
+
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/cocoav_interfaces/msg/detail/rosidl_runtime_c/visibility_control.h
+cocoav_interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoav_interfaces/msg/rosidl_generator_c__visibility_control.h
+cocoav_interfaces/msg/detail/cocoa_imu__struct.h
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoav_interfaces/msg/detail/cocoa_imu__struct.h
+
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
 
 rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.h
 stdbool.h

@@ -1,3 +1,5 @@
+msg/CocoaIMU.idl
+msg/CocoaIMU.msg
 msg/CocoaTest.idl
 msg/CocoaTest.msg
 srv/CocoaVFK.idl

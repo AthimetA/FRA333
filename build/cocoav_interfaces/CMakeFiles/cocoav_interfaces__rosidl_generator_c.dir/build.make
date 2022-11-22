@@ -73,6 +73,7 @@ rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h: /opt/ros/foxy/share/rosidl
 rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h: rosidl_adapter/cocoav_interfaces/srv/CocoaVIK.idl
 rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h: rosidl_adapter/cocoav_interfaces/srv/CocoaVFK.idl
 rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h: rosidl_adapter/cocoav_interfaces/msg/CocoaTest.idl
+rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h: rosidl_adapter/cocoav_interfaces/msg/CocoaIMU.idl
 rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -198,6 +199,18 @@ rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__struct.h: rosidl_gen
 rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.h: rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.h
 
+rosidl_generator_c/cocoav_interfaces/msg/cocoa_imu.h: rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoav_interfaces/msg/cocoa_imu.h
+
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.h: rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.h
+
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__struct.h: rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__struct.h
+
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__type_support.h: rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__type_support.h
+
 rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vik__functions.c: rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vik__functions.c
 
@@ -206,6 +219,9 @@ rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vfk__functions.c: rosidl_g
 
 rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.c: rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.c
+
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c: rosidl_generator_c/cocoav_interfaces/srv/cocoa_vik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c
 
 CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vik__functions.c.o: CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vik__functions.c.o: rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vik__functions.c
@@ -246,11 +262,25 @@ CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_i
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.c -o CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.c.s
 
+CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c.o: CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c.o: rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/azthorax/fra333_ws/build/cocoav_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c.o   -c /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c
+
+CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c > CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c.i
+
+CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c -o CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c.s
+
 # Object files for target cocoav_interfaces__rosidl_generator_c
 cocoav_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vik__functions.c.o" \
 "CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vfk__functions.c.o" \
-"CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.c.o"
+"CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.c.o" \
+"CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c.o"
 
 # External object files for target cocoav_interfaces__rosidl_generator_c
 cocoav_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -258,6 +288,7 @@ cocoav_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
 libcocoav_interfaces__rosidl_generator_c.so: CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vik__functions.c.o
 libcocoav_interfaces__rosidl_generator_c.so: CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vfk__functions.c.o
 libcocoav_interfaces__rosidl_generator_c.so: CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.c.o
+libcocoav_interfaces__rosidl_generator_c.so: CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c.o
 libcocoav_interfaces__rosidl_generator_c.so: CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/build.make
 libcocoav_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 libcocoav_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
@@ -287,7 +318,7 @@ libcocoav_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_runtime
 libcocoav_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librcpputils.so
 libcocoav_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librcutils.so
 libcocoav_interfaces__rosidl_generator_c.so: CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/azthorax/fra333_ws/build/cocoav_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libcocoav_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/azthorax/fra333_ws/build/cocoav_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libcocoav_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -311,9 +342,14 @@ CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/
 CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.h
 CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__struct.h
 CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.h
+CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoav_interfaces/msg/cocoa_imu.h
+CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.h
+CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__struct.h
+CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__type_support.h
 CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vik__functions.c
 CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vfk__functions.c
 CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.c
+CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.c
 	cd /home/azthorax/fra333_ws/build/cocoav_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces /home/azthorax/fra333_ws/build/cocoav_interfaces /home/azthorax/fra333_ws/build/cocoav_interfaces /home/azthorax/fra333_ws/build/cocoav_interfaces/CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/depend
 

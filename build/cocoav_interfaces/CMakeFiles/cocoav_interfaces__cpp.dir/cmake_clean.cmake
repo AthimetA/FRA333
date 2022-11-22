@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cocoav_interfaces__cpp"
+  "rosidl_generator_cpp/cocoav_interfaces/msg/cocoa_imu.hpp"
   "rosidl_generator_cpp/cocoav_interfaces/msg/cocoa_test.hpp"
+  "rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_imu__builder.hpp"
+  "rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_imu__struct.hpp"
+  "rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_imu__traits.hpp"
   "rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__builder.hpp"
   "rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__struct.hpp"
   "rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__traits.hpp"

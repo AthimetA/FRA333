@@ -41,6 +41,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/CocoaVIK.srv"
   "srv/CocoaVFK.srv"
   "msg/CocoaTest.msg"
+  "msg/CocoaIMU.msg"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
   DEPENDENCIES sensor_msgs

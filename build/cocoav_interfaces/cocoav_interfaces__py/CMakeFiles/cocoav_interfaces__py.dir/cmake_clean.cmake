@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/cocoav_interfaces/msg/__init__.py"
+  "../rosidl_generator_py/cocoav_interfaces/msg/_cocoa_imu.py"
+  "../rosidl_generator_py/cocoav_interfaces/msg/_cocoa_imu_s.c"
   "../rosidl_generator_py/cocoav_interfaces/msg/_cocoa_test.py"
   "../rosidl_generator_py/cocoav_interfaces/msg/_cocoa_test_s.c"
   "../rosidl_generator_py/cocoav_interfaces/srv/__init__.py"

@@ -27,6 +27,12 @@ cocoav_interfaces/msg/detail/cocoa_test__struct.h
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/cocoav_interfaces/msg/detail/cocoa_test__struct.h
 cocoav_interfaces/msg/detail/cocoa_test__functions.h
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/cocoav_interfaces/msg/detail/cocoa_test__functions.h
+cocoav_interfaces/msg/detail/cocoa_imu__type_support.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/cocoav_interfaces/msg/detail/cocoa_imu__type_support.h
+cocoav_interfaces/msg/detail/cocoa_imu__struct.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/cocoav_interfaces/msg/detail/cocoa_imu__struct.h
+cocoav_interfaces/msg/detail/cocoa_imu__functions.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/cocoav_interfaces/msg/detail/cocoa_imu__functions.h
 cocoav_interfaces/srv/detail/cocoa_vik__type_support.h
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_py/cocoav_interfaces/cocoav_interfaces/srv/detail/cocoa_vik__type_support.h
 cocoav_interfaces/srv/detail/cocoa_vik__struct.h
@@ -631,6 +637,34 @@ cpython/unicodeobject.h
 /usr/include/python3.8/warnings.h
 
 /usr/include/python3.8/weakrefobject.h
+
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/cocoav_interfaces/msg/detail/rosidl_runtime_c/visibility_control.h
+cocoav_interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoav_interfaces/msg/rosidl_generator_c__visibility_control.h
+cocoav_interfaces/msg/detail/cocoa_imu__struct.h
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoav_interfaces/msg/detail/cocoa_imu__struct.h
+
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_imu__type_support.h
+rosidl_typesupport_interface/macros.h
+rosidl_generator_c/cocoav_interfaces/msg/detail/rosidl_typesupport_interface/macros.h
+cocoav_interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoav_interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_runtime_c/message_type_support_struct.h
+rosidl_generator_c/cocoav_interfaces/msg/detail/rosidl_runtime_c/message_type_support_struct.h
 
 rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.h
 stdbool.h
