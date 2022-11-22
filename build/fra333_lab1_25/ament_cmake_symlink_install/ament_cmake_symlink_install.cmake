@@ -311,58 +311,58 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/fra333_lab1_25/environment")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/fra333_lab1_25/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/fra333_lab1_25/environment")
 
 # install(FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/fra333_lab1_25/environment")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/fra333_lab1_25/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/fra333_lab1_25/environment")
 
-# install(DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25/fra333_lab1_25/" "DESTINATION" "lib/python3.8/site-packages/fra333_lab1_25" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25/fra333_lab1_25/" "DESTINATION" "lib/python3.8/site-packages/fra333_lab1_25" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25/fra333_lab1_25/" "DESTINATION" "lib/python3.8/site-packages/fra333_lab1_25" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25/fra333_lab1_25/" "DESTINATION" "lib/python3.8/site-packages/fra333_lab1_25" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
 # install(PROGRAMS "scripts/noise_generator.py" "scripts/velocity_mux.py" "DESTINATION" "lib/fra333_lab1_25")
-ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" PROGRAMS "scripts/noise_generator.py" "scripts/velocity_mux.py" "DESTINATION" "lib/fra333_lab1_25")
+ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" PROGRAMS "scripts/noise_generator.py" "scripts/velocity_mux.py" "DESTINATION" "lib/fra333_lab1_25")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/fra333_lab1_25")
-ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" DIRECTORY "launch" "DESTINATION" "share/fra333_lab1_25")
+ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" DIRECTORY "launch" "DESTINATION" "share/fra333_lab1_25")
 
 # install(FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/fra333_lab1_25" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/fra333_lab1_25" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/fra333_lab1_25" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
 # install(FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/fra333_lab1_25" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/fra333_lab1_25" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/fra333_lab1_25" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/fra333_lab1_25/environment")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/fra333_lab1_25/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/fra333_lab1_25/environment")
 
 # install(FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/fra333_lab1_25/environment")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/fra333_lab1_25/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/fra333_lab1_25/environment")
 
 # install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/fra333_lab1_25/environment")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/fra333_lab1_25/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/fra333_lab1_25/environment")
 
 # install(FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/fra333_lab1_25/environment")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/fra333_lab1_25/environment")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/fra333_lab1_25/environment")
 
 # install(FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/fra333_lab1_25")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/fra333_lab1_25")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/fra333_lab1_25")
 
 # install(FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/fra333_lab1_25")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/fra333_lab1_25")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/fra333_lab1_25")
 
 # install(FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/fra333_lab1_25")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/fra333_lab1_25")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/fra333_lab1_25")
 
 # install(FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/fra333_lab1_25")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/fra333_lab1_25")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/fra333_lab1_25")
 
 # install(FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/fra333_lab1_25")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/fra333_lab1_25")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/fra333_lab1_25")
 
 # install(FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_index/share/ament_index/resource_index/packages/fra333_lab1_25" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_index/share/ament_index/resource_index/packages/fra333_lab1_25" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_index/share/ament_index/resource_index/packages/fra333_lab1_25" "DESTINATION" "share/ament_index/resource_index/packages")
 
 # install(FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_core/fra333_lab1_25Config.cmake" "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_core/fra333_lab1_25Config-version.cmake" "DESTINATION" "share/fra333_lab1_25/cmake")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_core/fra333_lab1_25Config.cmake" "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_core/fra333_lab1_25Config-version.cmake" "DESTINATION" "share/fra333_lab1_25/cmake")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_core/fra333_lab1_25Config.cmake" "/home/azthorax/fra333_ws/build/fra333_lab1_25/ament_cmake_core/fra333_lab1_25Config-version.cmake" "DESTINATION" "share/fra333_lab1_25/cmake")
 
-# install(FILES "/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25/package.xml" "DESTINATION" "share/fra333_lab1_25")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25/package.xml" "DESTINATION" "share/fra333_lab1_25")
+# install(FILES "/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25/package.xml" "DESTINATION" "share/fra333_lab1_25")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25" FILES "/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25/package.xml" "DESTINATION" "share/fra333_lab1_25")

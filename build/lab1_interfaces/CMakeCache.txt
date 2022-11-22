@@ -406,7 +406,7 @@ foonathan_memory_DIR:PATH=/opt/ros/foxy/lib/foonathan_memory/cmake
 lab1_interfaces_BINARY_DIR:STATIC=/home/azthorax/fra333_ws/build/lab1_interfaces
 
 //Value Computed by CMake
-lab1_interfaces_SOURCE_DIR:STATIC=/home/azthorax/fra333_ws/src/fra333_lab1_25/lab1_interfaces
+lab1_interfaces_SOURCE_DIR:STATIC=/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/lab1_interfaces
 
 //Dependencies for the target
 lab1_interfaces__python_LIB_DEPENDS:STATIC=general;lab1_interfaces__rosidl_generator_c;general;/usr/lib/x86_64-linux-gnu/libpython3.8.so;general;lab1_interfaces__rosidl_typesupport_c;general;/opt/ros/foxy/share/std_msgs/cmake/../../../lib/libstd_msgs__python.so;general;/opt/ros/foxy/share/builtin_interfaces/cmake/../../../lib/libbuiltin_interfaces__python.so;
@@ -598,7 +598,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/azthorax/fra333_ws/src/fra333_lab1_25/lab1_interfaces
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/lab1_interfaces
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

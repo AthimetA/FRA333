@@ -1,4 +1,4 @@
-# Install script for directory: /home/azthorax/fra333_ws/src/fra333_lab1_25/lab1_interfaces
+# Install script for directory: /home/azthorax/fra333_ws/src/fra333_lab1_25_v1/lab1_interfaces
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

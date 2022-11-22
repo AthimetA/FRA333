@@ -1,1 +1,0 @@
-/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_fk__type_support.h

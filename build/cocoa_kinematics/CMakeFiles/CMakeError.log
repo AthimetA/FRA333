@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/azthorax/fra333_ws/build/cocoa_kinematics/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_328de/fast && /usr/bin/make -f CMakeFiles/cmTC_328de.dir/build.make CMakeFiles/cmTC_328de.dir/build
+Run Build Command(s):/usr/bin/make cmTC_e6c5e/fast && /usr/bin/make -f CMakeFiles/cmTC_e6c5e.dir/build.make CMakeFiles/cmTC_e6c5e.dir/build
 make[1]: Entering directory '/home/azthorax/fra333_ws/build/cocoa_kinematics/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_328de.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_328de.dir/src.c.o   -c /home/azthorax/fra333_ws/build/cocoa_kinematics/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_328de
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_328de.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_328de.dir/src.c.o  -o cmTC_328de 
-/usr/bin/ld: CMakeFiles/cmTC_328de.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_e6c5e.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e6c5e.dir/src.c.o   -c /home/azthorax/fra333_ws/build/cocoa_kinematics/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e6c5e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6c5e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_e6c5e.dir/src.c.o  -o cmTC_e6c5e 
+/usr/bin/ld: CMakeFiles/cmTC_e6c5e.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_328de.dir/build.make:87: cmTC_328de] Error 1
+make[1]: *** [CMakeFiles/cmTC_e6c5e.dir/build.make:87: cmTC_e6c5e] Error 1
 make[1]: Leaving directory '/home/azthorax/fra333_ws/build/cocoa_kinematics/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_328de/fast] Error 2
+make: *** [Makefile:121: cmTC_e6c5e/fast] Error 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/azthorax/fra333_ws/build/cocoa_kinematics/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_6e343/fast && /usr/bin/make -f CMakeFiles/cmTC_6e343.dir/build.make CMakeFiles/cmTC_6e343.dir/build
+Run Build Command(s):/usr/bin/make cmTC_a9262/fast && /usr/bin/make -f CMakeFiles/cmTC_a9262.dir/build.make CMakeFiles/cmTC_a9262.dir/build
 make[1]: Entering directory '/home/azthorax/fra333_ws/build/cocoa_kinematics/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6e343.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_6e343.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_6e343
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e343.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_6e343.dir/CheckFunctionExists.c.o  -o cmTC_6e343  -lpthreads 
+Building C object CMakeFiles/cmTC_a9262.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a9262.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a9262
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9262.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_a9262.dir/CheckFunctionExists.c.o  -o cmTC_a9262  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_6e343.dir/build.make:87: cmTC_6e343] Error 1
+make[1]: *** [CMakeFiles/cmTC_a9262.dir/build.make:87: cmTC_a9262] Error 1
 make[1]: Leaving directory '/home/azthorax/fra333_ws/build/cocoa_kinematics/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_6e343/fast] Error 2
+make: *** [Makefile:121: cmTC_a9262/fast] Error 2
 
 
 

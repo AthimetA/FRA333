@@ -1,0 +1,1258 @@
+[0.123s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.123s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fc91c74d1c0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fc91c74d1c0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fc91c74d700>)
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.161s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/azthorax/fra333_ws'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE/Demo_IMU) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE/Demo_IMU) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE/Demo_IMU) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE/Demo_IMU) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE/Demo_IMU) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE/Demo_IMU) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE/Demo_IMU) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE/Demo_IMU) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE/Demo_IMU) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE/Demo_IMU) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE/Demo_IMU) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE/Demo_IMU) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE/Demo_IMU) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Demo_IMU_ArduinoIDE/Demo_IMU) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro) by extension 'python_setup_py'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code) by extensions ['cmake', 'python']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code) by extension 'cmake'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code) by extension 'python_setup_py'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/Demo) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/Demo) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/Demo) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/Demo) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/Demo) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/Demo) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/Demo) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/Demo) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/Demo) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/Demo) by extensions ['cmake', 'python']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/Demo) by extension 'cmake'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/Demo) by extension 'python'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/Demo) by extensions ['python_setup_py']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/Demo) by extension 'python_setup_py'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/fake_imu) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/fake_imu) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/fake_imu) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/fake_imu) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/fake_imu) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/fake_imu) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/fake_imu) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/fake_imu) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/fake_imu) by extension 'ros'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/fake_imu) by extensions ['cmake', 'python']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/fake_imu) by extension 'cmake'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/fake_imu) by extension 'python'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/fake_imu) by extensions ['python_setup_py']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/arduino_code/fake_imu) by extension 'python_setup_py'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_interfaces) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_interfaces) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_interfaces) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_interfaces) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_interfaces) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_interfaces) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_interfaces) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_interfaces) by extension 'ros'
+[0.176s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Xicro/xicro_interfaces' with type 'ros.ament_cmake' and name 'xicro_interfaces'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_pkg) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_pkg) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_pkg) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_pkg) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_pkg) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_pkg) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_pkg) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Xicro/xicro_pkg) by extension 'ros'
+[0.177s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Xicro/xicro_pkg' with type 'ros.ament_cmake' and name 'xicro_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25) by extension 'ros'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25) by extensions ['cmake', 'python']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25) by extension 'cmake'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25) by extension 'python'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25) by extensions ['python_setup_py']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25) by extension 'python_setup_py'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc) by extension 'ros'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc) by extensions ['cmake', 'python']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc) by extension 'cmake'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc) by extension 'python'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc) by extensions ['python_setup_py']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc) by extension 'python_setup_py'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc/pic) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc/pic) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc/pic) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc/pic) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc/pic) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc/pic) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc/pic) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc/pic) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc/pic) by extension 'ros'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc/pic) by extensions ['cmake', 'python']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc/pic) by extension 'cmake'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc/pic) by extension 'python'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc/pic) by extensions ['python_setup_py']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw1_25/doc/pic) by extension 'python_setup_py'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25) by extension 'ros'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25) by extensions ['cmake', 'python']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25) by extension 'cmake'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25) by extension 'python'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25) by extensions ['python_setup_py']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25) by extension 'python_setup_py'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/__pycache__) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/__pycache__) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/__pycache__) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/__pycache__) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/__pycache__) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/__pycache__) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/__pycache__) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/__pycache__) by extension 'ros'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/__pycache__) by extensions ['cmake', 'python']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/__pycache__) by extension 'cmake'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/__pycache__) by extension 'python'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/__pycache__) by extensions ['python_setup_py']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/__pycache__) by extension 'python_setup_py'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc) by extension 'ros'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc) by extensions ['cmake', 'python']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc) by extension 'python_setup_py'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc/__pycache__) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc/__pycache__) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc/__pycache__) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc/__pycache__) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc/__pycache__) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc/__pycache__) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc/__pycache__) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc/__pycache__) by extension 'ros'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc/__pycache__) by extensions ['cmake', 'python']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc/__pycache__) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc/__pycache__) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc/__pycache__) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_hw2_25/doc/__pycache__) by extension 'python_setup_py'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1) by extension 'ros'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1) by extensions ['cmake', 'python']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1) by extension 'cmake'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1) by extension 'python'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1) by extensions ['python_setup_py']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1) by extension 'python_setup_py'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc) by extension 'ros'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc) by extensions ['cmake', 'python']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc) by extension 'cmake'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc) by extension 'python'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc) by extensions ['python_setup_py']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc) by extension 'python_setup_py'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc/pic) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc/pic) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc/pic) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc/pic) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc/pic) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc/pic) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc/pic) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc/pic) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc/pic) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc/pic) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc/pic) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc/pic) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc/pic) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/doc/pic) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/fra333_lab1_25) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/fra333_lab1_25) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/fra333_lab1_25) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/fra333_lab1_25) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/fra333_lab1_25) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/fra333_lab1_25) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/fra333_lab1_25) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/fra333_lab1_25) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/fra333_lab1_25) by extension 'ros'
+[0.184s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fra333_lab1_25_v1/fra333_lab1_25' with type 'ros.ament_cmake' and name 'fra333_lab1_25'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/lab1_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/lab1_interfaces) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/lab1_interfaces) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/lab1_interfaces) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/lab1_interfaces) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/lab1_interfaces) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/lab1_interfaces) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/lab1_interfaces) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab1_25_v1/lab1_interfaces) by extension 'ros'
+[0.185s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fra333_lab1_25_v1/lab1_interfaces' with type 'ros.ament_cmake' and name 'lab1_interfaces'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1) by extension 'python_setup_py'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/Note) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/Note) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/Note) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/Note) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/Note) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/Note) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/Note) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/Note) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/Note) by extension 'ros'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/Note) by extensions ['cmake', 'python']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/Note) by extension 'cmake'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/Note) by extension 'python'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/Note) by extensions ['python_setup_py']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/Note) by extension 'python_setup_py'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_description) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_description) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_description) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_description) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_description) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_description) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_description) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_description) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_description) by extension 'ros'
+[0.187s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fra333_lab2_25_v1/cocoa_description' with type 'ros.ament_cmake' and name 'cocoa_description'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics) by extension 'ros'
+[0.187s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fra333_lab2_25_v1/cocoa_kinematics' with type 'ros.ament_cmake' and name 'cocoa_kinematics'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics_interfaces) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics_interfaces) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics_interfaces) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics_interfaces) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics_interfaces) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics_interfaces) by extension 'colcon_meta'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics_interfaces) by extensions ['ros']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/cocoa_kinematics_interfaces) by extension 'ros'
+[0.188s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fra333_lab2_25_v1/cocoa_kinematics_interfaces' with type 'ros.ament_cmake' and name 'cocoa_kinematics_interfaces'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc) by extension 'ros'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc) by extensions ['cmake', 'python']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc) by extension 'cmake'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc) by extension 'python'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc) by extensions ['python_setup_py']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc) by extension 'python_setup_py'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/img) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/img) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/img) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/img) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/img) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/img) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/img) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/img) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/img) by extension 'ros'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/img) by extensions ['cmake', 'python']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/img) by extension 'cmake'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/img) by extension 'python'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/img) by extensions ['python_setup_py']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/img) by extension 'python_setup_py'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/pic) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/pic) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/pic) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/pic) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/pic) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/pic) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/pic) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/pic) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/pic) by extension 'ros'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/pic) by extensions ['cmake', 'python']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/pic) by extension 'cmake'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/pic) by extension 'python'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/pic) by extensions ['python_setup_py']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab2_25_v1/doc/pic) by extension 'python_setup_py'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1) by extension 'ros'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1) by extensions ['cmake', 'python']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1) by extension 'cmake'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1) by extension 'python'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1) by extensions ['python_setup_py']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1) by extension 'python_setup_py'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/Note) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/Note) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/Note) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/Note) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/Note) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/Note) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/Note) by extension 'colcon_meta'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/Note) by extensions ['ros']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/Note) by extension 'ros'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/Note) by extensions ['cmake', 'python']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/Note) by extension 'cmake'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/Note) by extension 'python'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/Note) by extensions ['python_setup_py']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/Note) by extension 'python_setup_py'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_description) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_description) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_description) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_description) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_description) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_description) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_description) by extension 'colcon_meta'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_description) by extensions ['ros']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_description) by extension 'ros'
+[0.192s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fra333_lab3_25_v1/cocoav_description' with type 'ros.ament_cmake' and name 'cocoav_description'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_interfaces) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_interfaces) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_interfaces) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_interfaces) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_interfaces) by extensions ['colcon_meta']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_interfaces) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_interfaces) by extensions ['ros']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_interfaces) by extension 'ros'
+[0.192s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fra333_lab3_25_v1/cocoav_interfaces' with type 'ros.ament_cmake' and name 'cocoav_interfaces'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_kinematics) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_kinematics) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_kinematics) by extension 'ignore_ament_install'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_kinematics) by extensions ['colcon_pkg']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_kinematics) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_kinematics) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_kinematics) by extension 'colcon_meta'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_kinematics) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/cocoav_kinematics) by extension 'ros'
+[0.193s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fra333_lab3_25_v1/cocoav_kinematics' with type 'ros.ament_cmake' and name 'cocoav_kinematics'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/doc) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/doc) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/doc) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/doc) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/doc) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/doc) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/doc) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/doc) by extension 'ros'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/doc) by extensions ['cmake', 'python']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/doc) by extension 'cmake'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/doc) by extension 'python'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/doc) by extensions ['python_setup_py']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/fra333_lab3_25_v1/doc) by extension 'python_setup_py'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demo_3r_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demo_3r_robot) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demo_3r_robot) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demo_3r_robot) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demo_3r_robot) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demo_3r_robot) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demo_3r_robot) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demo_3r_robot) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demo_3r_robot) by extension 'ros'
+[0.195s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_control_demo_3r_robot' with type 'ros.ament_cmake' and name 'ros2_control_demo_3r_robot'
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.219s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 289 installed packages in /opt/ros/foxy
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'cocoa_description' build argument 'cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'cocoa_description' build argument 'cmake_target' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'cocoa_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'cocoa_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'cocoa_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'cocoa_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'cocoa_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'cocoa_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'cocoa_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.283s] DEBUG:colcon.colcon_core.verb:Building package 'cocoa_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/azthorax/fra333_ws/build/cocoa_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/azthorax/fra333_ws/install/cocoa_description', 'merge_install': False, 'path': '/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description', 'symlink_install': True, 'test_result_base': None}
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics' build argument 'cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics' build argument 'cmake_target' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics' build argument 'cmake_clean_first' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics' build argument 'cmake_force_configure' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics' build argument 'ament_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.284s] DEBUG:colcon.colcon_core.verb:Building package 'cocoa_kinematics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/azthorax/fra333_ws/build/cocoa_kinematics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/azthorax/fra333_ws/install/cocoa_kinematics', 'merge_install': False, 'path': '/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics', 'symlink_install': True, 'test_result_base': None}
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'cocoa_kinematics_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.285s] DEBUG:colcon.colcon_core.verb:Building package 'cocoa_kinematics_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces', 'merge_install': False, 'path': '/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'cocoav_description' build argument 'cmake_args' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'cocoav_description' build argument 'cmake_target' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'cocoav_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'cocoav_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'cocoav_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'cocoav_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'cocoav_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'cocoav_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'cocoav_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.286s] DEBUG:colcon.colcon_core.verb:Building package 'cocoav_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/azthorax/fra333_ws/build/cocoav_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/azthorax/fra333_ws/install/cocoav_description', 'merge_install': False, 'path': '/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_description', 'symlink_install': True, 'test_result_base': None}
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'cocoav_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'cocoav_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'cocoav_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'cocoav_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'cocoav_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'cocoav_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'cocoav_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'cocoav_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'cocoav_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.287s] DEBUG:colcon.colcon_core.verb:Building package 'cocoav_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/azthorax/fra333_ws/build/cocoav_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/azthorax/fra333_ws/install/cocoav_interfaces', 'merge_install': False, 'path': '/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'cocoav_kinematics' build argument 'cmake_args' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'cocoav_kinematics' build argument 'cmake_target' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'cocoav_kinematics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'cocoav_kinematics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'cocoav_kinematics' build argument 'cmake_clean_first' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'cocoav_kinematics' build argument 'cmake_force_configure' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'cocoav_kinematics' build argument 'ament_cmake_args' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'cocoav_kinematics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'cocoav_kinematics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.288s] DEBUG:colcon.colcon_core.verb:Building package 'cocoav_kinematics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/azthorax/fra333_ws/build/cocoav_kinematics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/azthorax/fra333_ws/install/cocoav_kinematics', 'merge_install': False, 'path': '/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_kinematics', 'symlink_install': True, 'test_result_base': None}
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'fra333_lab1_25' build argument 'cmake_args' from command line to 'None'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'fra333_lab1_25' build argument 'cmake_target' from command line to 'None'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'fra333_lab1_25' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'fra333_lab1_25' build argument 'cmake_clean_cache' from command line to 'False'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'fra333_lab1_25' build argument 'cmake_clean_first' from command line to 'False'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'fra333_lab1_25' build argument 'cmake_force_configure' from command line to 'False'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'fra333_lab1_25' build argument 'ament_cmake_args' from command line to 'None'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'fra333_lab1_25' build argument 'catkin_cmake_args' from command line to 'None'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'fra333_lab1_25' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.289s] DEBUG:colcon.colcon_core.verb:Building package 'fra333_lab1_25' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/azthorax/fra333_ws/build/fra333_lab1_25', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/azthorax/fra333_ws/install/fra333_lab1_25', 'merge_install': False, 'path': '/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25', 'symlink_install': True, 'test_result_base': None}
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'lab1_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'lab1_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'lab1_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'lab1_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'lab1_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'lab1_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'lab1_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'lab1_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'lab1_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.291s] DEBUG:colcon.colcon_core.verb:Building package 'lab1_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/azthorax/fra333_ws/build/lab1_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/azthorax/fra333_ws/install/lab1_interfaces', 'merge_install': False, 'path': '/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/lab1_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_3r_robot' build argument 'cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_3r_robot' build argument 'cmake_target' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_3r_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_3r_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_3r_robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_3r_robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_3r_robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_3r_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_3r_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.292s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_control_demo_3r_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot', 'merge_install': False, 'path': '/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot', 'symlink_install': True, 'test_result_base': None}
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'xicro_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'xicro_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'xicro_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'xicro_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'xicro_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'xicro_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'xicro_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'xicro_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'xicro_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.293s] DEBUG:colcon.colcon_core.verb:Building package 'xicro_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/azthorax/fra333_ws/build/xicro_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/azthorax/fra333_ws/install/xicro_interfaces', 'merge_install': False, 'path': '/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'xicro_pkg' build argument 'cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'xicro_pkg' build argument 'cmake_target' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'xicro_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'xicro_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'xicro_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'xicro_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'xicro_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'xicro_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'xicro_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.294s] DEBUG:colcon.colcon_core.verb:Building package 'xicro_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/azthorax/fra333_ws/build/xicro_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/azthorax/fra333_ws/install/xicro_pkg', 'merge_install': False, 'path': '/home/azthorax/fra333_ws/src/Xicro/xicro_pkg', 'symlink_install': True, 'test_result_base': None}
+[0.294s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.298s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.298s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description' with build type 'ament_cmake'
+[0.298s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description'
+[0.305s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.305s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.305s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.310s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics' with build type 'ament_cmake'
+[0.310s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics'
+[0.312s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.312s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.317s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces' with build type 'ament_cmake'
+[0.317s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces'
+[0.319s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.319s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.324s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_description' with build type 'ament_cmake'
+[0.324s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_description'
+[0.327s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.327s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.333s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces' with build type 'ament_cmake'
+[0.333s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces'
+[0.336s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.336s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.340s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_kinematics' with build type 'ament_cmake'
+[0.341s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_kinematics'
+[0.342s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.342s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.347s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25' with build type 'ament_cmake'
+[0.347s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25'
+[0.349s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.349s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.354s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/lab1_interfaces' with build type 'ament_cmake'
+[0.354s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/lab1_interfaces'
+[0.356s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.356s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.362s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot' with build type 'ament_cmake'
+[0.362s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot'
+[0.364s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.364s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.369s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces' with build type 'ament_cmake'
+[0.369s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/azthorax/fra333_ws/src/Xicro/xicro_interfaces'
+[0.371s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.371s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.377s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/azthorax/fra333_ws/src/Xicro/xicro_pkg' with build type 'ament_cmake'
+[0.377s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/azthorax/fra333_ws/src/Xicro/xicro_pkg'
+[0.379s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.379s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.396s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoa_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoa_description
+[0.401s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoa_kinematics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoa_kinematics
+[0.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces
+[0.411s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoav_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoav_description
+[0.417s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoav_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoav_interfaces
+[0.423s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoav_kinematics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_kinematics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoav_kinematics
+[0.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/fra333_lab1_25': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/fra333_lab1_25
+[0.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/lab1_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab1_25_v1/lab1_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/lab1_interfaces
+[0.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot
+[0.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/xicro_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/Xicro/xicro_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/xicro_interfaces
+[0.451s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/xicro_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/Xicro/xicro_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/xicro_pkg
+[2.458s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoa_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoa_kinematics
+[2.459s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoa_kinematics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_kinematics -- -j12 -l12
+[2.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoa_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoa_description
+[2.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoa_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_description -- -j12 -l12
+[2.479s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoav_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_kinematics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoav_kinematics
+[2.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoav_kinematics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoav_kinematics -- -j12 -l12
+[2.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoav_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoav_description
+[2.482s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoav_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoav_description -- -j12 -l12
+[2.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/xicro_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/Xicro/xicro_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/xicro_pkg
+[2.487s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/xicro_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/xicro_pkg -- -j12 -l12
+[2.500s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoa_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_kinematics -- -j12 -l12
+[2.506s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/xicro_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/Xicro/xicro_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/xicro_interfaces
+[2.507s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/xicro_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/xicro_interfaces -- -j12 -l12
+[2.515s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoa_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_description -- -j12 -l12
+[2.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoav_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoav_kinematics -- -j12 -l12
+[2.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoa_kinematics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoa_kinematics
+[2.546s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoav_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoav_description -- -j12 -l12
+[2.552s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/xicro_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/xicro_pkg -- -j12 -l12
+[2.558s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/lab1_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab1_25_v1/lab1_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/lab1_interfaces
+[2.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/lab1_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/lab1_interfaces -- -j12 -l12
+[2.564s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoa_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoa_description
+[2.568s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoav_kinematics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoav_kinematics
+[2.576s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/fra333_lab1_25' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/fra333_lab1_25
+[2.577s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/fra333_lab1_25': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/fra333_lab1_25 -- -j12 -l12
+[2.581s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/ros2_control_demo_3r_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot
+[2.582s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot -- -j12 -l12
+[2.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/xicro_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/xicro_pkg
+[2.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoav_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoav_description
+[2.626s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/fra333_lab1_25' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/fra333_lab1_25 -- -j12 -l12
+[2.643s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot -- -j12 -l12
+[2.685s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/fra333_lab1_25': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/fra333_lab1_25
+[2.694s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot
+[2.876s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cocoa_kinematics)
+[2.880s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoa_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoa_kinematics
+[2.895s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics' for CMake module files
+[2.896s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics' for CMake config files
+[2.897s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoa_kinematics', 'cmake_prefix_path')
+[2.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/hook/cmake_prefix_path.ps1'
+[2.900s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/hook/cmake_prefix_path.dsv'
+[2.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/hook/cmake_prefix_path.sh'
+[2.902s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics/lib'
+[2.902s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics/bin'
+[2.902s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics/lib/pkgconfig/cocoa_kinematics.pc'
+[2.903s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics/lib/python3.8/site-packages'
+[2.903s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoa_kinematics', 'pythonpath')
+[2.905s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/hook/pythonpath.ps1'
+[2.906s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/hook/pythonpath.dsv'
+[2.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/hook/pythonpath.sh'
+[2.908s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics/bin'
+[2.910s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/package.ps1'
+[2.911s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/package.dsv'
+[2.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/package.sh'
+[2.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/package.bash'
+[2.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/package.zsh'
+[2.917s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/cocoa_kinematics/share/colcon-core/packages/cocoa_kinematics)
+[2.932s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cocoav_kinematics)
+[2.935s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_kinematics' for CMake module files
+[2.939s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoav_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoav_kinematics
+[2.939s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_kinematics' for CMake config files
+[2.940s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoav_kinematics', 'cmake_prefix_path')
+[2.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/hook/cmake_prefix_path.ps1'
+[2.943s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/hook/cmake_prefix_path.dsv'
+[2.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/hook/cmake_prefix_path.sh'
+[2.946s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_kinematics/lib'
+[2.946s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_kinematics/bin'
+[2.946s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_kinematics/lib/pkgconfig/cocoav_kinematics.pc'
+[2.946s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_kinematics/lib/python3.8/site-packages'
+[2.946s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoav_kinematics', 'pythonpath')
+[2.949s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/hook/pythonpath.ps1'
+[2.949s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/hook/pythonpath.dsv'
+[2.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/hook/pythonpath.sh'
+[2.951s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_kinematics/bin'
+[2.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/package.ps1'
+[2.955s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/package.dsv'
+[2.956s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/package.sh'
+[2.956s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/package.bash'
+[2.957s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/package.zsh'
+[2.957s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/cocoav_kinematics/share/colcon-core/packages/cocoav_kinematics)
+[2.966s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cocoa_kinematics)
+[2.970s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics' for CMake module files
+[2.971s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics' for CMake config files
+[2.972s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoa_kinematics', 'cmake_prefix_path')
+[2.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/hook/cmake_prefix_path.ps1'
+[2.975s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/hook/cmake_prefix_path.dsv'
+[2.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/hook/cmake_prefix_path.sh'
+[2.982s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics/lib'
+[2.983s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics/bin'
+[2.983s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics/lib/pkgconfig/cocoa_kinematics.pc'
+[2.983s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics/lib/python3.8/site-packages'
+[2.983s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoa_kinematics', 'pythonpath')
+[2.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/hook/pythonpath.ps1'
+[2.986s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/hook/pythonpath.dsv'
+[2.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/hook/pythonpath.sh'
+[2.988s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics/bin'
+[2.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/package.ps1'
+[2.991s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/package.dsv'
+[2.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/package.sh'
+[2.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/package.bash'
+[2.994s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics/share/cocoa_kinematics/package.zsh'
+[2.995s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/cocoa_kinematics/share/colcon-core/packages/cocoa_kinematics)
+[3.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cocoav_kinematics)
+[3.003s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_kinematics' for CMake module files
+[3.007s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_kinematics' for CMake config files
+[3.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoav_kinematics', 'cmake_prefix_path')
+[3.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/hook/cmake_prefix_path.ps1'
+[3.017s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/hook/cmake_prefix_path.dsv'
+[3.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/hook/cmake_prefix_path.sh'
+[3.021s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_kinematics/lib'
+[3.021s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_kinematics/bin'
+[3.021s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_kinematics/lib/pkgconfig/cocoav_kinematics.pc'
+[3.021s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_kinematics/lib/python3.8/site-packages'
+[3.022s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoav_kinematics', 'pythonpath')
+[3.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/hook/pythonpath.ps1'
+[3.025s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/hook/pythonpath.dsv'
+[3.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/hook/pythonpath.sh'
+[3.026s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_kinematics/bin'
+[3.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/package.ps1'
+[3.031s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/package.dsv'
+[3.032s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/package.sh'
+[3.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/package.bash'
+[3.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/package.zsh'
+[3.035s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/cocoav_kinematics/share/colcon-core/packages/cocoav_kinematics)
+[3.037s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fra333_lab1_25)
+[3.037s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/fra333_lab1_25' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/fra333_lab1_25
+[3.041s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/fra333_lab1_25' for CMake module files
+[3.042s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/fra333_lab1_25' for CMake config files
+[3.043s] Level 1:colcon.colcon_core.shell:create_environment_hook('fra333_lab1_25', 'cmake_prefix_path')
+[3.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/hook/cmake_prefix_path.ps1'
+[3.047s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/hook/cmake_prefix_path.dsv'
+[3.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/hook/cmake_prefix_path.sh'
+[3.048s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/fra333_lab1_25/lib'
+[3.049s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/fra333_lab1_25/bin'
+[3.049s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/fra333_lab1_25/lib/pkgconfig/fra333_lab1_25.pc'
+[3.049s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/fra333_lab1_25/lib/python3.8/site-packages'
+[3.050s] Level 1:colcon.colcon_core.shell:create_environment_hook('fra333_lab1_25', 'pythonpath')
+[3.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/hook/pythonpath.ps1'
+[3.052s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/hook/pythonpath.dsv'
+[3.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/hook/pythonpath.sh'
+[3.054s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/fra333_lab1_25/bin'
+[3.056s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/package.ps1'
+[3.057s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/package.dsv'
+[3.058s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/package.sh'
+[3.058s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/package.bash'
+[3.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/package.zsh'
+[3.059s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/fra333_lab1_25/share/colcon-core/packages/fra333_lab1_25)
+[3.066s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cocoa_description)
+[3.070s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_description' for CMake module files
+[3.071s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoa_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoa_description
+[3.072s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_description' for CMake config files
+[3.072s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoa_description', 'cmake_prefix_path')
+[3.075s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/hook/cmake_prefix_path.ps1'
+[3.075s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/hook/cmake_prefix_path.dsv'
+[3.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/hook/cmake_prefix_path.sh'
+[3.077s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_description/lib'
+[3.077s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_description/bin'
+[3.077s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_description/lib/pkgconfig/cocoa_description.pc'
+[3.077s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_description/lib/python3.8/site-packages'
+[3.077s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoa_description', 'pythonpath')
+[3.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/hook/pythonpath.ps1'
+[3.080s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/hook/pythonpath.dsv'
+[3.081s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/hook/pythonpath.sh'
+[3.082s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_description/bin'
+[3.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/package.ps1'
+[3.085s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/package.dsv'
+[3.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/package.sh'
+[3.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/package.bash'
+[3.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/package.zsh'
+[3.087s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/cocoa_description/share/colcon-core/packages/cocoa_description)
+[3.095s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xicro_pkg)
+[3.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/xicro_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/xicro_pkg
+[3.099s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_pkg' for CMake module files
+[3.100s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_pkg' for CMake config files
+[3.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('xicro_pkg', 'cmake_prefix_path')
+[3.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/hook/cmake_prefix_path.ps1'
+[3.104s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/hook/cmake_prefix_path.dsv'
+[3.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/hook/cmake_prefix_path.sh'
+[3.105s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_pkg/lib'
+[3.105s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_pkg/bin'
+[3.105s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_pkg/lib/pkgconfig/xicro_pkg.pc'
+[3.106s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_pkg/lib/python3.8/site-packages'
+[3.106s] Level 1:colcon.colcon_core.shell:create_environment_hook('xicro_pkg', 'pythonpath')
+[3.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/hook/pythonpath.ps1'
+[3.108s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/hook/pythonpath.dsv'
+[3.109s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/hook/pythonpath.sh'
+[3.109s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_pkg/bin'
+[3.112s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/package.ps1'
+[3.113s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/package.dsv'
+[3.115s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/package.sh'
+[3.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/package.bash'
+[3.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/package.zsh'
+[3.118s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/xicro_pkg/share/colcon-core/packages/xicro_pkg)
+[3.125s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cocoav_description)
+[3.129s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_description' for CMake module files
+[3.133s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoav_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoav_description
+[3.134s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_description' for CMake config files
+[3.134s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoav_description', 'cmake_prefix_path')
+[3.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/hook/cmake_prefix_path.ps1'
+[3.137s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/hook/cmake_prefix_path.dsv'
+[3.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/hook/cmake_prefix_path.sh'
+[3.138s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_description/lib'
+[3.139s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_description/bin'
+[3.139s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_description/lib/pkgconfig/cocoav_description.pc'
+[3.139s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_description/lib/python3.8/site-packages'
+[3.139s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoav_description', 'pythonpath')
+[3.141s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/hook/pythonpath.ps1'
+[3.142s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/hook/pythonpath.dsv'
+[3.142s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/hook/pythonpath.sh'
+[3.143s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_description/bin'
+[3.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/package.ps1'
+[3.146s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/package.dsv'
+[3.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/package.sh'
+[3.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/package.bash'
+[3.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/package.zsh'
+[3.148s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/cocoav_description/share/colcon-core/packages/cocoav_description)
+[3.155s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fra333_lab1_25)
+[3.158s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/fra333_lab1_25' for CMake module files
+[3.159s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/fra333_lab1_25' for CMake config files
+[3.159s] Level 1:colcon.colcon_core.shell:create_environment_hook('fra333_lab1_25', 'cmake_prefix_path')
+[3.162s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/hook/cmake_prefix_path.ps1'
+[3.163s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/hook/cmake_prefix_path.dsv'
+[3.163s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/hook/cmake_prefix_path.sh'
+[3.164s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/fra333_lab1_25/lib'
+[3.164s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/fra333_lab1_25/bin'
+[3.164s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/fra333_lab1_25/lib/pkgconfig/fra333_lab1_25.pc'
+[3.164s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/fra333_lab1_25/lib/python3.8/site-packages'
+[3.165s] Level 1:colcon.colcon_core.shell:create_environment_hook('fra333_lab1_25', 'pythonpath')
+[3.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/hook/pythonpath.ps1'
+[3.167s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/hook/pythonpath.dsv'
+[3.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/hook/pythonpath.sh'
+[3.168s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/fra333_lab1_25/bin'
+[3.171s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/package.ps1'
+[3.172s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/package.dsv'
+[3.172s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/package.sh'
+[3.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/package.bash'
+[3.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/fra333_lab1_25/share/fra333_lab1_25/package.zsh'
+[3.173s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/fra333_lab1_25/share/colcon-core/packages/fra333_lab1_25)
+[3.177s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cocoa_description)
+[3.179s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_description' for CMake module files
+[3.180s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_description' for CMake config files
+[3.180s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoa_description', 'cmake_prefix_path')
+[3.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/hook/cmake_prefix_path.ps1'
+[3.184s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/hook/cmake_prefix_path.dsv'
+[3.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/hook/cmake_prefix_path.sh'
+[3.185s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_description/lib'
+[3.185s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_description/bin'
+[3.185s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_description/lib/pkgconfig/cocoa_description.pc'
+[3.186s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_description/lib/python3.8/site-packages'
+[3.186s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoa_description', 'pythonpath')
+[3.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/hook/pythonpath.ps1'
+[3.190s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/hook/pythonpath.dsv'
+[3.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/hook/pythonpath.sh'
+[3.191s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_description/bin'
+[3.193s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/package.ps1'
+[3.194s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/package.dsv'
+[3.194s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/package.sh'
+[3.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/package.bash'
+[3.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_description/share/cocoa_description/package.zsh'
+[3.196s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/cocoa_description/share/colcon-core/packages/cocoa_description)
+[3.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoav_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoav_interfaces
+[3.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoav_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoav_interfaces -- -j12 -l12
+[3.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab2_25_v1/cocoa_kinematics_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces
+[3.211s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces -- -j12 -l12
+[3.212s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_control_demo_3r_robot)
+[3.216s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot' for CMake module files
+[3.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/ros2_control_demo_3r_robot
+[3.217s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot' for CMake config files
+[3.217s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demo_3r_robot', 'cmake_prefix_path')
+[3.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/hook/cmake_prefix_path.ps1'
+[3.220s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/hook/cmake_prefix_path.dsv'
+[3.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/hook/cmake_prefix_path.sh'
+[3.222s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/lib'
+[3.222s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/bin'
+[3.222s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/lib/pkgconfig/ros2_control_demo_3r_robot.pc'
+[3.222s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/lib/python3.8/site-packages'
+[3.222s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demo_3r_robot', 'pythonpath')
+[3.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/hook/pythonpath.ps1'
+[3.225s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/hook/pythonpath.dsv'
+[3.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/hook/pythonpath.sh'
+[3.226s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/bin'
+[3.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/package.ps1'
+[3.229s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/package.dsv'
+[3.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/package.sh'
+[3.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/package.bash'
+[3.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/package.zsh'
+[3.231s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/colcon-core/packages/ros2_control_demo_3r_robot)
+[3.243s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xicro_pkg)
+[3.246s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_pkg' for CMake module files
+[3.247s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_pkg' for CMake config files
+[3.247s] Level 1:colcon.colcon_core.shell:create_environment_hook('xicro_pkg', 'cmake_prefix_path')
+[3.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/hook/cmake_prefix_path.ps1'
+[3.251s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/hook/cmake_prefix_path.dsv'
+[3.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/hook/cmake_prefix_path.sh'
+[3.252s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_pkg/lib'
+[3.252s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_pkg/bin'
+[3.252s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_pkg/lib/pkgconfig/xicro_pkg.pc'
+[3.253s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_pkg/lib/python3.8/site-packages'
+[3.253s] Level 1:colcon.colcon_core.shell:create_environment_hook('xicro_pkg', 'pythonpath')
+[3.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/hook/pythonpath.ps1'
+[3.255s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/hook/pythonpath.dsv'
+[3.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/hook/pythonpath.sh'
+[3.257s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_pkg/bin'
+[3.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/package.ps1'
+[3.260s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/package.dsv'
+[3.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/package.sh'
+[3.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/package.bash'
+[3.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/package.zsh'
+[3.263s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/xicro_pkg/share/colcon-core/packages/xicro_pkg)
+[3.268s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cocoav_description)
+[3.272s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_description' for CMake module files
+[3.273s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_description' for CMake config files
+[3.274s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoav_description', 'cmake_prefix_path')
+[3.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/hook/cmake_prefix_path.ps1'
+[3.276s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/hook/cmake_prefix_path.dsv'
+[3.277s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/hook/cmake_prefix_path.sh'
+[3.278s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_description/lib'
+[3.278s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_description/bin'
+[3.278s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_description/lib/pkgconfig/cocoav_description.pc'
+[3.278s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_description/lib/python3.8/site-packages'
+[3.278s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoav_description', 'pythonpath')
+[3.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/hook/pythonpath.ps1'
+[3.281s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/hook/pythonpath.dsv'
+[3.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/hook/pythonpath.sh'
+[3.284s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_description/bin'
+[3.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/package.ps1'
+[3.287s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/package.dsv'
+[3.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/package.sh'
+[3.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/package.bash'
+[3.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/package.zsh'
+[3.290s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/cocoav_description/share/colcon-core/packages/cocoav_description)
+[3.294s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_control_demo_3r_robot)
+[3.297s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot' for CMake module files
+[3.298s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot' for CMake config files
+[3.298s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demo_3r_robot', 'cmake_prefix_path')
+[3.300s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/hook/cmake_prefix_path.ps1'
+[3.301s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/hook/cmake_prefix_path.dsv'
+[3.301s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/hook/cmake_prefix_path.sh'
+[3.302s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/lib'
+[3.302s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/bin'
+[3.302s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/lib/pkgconfig/ros2_control_demo_3r_robot.pc'
+[3.303s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/lib/python3.8/site-packages'
+[3.303s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demo_3r_robot', 'pythonpath')
+[3.305s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/hook/pythonpath.ps1'
+[3.305s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/hook/pythonpath.dsv'
+[3.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/hook/pythonpath.sh'
+[3.307s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/bin'
+[3.309s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/package.ps1'
+[3.310s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/package.dsv'
+[3.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/package.sh'
+[3.312s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/package.bash'
+[3.313s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/ros2_control_demo_3r_robot/package.zsh'
+[3.313s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/ros2_control_demo_3r_robot/share/colcon-core/packages/ros2_control_demo_3r_robot)
+[6.918s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/lab1_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/lab1_interfaces -- -j12 -l12
+[7.290s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/lab1_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/lab1_interfaces
+[8.167s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoav_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoav_interfaces -- -j12 -l12
+[8.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces -- -j12 -l12
+[8.575s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoav_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoav_interfaces
+[8.584s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab1_interfaces)
+[8.588s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/lab1_interfaces' for CMake module files
+[8.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/lab1_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/lab1_interfaces
+[8.590s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/lab1_interfaces' for CMake config files
+[8.591s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_interfaces', 'cmake_prefix_path')
+[8.594s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/cmake_prefix_path.ps1'
+[8.595s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/cmake_prefix_path.dsv'
+[8.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/cmake_prefix_path.sh'
+[8.597s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/lab1_interfaces/lib'
+[8.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_interfaces', 'ld_library_path_lib')
+[8.600s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/ld_library_path_lib.ps1'
+[8.601s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/ld_library_path_lib.dsv'
+[8.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/ld_library_path_lib.sh'
+[8.602s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/lab1_interfaces/bin'
+[8.602s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/lab1_interfaces/lib/pkgconfig/lab1_interfaces.pc'
+[8.602s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/lab1_interfaces/lib/python3.8/site-packages'
+[8.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_interfaces', 'pythonpath')
+[8.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/pythonpath.ps1'
+[8.605s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/pythonpath.dsv'
+[8.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/pythonpath.sh'
+[8.607s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/lab1_interfaces/bin'
+[8.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/package.ps1'
+[8.610s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/package.dsv'
+[8.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/package.sh'
+[8.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/package.bash'
+[8.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/package.zsh'
+[8.613s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/lab1_interfaces/share/colcon-core/packages/lab1_interfaces)
+[8.977s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab1_interfaces)
+[8.981s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/lab1_interfaces' for CMake module files
+[8.982s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/lab1_interfaces' for CMake config files
+[8.983s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_interfaces', 'cmake_prefix_path')
+[8.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/cmake_prefix_path.ps1'
+[8.986s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/cmake_prefix_path.dsv'
+[8.986s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/cmake_prefix_path.sh'
+[8.988s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/lab1_interfaces/lib'
+[8.988s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_interfaces', 'ld_library_path_lib')
+[9.002s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/ld_library_path_lib.ps1'
+[9.003s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/ld_library_path_lib.dsv'
+[9.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/ld_library_path_lib.sh'
+[9.004s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/lab1_interfaces/bin'
+[9.005s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/lab1_interfaces/lib/pkgconfig/lab1_interfaces.pc'
+[9.005s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/lab1_interfaces/lib/python3.8/site-packages'
+[9.005s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_interfaces', 'pythonpath')
+[9.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/pythonpath.ps1'
+[9.008s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/pythonpath.dsv'
+[9.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/hook/pythonpath.sh'
+[9.010s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/lab1_interfaces/bin'
+[9.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/package.ps1'
+[9.013s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/package.dsv'
+[9.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/package.sh'
+[9.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/package.bash'
+[9.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/lab1_interfaces/share/lab1_interfaces/package.zsh'
+[9.017s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/lab1_interfaces/share/colcon-core/packages/lab1_interfaces)
+[9.079s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces
+[10.069s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cocoav_interfaces)
+[10.073s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_interfaces' for CMake module files
+[10.074s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoav_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoav_interfaces
+[10.075s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_interfaces' for CMake config files
+[10.075s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoav_interfaces', 'cmake_prefix_path')
+[10.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/cmake_prefix_path.ps1'
+[10.079s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/cmake_prefix_path.dsv'
+[10.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/cmake_prefix_path.sh'
+[10.084s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_interfaces/lib'
+[10.084s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoav_interfaces', 'ld_library_path_lib')
+[10.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/ld_library_path_lib.ps1'
+[10.088s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/ld_library_path_lib.dsv'
+[10.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/ld_library_path_lib.sh'
+[10.089s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_interfaces/bin'
+[10.089s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_interfaces/lib/pkgconfig/cocoav_interfaces.pc'
+[10.090s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_interfaces/lib/python3.8/site-packages'
+[10.090s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoav_interfaces', 'pythonpath')
+[10.092s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/pythonpath.ps1'
+[10.093s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/pythonpath.dsv'
+[10.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/pythonpath.sh'
+[10.095s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_interfaces/bin'
+[10.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/package.ps1'
+[10.099s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/package.dsv'
+[10.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/package.sh'
+[10.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/package.bash'
+[10.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/package.zsh'
+[10.103s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/cocoav_interfaces/share/colcon-core/packages/cocoav_interfaces)
+[10.196s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cocoav_interfaces)
+[10.200s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_interfaces' for CMake module files
+[10.201s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_interfaces' for CMake config files
+[10.201s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoav_interfaces', 'cmake_prefix_path')
+[10.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/cmake_prefix_path.ps1'
+[10.205s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/cmake_prefix_path.dsv'
+[10.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/cmake_prefix_path.sh'
+[10.206s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_interfaces/lib'
+[10.207s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoav_interfaces', 'ld_library_path_lib')
+[10.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/ld_library_path_lib.ps1'
+[10.210s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/ld_library_path_lib.dsv'
+[10.211s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/ld_library_path_lib.sh'
+[10.212s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_interfaces/bin'
+[10.212s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_interfaces/lib/pkgconfig/cocoav_interfaces.pc'
+[10.212s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_interfaces/lib/python3.8/site-packages'
+[10.213s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoav_interfaces', 'pythonpath')
+[10.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/pythonpath.ps1'
+[10.216s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/pythonpath.dsv'
+[10.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/hook/pythonpath.sh'
+[10.218s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoav_interfaces/bin'
+[10.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/package.ps1'
+[10.222s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/package.dsv'
+[10.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/package.sh'
+[10.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/package.bash'
+[10.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/package.zsh'
+[10.225s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/cocoav_interfaces/share/colcon-core/packages/cocoav_interfaces)
+[10.334s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cocoa_kinematics_interfaces)
+[10.338s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces' for CMake module files
+[10.339s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces
+[10.339s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces' for CMake config files
+[10.340s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoa_kinematics_interfaces', 'cmake_prefix_path')
+[10.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/cmake_prefix_path.ps1'
+[10.342s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/cmake_prefix_path.dsv'
+[10.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/cmake_prefix_path.sh'
+[10.342s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib'
+[10.342s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoa_kinematics_interfaces', 'ld_library_path_lib')
+[10.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/ld_library_path_lib.ps1'
+[10.344s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/ld_library_path_lib.dsv'
+[10.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/ld_library_path_lib.sh'
+[10.344s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/bin'
+[10.344s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/pkgconfig/cocoa_kinematics_interfaces.pc'
+[10.345s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages'
+[10.345s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoa_kinematics_interfaces', 'pythonpath')
+[10.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/pythonpath.ps1'
+[10.346s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/pythonpath.dsv'
+[10.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/pythonpath.sh'
+[10.347s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/bin'
+[10.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/package.ps1'
+[10.349s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/package.dsv'
+[10.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/package.sh'
+[10.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/package.bash'
+[10.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/package.zsh'
+[10.350s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/colcon-core/packages/cocoa_kinematics_interfaces)
+[10.408s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cocoa_kinematics_interfaces)
+[10.413s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces' for CMake module files
+[10.414s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces' for CMake config files
+[10.414s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoa_kinematics_interfaces', 'cmake_prefix_path')
+[10.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/cmake_prefix_path.ps1'
+[10.416s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/cmake_prefix_path.dsv'
+[10.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/cmake_prefix_path.sh'
+[10.417s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib'
+[10.417s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoa_kinematics_interfaces', 'ld_library_path_lib')
+[10.418s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/ld_library_path_lib.ps1'
+[10.418s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/ld_library_path_lib.dsv'
+[10.419s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/ld_library_path_lib.sh'
+[10.419s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/bin'
+[10.419s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/pkgconfig/cocoa_kinematics_interfaces.pc'
+[10.419s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/lib/python3.8/site-packages'
+[10.419s] Level 1:colcon.colcon_core.shell:create_environment_hook('cocoa_kinematics_interfaces', 'pythonpath')
+[10.421s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/pythonpath.ps1'
+[10.421s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/pythonpath.dsv'
+[10.421s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/hook/pythonpath.sh'
+[10.421s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/bin'
+[10.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/package.ps1'
+[10.423s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/package.dsv'
+[10.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/package.sh'
+[10.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/package.bash'
+[10.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/cocoa_kinematics_interfaces/package.zsh'
+[10.425s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/cocoa_kinematics_interfaces/share/colcon-core/packages/cocoa_kinematics_interfaces)
+[15.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/xicro_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/xicro_interfaces -- -j12 -l12
+[16.310s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/azthorax/fra333_ws/build/xicro_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/xicro_interfaces
+[20.385s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xicro_interfaces)
+[20.387s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_interfaces' for CMake module files
+[20.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/azthorax/fra333_ws/build/xicro_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/xicro_interfaces
+[20.388s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_interfaces' for CMake config files
+[20.388s] Level 1:colcon.colcon_core.shell:create_environment_hook('xicro_interfaces', 'cmake_prefix_path')
+[20.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/cmake_prefix_path.ps1'
+[20.390s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/cmake_prefix_path.dsv'
+[20.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/cmake_prefix_path.sh'
+[20.391s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_interfaces/lib'
+[20.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('xicro_interfaces', 'ld_library_path_lib')
+[20.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/ld_library_path_lib.ps1'
+[20.392s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/ld_library_path_lib.dsv'
+[20.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/ld_library_path_lib.sh'
+[20.393s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_interfaces/bin'
+[20.393s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_interfaces/lib/pkgconfig/xicro_interfaces.pc'
+[20.393s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_interfaces/lib/python3.8/site-packages'
+[20.393s] Level 1:colcon.colcon_core.shell:create_environment_hook('xicro_interfaces', 'pythonpath')
+[20.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/pythonpath.ps1'
+[20.394s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/pythonpath.dsv'
+[20.395s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/pythonpath.sh'
+[20.395s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_interfaces/bin'
+[20.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/package.ps1'
+[20.397s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/package.dsv'
+[20.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/package.sh'
+[20.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/package.bash'
+[20.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/package.zsh'
+[20.398s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/xicro_interfaces/share/colcon-core/packages/xicro_interfaces)
+[20.725s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xicro_interfaces)
+[20.729s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_interfaces' for CMake module files
+[20.729s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_interfaces' for CMake config files
+[20.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('xicro_interfaces', 'cmake_prefix_path')
+[20.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/cmake_prefix_path.ps1'
+[20.731s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/cmake_prefix_path.dsv'
+[20.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/cmake_prefix_path.sh'
+[20.732s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_interfaces/lib'
+[20.732s] Level 1:colcon.colcon_core.shell:create_environment_hook('xicro_interfaces', 'ld_library_path_lib')
+[20.733s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/ld_library_path_lib.ps1'
+[20.734s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/ld_library_path_lib.dsv'
+[20.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/ld_library_path_lib.sh'
+[20.734s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_interfaces/bin'
+[20.734s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_interfaces/lib/pkgconfig/xicro_interfaces.pc'
+[20.734s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_interfaces/lib/python3.8/site-packages'
+[20.734s] Level 1:colcon.colcon_core.shell:create_environment_hook('xicro_interfaces', 'pythonpath')
+[20.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/pythonpath.ps1'
+[20.736s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/pythonpath.dsv'
+[20.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/hook/pythonpath.sh'
+[20.736s] Level 1:colcon.colcon_core.environment:checking '/home/azthorax/fra333_ws/install/xicro_interfaces/bin'
+[20.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/package.ps1'
+[20.738s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/package.dsv'
+[20.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/package.sh'
+[20.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/package.bash'
+[20.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/azthorax/fra333_ws/install/xicro_interfaces/share/xicro_interfaces/package.zsh'
+[20.740s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/azthorax/fra333_ws/install/xicro_interfaces/share/colcon-core/packages/xicro_interfaces)
+[20.740s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[20.740s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[20.740s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[20.741s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[20.749s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[20.749s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[20.749s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[20.773s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[20.776s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/azthorax/fra333_ws/install/local_setup.ps1'
+[20.778s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/azthorax/fra333_ws/install/_local_setup_util_ps1.py'
+[20.781s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/azthorax/fra333_ws/install/setup.ps1'
+[20.783s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/azthorax/fra333_ws/install/local_setup.sh'
+[20.784s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/azthorax/fra333_ws/install/_local_setup_util_sh.py'
+[20.785s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/azthorax/fra333_ws/install/setup.sh'
+[20.786s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/azthorax/fra333_ws/install/local_setup.bash'
+[20.787s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/azthorax/fra333_ws/install/setup.bash'
+[20.788s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/azthorax/fra333_ws/install/local_setup.zsh'
+[20.788s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/azthorax/fra333_ws/install/setup.zsh'

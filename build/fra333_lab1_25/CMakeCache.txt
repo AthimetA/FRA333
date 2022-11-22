@@ -338,7 +338,7 @@ foonathan_memory_DIR:PATH=/opt/ros/foxy/lib/foonathan_memory/cmake
 fra333_lab1_25_BINARY_DIR:STATIC=/home/azthorax/fra333_ws/build/fra333_lab1_25
 
 //Value Computed by CMake
-fra333_lab1_25_SOURCE_DIR:STATIC=/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25
+fra333_lab1_25_SOURCE_DIR:STATIC=/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25
 
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/foxy/share/geometry_msgs/cmake
@@ -550,7 +550,7 @@ CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/azthorax/fra333_ws/src/fra333_lab1_25/fra333_lab1_25
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
