@@ -13,6 +13,7 @@ CMakeFiles/cocoav_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_ge
  /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
  /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
  /opt/ros/foxy/include/sensor_msgs/msg/detail/joint_state__struct.h
+ /opt/ros/foxy/include/std_msgs/msg/detail/float64__struct.h
  /opt/ros/foxy/include/std_msgs/msg/detail/header__struct.h
  /usr/include/python3.8/Python.h
  /usr/include/python3.8/abstract.h
@@ -101,6 +102,9 @@ CMakeFiles/cocoav_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_ge
  /usr/include/python3.8/unicodeobject.h
  /usr/include/python3.8/warnings.h
  /usr/include/python3.8/weakrefobject.h
+ rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.h
+ rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__struct.h
+ rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.h
  rosidl_generator_c/cocoav_interfaces/msg/rosidl_generator_c__visibility_control.h
  rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vfk__functions.h
  rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vfk__struct.h

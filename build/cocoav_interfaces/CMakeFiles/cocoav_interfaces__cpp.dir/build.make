@@ -61,6 +61,10 @@ CMakeFiles/cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/srv/co
 CMakeFiles/cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vfk__builder.hpp
 CMakeFiles/cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vfk__struct.hpp
 CMakeFiles/cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vfk__traits.hpp
+CMakeFiles/cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/msg/cocoa_test.hpp
+CMakeFiles/cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__builder.hpp
+CMakeFiles/cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__struct.hpp
+CMakeFiles/cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__traits.hpp
 
 
 rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp: /opt/ros/foxy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -80,6 +84,7 @@ rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp: /opt/ros/foxy/share/ro
 rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp: rosidl_adapter/cocoav_interfaces/srv/CocoaVIK.idl
 rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp: rosidl_adapter/cocoav_interfaces/srv/CocoaVFK.idl
+rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp: rosidl_adapter/cocoav_interfaces/msg/CocoaTest.idl
 rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -193,6 +198,18 @@ rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vfk__struct.hpp: rosidl_
 rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vfk__traits.hpp: rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vfk__traits.hpp
 
+rosidl_generator_cpp/cocoav_interfaces/msg/cocoa_test.hpp: rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoav_interfaces/msg/cocoa_test.hpp
+
+rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__builder.hpp: rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__builder.hpp
+
+rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__struct.hpp: rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__struct.hpp
+
+rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__traits.hpp: rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__traits.hpp
+
 cocoav_interfaces__cpp: CMakeFiles/cocoav_interfaces__cpp
 cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vik.hpp
 cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vik__builder.hpp
@@ -202,6 +219,10 @@ cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/srv/cocoa_vfk.hpp
 cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vfk__builder.hpp
 cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vfk__struct.hpp
 cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/srv/detail/cocoa_vfk__traits.hpp
+cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/msg/cocoa_test.hpp
+cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__builder.hpp
+cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__struct.hpp
+cocoav_interfaces__cpp: rosidl_generator_cpp/cocoav_interfaces/msg/detail/cocoa_test__traits.hpp
 cocoav_interfaces__cpp: CMakeFiles/cocoav_interfaces__cpp.dir/build.make
 
 .PHONY : cocoav_interfaces__cpp

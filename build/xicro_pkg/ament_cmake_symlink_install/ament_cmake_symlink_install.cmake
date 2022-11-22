@@ -319,8 +319,8 @@ ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/Xicro/xicro_pkg"
 # install(DIRECTORY "/home/azthorax/fra333_ws/src/Xicro/xicro_pkg/xicro_pkg/" "DESTINATION" "lib/python3.8/site-packages/xicro_pkg" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/Xicro/xicro_pkg" DIRECTORY "/home/azthorax/fra333_ws/src/Xicro/xicro_pkg/xicro_pkg/" "DESTINATION" "lib/python3.8/site-packages/xicro_pkg" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install(PROGRAMS "scripts/gui_xicro.py" "scripts/generate_library.py" "scripts/generate_xicro_node.py" "scripts/fake_Imu_node.py" "scripts/xicro_node_read_imu_ID_3_arduino.py" "DESTINATION" "lib/xicro_pkg")
-ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/Xicro/xicro_pkg" PROGRAMS "scripts/gui_xicro.py" "scripts/generate_library.py" "scripts/generate_xicro_node.py" "scripts/fake_Imu_node.py" "scripts/xicro_node_read_imu_ID_3_arduino.py" "DESTINATION" "lib/xicro_pkg")
+# install(PROGRAMS "scripts/gui_xicro.py" "scripts/generate_library.py" "scripts/generate_xicro_node.py" "scripts/fake_Imu_node.py" "scripts/xicro_node_read_imu_ID_3_arduino.py" "scripts/xicro_node_cocoav_imu_ID_1_arduino.py" "DESTINATION" "lib/xicro_pkg")
+ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/Xicro/xicro_pkg" PROGRAMS "scripts/gui_xicro.py" "scripts/generate_library.py" "scripts/generate_xicro_node.py" "scripts/fake_Imu_node.py" "scripts/xicro_node_read_imu_ID_3_arduino.py" "scripts/xicro_node_cocoav_imu_ID_1_arduino.py" "DESTINATION" "lib/xicro_pkg")
 
 # install(DIRECTORY "config" "DESTINATION" "share/xicro_pkg")
 ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/Xicro/xicro_pkg" DIRECTORY "config" "DESTINATION" "share/xicro_pkg")

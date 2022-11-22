@@ -67,6 +67,7 @@ rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosid
 rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_c.h: rosidl_adapter/cocoav_interfaces/srv/CocoaVIK.idl
 rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_c.h: rosidl_adapter/cocoav_interfaces/srv/CocoaVFK.idl
+rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_c.h: rosidl_adapter/cocoav_interfaces/msg/CocoaTest.idl
 rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -162,11 +163,17 @@ rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosid
 rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vfk__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vfk__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__type_support.c: rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__type_support.c
 
 rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vfk__type_support.c: rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vfk__type_support.c
+
+rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c: rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c
 
 CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__type_support.c.o: CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__type_support.c.o: rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__type_support.c
@@ -194,16 +201,31 @@ CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_type
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vfk__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vfk__type_support.c -o CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vfk__type_support.c.s
 
+CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c.o: CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c.o: rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/azthorax/fra333_ws/build/cocoav_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c.o   -c /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c
+
+CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c > CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c.i
+
+CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c -o CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c.s
+
 # Object files for target cocoav_interfaces__rosidl_typesupport_introspection_c
 cocoav_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__type_support.c.o" \
-"CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vfk__type_support.c.o"
+"CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vfk__type_support.c.o" \
+"CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c.o"
 
 # External object files for target cocoav_interfaces__rosidl_typesupport_introspection_c
 cocoav_interfaces__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libcocoav_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__type_support.c.o
 libcocoav_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vfk__type_support.c.o
+libcocoav_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c.o
 libcocoav_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/build.make
 libcocoav_interfaces__rosidl_typesupport_introspection_c.so: libcocoav_interfaces__rosidl_generator_c.so
 libcocoav_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
@@ -234,7 +256,7 @@ libcocoav_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/l
 libcocoav_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libcocoav_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librcutils.so
 libcocoav_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/azthorax/fra333_ws/build/cocoav_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libcocoav_interfaces__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/azthorax/fra333_ws/build/cocoav_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libcocoav_interfaces__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -248,8 +270,10 @@ CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_c.h
 CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vfk__rosidl_typesupport_introspection_c.h
+CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__rosidl_typesupport_introspection_c.h
 CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__type_support.c
 CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vfk__type_support.c
+CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c
 	cd /home/azthorax/fra333_ws/build/cocoav_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces /home/azthorax/fra333_ws/build/cocoav_interfaces /home/azthorax/fra333_ws/build/cocoav_interfaces /home/azthorax/fra333_ws/build/cocoav_interfaces/CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/depend
 

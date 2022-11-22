@@ -1,3 +1,5 @@
+msg/CocoaTest.idl
+msg/CocoaTest.msg
 srv/CocoaVFK.idl
 srv/CocoaVFK.srv
 srv/CocoaVFK_Request.msg

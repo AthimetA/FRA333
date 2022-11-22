@@ -1,5 +1,6 @@
+#include <Xicro_cocoav_imu_ID_1.h>
 #include <Arduino_LSM6DS3.h>
-#include <Xicro_read_imu_ID_3.h>
+
 Xicro xicro;
 
 float ax, ay, az;  
@@ -11,6 +12,8 @@ float angular_velocity[3]={0};
 float angular_velocity_covariance[9]={1,0,0,0,1,0,0,0,1};
 float linear_acceleration[3]={0};
 float linear_acceleration_covariance[9]={1,0,0,0,1,0,0,0,1};
+
+float testmsg = 2.0;
 
 
 void setup() 
@@ -42,6 +45,7 @@ void read_imu_Sendros2()
       ,orientation[0],orientation[1],orientation[2],orientation[3],orientation_covariance 
       ,angular_velocity[0],angular_velocity[1],angular_velocity[2],angular_velocity_covariance 
       ,linear_acceleration[0],linear_acceleration[1],linear_acceleration[2] ,linear_acceleration_covariance );
+      xicro.publish_test_topic_7(testmsg);
   }
 
 }

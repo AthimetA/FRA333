@@ -1,0 +1,28 @@
+[0.084s] Invoking command in '/home/azthorax/fra333_ws/build/cocoav_kinematics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoav_kinematics -- -j12 -l12
+[0.214s] Invoked command in '/home/azthorax/fra333_ws/build/cocoav_kinematics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoav_kinematics -- -j12 -l12
+[0.369s] Invoking command in '/home/azthorax/fra333_ws/build/cocoav_kinematics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoav_kinematics
+[0.477s] -- Install configuration: ""
+[0.477s] -- Execute custom install script
+[0.477s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/pythonpath.sh
+[0.477s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/pythonpath.dsv
+[0.477s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/lib/python3.8/site-packages/cocoav_kinematics/__init__.py
+[0.478s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/lib/cocoav_kinematics/fk_ik_server.py
+[0.478s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/lib/cocoav_kinematics/trajectory_gen.py
+[0.478s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/launch/display_with_kinematic.launch.py
+[0.478s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/ament_index/resource_index/package_run_dependencies/cocoav_kinematics
+[0.478s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/ament_index/resource_index/parent_prefix_path/cocoav_kinematics
+[0.478s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/ament_prefix_path.sh
+[0.478s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/ament_prefix_path.dsv
+[0.478s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/path.sh
+[0.478s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/environment/path.dsv
+[0.478s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/local_setup.bash
+[0.478s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/local_setup.sh
+[0.478s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/local_setup.zsh
+[0.478s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/local_setup.dsv
+[0.479s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/package.dsv
+[0.479s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/ament_index/resource_index/packages/cocoav_kinematics
+[0.479s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/cmake/cocoav_kinematicsConfig.cmake
+[0.479s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/cmake/cocoav_kinematicsConfig-version.cmake
+[0.483s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoav_kinematics/share/cocoav_kinematics/package.xml
+[0.484s] Listing '/home/azthorax/fra333_ws/install/cocoav_kinematics/lib/python3.8/site-packages/cocoav_kinematics'...
+[0.541s] Invoked command in '/home/azthorax/fra333_ws/build/cocoav_kinematics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoav_kinematics

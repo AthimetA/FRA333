@@ -6,6 +6,7 @@
 /home/azthorax/fra333_ws/install/xicro_pkg/lib/xicro_pkg/generate_xicro_node.py
 /home/azthorax/fra333_ws/install/xicro_pkg/lib/xicro_pkg/fake_Imu_node.py
 /home/azthorax/fra333_ws/install/xicro_pkg/lib/xicro_pkg/xicro_node_read_imu_ID_3_arduino.py
+/home/azthorax/fra333_ws/install/xicro_pkg/lib/xicro_pkg/xicro_node_cocoav_imu_ID_1_arduino.py
 /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/config/.Xicro_node_preSetup.txt
 /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/config/.arduino_cpp_preSetup.txt
 /home/azthorax/fra333_ws/install/xicro_pkg/share/xicro_pkg/config/.arduino_h_preSetup.txt

@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/msg/cocoa_test__type_support.cpp
+cstddef
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/msg/cstddef
+rosidl_runtime_c/message_type_support_struct.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/msg/rosidl_runtime_c/message_type_support_struct.h
+cocoav_interfaces/msg/rosidl_typesupport_c__visibility_control.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/msg/cocoav_interfaces/msg/rosidl_typesupport_c__visibility_control.h
+cocoav_interfaces/msg/detail/cocoa_test__struct.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/msg/cocoav_interfaces/msg/detail/cocoa_test__struct.h
+rosidl_typesupport_c/identifier.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/msg/rosidl_typesupport_c/identifier.h
+rosidl_typesupport_c/message_type_support_dispatch.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/msg/rosidl_typesupport_c/message_type_support_dispatch.h
+rosidl_typesupport_c/type_support_map.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/msg/rosidl_typesupport_c/type_support_map.h
+rosidl_typesupport_c/visibility_control.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/msg/rosidl_typesupport_c/visibility_control.h
+rosidl_typesupport_interface/macros.h
+/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/msg/rosidl_typesupport_interface/macros.h
+
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/cocoa_vfk__type_support.cpp
 cstddef
 /home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_typesupport_c/cocoav_interfaces/srv/cstddef
@@ -136,6 +156,14 @@ rosidl_runtime_c/string.h
 rosidl_runtime_c/primitives_sequence.h
 /opt/ros/foxy/include/sensor_msgs/msg/detail/rosidl_runtime_c/primitives_sequence.h
 
+/opt/ros/foxy/include/std_msgs/msg/detail/float64__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
 /opt/ros/foxy/include/std_msgs/msg/detail/header__struct.h
 stdbool.h
 -
@@ -147,6 +175,16 @@ builtin_interfaces/msg/detail/time__struct.h
 /opt/ros/foxy/include/std_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.h
 rosidl_runtime_c/string.h
 /opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/string.h
+
+rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+std_msgs/msg/detail/float64__struct.h
+rosidl_generator_c/cocoav_interfaces/msg/detail/std_msgs/msg/detail/float64__struct.h
 
 rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vfk__struct.h
 stdbool.h

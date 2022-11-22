@@ -2,6 +2,7 @@
   "package_name": "cocoav_interfaces",
   "non_idl_tuples": [
     "/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces:srv/CocoaVIK.srv",
-    "/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces:srv/CocoaVFK.srv"
+    "/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces:srv/CocoaVFK.srv",
+    "/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_interfaces:msg/CocoaTest.msg"
   ]
 }
