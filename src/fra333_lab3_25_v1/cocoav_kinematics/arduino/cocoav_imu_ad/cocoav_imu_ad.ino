@@ -31,9 +31,9 @@ void read_imu_Sendros2()
 {
   if(IMU.readAcceleration(gx, gy, gz) && IMU.readGyroscope(ax, ay, az))
   {
-      angular_velocity[0]=ax*(3.141592/180.00);
-      angular_velocity[1]=ay*(3.141592/180.00);
-      angular_velocity[2]=az*(3.141592/180.0);
+      angular_velocity[0]=ax;
+      angular_velocity[1]=ay;
+      angular_velocity[2]=az;
       linear_acceleration[0]=gx*(9.80665);
       linear_acceleration[1]=gy*(9.80665);
       linear_acceleration[2]=gz*(-9.80665);

@@ -10,6 +10,11 @@ from rclpy.qos import QoSProfile
 
 from cocoav_interfaces.msg import CocoaVIMU
 
+from pathlib import Path
+from imucal.management import find_calibration_info_for_sensor
+from imucal.management import load_calibration_info
+import pandas as pd
+
 class CocoaVCalibrator(Node):
     def __init__(self):
         super().__init__('cocoav_calibrator_node')
@@ -32,6 +37,11 @@ class CocoaVCalibrator(Node):
         
         # Timer
         self.timer_callback = self.create_timer(self.time_rate, callback=self.timer_callback)
+        
+        # Calibration
+        folder = '/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_kinematics/scripts/imucal/info'
+        cals = find_calibration_info_for_sensor("arduinoimu", Path(folder))
+        self.cocoav_calibrator = load_calibration_info(cals[0])
     
     def imu_sub_callback(self, msg:CocoaVIMU):
         self.time_ms = msg.time_ms
@@ -40,9 +50,14 @@ class CocoaVCalibrator(Node):
     
     def imu_calibrate(self):
         imu = CocoaVIMU()
+        data = np.array([self.angular_velocity[0], self.angular_velocity[1], self.angular_velocity[2], self.linear_acceleration[0], self.linear_acceleration[1], self.linear_acceleration[2]])
+        col = ['gyr_x', 'gyr_y', 'gyr_z', 'acc_x', 'acc_y', 'acc_z']
+        datadf = pd.DataFrame(data.reshape(1,6), columns=col)
+        calibrated_data = self.cocoav_calibrator.calibrate_df(datadf, "m/s^2", "deg/s").to_dict()
         imu.time_ms = self.time_ms
-        imu.angular_velocity = self.angular_velocity
-        imu.linear_acceleration = self.linear_acceleration
+        imu.angular_velocity = [calibrated_data['gyr_x'][0], calibrated_data['gyr_y'][0], calibrated_data['gyr_z'][0]]
+        imu.angular_velocity = imu.angular_velocity*3.14159265359/180
+        imu.linear_acceleration = [calibrated_data['acc_x'][0], calibrated_data['acc_y'][0], calibrated_data['acc_z'][0]]
         self.imu_pub.publish(imu)
     
     def timer_callback(self):

@@ -53,7 +53,7 @@ class CocoaTest(Node):
         
         # Estimator
         self.estimate_orientation_euler = 0
-        self.estimate_frequency = 100
+        self.estimate_frequency = 1000
         self.estimate_timer = self.create_timer(1/self.estimate_frequency, callback=self.cocoaV_orientation_estimation_callback)
         
     
@@ -61,7 +61,7 @@ class CocoaTest(Node):
         self.time_ms = msg.time_ms
         self.angular_velocity = msg.angular_velocity
         self.linear_acceleration = msg.linear_acceleration
-        self.datalog = self.datalog.append({'gyr_x': self.angular_velocity[0], 'gyr_y': self.angular_velocity[1], 'gyr_z': self.angular_velocity[2], 'acc_x': self.linear_acceleration[0], 'acc_y': self.linear_acceleration[1], 'acc_z': self.linear_acceleration[2]}, ignore_index=True)
+        # self.datalog = self.datalog.append({'gyr_x': self.angular_velocity[0], 'gyr_y': self.angular_velocity[1], 'gyr_z': self.angular_velocity[2], 'acc_x': self.linear_acceleration[0], 'acc_y': self.linear_acceleration[1], 'acc_z': self.linear_acceleration[2]}, ignore_index=True)
     
     def imu_calibrate(self):
         imu = CocoaVIMU()
@@ -78,57 +78,57 @@ class CocoaTest(Node):
         
     
     def cocoaV_orientation_estimation_callback(self):
-        print("angular_velocity: ",self.angular_velocity)
-        print("linear_acceleration: ",self.linear_acceleration)
-        # self.timearray.append(self.time_ms/1000)
-        # self.dataarrayA.append(self.linear_acceleration)
-        # self.dataarrayW.append(self.angular_velocity)
-        # #
-        # if self.count == 100:
-        #     self.count = 0
-        #     self.testround += 1
-        #     # print('-'*50)
-        #     # self.get_logger().info('Calibration round %d finished' % self.testround)
-        #     # print("Time array: ", self.timearray)
-        #     # print(np.diff(self.timearray))
-        #     p = self.estimate_orientation(self.dataarrayA, self.dataarrayW, self.timearray)
-        #     # print("DataA array: ", self.dataarrayA)
-        #     # print("DataW array: ", self.dataarrayW)
-        #     FA = quaternion.as_float_array(p)
-        #     PE = np.mean(FA, axis=0)
-        #     # print("P array: \n", FA)
-        #     # print("Estimated orientation: ", PE)
-        #     # print("P array: \n", FA)
-        #     # print("Estimated orientation: ", PE)
-        #     # FA = quaternion.as_float_array(PE)
-        #     # # print("Estimated orientation as float array: ", FA)
-        #     self.estimate_orientation_euler = Rotation.from_quat(PE)
-        #     # print("Estimated orientation as rotation matrix: \n", R.as_matrix())
-        #     eee = self.estimate_orientation_euler.as_euler('xyz', degrees=True)
-        #     neee = np.array(eee)
-        #     neee =np.rint(neee)
-        #     print("Estimated orientation as euler angles: ", neee)
-        #     # print("Estimated orientation as quaternion: ", R.as_quat())
-        #     # print("Orientation X: ", p[0])
-        #     # print("Orientation Y: ", p[1])
-        #     # print("Orientation Z: ", p[2])
-        #     # R = self.quat2rot(PE)
-        #     # R = Rotation.from_quat(PE)
-        #     # print("Rotation matrix: ", R)
-        #     # phi, theta, psi = self.rot2euler(R)
-        #     # print("Euler angles: ", phi, theta, psi)
-        #     self.dataarrayA = []
-        #     self.dataarrayW = []
-        #     self.timearray = []
-        # else:
-            # self.count += 1
+        # print("angular_velocity: ",self.angular_velocity)
+        # print("linear_acceleration: ",self.linear_acceleration)
+        self.timearray.append(self.time_ms/1000)
+        self.dataarrayA.append(self.linear_acceleration)
+        self.dataarrayW.append(self.angular_velocity)
+        #
+        if self.count == 100:
+            self.count = 0
+            self.testround += 1
+            # print('-'*50)
+            # self.get_logger().info('Calibration round %d finished' % self.testround)
+            # print("Time array: ", self.timearray)
+            # print(np.diff(self.timearray))
+            p = self.estimate_orientation(self.dataarrayA, self.dataarrayW, self.timearray)
+            # print("DataA array: ", self.dataarrayA)
+            # print("DataW array: ", self.dataarrayW)
+            FA = quaternion.as_float_array(p)
+            PE = np.mean(FA, axis=0)
+            # print("P array: \n", FA)
+            # print("Estimated orientation: ", PE)
+            # print("P array: \n", FA)
+            # print("Estimated orientation: ", PE)
+            # FA = quaternion.as_float_array(PE)
+            # # print("Estimated orientation as float array: ", FA)
+            self.estimate_orientation_euler = Rotation.from_quat(PE)
+            # print("Estimated orientation as rotation matrix: \n", R.as_matrix())
+            eee = self.estimate_orientation_euler.as_euler('xyz', degrees=True)
+            neee = np.array(eee)
+            neee =np.rint(neee)
+            print("Estimated orientation as euler angles: ", neee)
+            # print("Estimated orientation as quaternion: ", R.as_quat())
+            # print("Orientation X: ", p[0])
+            # print("Orientation Y: ", p[1])
+            # print("Orientation Z: ", p[2])
+            # R = self.quat2rot(PE)
+            # R = Rotation.from_quat(PE)
+            # print("Rotation matrix: ", R)
+            # phi, theta, psi = self.rot2euler(R)
+            # print("Euler angles: ", phi, theta, psi)
+            self.dataarrayA = []
+            self.dataarrayW = []
+            self.timearray = []
+        else:
+            self.count += 1
     
     
     def timer_callback(self):
         self.imu_calibrate()
     
     def estimate_orientation(self,a, w, t, alpha=0.8, g_ref=(0., 0., 1.),
-                         theta_min=1e-1, highpass=1/100, lowpass=1/40):
+                         theta_min=1e-2, highpass=1/100, lowpass=1/10):
         # """ Estimate orientation with a complementary filter.
         # Fuse linear acceleration and angular velocity measurements to obtain an
         # estimate of orientation using a complementary filter as described in
@@ -206,8 +206,8 @@ def main(args=None):
         raise
     finally:
         print("Hi I'm dead")
-        print(calibrate_obj.datalog)
-        calibrate_obj.datalog.to_csv('calibrate.csv', index=False)
+        # print(calibrate_obj.datalog)
+        # calibrate_obj.datalog.to_csv('calibrate.csv', index=False)
         print("Data saved")
         calibrate_obj.destroy_node()
         rclpy.shutdown() 
