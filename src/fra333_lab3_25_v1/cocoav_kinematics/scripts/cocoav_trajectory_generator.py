@@ -49,9 +49,9 @@ class CocoaVTrajectoryGen(Node):
         # define constant
         g = 9.81
         # Get linear acceleration
-        acc_x = self.linear_acceleration[0]
-        acc_y = self.linear_acceleration[1]
-        acc_z = self.linear_acceleration[2]
+        acc_x = int(self.linear_acceleration[0])
+        acc_y = int(self.linear_acceleration[1])
+        acc_z = int(self.linear_acceleration[2])
         # Get current position
         setpoint_x = self.setpoint_position[0]
         setpoint_y = self.setpoint_position[1]
