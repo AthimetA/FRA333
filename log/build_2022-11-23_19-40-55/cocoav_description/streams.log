@@ -1,0 +1,80 @@
+[0.073s] Invoking command in '/home/azthorax/fra333_ws/build/cocoav_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoav_description
+[0.156s] -- The C compiler identification is GNU 9.4.0
+[0.215s] -- The CXX compiler identification is GNU 9.4.0
+[0.220s] -- Check for working C compiler: /usr/bin/cc
+[0.294s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.295s] -- Detecting C compiler ABI info
+[0.380s] -- Detecting C compiler ABI info - done
+[0.394s] -- Detecting C compile features
+[0.395s] -- Detecting C compile features - done
+[0.399s] -- Check for working CXX compiler: /usr/bin/c++
+[0.501s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.503s] -- Detecting CXX compiler ABI info
+[0.594s] -- Detecting CXX compiler ABI info - done
+[0.608s] -- Detecting CXX compile features
+[0.609s] -- Detecting CXX compile features - done
+[0.611s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.637s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.637s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.851s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.876s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.927s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.935s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.012s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.048s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.144s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.214s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.216s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.217s] -- Looking for pthread.h
+[1.312s] -- Looking for pthread.h - found
+[1.312s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.416s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.417s] -- Looking for pthread_create in pthreads
+[1.478s] -- Looking for pthread_create in pthreads - not found
+[1.478s] -- Looking for pthread_create in pthread
+[1.557s] -- Looking for pthread_create in pthread - found
+[1.559s] -- Found Threads: TRUE  
+[1.766s] -- Found rclpy: 1.0.11 (/opt/ros/foxy/share/rclpy/cmake)
+[1.882s] -- Configuring done
+[1.884s] -- Generating done
+[1.887s] -- Build files have been written to: /home/azthorax/fra333_ws/build/cocoav_description
+[1.904s] Invoked command in '/home/azthorax/fra333_ws/build/cocoav_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoav_description
+[1.908s] Invoking command in '/home/azthorax/fra333_ws/build/cocoav_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoav_description -- -j12 -l12
+[1.960s] Invoked command in '/home/azthorax/fra333_ws/build/cocoav_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoav_description -- -j12 -l12
+[1.989s] Invoking command in '/home/azthorax/fra333_ws/build/cocoav_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoav_description
+[2.001s] -- Install configuration: ""
+[2.001s] -- Execute custom install script
+[2.002s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/environment/pythonpath.sh
+[2.010s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/environment/pythonpath.dsv
+[2.018s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/lib/python3.8/site-packages/cocoav_description/__init__.py
+[2.027s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/meshes/end_effector.stl
+[2.039s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/meshes/link_0.stl
+[2.046s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/meshes/link_1.stl
+[2.057s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/meshes/link_1c.stl
+[2.066s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/meshes/link_2.stl
+[2.075s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/meshes/link_3.stl
+[2.088s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/meshes/link_3c.stl
+[2.095s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/robot/cocoav_gazebo.xacro
+[2.106s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/robot/cocoav_include.xacro
+[2.116s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/robot/cocoav_robot.urdf.xacro
+[2.125s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/launch/display_gazebo.launch.py
+[2.138s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/config/cocoa_controllers.yaml
+[2.150s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/config/cocoav.rviz
+[2.162s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/ament_index/resource_index/package_run_dependencies/cocoav_description
+[2.176s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/ament_index/resource_index/parent_prefix_path/cocoav_description
+[2.190s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/environment/ament_prefix_path.sh
+[2.202s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/environment/ament_prefix_path.dsv
+[2.213s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/environment/path.sh
+[2.223s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/environment/path.dsv
+[2.234s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/local_setup.bash
+[2.244s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/local_setup.sh
+[2.254s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/local_setup.zsh
+[2.264s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/local_setup.dsv
+[2.275s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/package.dsv
+[2.281s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/ament_index/resource_index/packages/cocoav_description
+[2.293s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/cmake/cocoav_descriptionConfig.cmake
+[2.306s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/cmake/cocoav_descriptionConfig-version.cmake
+[2.318s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoav_description/share/cocoav_description/package.xml
+[2.366s] Listing '/home/azthorax/fra333_ws/install/cocoav_description/lib/python3.8/site-packages/cocoav_description'...
+[2.366s] Compiling '/home/azthorax/fra333_ws/install/cocoav_description/lib/python3.8/site-packages/cocoav_description/__init__.py'...
+[2.397s] Invoked command in '/home/azthorax/fra333_ws/build/cocoav_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoav_description

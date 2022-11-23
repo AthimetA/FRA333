@@ -28,7 +28,6 @@ ament_python_install_package(${PROJECT_NAME})
 # Install Python executables
 install(PROGRAMS
   scripts/fk_ik_server.py
-  scripts/trajectory_gen.py
   scripts/cocoav_imu_calibration.py
   scripts/cocoav_trajectory_generator.py
   scripts/cocoav_calibrator_findconfig.py
