@@ -25,7 +25,7 @@ class CocoaIMUTest(Node):
         self.time_ms = 0
         self.angular_velocity = [0.0,0.0,0.0]
         self.linear_acceleration = [0.0,0.0,0.0]
-        self.imu_sub = self.create_subscription(CocoaVIMU, '/cocoav_imu_calibrated', self.imu_sub_callback, qos_profile)
+        self.imu_sub = self.create_subscription(CocoaVIMU, '/cocoav_imu_arduino', self.imu_sub_callback, qos_profile)
     
     def imu_sub_callback(self, msg:CocoaVIMU):
         self.time_ms = msg.time_ms

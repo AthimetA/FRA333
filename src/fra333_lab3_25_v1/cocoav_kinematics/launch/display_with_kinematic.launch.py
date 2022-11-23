@@ -31,15 +31,21 @@ def generate_launch_description():
         ])
     )
     
-    traject_test = Node(
+    cocoav_imu_calibrator = Node(
         package='cocoav_kinematics',
-        executable='trajectory_gen.py',
+        executable='cocoav_imu_calibration.py',
+    )
+    
+    cocoav_trajectory_generator = Node(
+        package='cocoav_kinematics',
+        executable='cocoav_trajectory_generator.py',
     )
     
     # Launch Description
     launch_description = LaunchDescription()
     launch_description.add_action(display)
-    launch_description.add_action(traject_test)
+    launch_description.add_action(cocoav_imu_calibrator)
+    launch_description.add_action(cocoav_trajectory_generator)
     
     # launch_description.add_action(srv_call_set_joint)
     return launch_description

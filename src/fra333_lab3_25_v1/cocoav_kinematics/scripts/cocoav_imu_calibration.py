@@ -55,8 +55,9 @@ class CocoaVCalibrator(Node):
         datadf = pd.DataFrame(data.reshape(1,6), columns=col)
         calibrated_data = self.cocoav_calibrator.calibrate_df(datadf, "m/s^2", "deg/s").to_dict()
         imu.time_ms = self.time_ms
-        imu.angular_velocity = [calibrated_data['gyr_x'][0], calibrated_data['gyr_y'][0], calibrated_data['gyr_z'][0]]
-        imu.angular_velocity = imu.angular_velocity*3.14159265359/180
+        imu.angular_velocity = [calibrated_data['gyr_x'][0]*3.14159265359/180,
+                                calibrated_data['gyr_y'][0]*3.14159265359/180,
+                                calibrated_data['gyr_z'][0]*3.14159265359/180]
         imu.linear_acceleration = [calibrated_data['acc_x'][0], calibrated_data['acc_y'][0], calibrated_data['acc_z'][0]]
         self.imu_pub.publish(imu)
     

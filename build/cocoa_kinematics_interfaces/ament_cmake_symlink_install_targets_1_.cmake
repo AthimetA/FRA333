@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/libcocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp.so" "TARGETS" "cocoa_kinematics_interfaces__rosidl_typesupport_fastrtps_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
