@@ -33,10 +33,10 @@ class CocoaVTrajectoryGen(Node):
         # Const Parameters
         self.link_length = [0.1360,0.26179,0.200]
         self.home_config = [0.0,0.0,0.0] # [q1,q2,q3]
-        self.home_position = self.cocoav_forward_kinematics(self.home_config[0], self.home_config[1], self.home_config[2])
+        self.home_position_cartesian = self.cocoav_forward_kinematics(self.home_config[0], self.home_config[1], self.home_config[2])
         # Parameters
         self.joint_config = [0.0,0.0,0.0]
-        self.setpoint_position = self.cocoav_forward_kinematics(self.joint_config[0], self.joint_config[1], self.joint_config[2])
+        self.setpoint_position_cartesian = self.cocoav_forward_kinematics(self.joint_config[0], self.joint_config[1], self.joint_config[2])
         
         # Timer
         self.timer = self.create_timer(self.timer_period, self.timer_callback)
@@ -47,6 +47,15 @@ class CocoaVTrajectoryGen(Node):
         self.linear_acceleration = [0.0,0.0,0.0]
         self.imu_sub = self.create_subscription(CocoaVIMU, '/cocoav_imu_arduino', self.imu_sub_callback, qos_profile)
 
+    def cartesian2cylinrical(self, x, y, z):
+        r = np.sqrt((x**2)+(y**2))
+        theta = np.arctan2(y,x)
+        return [r, theta, z]
+    
+    def cylinder2cartesian(self, r, theta, z):
+        x = r*np.cos(theta)
+        y = r*np.sin(theta)
+        return [x,y,z]
         
     def cocoav_position_generator1(self):
         # define constant
@@ -56,22 +65,25 @@ class CocoaVTrajectoryGen(Node):
         acc_y = int(self.linear_acceleration[1])
         acc_z = int(self.linear_acceleration[2])
         # Get current position
-        setpoint_x = self.setpoint_position[0]
-        setpoint_y = self.setpoint_position[1]
-        setpoint_z = self.setpoint_position[2]
+        setpoint_x = self.setpoint_position_cartesian[0]
+        setpoint_y = self.setpoint_position_cartesian[1]
+        setpoint_z = self.setpoint_position_cartesian[2]
         ############################################################
-        setpoint_x += (acc_x / g)*0.01
-        setpoint_y += (acc_y / g)*0.01
-        setpoint_z += (acc_z / g)*0.01
+        # Calculate new position
+        r , theta, z = self.cartesian2cylinrical(setpoint_x, setpoint_y, setpoint_z)
+        r += (acc_x / g)*0.01
+        theta += (acc_y / g)*0.01
+        z += (acc_z / g)*0.01
+        setpoint_x, setpoint_y, setpoint_z = self.cylinder2cartesian(r, theta, z)
         ###########################################################
         config, status  = self.cocoav_inverse_kinematics(setpoint_x, setpoint_y, setpoint_z, self.joint_config)
         if self.check_IK_joint_limit(config[0], config[1], config[2]) and status:
             self.joint_config = config
-            self.setpoint_position = [setpoint_x, setpoint_y, setpoint_z]
+            self.setpoint_position_cartesian = [setpoint_x, setpoint_y, setpoint_z]
         self.get_logger().info("--------------------------")
-        self.get_logger().info("acc_x: %.3f => setpoint_x: %.3f" % (acc_x, self.setpoint_position[0]))
-        self.get_logger().info("acc_y: %.3f => setpoint_y: %.3f" % (acc_y, self.setpoint_position[1]))
-        self.get_logger().info("acc_z: %.3f => setpoint_z: %.3f" % (acc_z, self.setpoint_position[2]))
+        self.get_logger().info("acc_x: %.3f => setpoint_x: %.3f" % (acc_x, self.setpoint_position_cartesian[0]))
+        self.get_logger().info("acc_y: %.3f => setpoint_y: %.3f" % (acc_y, self.setpoint_position_cartesian[1]))
+        self.get_logger().info("acc_z: %.3f => setpoint_z: %.3f" % (acc_z, self.setpoint_position_cartesian[2]))
         
     def cocoav_forward_kinematics(self, q1, q2, q3):
         [l1,l2,l3] = self.link_length
@@ -115,7 +127,7 @@ class CocoaVTrajectoryGen(Node):
         return False
     
     def check_IK_joint_limit(self, q1, q2, q3):
-        if (-np.pi<= q1 <= np.pi) and (-np.pi/6 <= q2 <= np.pi/6) and (-np.pi/3 <= q3 <= np.pi/2):
+        if (2*-np.pi<= q1 <= 2*np.pi) and (-np.pi/6 <= q2 <= np.pi/6) and (-np.pi/3 <= q3 <= np.pi/2):
             return True
         self.get_logger().info('q1: %.3f, q2: %.3f, q3: %.3f' % (q1, q2, q3))
         self.get_logger().info('IK joint limit exceed')
@@ -143,7 +155,7 @@ class CocoaVTrajectoryGen(Node):
             if time - self.node_star_time > 5:
                 self.node_star_bool = True
                 self.get_logger().info('CocoaVTrajectoryGen Node started')
-                self.get_logger().info('Robot start Positon : [%.3f, %.3f, %.3f]' % (self.setpoint_position[0], self.setpoint_position[1], self.setpoint_position[2]))
+                self.get_logger().info('Robot start Positon : [%.3f, %.3f, %.3f]' % (self.setpoint_position_cartesian[0], self.setpoint_position_cartesian[1], self.setpoint_position_cartesian[2]))
     
     def imu_sub_callback(self, msg:CocoaVIMU):
         self.time_ms = msg.time_ms
