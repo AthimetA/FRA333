@@ -1,0 +1,255 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+-- Found PythonExtra: .so  
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/azthorax/fra333_ws/build/cocoav_interfaces
+[35m[1mScanning dependencies of target cocoav_interfaces__cpp[0m
+[  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[  3%] Built target cocoav_interfaces__cpp
+[  7%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[35m[1mScanning dependencies of target cocoav_interfaces__rosidl_generator_c[0m
+[ 10%] [32mBuilding C object CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vik__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/srv/detail/cocoa_vfk__functions.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_test__functions.c.o[0m
+[ 16%] [32mBuilding C object CMakeFiles/cocoav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoav_interfaces/msg/detail/cocoa_vimu__functions.c.o[0m
+[35m[1mScanning dependencies of target cocoav_interfaces__rosidl_typesupport_cpp[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoav_interfaces/srv/cocoa_vik__type_support.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoav_interfaces/srv/cocoa_vfk__type_support.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoav_interfaces/msg/cocoa_test__type_support.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoav_interfaces/msg/cocoa_vimu__type_support.cpp.o[0m
+[ 25%] [32m[1mLinking C shared library libcocoav_interfaces__rosidl_generator_c.so[0m
+[35m[1mScanning dependencies of target cocoav_interfaces__rosidl_typesupport_introspection_cpp[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoav_interfaces/srv/detail/cocoa_vik__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoav_interfaces/srv/detail/cocoa_vfk__type_support.cpp.o[0m
+[ 29%] Built target cocoav_interfaces__rosidl_generator_c
+[ 30%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoav_interfaces/msg/detail/cocoa_test__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoav_interfaces/msg/detail/cocoa_vimu__type_support.cpp.o[0m
+[ 34%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 36%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[35m[1mScanning dependencies of target cocoav_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoav_interfaces/srv/detail/dds_fastrtps/cocoa_vik__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoav_interfaces/srv/detail/dds_fastrtps/cocoa_vfk__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoav_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoav_interfaces/msg/detail/dds_fastrtps/cocoa_vimu__type_support.cpp.o[0m
+[ 45%] [32m[1mLinking CXX shared library libcocoav_interfaces__rosidl_typesupport_cpp.so[0m
+[ 45%] Built target cocoav_interfaces__rosidl_typesupport_cpp
+[35m[1mScanning dependencies of target cocoav_interfaces__rosidl_typesupport_c[0m
+[ 47%] [32m[1mLinking CXX shared library libcocoav_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 49%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoav_interfaces/msg/cocoa_test__type_support.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoav_interfaces/msg/cocoa_vimu__type_support.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoav_interfaces/srv/cocoa_vik__type_support.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoav_interfaces/srv/cocoa_vfk__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target cocoav_interfaces__rosidl_typesupport_introspection_c[0m
+[ 56%] [32mBuilding C object CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vik__type_support.c.o[0m
+[ 58%] [32mBuilding C object CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_test__type_support.c.o[0m
+[ 60%] [32mBuilding C object CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/srv/detail/cocoa_vfk__type_support.c.o[0m
+[ 61%] [32mBuilding C object CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoav_interfaces/msg/detail/cocoa_vimu__type_support.c.o[0m
+[ 63%] [32m[1mLinking CXX shared library libcocoav_interfaces__rosidl_typesupport_c.so[0m
+[ 65%] [32m[1mLinking C shared library libcocoav_interfaces__rosidl_typesupport_introspection_c.so[0m
+[ 65%] Built target cocoav_interfaces__rosidl_typesupport_c
+[ 65%] Built target cocoav_interfaces__rosidl_typesupport_introspection_cpp
+[ 65%] Built target cocoav_interfaces__rosidl_typesupport_introspection_c
+[ 67%] [32m[1mLinking CXX shared library libcocoav_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 67%] Built target cocoav_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 69%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[35m[1mScanning dependencies of target cocoav_interfaces__rosidl_typesupport_fastrtps_c[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoav_interfaces/srv/detail/cocoa_vik__type_support_c.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoav_interfaces/srv/detail/cocoa_vfk__type_support_c.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoav_interfaces/msg/detail/cocoa_test__type_support_c.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/cocoav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoav_interfaces/msg/detail/cocoa_vimu__type_support_c.cpp.o[0m
+[ 78%] [32m[1mLinking CXX shared library libcocoav_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 78%] Built target cocoav_interfaces__rosidl_typesupport_fastrtps_c
+[35m[1mScanning dependencies of target cocoav_interfaces[0m
+[ 78%] Built target cocoav_interfaces
+[35m[1mScanning dependencies of target cocoav_interfaces__py[0m
+[ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 80%] Built target cocoav_interfaces__py
+[35m[1mScanning dependencies of target cocoav_interfaces__python[0m
+[ 81%] [32mBuilding C object CMakeFiles/cocoav_interfaces__python.dir/rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vfk_s.c.o[0m
+[ 83%] [32mBuilding C object CMakeFiles/cocoav_interfaces__python.dir/rosidl_generator_py/cocoav_interfaces/msg/_cocoa_test_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/cocoav_interfaces__python.dir/rosidl_generator_py/cocoav_interfaces/msg/_cocoa_vimu_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/cocoav_interfaces__python.dir/rosidl_generator_py/cocoav_interfaces/srv/_cocoa_vik_s.c.o[0m
+[ 89%] [32m[1mLinking C shared library rosidl_generator_py/cocoav_interfaces/libcocoav_interfaces__python.so[0m
+[ 89%] Built target cocoav_interfaces__python
+[35m[1mScanning dependencies of target cocoav_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mScanning dependencies of target cocoav_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mScanning dependencies of target cocoav_interfaces__rosidl_typesupport_c__pyext[0m
+[ 90%] [32mBuilding C object CMakeFiles/cocoav_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/cocoav_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[ 94%] [32mBuilding C object CMakeFiles/cocoav_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cocoav_interfaces/_cocoav_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 96%] [32m[1mLinking CXX shared library rosidl_generator_py/cocoav_interfaces/cocoav_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[ 98%] [32m[1mLinking C shared library rosidl_generator_py/cocoav_interfaces/cocoav_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/cocoav_interfaces/cocoav_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[100%] Built target cocoav_interfaces__rosidl_typesupport_c__pyext
+[100%] Built target cocoav_interfaces__rosidl_typesupport_introspection_c__pyext
+[100%] Built target cocoav_interfaces__rosidl_typesupport_fastrtps_c__pyext
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/ament_index/resource_index/rosidl_interfaces/cocoav_interfaces
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/cocoa_test.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/cocoa_vimu.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_test__functions.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_test__struct.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_test__type_support.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_vimu__functions.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_vimu__struct.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_vimu__type_support.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/cocoa_vfk.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/cocoa_vik.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vfk__functions.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vfk__struct.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vfk__type_support.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vik__functions.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vik__struct.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vik__type_support.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/environment/library_path.sh
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/environment/library_path.dsv
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_test__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_vimu__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vfk__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/libcocoav_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_test__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_vimu__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vfk__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/libcocoav_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_test__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_vimu__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vfk__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/cocoa_test.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/cocoa_vimu.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_test__builder.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_test__struct.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_test__traits.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_vimu__builder.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_vimu__struct.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_vimu__traits.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/cocoa_vfk.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/cocoa_vik.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vfk__builder.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vfk__struct.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vfk__traits.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vik__builder.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vik__struct.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vik__traits.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_test__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/msg/detail/cocoa_vimu__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vfk__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/include/cocoav_interfaces/srv/detail/cocoa_vik__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/environment/pythonpath.sh
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/environment/pythonpath.dsv
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/python3.8/site-packages/cocoav_interfaces/__init__.py
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/python3.8/site-packages/cocoav_interfaces/srv/__init__.py
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/python3.8/site-packages/cocoav_interfaces/srv/_cocoa_vfk.py
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/python3.8/site-packages/cocoav_interfaces/srv/_cocoa_vik.py
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/python3.8/site-packages/cocoav_interfaces/msg/__init__.py
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/python3.8/site-packages/cocoav_interfaces/msg/_cocoa_test.py
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/python3.8/site-packages/cocoav_interfaces/msg/_cocoa_vimu.py
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/python3.8/site-packages/cocoav_interfaces/cocoav_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/python3.8/site-packages/cocoav_interfaces/cocoav_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/python3.8/site-packages/cocoav_interfaces/cocoav_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/libcocoav_interfaces__python.so
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/srv/CocoaVIK.idl
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/srv/CocoaVFK.idl
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/msg/CocoaTest.idl
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/msg/CocoaVIMU.idl
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/srv/CocoaVIK.srv
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/srv/CocoaVIK_Request.msg
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/srv/CocoaVIK_Response.msg
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/srv/CocoaVFK.srv
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/srv/CocoaVFK_Request.msg
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/srv/CocoaVFK_Response.msg
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/msg/CocoaTest.msg
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/msg/CocoaVIMU.msg
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/ament_index/resource_index/package_run_dependencies/cocoav_interfaces
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/ament_index/resource_index/parent_prefix_path/cocoav_interfaces
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/environment/ament_prefix_path.sh
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/environment/ament_prefix_path.dsv
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/environment/path.sh
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/environment/path.dsv
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/local_setup.bash
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/local_setup.sh
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/local_setup.zsh
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/local_setup.dsv
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/package.dsv
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/ament_index/resource_index/packages/cocoav_interfaces
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/cocoav_interfacesConfig.cmake
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/cocoav_interfacesConfig-version.cmake
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/package.xml
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/libcocoav_interfaces__rosidl_generator_c.so
+-- Set runtime path of "/home/azthorax/fra333_ws/install/cocoav_interfaces/lib/libcocoav_interfaces__rosidl_generator_c.so" to ""
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/libcocoav_interfaces__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/azthorax/fra333_ws/install/cocoav_interfaces/lib/libcocoav_interfaces__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/libcocoav_interfaces__rosidl_typesupport_c.so
+-- Set runtime path of "/home/azthorax/fra333_ws/install/cocoav_interfaces/lib/libcocoav_interfaces__rosidl_typesupport_c.so" to ""
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/libcocoav_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/azthorax/fra333_ws/install/cocoav_interfaces/lib/libcocoav_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/lib/libcocoav_interfaces__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/azthorax/fra333_ws/install/cocoav_interfaces/lib/libcocoav_interfaces__rosidl_typesupport_cpp.so" to ""
+Compiling '/home/azthorax/fra333_ws/install/cocoav_interfaces/lib/python3.8/site-packages/cocoav_interfaces/__init__.py'...
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/cocoav_interfaces__rosidl_generator_cExport.cmake
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/cocoav_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/cocoav_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/cocoav_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/cocoav_interfaces__rosidl_typesupport_cExport.cmake
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/cocoav_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/cocoav_interfaces__rosidl_generator_cppExport.cmake
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/cocoav_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/cocoav_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/cocoav_interfaces__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/azthorax/fra333_ws/install/cocoav_interfaces/share/cocoav_interfaces/cmake/cocoav_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
