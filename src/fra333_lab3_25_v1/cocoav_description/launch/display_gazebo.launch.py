@@ -75,7 +75,7 @@ def generate_launch_description():
        output='screen')
 
     launch_description = LaunchDescription()
-    launch_description.add_action(rviz)
+    # launch_description.add_action(rviz)
     launch_description.add_action(gazebo)
     launch_description.add_action(node_robot_state_publisher)
     launch_description.add_action(spawn_entity)

@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-import math
-from re import S
 import numpy as np
 from numpy import ones, zeros
 import rclpy
@@ -45,7 +43,7 @@ class CocoaVTrajectoryGen(Node):
         self.time_ms = 0
         self.angular_velocity = [0.0,0.0,0.0]
         self.linear_acceleration = [0.0,0.0,0.0]
-        self.imu_sub = self.create_subscription(CocoaVIMU, '/cocoav_imu_arduino', self.imu_sub_callback, qos_profile)
+        self.imu_sub = self.create_subscription(CocoaVIMU, '/cocoav_imu_calibrated', self.imu_sub_callback, qos_profile)
 
     def cartesian2cylinrical(self, x, y, z):
         r = np.sqrt((x**2)+(y**2))
@@ -59,7 +57,7 @@ class CocoaVTrajectoryGen(Node):
         
     def cocoav_position_generator1(self):
         # define constant
-        g = 9.81
+        g = 9 # int(9.81)
         # Get linear acceleration
         acc_x = int(self.linear_acceleration[0])
         acc_y = int(self.linear_acceleration[1])
@@ -136,18 +134,15 @@ class CocoaVTrajectoryGen(Node):
     def timer_callback(self):
         if self.node_star_bool:
             self.cocoav_position_generator1()
-            bazu_trajectory_msg = JointTrajectory()
-            bazu_trajectory_msg.joint_names = self.joints
+            cocoav_trajectory_msg = JointTrajectory()
+            cocoav_trajectory_msg.joint_names = self.joints
             ## creating a point
             point = JointTrajectoryPoint()
             ## adding newly created point into trajectory message
             point.positions = self.joint_config
             point.time_from_start = Duration(sec=1)
-            bazu_trajectory_msg.points.append(point)
-            # point.positions = self.goal_positions
-            # point.time_from_start = Duration(sec=8)
-            # bazu_trajectory_msg.points.append(point)
-            self.trajectory_publihser.publish(bazu_trajectory_msg)
+            cocoav_trajectory_msg.points.append(point)
+            self.trajectory_publihser.publish(cocoav_trajectory_msg)
         else:
             time = self.get_clock().now().to_msg().sec
             if time - self.node_star_time > 5:
