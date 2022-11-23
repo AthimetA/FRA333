@@ -36,7 +36,7 @@ void read_imu_Sendros2()
       angular_velocity[2]=az*(3.141592/180.0);
       linear_acceleration[0]=gx*(9.80665);
       linear_acceleration[1]=gy*(9.80665);
-      linear_acceleration[2]=gz*(9.80665);
+      linear_acceleration[2]=gz*(-9.80665);
       ctime = millis();
 
       xicro.publish_cocoav_imu_arduino(ctime,

@@ -15,7 +15,7 @@ class CocoaVCalibrator(Node):
         super().__init__('cocoav_calibrator_node')
         
         # define rate
-        self.rate = 10
+        self.rate = 100
         qos_profile = QoSProfile(depth=10)
         
         # Parameters
