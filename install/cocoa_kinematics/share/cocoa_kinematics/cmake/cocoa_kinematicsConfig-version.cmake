@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/build/cocoa_kinematics/ament_cmake_core/cocoa_kinematicsConfig-version.cmake
