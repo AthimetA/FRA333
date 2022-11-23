@@ -21,7 +21,6 @@ def generate_launch_description():
     file_name = 'display_gazebo.launch.py'
     
     display = IncludeLaunchDescription(
-    
          PythonLaunchDescriptionSource([
             PathJoinSubstitution([
                 FindPackageShare(package_name),
