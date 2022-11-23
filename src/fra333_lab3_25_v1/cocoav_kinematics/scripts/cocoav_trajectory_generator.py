@@ -133,8 +133,6 @@ class CocoaVTrajectoryGen(Node):
         self.get_logger().info('IK joint limit exceed')
         return False
         
-
-
     def timer_callback(self):
         if self.node_star_bool:
             self.cocoav_position_generator1()
@@ -142,9 +140,9 @@ class CocoaVTrajectoryGen(Node):
             bazu_trajectory_msg.joint_names = self.joints
             ## creating a point
             point = JointTrajectoryPoint()
+            ## adding newly created point into trajectory message
             point.positions = self.joint_config
             point.time_from_start = Duration(sec=1)
-            ## adding newly created point into trajectory message
             bazu_trajectory_msg.points.append(point)
             # point.positions = self.goal_positions
             # point.time_from_start = Duration(sec=8)
