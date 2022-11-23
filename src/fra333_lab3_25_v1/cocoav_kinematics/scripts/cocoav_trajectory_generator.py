@@ -16,6 +16,9 @@ class CocoaVTrajectoryGen(Node):
 
     def __init__(self):
         super().__init__('cocoav_trajectory_pub_node')
+        # Delay on start 
+        self.node_star_time = self.get_clock().now().to_msg().sec
+        self.node_star_bool = False
         
         # define rate
         self.rate = 10
@@ -114,25 +117,33 @@ class CocoaVTrajectoryGen(Node):
     def check_IK_joint_limit(self, q1, q2, q3):
         if (-np.pi<= q1 <= np.pi) and (-np.pi/6 <= q2 <= np.pi/6) and (-np.pi/3 <= q3 <= np.pi/2):
             return True
+        self.get_logger().info('q1: %.3f, q2: %.3f, q3: %.3f' % (q1, q2, q3))
         self.get_logger().info('IK joint limit exceed')
         return False
         
 
 
     def timer_callback(self):
-        self.cocoav_position_generator1()
-        bazu_trajectory_msg = JointTrajectory()
-        bazu_trajectory_msg.joint_names = self.joints
-        ## creating a point
-        point = JointTrajectoryPoint()
-        point.positions = self.joint_config
-        point.time_from_start = Duration(sec=1)
-        ## adding newly created point into trajectory message
-        bazu_trajectory_msg.points.append(point)
-        # point.positions = self.goal_positions
-        # point.time_from_start = Duration(sec=8)
-        # bazu_trajectory_msg.points.append(point)
-        self.trajectory_publihser.publish(bazu_trajectory_msg)
+        if self.node_star_bool:
+            self.cocoav_position_generator1()
+            bazu_trajectory_msg = JointTrajectory()
+            bazu_trajectory_msg.joint_names = self.joints
+            ## creating a point
+            point = JointTrajectoryPoint()
+            point.positions = self.joint_config
+            point.time_from_start = Duration(sec=1)
+            ## adding newly created point into trajectory message
+            bazu_trajectory_msg.points.append(point)
+            # point.positions = self.goal_positions
+            # point.time_from_start = Duration(sec=8)
+            # bazu_trajectory_msg.points.append(point)
+            self.trajectory_publihser.publish(bazu_trajectory_msg)
+        else:
+            time = self.get_clock().now().to_msg().sec
+            if time - self.node_star_time > 5:
+                self.node_star_bool = True
+                self.get_logger().info('CocoaVTrajectoryGen Node started')
+                self.get_logger().info('Robot start Positon : [%.3f, %.3f, %.3f]' % (self.setpoint_position[0], self.setpoint_position[1], self.setpoint_position[2]))
     
     def imu_sub_callback(self, msg:CocoaVIMU):
         self.time_ms = msg.time_ms
