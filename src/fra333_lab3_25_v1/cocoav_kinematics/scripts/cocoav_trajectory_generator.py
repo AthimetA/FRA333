@@ -91,9 +91,9 @@ class CocoaVTrajectoryGen(Node):
             self.joint_config = config
             self.setpoint_position_cartesian = [setpoint_x, setpoint_y, setpoint_z]
         self.get_logger().info("--------------------------")
-        self.get_logger().info("gry_x: %.3f => setpoint_x: %.3f" % (gry_x, self.setpoint_position_cartesian[0]))
-        self.get_logger().info("gry_y: %.3f => setpoint_y: %.3f" % (gry_y, self.setpoint_position_cartesian[1]))
-        self.get_logger().info("gry_z: %.3f => setpoint_z: %.3f" % (gry_z, self.setpoint_position_cartesian[2]))
+        self.get_logger().info("gry_x: %.3f => acc_x: %.3f" % (gry_x, acc_x))
+        self.get_logger().info("gry_y: %.3f => acc_y: %.3f" % (gry_y, acc_y))
+        self.get_logger().info("gry_z: %.3f => acc_z: %.3f" % (gry_z, acc_z))
         
     def cocoav_forward_kinematics(self, q1, q2, q3):
         [l1,l2,l3] = self.link_length
@@ -142,6 +142,11 @@ class CocoaVTrajectoryGen(Node):
         self.get_logger().info('q1: %.3f, q2: %.3f, q3: %.3f' % (q1, q2, q3))
         self.get_logger().info('IK joint limit exceed')
         return False
+    
+    def imu_sub_callback(self, msg:CocoaVIMU):
+        self.time_ms = msg.time_ms
+        self.angular_velocity = msg.angular_velocity
+        self.linear_acceleration = msg.linear_acceleration
         
     def timer_callback(self):
         if self.node_star_bool:
@@ -161,11 +166,7 @@ class CocoaVTrajectoryGen(Node):
                 self.node_star_bool = True
                 self.get_logger().info('CocoaVTrajectoryGen Node started')
                 self.get_logger().info('Robot start Positon : [%.3f, %.3f, %.3f]' % (self.setpoint_position_cartesian[0], self.setpoint_position_cartesian[1], self.setpoint_position_cartesian[2]))
-    
-    def imu_sub_callback(self, msg:CocoaVIMU):
-        self.time_ms = msg.time_ms
-        self.angular_velocity = msg.angular_velocity
-        self.linear_acceleration = msg.linear_acceleration
+
  
 def main(args=None):
     rclpy.init(args=args)
