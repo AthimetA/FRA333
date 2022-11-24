@@ -13,6 +13,7 @@ from cocoav_interfaces.msg import CocoaVIMU
 
 import pandas as pd
 import yaml
+from pathlib import Path
 
 class CocoaIMUTest(Node):
     def __init__(self):
@@ -36,10 +37,10 @@ class CocoaIMUTest(Node):
         print('saving data')
         self.Nodetime = self.get_clock().now().to_msg().sec - self.startime
         if self.Nodetime > 10:
-            print(self.datalog)
             self.cal_calibrate()
-            self.datalog.to_csv('calibrate.csv', index=False)
+            # self.datalog.to_csv('calibrate.csv', index=False)
             print("Data saved")
+            print("Calibration finished please stop the node")
     
     def imu_sub_callback(self, msg:CocoaVIMU):
         self.time_ms = msg.time_ms
@@ -48,27 +49,28 @@ class CocoaIMUTest(Node):
         self.datalog = self.datalog.append({'gyr_x': self.angular_velocity[0], 'gyr_y': self.angular_velocity[1], 'gyr_z': self.angular_velocity[2], 'acc_x': self.linear_acceleration[0], 'acc_y': self.linear_acceleration[1], 'acc_z': self.linear_acceleration[2]}, ignore_index=True)
 
     def cal_calibrate(self):
+        # Calculate the mean of the data
         gyr_x = self.datalog['gyr_x'].mean()
         gyr_y = self.datalog['gyr_y'].mean()
         gyr_z = self.datalog['gyr_z'].mean()
         acc_x = self.datalog['acc_x'].mean()
         acc_y = self.datalog['acc_y'].mean()
         acc_z = self.datalog['acc_z'].mean()
-        
+        # Calculate the standard deviation of the data
         gyr_x_var = self.datalog['gyr_x'].var()
         gyr_y_var = self.datalog['gyr_y'].var()
         gyr_z_var = self.datalog['gyr_z'].var()
         acc_x_var = self.datalog['acc_x'].var()
         acc_y_var = self.datalog['acc_y'].var()
         acc_z_var = self.datalog['acc_z'].var()
-        
+        # Create a dictionary value with the data
         angular_velocity_mean = [float(gyr_x), float(gyr_y), float(gyr_z)]
         linear_acceleration_mean = [float(acc_x), float(acc_y), float(acc_z)]
         angular_velocity_var = [float(gyr_x_var), float(gyr_y_var), float(gyr_z_var)]
         linear_acceleration_var = [float(acc_x_var), float(acc_y_var), float(acc_z_var)]
-        
+        # Create a dictionary value with the data
         ymal_dict = {'angular_velocity_mean': angular_velocity_mean, 'linear_acceleration_mean': linear_acceleration_mean, 'angular_velocity_var': angular_velocity_var, 'linear_acceleration_var': linear_acceleration_var}
-        
+        # Save the data to a yaml file
         yaml.dump(ymal_dict, open('cocoav_imu_calib.yaml', 'w'))
         
 def main(args=None):

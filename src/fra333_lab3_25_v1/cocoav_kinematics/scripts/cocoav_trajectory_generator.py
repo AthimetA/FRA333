@@ -58,7 +58,7 @@ class CocoaVTrajectoryGen(Node):
     def cocoav_position_generator1(self):
         # define constant
         val = 0.01 
-        # Get linear acceleration
+        # Get linear acceleration and angular velocity
         acc_x = int(self.linear_acceleration[0])
         acc_y = int(self.linear_acceleration[1])
         acc_z = int(self.linear_acceleration[2])

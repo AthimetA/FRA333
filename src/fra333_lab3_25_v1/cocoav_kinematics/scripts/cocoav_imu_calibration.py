@@ -42,10 +42,6 @@ class CocoaVCalibrator(Node):
         self.timer_callback = self.create_timer(self.time_rate, callback=self.timer_callback)
         
         # Calibration
-        folder = '/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_kinematics/scripts/imucal/info'
-        cals = find_calibration_info_for_sensor("arduinoimu", Path(folder))
-        self.cocoav_calibrator = load_calibration_info(cals[0])
-        
         self.angular_velocity_mean = [0.0,0.0,0.0]
         self.linear_acceleration_mean = [0.0,0.0,0.0]
         with open("/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_kinematics/scripts/cocoav_imu_calib.yaml", "r") as stream:
@@ -61,19 +57,9 @@ class CocoaVCalibrator(Node):
         self.time_ms = msg.time_ms
         self.angular_velocity = msg.angular_velocity
         self.linear_acceleration = msg.linear_acceleration
-    
-    def imu_calibrate(self):
-        imu = CocoaVIMU()
-        data = np.array([self.angular_velocity[0], self.angular_velocity[1], self.angular_velocity[2], self.linear_acceleration[0], self.linear_acceleration[1], self.linear_acceleration[2]])
-        col = ['gyr_x', 'gyr_y', 'gyr_z', 'acc_x', 'acc_y', 'acc_z']
-        datadf = pd.DataFrame(data.reshape(1,6), columns=col)
-        calibrated_data = self.cocoav_calibrator.calibrate_df(datadf, "m/s^2", "deg/s").to_dict()
-        imu.time_ms = self.time_ms
-        imu.angular_velocity = [calibrated_data['gyr_x'][0]*3.14159265359/180,
-                                calibrated_data['gyr_y'][0]*3.14159265359/180,
-                                calibrated_data['gyr_z'][0]*3.14159265359/180]
-        imu.linear_acceleration = [calibrated_data['acc_x'][0], calibrated_data['acc_y'][0], calibrated_data['acc_z'][0]]
-        self.imu_pub.publish(imu)
+        
+    def timer_callback(self):
+        self.cocoav_imu_calibrate()
     
     def cocoav_imu_calibrate(self):
         imu = CocoaVIMU()
@@ -90,9 +76,6 @@ class CocoaVCalibrator(Node):
         imu.linear_acceleration = [callibrated_linear_acceleration[0], callibrated_linear_acceleration[1], callibrated_linear_acceleration[2]]
         self.imu_pub.publish(imu)
     
-    def timer_callback(self):
-        # self.imu_calibrate()
-        self.cocoav_imu_calibrate()
 
 def main(args=None):
     rclpy.init(args=args)
