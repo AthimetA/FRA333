@@ -17,16 +17,29 @@ import yaml
 class CocoaIMUTest(Node):
     def __init__(self):
         super().__init__('cocoav_test_node')
+        self.startime = self.get_clock().now().to_msg().sec
+        self.Nodetime = 0
         self.datalog = pd.DataFrame(columns=['gyr_x', 'gyr_y', 'gyr_z', 'acc_x', 'acc_y', 'acc_z'])
 
         # define rate
         qos_profile = QoSProfile(depth=10)
+        
+        self.stop_timer = self.create_timer(1, self.checktostop)
         
         # Subscribers
         self.time_ms = 0
         self.angular_velocity = [0.0,0.0,0.0]
         self.linear_acceleration = [0.0,0.0,0.0]
         self.imu_sub = self.create_subscription(CocoaVIMU, '/cocoav_imu_arduino', self.imu_sub_callback, qos_profile)
+        
+    def checktostop(self):
+        print('saving data')
+        self.Nodetime = self.get_clock().now().to_msg().sec - self.startime
+        if self.Nodetime > 10:
+            print(self.datalog)
+            self.cal_calibrate()
+            self.datalog.to_csv('calibrate.csv', index=False)
+            print("Data saved")
     
     def imu_sub_callback(self, msg:CocoaVIMU):
         self.time_ms = msg.time_ms
@@ -70,10 +83,6 @@ def main(args=None):
         print('exception in repeater:', file=sys.stderr)
         raise
     finally:
-        print(calibrate_obj.datalog)
-        calibrate_obj.cal_calibrate()
-        calibrate_obj.datalog.to_csv('calibrate.csv', index=False)
-        print("Data saved")
         calibrate_obj.destroy_node()
         rclpy.shutdown() 
 
