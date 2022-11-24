@@ -57,11 +57,14 @@ class CocoaVTrajectoryGen(Node):
         
     def cocoav_position_generator1(self):
         # define constant
-        g = 9 # int(9.81)
+        scale = 9 # int(9.81)
         # Get linear acceleration
         acc_x = int(self.linear_acceleration[0])
         acc_y = int(self.linear_acceleration[1])
         acc_z = int(self.linear_acceleration[2])
+        gry_x = int(self.angular_velocity[0])
+        gry_y = int(self.angular_velocity[1])
+        gry_z = int(self.angular_velocity[2])
         # Get current position
         setpoint_x = self.setpoint_position_cartesian[0]
         setpoint_y = self.setpoint_position_cartesian[1]
@@ -69,9 +72,19 @@ class CocoaVTrajectoryGen(Node):
         ############################################################
         # Calculate new position
         r , theta, z = self.cartesian2cylinrical(setpoint_x, setpoint_y, setpoint_z)
-        r += (acc_x / g)*0.01
-        theta += (acc_y / g)*0.01
-        z += (acc_z / g)*0.01
+        val = 0.01
+        if acc_z >= 10 :
+            z += val
+        elif acc_z == 0 :
+            z -= val
+        elif acc_x == 9 :
+            r += val
+        elif acc_x == -9 :
+            r -= val
+        elif acc_y == 9 :
+            theta += val
+        elif acc_y == -9 :
+            theta -= val
         setpoint_x, setpoint_y, setpoint_z = self.cylinder2cartesian(r, theta, z)
         ###########################################################
         config, status  = self.cocoav_inverse_kinematics(setpoint_x, setpoint_y, setpoint_z, self.joint_config)
@@ -79,9 +92,12 @@ class CocoaVTrajectoryGen(Node):
             self.joint_config = config
             self.setpoint_position_cartesian = [setpoint_x, setpoint_y, setpoint_z]
         self.get_logger().info("--------------------------")
-        self.get_logger().info("acc_x: %.3f => setpoint_x: %.3f" % (acc_x, self.setpoint_position_cartesian[0]))
-        self.get_logger().info("acc_y: %.3f => setpoint_y: %.3f" % (acc_y, self.setpoint_position_cartesian[1]))
-        self.get_logger().info("acc_z: %.3f => setpoint_z: %.3f" % (acc_z, self.setpoint_position_cartesian[2]))
+        # self.get_logger().info("gry_x: %.3f => setpoint_x: %.3f" % (gry_x, self.setpoint_position_cartesian[0]))
+        # self.get_logger().info("gry_y: %.3f => setpoint_y: %.3f" % (gry_y, self.setpoint_position_cartesian[1]))
+        # self.get_logger().info("gry_z: %.3f => setpoint_z: %.3f" % (gry_z, self.setpoint_position_cartesian[2]))
+        self.get_logger().info("gry_x: %.3f => acc_x: %.3f" % (gry_x, acc_x))
+        self.get_logger().info("gry_y: %.3f => acc_y: %.3f" % (gry_y, acc_y))
+        self.get_logger().info("gry_z: %.3f => acc_z: %.3f" % (gry_z, acc_z))
         
     def cocoav_forward_kinematics(self, q1, q2, q3):
         [l1,l2,l3] = self.link_length

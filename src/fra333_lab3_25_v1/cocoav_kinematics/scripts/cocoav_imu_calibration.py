@@ -15,6 +15,9 @@ from imucal.management import find_calibration_info_for_sensor
 from imucal.management import load_calibration_info
 import pandas as pd
 
+import yaml
+from yaml.loader import SafeLoader
+
 class CocoaVCalibrator(Node):
     def __init__(self):
         super().__init__('cocoav_calibrator_node')
@@ -42,6 +45,17 @@ class CocoaVCalibrator(Node):
         folder = '/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_kinematics/scripts/imucal/info'
         cals = find_calibration_info_for_sensor("arduinoimu", Path(folder))
         self.cocoav_calibrator = load_calibration_info(cals[0])
+        
+        self.angular_velocity_mean = [0.0,0.0,0.0]
+        self.linear_acceleration_mean = [0.0,0.0,0.0]
+        with open("/home/azthorax/fra333_ws/src/fra333_lab3_25_v1/cocoav_kinematics/scripts/cocoav_imu_calib.yaml", "r") as stream:
+            try:
+                data = yaml.safe_load(stream)
+                self.angular_velocity_mean = data['angular_velocity_mean']
+                self.linear_acceleration_mean = data['linear_acceleration_mean']
+                print("Calibration data loaded")
+            except yaml.YAMLError as exc:
+                print("Error in configuration file:", exc) 
     
     def imu_sub_callback(self, msg:CocoaVIMU):
         self.time_ms = msg.time_ms
@@ -61,8 +75,24 @@ class CocoaVCalibrator(Node):
         imu.linear_acceleration = [calibrated_data['acc_x'][0], calibrated_data['acc_y'][0], calibrated_data['acc_z'][0]]
         self.imu_pub.publish(imu)
     
+    def cocoav_imu_calibrate(self):
+        imu = CocoaVIMU()
+        imu.time_ms = self.time_ms
+        callibrated_angular_velocity = [self.angular_velocity[0] - self.angular_velocity_mean[0],
+                                       self.angular_velocity[1] - self.angular_velocity_mean[1],
+                                       self.angular_velocity[2] - self.angular_velocity_mean[2]]
+        callibrated_linear_acceleration = [self.linear_acceleration[0] - self.linear_acceleration_mean[0],
+                                           self.linear_acceleration[1] - self.linear_acceleration_mean[1],
+                                           self.linear_acceleration[2] - self.linear_acceleration_mean[2]]
+        imu.angular_velocity = [callibrated_angular_velocity[0]*3.14159265359/180,
+                                callibrated_angular_velocity[1]*3.14159265359/180,
+                                callibrated_angular_velocity[2]*3.14159265359/180]
+        imu.linear_acceleration = [callibrated_linear_acceleration[0], callibrated_linear_acceleration[1], callibrated_linear_acceleration[2]]
+        self.imu_pub.publish(imu)
+    
     def timer_callback(self):
-        self.imu_calibrate()
+        # self.imu_calibrate()
+        self.cocoav_imu_calibrate()
 
 def main(args=None):
     rclpy.init(args=args)
