@@ -5,11 +5,10 @@ controller_manager:
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
-    joint_trajectory_position_controller:
-      type: joint_trajectory_controller/JointTrajectoryController
+    cocoax_joint_group_VelocityController:
+      type: velocity_controllers/JointGroupVelocityController
 
-
-joint_trajectory_position_controller:
+cocoax_joint_group_VelocityController:
   ros__parameters:
     joints:
       - joint_rev_0_1
@@ -17,18 +16,8 @@ joint_trajectory_position_controller:
       - joint_rev_2_3
 
     command_interfaces:
-      - position
-
-    state_interfaces:
-      - position
       - velocity
-
-    state_publish_rate: 50.0 # Defaults to 50
-    action_monitor_rate: 20.0 # Defaults to 20
-
-    allow_partial_joints_goal: false # Defaults to false
-    open_loop_control: true
-    allow_integration_in_goal_trajectories: true
-    constraints:
-      stopped_velocity_tolerance: 0.01 # Defaults to 0.01
-      goal_time: 0.0 # Defaults to 0.0 (start immediately)
+    
+    state_interfaces:
+      - velocity
+      - effort
