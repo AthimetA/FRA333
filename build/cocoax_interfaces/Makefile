@@ -375,59 +375,59 @@ cocoax_interfaces__py/fast:
 	$(MAKE) -f cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py.dir/build.make cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py.dir/build
 .PHONY : cocoax_interfaces__py/fast
 
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.o: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.c.o
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.o: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.o
 
-.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.o
-
-# target to build an object file
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.c.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.c.o
-.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.c.o
-
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.i: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.c.i
-
-.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.c.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.c.i
-.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.c.i
-
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.s: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.c.s
-
-.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.c.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.c.s
-.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.c.s
-
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.o: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.c.o
-
-.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.o
+.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.o
 
 # target to build an object file
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.c.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.c.o
-.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.c.o
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.o
+.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.o
 
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.i: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.c.i
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.i: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.i
 
-.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.i
+.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.i
 
 # target to preprocess a source file
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.c.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.c.i
-.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.c.i
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.i
+.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.i
 
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.s: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.c.s
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.s: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.s
 
-.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.s
+.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.s
 
 # target to generate assembly for a file
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.c.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.c.s
-.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.c.s
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.s
+.PHONY : rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.s
+
+rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.o: rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.o
+
+.PHONY : rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.o
+
+# target to build an object file
+rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.o
+.PHONY : rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.o
+
+rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.i: rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.i
+
+.PHONY : rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.i
+.PHONY : rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.i
+
+rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.s: rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.s
+
+.PHONY : rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.s
+.PHONY : rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.s
 
 rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xfk__functions.o: rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xfk__functions.c.o
 
@@ -564,59 +564,59 @@ rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport
 	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_introspection_c.c.s
 .PHONY : rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_introspection_c.c.s
 
-rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.o: rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.c.o
+rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.o: rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c.o
 
-.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.o
-
-# target to build an object file
-rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.c.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__python.dir/build.make CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.c.o
-.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.c.o
-
-rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.i: rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.c.i
-
-.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.i
-
-# target to preprocess a source file
-rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.c.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__python.dir/build.make CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.c.i
-.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.c.i
-
-rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.s: rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.c.s
-
-.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.s
-
-# target to generate assembly for a file
-rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.c.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__python.dir/build.make CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.c.s
-.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.c.s
-
-rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.o: rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.c.o
-
-.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.o
+.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.o
 
 # target to build an object file
-rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.c.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__python.dir/build.make CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.c.o
-.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.c.o
+rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__python.dir/build.make CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c.o
+.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c.o
 
-rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.i: rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.c.i
+rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.i: rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c.i
 
-.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.i
+.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.i
 
 # target to preprocess a source file
-rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.c.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__python.dir/build.make CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.c.i
-.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.c.i
+rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__python.dir/build.make CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c.i
+.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c.i
 
-rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.s: rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.c.s
+rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.s: rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c.s
 
-.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.s
+.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.s
 
 # target to generate assembly for a file
-rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.c.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__python.dir/build.make CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.c.s
-.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.c.s
+rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__python.dir/build.make CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c.s
+.PHONY : rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c.s
+
+rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.o: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c.o
+
+.PHONY : rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.o
+
+# target to build an object file
+rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__python.dir/build.make CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c.o
+.PHONY : rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c.o
+
+rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.i: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c.i
+
+.PHONY : rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__python.dir/build.make CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c.i
+.PHONY : rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c.i
+
+rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.s: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c.s
+
+.PHONY : rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__python.dir/build.make CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c.s
+.PHONY : rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c.s
 
 rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk_s.o: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk_s.c.o
 
@@ -672,59 +672,59 @@ rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xik_s.c.s:
 	$(MAKE) -f CMakeFiles/cocoax_interfaces__python.dir/build.make CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xik_s.c.s
 .PHONY : rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xik_s.c.s
 
-rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.o: rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.cpp.o
+rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.o: rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.o
 
-.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.cpp.o
-
-rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.i: rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.cpp.i
-
-.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.cpp.i
-
-rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.s: rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.cpp.s
-
-.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.cpp.s
-
-rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.o: rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.o
-
-.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.o
+.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.o
 
 # target to build an object file
-rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.o
+rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.o
 
-rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.i: rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.i
+rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.i: rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.i
 
-.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.i
+.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.i
+rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.i
 
-rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.s: rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.s
+rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.s: rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.s
 
-.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.s
+.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.s
+rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.s
+
+rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.o: rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.o
+
+rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.i: rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.i
+
+rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.s: rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.s
 
 rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xfk__type_support.o: rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xfk__type_support.cpp.o
 
@@ -780,59 +780,59 @@ rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xik__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xik__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xik__type_support.cpp.s
 
-rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.o: rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.cpp.o
+rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.o: rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.o
 
-.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.cpp.o
-
-rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.i: rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.cpp.i
-
-.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.cpp.i
-
-rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.s: rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.cpp.s
-
-.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.cpp.s
-
-rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.o: rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.o
-
-.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.o
+.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.o
 
 # target to build an object file
-rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.o
+rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.o
 
-rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.i: rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.i
+rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.i: rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.i
 
-.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.i
+.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.i
+rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.i
 
-rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.s: rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.s
+rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.s: rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.s
 
-.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.s
+.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.cpp.s
+rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.s
+
+rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.o: rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.o
+
+rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.i: rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.i
+
+rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.s: rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.s
 
 rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_xfk__type_support.o: rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_xfk__type_support.cpp.o
 
@@ -888,59 +888,59 @@ rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_xik__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_xik__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_xik__type_support.cpp.s
 
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.o: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.o
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.o: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.o
 
-.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.i: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.i
-
-.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.s: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.s
-
-.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.o: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.o
-
-.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.o
+.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.o
 
 # target to build an object file
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.o
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.o
 
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.i: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.i
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.i: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.i
 
-.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.i
+.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.i
 
 # target to preprocess a source file
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.i
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.i
 
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.s: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.s
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.s: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.s
 
-.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.s
+.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.s
 
 # target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.s
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.o: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.i: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.s: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support_c.o: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support_c.cpp.o
 
@@ -996,59 +996,59 @@ rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__type_suppo
 	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support_c.cpp.s
 
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.o: rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.cpp.o
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.o: rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.cpp.o
 
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.i: rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.cpp.i
-
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.s: rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.cpp.s
-
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.o: rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.cpp.o
-
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.o
 
 # target to build an object file
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.cpp.o
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.cpp.o
 
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.i: rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.cpp.i
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.i: rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.cpp.i
 
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.cpp.i
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.cpp.i
 
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.s: rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.cpp.s
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.s: rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.cpp.s
 
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.cpp.s
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.o: rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.i: rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.s: rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_xfk__type_support.o: rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_xfk__type_support.cpp.o
 
@@ -1104,59 +1104,59 @@ rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_
 	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_xik__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_xik__type_support.cpp.s
 
-rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.o: rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.c.o
+rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.o: rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.o
 
-.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.c.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.c.o
-
-rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.i: rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.c.i
-
-.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.c.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.c.i
-
-rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.s: rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.c.s
-
-.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.c.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.c.s
-
-rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.o: rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.c.o
-
-.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.o
+.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.o
 
 # target to build an object file
-rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.c.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.c.o
+rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.o
 
-rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.i: rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.c.i
+rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.i: rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.i
 
-.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.i
+.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.c.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.c.i
+rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.i
 
-rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.s: rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.c.s
+rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.s: rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.s
 
-.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.s
+.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.c.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.c.s
+rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.s
+
+rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.o: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.o
+
+.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.o
+
+rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.i: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.i
+
+.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.i
+
+rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.s: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.s
+
+.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.s
 
 rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.o: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.c.o
 
@@ -1212,59 +1212,59 @@ rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__type_
 	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support.c.s
 
-rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.o: rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.cpp.o
+rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.o: rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.cpp.o
 
-.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.i: rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.cpp.i
-
-.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.s: rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.cpp.s
-
-.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.o: rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.cpp.o
-
-.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.o
+.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.o
 
 # target to build an object file
-rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.cpp.o
+rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.cpp.o
 
-rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.i: rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.cpp.i
+rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.i: rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.cpp.i
 
-.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.i
+.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.cpp.i
+rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.cpp.i
 
-rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.s: rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.cpp.s
+rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.s: rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.cpp.s
 
-.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.s
+.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.cpp.s
+rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.o: rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.i: rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.s: rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.o: rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.cpp.o
 
@@ -1349,12 +1349,12 @@ help:
 	@echo "... cocoax_interfaces__rosidl_typesupport_cpp"
 	@echo "... cocoax_interfaces__python"
 	@echo "... cocoax_interfaces__py"
-	@echo "... rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.o"
-	@echo "... rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.i"
-	@echo "... rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.s"
-	@echo "... rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.o"
-	@echo "... rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.i"
-	@echo "... rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.s"
+	@echo "... rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.o"
+	@echo "... rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.i"
+	@echo "... rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.s"
+	@echo "... rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.o"
+	@echo "... rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.i"
+	@echo "... rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.s"
 	@echo "... rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xfk__functions.o"
 	@echo "... rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xfk__functions.i"
 	@echo "... rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xfk__functions.s"
@@ -1370,84 +1370,84 @@ help:
 	@echo "... rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_introspection_c.o"
 	@echo "... rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_introspection_c.i"
 	@echo "... rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_introspection_c.s"
-	@echo "... rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.o"
-	@echo "... rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.i"
-	@echo "... rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.s"
-	@echo "... rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.o"
-	@echo "... rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.i"
-	@echo "... rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.s"
+	@echo "... rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.o"
+	@echo "... rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.i"
+	@echo "... rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.s"
+	@echo "... rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.o"
+	@echo "... rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.i"
+	@echo "... rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.s"
 	@echo "... rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk_s.o"
 	@echo "... rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk_s.i"
 	@echo "... rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk_s.s"
 	@echo "... rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xik_s.o"
 	@echo "... rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xik_s.i"
 	@echo "... rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xik_s.s"
-	@echo "... rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.o"
-	@echo "... rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.i"
-	@echo "... rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test__type_support.s"
-	@echo "... rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.o"
-	@echo "... rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.i"
-	@echo "... rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_ximu__type_support.s"
+	@echo "... rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.o"
+	@echo "... rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.i"
+	@echo "... rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.s"
+	@echo "... rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.o"
+	@echo "... rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.i"
+	@echo "... rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.s"
 	@echo "... rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xfk__type_support.o"
 	@echo "... rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xfk__type_support.i"
 	@echo "... rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xfk__type_support.s"
 	@echo "... rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xik__type_support.o"
 	@echo "... rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xik__type_support.i"
 	@echo "... rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xik__type_support.s"
-	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.o"
-	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.i"
-	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test__type_support.s"
-	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.o"
-	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.i"
-	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_ximu__type_support.s"
+	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.o"
+	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.i"
+	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.s"
+	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.o"
+	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.i"
+	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.s"
 	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_xfk__type_support.o"
 	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_xfk__type_support.i"
 	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_xfk__type_support.s"
 	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_xik__type_support.o"
 	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_xik__type_support.i"
 	@echo "... rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_xik__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_xfk__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_xfk__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_xfk__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_xik__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_xik__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_xik__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.s"

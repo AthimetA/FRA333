@@ -1,0 +1,27 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/environment/pythonpath.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/lib/python3.8/site-packages/cocoax_kinematics/__init__.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/lib/cocoax_kinematics/fk_ik_server.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/lib/cocoax_kinematics/cocoav_imu_calibration.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/lib/cocoax_kinematics/cocoav_trajectory_generator.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/lib/cocoax_kinematics/cocoav_calibrator_findconfig.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/lib/cocoax_kinematics/testnode.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/launch/display_with_kinematic.launch.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/ament_index/resource_index/package_run_dependencies/cocoax_kinematics
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/ament_index/resource_index/parent_prefix_path/cocoax_kinematics
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/environment/path.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/environment/path.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/local_setup.bash
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/local_setup.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/local_setup.zsh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/local_setup.dsv
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/package.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/ament_index/resource_index/packages/cocoax_kinematics
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/cmake/cocoax_kinematicsConfig.cmake
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/cmake/cocoax_kinematicsConfig-version.cmake
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/package.xml
+Listing '/home/azthorax/fra333_ws/install/cocoax_kinematics/lib/python3.8/site-packages/cocoax_kinematics'...

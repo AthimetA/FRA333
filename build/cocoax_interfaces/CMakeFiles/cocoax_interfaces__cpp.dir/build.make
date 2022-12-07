@@ -61,14 +61,14 @@ CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/co
 CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__builder.hpp
 CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__struct.hpp
 CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__traits.hpp
-CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/cocoa_test.hpp
-CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_test__builder.hpp
-CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_test__struct.hpp
-CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_test__traits.hpp
-CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/cocoa_ximu.hpp
-CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__builder.hpp
-CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__struct.hpp
-CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__traits.hpp
+CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_x_enable.hpp
+CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__builder.hpp
+CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.hpp
+CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__traits.hpp
+CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/cocoa_control_ref.hpp
+CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__builder.hpp
+CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.hpp
+CMakeFiles/cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__traits.hpp
 
 
 rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp: /opt/ros/foxy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -88,8 +88,8 @@ rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp: /opt/ros/foxy/share/ro
 rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp: rosidl_adapter/cocoax_interfaces/srv/CocoaXIK.idl
 rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp: rosidl_adapter/cocoax_interfaces/srv/CocoaXFK.idl
-rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp: rosidl_adapter/cocoax_interfaces/msg/CocoaTest.idl
-rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp: rosidl_adapter/cocoax_interfaces/msg/CocoaXIMU.idl
+rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp: rosidl_adapter/cocoax_interfaces/srv/CocoaXEnable.idl
+rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp: rosidl_adapter/cocoax_interfaces/msg/CocoaControlRef.idl
 rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -203,29 +203,29 @@ rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__struct.hpp: rosidl_
 rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__traits.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__traits.hpp
 
-rosidl_generator_cpp/cocoax_interfaces/msg/cocoa_test.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/msg/cocoa_test.hpp
+rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_x_enable.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_x_enable.hpp
 
-rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_test__builder.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_test__builder.hpp
+rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__builder.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__builder.hpp
 
-rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_test__struct.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_test__struct.hpp
+rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.hpp
 
-rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_test__traits.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_test__traits.hpp
+rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__traits.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__traits.hpp
 
-rosidl_generator_cpp/cocoax_interfaces/msg/cocoa_ximu.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/msg/cocoa_ximu.hpp
+rosidl_generator_cpp/cocoax_interfaces/msg/cocoa_control_ref.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/msg/cocoa_control_ref.hpp
 
-rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__builder.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__builder.hpp
+rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__builder.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__builder.hpp
 
-rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__struct.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__struct.hpp
+rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.hpp
 
-rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__traits.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__traits.hpp
+rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__traits.hpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__traits.hpp
 
 cocoax_interfaces__cpp: CMakeFiles/cocoax_interfaces__cpp
 cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xik.hpp
@@ -236,14 +236,14 @@ cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xfk.hpp
 cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__builder.hpp
 cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__struct.hpp
 cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__traits.hpp
-cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/cocoa_test.hpp
-cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_test__builder.hpp
-cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_test__struct.hpp
-cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_test__traits.hpp
-cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/cocoa_ximu.hpp
-cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__builder.hpp
-cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__struct.hpp
-cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__traits.hpp
+cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_x_enable.hpp
+cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__builder.hpp
+cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.hpp
+cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__traits.hpp
+cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/cocoa_control_ref.hpp
+cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__builder.hpp
+cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.hpp
+cocoax_interfaces__cpp: rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__traits.hpp
 cocoax_interfaces__cpp: CMakeFiles/cocoax_interfaces__cpp.dir/build.make
 
 .PHONY : cocoax_interfaces__cpp

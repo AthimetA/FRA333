@@ -10,41 +10,17 @@ import sys
 
 
 def generate_launch_description():
-
-    ### How to launch another launch file ###
-    #
-    # You must specify the package, folder, and the name
-    #
-    package_name = 'cocoax_description'
-    # path_to_package = get_package_share_directory(package_name)
-    sub_folder = 'launch'    # launch_description.add_action(joint_state_publisher_gui)
-    file_name = 'display_gazebo.launch.py'
-    
-    display = IncludeLaunchDescription(
-         PythonLaunchDescriptionSource([
-            PathJoinSubstitution([
-                FindPackageShare(package_name),
-                sub_folder,
-                file_name
-            ])
-        ])
-    )
-    
-    cocoav_imu_calibrator = Node(
-        package='cocoax_kinematics',
-        executable='cocoav_imu_calibration.py',
-    )
-    
-    cocoav_trajectory_generator = Node(
-        package='cocoax_kinematics',
-        executable='cocoav_trajectory_generator.py',
-    )
-    
     # Launch Description
     launch_description = LaunchDescription()
-    launch_description.add_action(display)
-    launch_description.add_action(cocoav_imu_calibrator)
-    launch_description.add_action(cocoav_trajectory_generator)
+    
+    # Add the tracker node
+    control_package_name = 'cocoax_control'
+    cocoax_control = Node(
+        package=control_package_name,
+        executable="tracker.py",
+        name="cocoax_tracker_node",
+        namespace="cocoax_tracker",)
+    launch_description.add_action(cocoax_control)
     
     # launch_description.add_action(srv_call_set_joint)
     return launch_description

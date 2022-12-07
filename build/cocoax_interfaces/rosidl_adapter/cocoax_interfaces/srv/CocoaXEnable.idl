@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from cocoax_interfaces/srv/CocoaXEnable.srv
+// generated code does not contain a copyright notice
+
+
+module cocoax_interfaces {
+  module srv {
+    struct CocoaXEnable_Request {
+      boolean setenable;
+    };
+    struct CocoaXEnable_Response {
+      string trackerstatus;
+    };
+  };
+};

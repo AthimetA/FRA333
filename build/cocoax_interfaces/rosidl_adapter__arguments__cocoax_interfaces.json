@@ -3,7 +3,7 @@
   "non_idl_tuples": [
     "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces:srv/CocoaXIK.srv",
     "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces:srv/CocoaXFK.srv",
-    "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces:msg/CocoaTest.msg",
-    "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces:msg/CocoaXIMU.msg"
+    "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces:srv/CocoaXEnable.srv",
+    "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces:msg/CocoaControlRef.msg"
   ]
 }

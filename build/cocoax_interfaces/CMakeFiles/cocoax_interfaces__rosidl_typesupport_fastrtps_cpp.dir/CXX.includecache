@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test__type_support.cpp
-cocoax_interfaces/msg/detail/cocoa_test__rosidl_typesupport_fastrtps_cpp.hpp
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoax_interfaces/msg/detail/cocoa_test__rosidl_typesupport_fastrtps_cpp.hpp
-cocoax_interfaces/msg/detail/cocoa_test__struct.hpp
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoax_interfaces/msg/detail/cocoa_test__struct.hpp
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.cpp
+cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_fastrtps_cpp.hpp
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_fastrtps_cpp.hpp
+cocoax_interfaces/msg/detail/cocoa_control_ref__struct.hpp
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.hpp
 limits
 -
 stdexcept
@@ -30,11 +30,11 @@ rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp
 fastcdr/Cdr.h
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/fastcdr/Cdr.h
 
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_ximu__type_support.cpp
-cocoax_interfaces/msg/detail/cocoa_ximu__rosidl_typesupport_fastrtps_cpp.hpp
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoax_interfaces/msg/detail/cocoa_ximu__rosidl_typesupport_fastrtps_cpp.hpp
-cocoax_interfaces/msg/detail/cocoa_ximu__struct.hpp
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoax_interfaces/msg/detail/cocoa_ximu__struct.hpp
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.cpp
+cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_fastrtps_cpp.hpp
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_fastrtps_cpp.hpp
+cocoax_interfaces/srv/detail/cocoa_x_enable__struct.hpp
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.hpp
 limits
 -
 stdexcept
@@ -42,17 +42,23 @@ stdexcept
 string
 -
 rosidl_typesupport_cpp/message_type_support.hpp
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/rosidl_typesupport_cpp/message_type_support.hpp
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/rosidl_typesupport_cpp/message_type_support.hpp
 rosidl_typesupport_fastrtps_cpp/identifier.hpp
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/identifier.hpp
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/identifier.hpp
 rosidl_typesupport_fastrtps_cpp/message_type_support.h
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/message_type_support.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/message_type_support.h
 rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp
 rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp
 fastcdr/Cdr.h
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/fastcdr/Cdr.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/fastcdr/Cdr.h
+rmw/error_handling.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/rmw/error_handling.h
+rosidl_typesupport_fastrtps_cpp/service_type_support.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/service_type_support.h
+rosidl_typesupport_fastrtps_cpp/service_type_support_decl.hpp
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/service_type_support_decl.hpp
 
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_xfk__type_support.cpp
 cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_fastrtps_cpp.hpp
@@ -600,22 +606,6 @@ vector
 std_msgs/msg/detail/header__struct.hpp
 /opt/ros/foxy/include/sensor_msgs/msg/detail/std_msgs/msg/detail/header__struct.hpp
 
-/opt/ros/foxy/include/std_msgs/msg/detail/float64__struct.hpp
-rosidl_runtime_cpp/bounded_vector.hpp
--
-rosidl_runtime_cpp/message_initialization.hpp
--
-algorithm
--
-array
--
-memory
--
-string
--
-vector
--
-
 /opt/ros/foxy/include/std_msgs/msg/detail/header__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
@@ -634,7 +624,7 @@ vector
 builtin_interfaces/msg/detail/time__struct.hpp
 /opt/ros/foxy/include/std_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.hpp
 
-rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_test__struct.hpp
+rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
@@ -649,10 +639,8 @@ string
 -
 vector
 -
-std_msgs/msg/detail/float64__struct.hpp
-rosidl_generator_cpp/cocoax_interfaces/msg/detail/std_msgs/msg/detail/float64__struct.hpp
 
-rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__struct.hpp
+rosidl_generator_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
@@ -708,31 +696,35 @@ rosidl_generator_cpp/cocoax_interfaces/srv/detail/geometry_msgs/msg/detail/point
 sensor_msgs/msg/detail/joint_state__struct.hpp
 rosidl_generator_cpp/cocoax_interfaces/srv/detail/sensor_msgs/msg/detail/joint_state__struct.hpp
 
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/cocoa_test__rosidl_typesupport_fastrtps_cpp.hpp
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_fastrtps_cpp.hpp
 rosidl_runtime_c/message_type_support_struct.h
 rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/rosidl_runtime_c/message_type_support_struct.h
 rosidl_typesupport_interface/macros.h
 rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/rosidl_typesupport_interface/macros.h
 cocoax_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
 rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/cocoax_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
-cocoax_interfaces/msg/detail/cocoa_test__struct.hpp
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/cocoax_interfaces/msg/detail/cocoa_test__struct.hpp
-fastcdr/Cdr.h
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/fastcdr/Cdr.h
-
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/cocoa_ximu__rosidl_typesupport_fastrtps_cpp.hpp
-rosidl_runtime_c/message_type_support_struct.h
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/rosidl_runtime_c/message_type_support_struct.h
-rosidl_typesupport_interface/macros.h
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/rosidl_typesupport_interface/macros.h
-cocoax_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/cocoax_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
-cocoax_interfaces/msg/detail/cocoa_ximu__struct.hpp
-rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/cocoax_interfaces/msg/detail/cocoa_ximu__struct.hpp
+cocoax_interfaces/msg/detail/cocoa_control_ref__struct.hpp
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.hpp
 fastcdr/Cdr.h
 rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/fastcdr/Cdr.h
 
 rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_fastrtps_cpp.hpp
+rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_interface/macros.h
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/rosidl_typesupport_interface/macros.h
+cocoax_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/cocoax_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+cocoax_interfaces/srv/detail/cocoa_x_enable__struct.hpp
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.hpp
+fastcdr/Cdr.h
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/fastcdr/Cdr.h
+rmw/types.h
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/rmw/types.h
+rosidl_typesupport_cpp/service_type_support.hpp
+rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/rosidl_typesupport_cpp/service_type_support.hpp
 
 rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_fastrtps_cpp.hpp
 rosidl_runtime_c/message_type_support_struct.h

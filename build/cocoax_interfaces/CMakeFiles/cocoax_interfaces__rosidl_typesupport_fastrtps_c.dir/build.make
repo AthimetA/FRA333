@@ -67,8 +67,8 @@ rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typ
 rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em
 rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/cocoax_interfaces/srv/CocoaXIK.idl
 rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/cocoax_interfaces/srv/CocoaXFK.idl
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/cocoax_interfaces/msg/CocoaTest.idl
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/cocoax_interfaces/msg/CocoaXIMU.idl
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/cocoax_interfaces/srv/CocoaXEnable.idl
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/cocoax_interfaces/msg/CocoaControlRef.idl
 rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -170,17 +170,17 @@ rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typ
 rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support_c.cpp: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support_c.cpp
 
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__rosidl_typesupport_fastrtps_c.h
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_fastrtps_c.h
 
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp
 
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__rosidl_typesupport_fastrtps_c.h
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_fastrtps_c.h
 
-rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp
+rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp
 
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support_c.cpp.o: CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support_c.cpp
@@ -208,46 +208,46 @@ CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesuppo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support_c.cpp -o CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support_c.cpp.s
 
-CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.o: CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
-CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.o -c /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.o: CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.o -c /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp
 
-CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp > CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.i
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp > CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.i
 
-CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp -o CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.s
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp -o CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.s
 
-CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.o: CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
-CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.o -c /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.o: CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.o -c /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp
 
-CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp > CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.i
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp > CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.i
 
-CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp -o CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.s
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp -o CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.s
 
 # Object files for target cocoax_interfaces__rosidl_typesupport_fastrtps_c
 cocoax_interfaces__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support_c.cpp.o" \
 "CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support_c.cpp.o" \
-"CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.o" \
-"CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.o"
+"CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.o" \
+"CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.o"
 
 # External object files for target cocoax_interfaces__rosidl_typesupport_fastrtps_c
 cocoax_interfaces__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
 
 libcocoax_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support_c.cpp.o
 libcocoax_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support_c.cpp.o
-libcocoax_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp.o
-libcocoax_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp.o
+libcocoax_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.o
+libcocoax_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.o
 libcocoax_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make
 libcocoax_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/librosidl_typesupport_fastrtps_c.so
 libcocoax_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
@@ -313,10 +313,10 @@ CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_t
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support_c.cpp
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support_c.cpp
-CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__rosidl_typesupport_fastrtps_c.h
-CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test__type_support_c.cpp
-CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__rosidl_typesupport_fastrtps_c.h
-CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support_c.cpp
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp
 	cd /home/azthorax/fra333_ws/build/cocoax_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces /home/azthorax/fra333_ws/build/cocoax_interfaces /home/azthorax/fra333_ws/build/cocoax_interfaces /home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/depend
 

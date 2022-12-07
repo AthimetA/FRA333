@@ -376,11 +376,11 @@ ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v
 # install(FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces/srv/CocoaXFK.idl" "DESTINATION" "share/cocoax_interfaces/srv")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces/srv/CocoaXFK.idl" "DESTINATION" "share/cocoax_interfaces/srv")
 
-# install(FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces/msg/CocoaTest.idl" "DESTINATION" "share/cocoax_interfaces/msg")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces/msg/CocoaTest.idl" "DESTINATION" "share/cocoax_interfaces/msg")
+# install(FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces/srv/CocoaXEnable.idl" "DESTINATION" "share/cocoax_interfaces/srv")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces/srv/CocoaXEnable.idl" "DESTINATION" "share/cocoax_interfaces/srv")
 
-# install(FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces/msg/CocoaXIMU.idl" "DESTINATION" "share/cocoax_interfaces/msg")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces/msg/CocoaXIMU.idl" "DESTINATION" "share/cocoax_interfaces/msg")
+# install(FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces/msg/CocoaControlRef.idl" "DESTINATION" "share/cocoax_interfaces/msg")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces/msg/CocoaControlRef.idl" "DESTINATION" "share/cocoax_interfaces/msg")
 
 # install(FILES "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/srv/CocoaXIK.srv" "DESTINATION" "share/cocoax_interfaces/srv")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces" FILES "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/srv/CocoaXIK.srv" "DESTINATION" "share/cocoax_interfaces/srv")
@@ -400,11 +400,17 @@ ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v
 # install(FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_cmake/srv/CocoaXFK_Response.msg" "DESTINATION" "share/cocoax_interfaces/srv")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_cmake/srv/CocoaXFK_Response.msg" "DESTINATION" "share/cocoax_interfaces/srv")
 
-# install(FILES "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/msg/CocoaTest.msg" "DESTINATION" "share/cocoax_interfaces/msg")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces" FILES "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/msg/CocoaTest.msg" "DESTINATION" "share/cocoax_interfaces/msg")
+# install(FILES "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/srv/CocoaXEnable.srv" "DESTINATION" "share/cocoax_interfaces/srv")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces" FILES "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/srv/CocoaXEnable.srv" "DESTINATION" "share/cocoax_interfaces/srv")
 
-# install(FILES "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/msg/CocoaXIMU.msg" "DESTINATION" "share/cocoax_interfaces/msg")
-ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces" FILES "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/msg/CocoaXIMU.msg" "DESTINATION" "share/cocoax_interfaces/msg")
+# install(FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_cmake/srv/CocoaXEnable_Request.msg" "DESTINATION" "share/cocoax_interfaces/srv")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_cmake/srv/CocoaXEnable_Request.msg" "DESTINATION" "share/cocoax_interfaces/srv")
+
+# install(FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_cmake/srv/CocoaXEnable_Response.msg" "DESTINATION" "share/cocoax_interfaces/srv")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_cmake/srv/CocoaXEnable_Response.msg" "DESTINATION" "share/cocoax_interfaces/srv")
+
+# install(FILES "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/msg/CocoaControlRef.msg" "DESTINATION" "share/cocoax_interfaces/msg")
+ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces" FILES "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/msg/CocoaControlRef.msg" "DESTINATION" "share/cocoax_interfaces/msg")
 
 # install(FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cocoax_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces" FILES "/home/azthorax/fra333_ws/build/cocoax_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cocoax_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

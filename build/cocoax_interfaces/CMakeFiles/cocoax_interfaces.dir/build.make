@@ -59,8 +59,10 @@ CMakeFiles/cocoax_interfaces: rosidl_cmake/srv/CocoaXIK_Response.msg
 CMakeFiles/cocoax_interfaces: /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/srv/CocoaXFK.srv
 CMakeFiles/cocoax_interfaces: rosidl_cmake/srv/CocoaXFK_Request.msg
 CMakeFiles/cocoax_interfaces: rosidl_cmake/srv/CocoaXFK_Response.msg
-CMakeFiles/cocoax_interfaces: /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/msg/CocoaTest.msg
-CMakeFiles/cocoax_interfaces: /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/msg/CocoaXIMU.msg
+CMakeFiles/cocoax_interfaces: /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/srv/CocoaXEnable.srv
+CMakeFiles/cocoax_interfaces: rosidl_cmake/srv/CocoaXEnable_Request.msg
+CMakeFiles/cocoax_interfaces: rosidl_cmake/srv/CocoaXEnable_Response.msg
+CMakeFiles/cocoax_interfaces: /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/msg/CocoaControlRef.msg
 CMakeFiles/cocoax_interfaces: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/cocoax_interfaces: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/cocoax_interfaces: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl

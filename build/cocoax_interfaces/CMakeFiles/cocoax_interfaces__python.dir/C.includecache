@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_s.c
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c
 Python.h
 -
 stdbool.h
@@ -15,28 +15,32 @@ numpy/ndarrayobject.h
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/numpy/ndarrayobject.h
 rosidl_runtime_c/visibility_control.h
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/rosidl_runtime_c/visibility_control.h
-cocoax_interfaces/msg/detail/cocoa_test__struct.h
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/cocoax_interfaces/msg/detail/cocoa_test__struct.h
-cocoax_interfaces/msg/detail/cocoa_test__functions.h
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/cocoax_interfaces/msg/detail/cocoa_test__functions.h
-
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_ximu_s.c
-Python.h
--
-stdbool.h
--
-numpy/ndarrayobject.h
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/numpy/ndarrayobject.h
-rosidl_runtime_c/visibility_control.h
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/rosidl_runtime_c/visibility_control.h
-cocoax_interfaces/msg/detail/cocoa_ximu__struct.h
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/cocoax_interfaces/msg/detail/cocoa_ximu__struct.h
-cocoax_interfaces/msg/detail/cocoa_ximu__functions.h
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/cocoax_interfaces/msg/detail/cocoa_ximu__functions.h
+cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h
+cocoax_interfaces/msg/detail/cocoa_control_ref__functions.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.h
 rosidl_runtime_c/primitives_sequence.h
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/rosidl_runtime_c/primitives_sequence.h
 rosidl_runtime_c/primitives_sequence_functions.h
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/msg/rosidl_runtime_c/primitives_sequence_functions.h
+
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c
+Python.h
+-
+stdbool.h
+-
+numpy/ndarrayobject.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/srv/numpy/ndarrayobject.h
+rosidl_runtime_c/visibility_control.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/srv/rosidl_runtime_c/visibility_control.h
+cocoax_interfaces/srv/detail/cocoa_x_enable__struct.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/srv/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.h
+cocoax_interfaces/srv/detail/cocoa_x_enable__functions.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/srv/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.h
+rosidl_runtime_c/string.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/srv/rosidl_runtime_c/string.h
+rosidl_runtime_c/string_functions.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/srv/rosidl_runtime_c/string_functions.h
 
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk_s.c
 Python.h
@@ -110,6 +114,14 @@ stddef.h
 rosidl_runtime_c/primitives_sequence.h
 /opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
 
+/opt/ros/foxy/include/rosidl_runtime_c/string_functions.h
+stddef.h
+-
+rosidl_runtime_c/string.h
+/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/string.h
+rosidl_runtime_c/visibility_control.h
+/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
+
 /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 
 /opt/ros/foxy/include/sensor_msgs/msg/detail/joint_state__struct.h
@@ -125,14 +137,6 @@ rosidl_runtime_c/string.h
 /opt/ros/foxy/include/sensor_msgs/msg/detail/rosidl_runtime_c/string.h
 rosidl_runtime_c/primitives_sequence.h
 /opt/ros/foxy/include/sensor_msgs/msg/detail/rosidl_runtime_c/primitives_sequence.h
-
-/opt/ros/foxy/include/std_msgs/msg/detail/float64__struct.h
-stdbool.h
--
-stddef.h
--
-stdint.h
--
 
 /opt/ros/foxy/include/std_msgs/msg/detail/header__struct.h
 stdbool.h
@@ -718,7 +722,7 @@ cpython/unicodeobject.h
 
 /usr/include/python3.8/weakrefobject.h
 
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__functions.h
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.h
 stdbool.h
 -
 stdlib.h
@@ -727,32 +731,10 @@ rosidl_runtime_c/visibility_control.h
 rosidl_generator_c/cocoax_interfaces/msg/detail/rosidl_runtime_c/visibility_control.h
 cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
 rosidl_generator_c/cocoax_interfaces/msg/detail/cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
-cocoax_interfaces/msg/detail/cocoa_test__struct.h
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoax_interfaces/msg/detail/cocoa_test__struct.h
+cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h
 
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test__struct.h
-stdbool.h
--
-stddef.h
--
-stdint.h
--
-std_msgs/msg/detail/float64__struct.h
-rosidl_generator_c/cocoax_interfaces/msg/detail/std_msgs/msg/detail/float64__struct.h
-
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__functions.h
-stdbool.h
--
-stdlib.h
--
-rosidl_runtime_c/visibility_control.h
-rosidl_generator_c/cocoax_interfaces/msg/detail/rosidl_runtime_c/visibility_control.h
-cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
-cocoax_interfaces/msg/detail/cocoa_ximu__struct.h
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoax_interfaces/msg/detail/cocoa_ximu__struct.h
-
-rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_ximu__struct.h
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h
 stdbool.h
 -
 stddef.h
@@ -761,6 +743,28 @@ stdint.h
 -
 
 rosidl_generator_c/cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
+
+rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/cocoax_interfaces/srv/detail/rosidl_runtime_c/visibility_control.h
+cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/cocoax_interfaces/srv/detail/cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
+cocoax_interfaces/srv/detail/cocoa_x_enable__struct.h
+rosidl_generator_c/cocoax_interfaces/srv/detail/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.h
+
+rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+rosidl_runtime_c/string.h
+rosidl_generator_c/cocoax_interfaces/srv/detail/rosidl_runtime_c/string.h
 
 rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xfk__functions.h
 stdbool.h

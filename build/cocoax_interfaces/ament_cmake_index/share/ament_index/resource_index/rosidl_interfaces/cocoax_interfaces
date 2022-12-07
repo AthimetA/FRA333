@@ -1,7 +1,9 @@
-msg/CocoaTest.idl
-msg/CocoaTest.msg
-msg/CocoaXIMU.idl
-msg/CocoaXIMU.msg
+msg/CocoaControlRef.idl
+msg/CocoaControlRef.msg
+srv/CocoaXEnable.idl
+srv/CocoaXEnable.srv
+srv/CocoaXEnable_Request.msg
+srv/CocoaXEnable_Response.msg
 srv/CocoaXFK.idl
 srv/CocoaXFK.srv
 srv/CocoaXFK_Request.msg

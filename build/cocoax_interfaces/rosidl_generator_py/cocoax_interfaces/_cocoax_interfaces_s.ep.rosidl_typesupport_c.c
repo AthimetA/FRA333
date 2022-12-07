@@ -24,39 +24,39 @@ static struct PyModuleDef cocoax_interfaces__module = {
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_runtime_c/service_type_support_struct.h"
 #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "cocoax_interfaces/msg/detail/cocoa_test__type_support.h"
-#include "cocoax_interfaces/msg/detail/cocoa_test__struct.h"
-#include "cocoax_interfaces/msg/detail/cocoa_test__functions.h"
+#include "cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.h"
+#include "cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h"
+#include "cocoax_interfaces/msg/detail/cocoa_control_ref__functions.h"
 
-static void * cocoax_interfaces__msg__cocoa_test__create_ros_message(void)
+static void * cocoax_interfaces__msg__cocoa_control_ref__create_ros_message(void)
 {
-  return cocoax_interfaces__msg__CocoaTest__create();
+  return cocoax_interfaces__msg__CocoaControlRef__create();
 }
 
-static void cocoax_interfaces__msg__cocoa_test__destroy_ros_message(void * raw_ros_message)
+static void cocoax_interfaces__msg__cocoa_control_ref__destroy_ros_message(void * raw_ros_message)
 {
-  cocoax_interfaces__msg__CocoaTest * ros_message = (cocoax_interfaces__msg__CocoaTest *)raw_ros_message;
-  cocoax_interfaces__msg__CocoaTest__destroy(ros_message);
+  cocoax_interfaces__msg__CocoaControlRef * ros_message = (cocoax_interfaces__msg__CocoaControlRef *)raw_ros_message;
+  cocoax_interfaces__msg__CocoaControlRef__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool cocoax_interfaces__msg__cocoa_test__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool cocoax_interfaces__msg__cocoa_control_ref__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * cocoax_interfaces__msg__cocoa_test__convert_to_py(void * raw_ros_message);
+PyObject * cocoax_interfaces__msg__cocoa_control_ref__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(cocoax_interfaces, msg, CocoaTest);
+ROSIDL_GET_MSG_TYPE_SUPPORT(cocoax_interfaces, msg, CocoaControlRef);
 
 int8_t
-_register_msg_type__msg__cocoa_test(PyObject * pymodule)
+_register_msg_type__msg__cocoa_control_ref(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&cocoax_interfaces__msg__cocoa_test__create_ros_message,
+    (void *)&cocoax_interfaces__msg__cocoa_control_ref__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -64,7 +64,7 @@ _register_msg_type__msg__cocoa_test(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__msg__cocoa_test",
+    "create_ros_message_msg__msg__cocoa_control_ref",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -75,7 +75,7 @@ _register_msg_type__msg__cocoa_test(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&cocoax_interfaces__msg__cocoa_test__destroy_ros_message,
+    (void *)&cocoax_interfaces__msg__cocoa_control_ref__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -83,7 +83,7 @@ _register_msg_type__msg__cocoa_test(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__msg__cocoa_test",
+    "destroy_ros_message_msg__msg__cocoa_control_ref",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -94,7 +94,7 @@ _register_msg_type__msg__cocoa_test(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&cocoax_interfaces__msg__cocoa_test__convert_from_py,
+    (void *)&cocoax_interfaces__msg__cocoa_control_ref__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -102,7 +102,7 @@ _register_msg_type__msg__cocoa_test(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__msg__cocoa_test",
+    "convert_from_py_msg__msg__cocoa_control_ref",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -113,7 +113,7 @@ _register_msg_type__msg__cocoa_test(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&cocoax_interfaces__msg__cocoa_test__convert_to_py,
+    (void *)&cocoax_interfaces__msg__cocoa_control_ref__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -121,7 +121,7 @@ _register_msg_type__msg__cocoa_test(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__msg__cocoa_test",
+    "convert_to_py_msg__msg__cocoa_control_ref",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -132,7 +132,7 @@ _register_msg_type__msg__cocoa_test(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(cocoax_interfaces, msg, CocoaTest),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(cocoax_interfaces, msg, CocoaControlRef),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -140,146 +140,7 @@ _register_msg_type__msg__cocoa_test(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__msg__cocoa_test",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-// already included above
-// #include <stdbool.h>
-// already included above
-// #include <stdint.h>
-// already included above
-// #include "rosidl_runtime_c/visibility_control.h"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "cocoax_interfaces/msg/detail/cocoa_ximu__type_support.h"
-#include "cocoax_interfaces/msg/detail/cocoa_ximu__struct.h"
-#include "cocoax_interfaces/msg/detail/cocoa_ximu__functions.h"
-
-static void * cocoax_interfaces__msg__cocoa_ximu__create_ros_message(void)
-{
-  return cocoax_interfaces__msg__CocoaXIMU__create();
-}
-
-static void cocoax_interfaces__msg__cocoa_ximu__destroy_ros_message(void * raw_ros_message)
-{
-  cocoax_interfaces__msg__CocoaXIMU * ros_message = (cocoax_interfaces__msg__CocoaXIMU *)raw_ros_message;
-  cocoax_interfaces__msg__CocoaXIMU__destroy(ros_message);
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-bool cocoax_interfaces__msg__cocoa_ximu__convert_from_py(PyObject * _pymsg, void * ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * cocoax_interfaces__msg__cocoa_ximu__convert_to_py(void * raw_ros_message);
-
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(cocoax_interfaces, msg, CocoaXIMU);
-
-int8_t
-_register_msg_type__msg__cocoa_ximu(PyObject * pymodule)
-{
-  int8_t err;
-
-  PyObject * pyobject_create_ros_message = NULL;
-  pyobject_create_ros_message = PyCapsule_New(
-    (void *)&cocoax_interfaces__msg__cocoa_ximu__create_ros_message,
-    NULL, NULL);
-  if (!pyobject_create_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "create_ros_message_msg__msg__cocoa_ximu",
-    pyobject_create_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_create_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_destroy_ros_message = NULL;
-  pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&cocoax_interfaces__msg__cocoa_ximu__destroy_ros_message,
-    NULL, NULL);
-  if (!pyobject_destroy_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "destroy_ros_message_msg__msg__cocoa_ximu",
-    pyobject_destroy_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_destroy_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_from_py = NULL;
-  pyobject_convert_from_py = PyCapsule_New(
-    (void *)&cocoax_interfaces__msg__cocoa_ximu__convert_from_py,
-    NULL, NULL);
-  if (!pyobject_convert_from_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_from_py_msg__msg__cocoa_ximu",
-    pyobject_convert_from_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_from_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_to_py = NULL;
-  pyobject_convert_to_py = PyCapsule_New(
-    (void *)&cocoax_interfaces__msg__cocoa_ximu__convert_to_py,
-    NULL, NULL);
-  if (!pyobject_convert_to_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_to_py_msg__msg__cocoa_ximu",
-    pyobject_convert_to_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_to_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(cocoax_interfaces, msg, CocoaXIMU),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_msg__msg__cocoa_ximu",
+    "type_support_msg__msg__cocoa_control_ref",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -910,6 +771,316 @@ _register_srv_type__srv__cocoa_xfk(PyObject * pymodule)
   return 0;
 }
 
+// already included above
+// #include <stdbool.h>
+// already included above
+// #include <stdint.h>
+// already included above
+// #include "rosidl_runtime_c/visibility_control.h"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/action_type_support_struct.h"
+#include "cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.h"
+#include "cocoax_interfaces/srv/detail/cocoa_x_enable__struct.h"
+#include "cocoax_interfaces/srv/detail/cocoa_x_enable__functions.h"
+
+static void * cocoax_interfaces__srv__cocoa_x_enable__request__create_ros_message(void)
+{
+  return cocoax_interfaces__srv__CocoaXEnable_Request__create();
+}
+
+static void cocoax_interfaces__srv__cocoa_x_enable__request__destroy_ros_message(void * raw_ros_message)
+{
+  cocoax_interfaces__srv__CocoaXEnable_Request * ros_message = (cocoax_interfaces__srv__CocoaXEnable_Request *)raw_ros_message;
+  cocoax_interfaces__srv__CocoaXEnable_Request__destroy(ros_message);
+}
+
+ROSIDL_GENERATOR_C_IMPORT
+bool cocoax_interfaces__srv__cocoa_x_enable__request__convert_from_py(PyObject * _pymsg, void * ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * cocoax_interfaces__srv__cocoa_x_enable__request__convert_to_py(void * raw_ros_message);
+
+
+ROSIDL_GENERATOR_C_IMPORT
+const rosidl_message_type_support_t *
+ROSIDL_GET_MSG_TYPE_SUPPORT(cocoax_interfaces, srv, CocoaXEnable_Request);
+
+int8_t
+_register_msg_type__srv__cocoa_x_enable__request(PyObject * pymodule)
+{
+  int8_t err;
+
+  PyObject * pyobject_create_ros_message = NULL;
+  pyobject_create_ros_message = PyCapsule_New(
+    (void *)&cocoax_interfaces__srv__cocoa_x_enable__request__create_ros_message,
+    NULL, NULL);
+  if (!pyobject_create_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "create_ros_message_msg__srv__cocoa_x_enable__request",
+    pyobject_create_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_create_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_destroy_ros_message = NULL;
+  pyobject_destroy_ros_message = PyCapsule_New(
+    (void *)&cocoax_interfaces__srv__cocoa_x_enable__request__destroy_ros_message,
+    NULL, NULL);
+  if (!pyobject_destroy_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "destroy_ros_message_msg__srv__cocoa_x_enable__request",
+    pyobject_destroy_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_destroy_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_from_py = NULL;
+  pyobject_convert_from_py = PyCapsule_New(
+    (void *)&cocoax_interfaces__srv__cocoa_x_enable__request__convert_from_py,
+    NULL, NULL);
+  if (!pyobject_convert_from_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_from_py_msg__srv__cocoa_x_enable__request",
+    pyobject_convert_from_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_from_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_to_py = NULL;
+  pyobject_convert_to_py = PyCapsule_New(
+    (void *)&cocoax_interfaces__srv__cocoa_x_enable__request__convert_to_py,
+    NULL, NULL);
+  if (!pyobject_convert_to_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_to_py_msg__srv__cocoa_x_enable__request",
+    pyobject_convert_to_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_to_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_type_support = NULL;
+  pyobject_type_support = PyCapsule_New(
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(cocoax_interfaces, srv, CocoaXEnable_Request),
+    NULL, NULL);
+  if (!pyobject_type_support) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "type_support_msg__srv__cocoa_x_enable__request",
+    pyobject_type_support);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_type_support);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+  return 0;
+}
+
+// already included above
+// #include <stdbool.h>
+// already included above
+// #include <stdint.h>
+// already included above
+// #include "rosidl_runtime_c/visibility_control.h"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/action_type_support_struct.h"
+// already included above
+// #include "cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.h"
+// already included above
+// #include "cocoax_interfaces/srv/detail/cocoa_x_enable__struct.h"
+// already included above
+// #include "cocoax_interfaces/srv/detail/cocoa_x_enable__functions.h"
+
+static void * cocoax_interfaces__srv__cocoa_x_enable__response__create_ros_message(void)
+{
+  return cocoax_interfaces__srv__CocoaXEnable_Response__create();
+}
+
+static void cocoax_interfaces__srv__cocoa_x_enable__response__destroy_ros_message(void * raw_ros_message)
+{
+  cocoax_interfaces__srv__CocoaXEnable_Response * ros_message = (cocoax_interfaces__srv__CocoaXEnable_Response *)raw_ros_message;
+  cocoax_interfaces__srv__CocoaXEnable_Response__destroy(ros_message);
+}
+
+ROSIDL_GENERATOR_C_IMPORT
+bool cocoax_interfaces__srv__cocoa_x_enable__response__convert_from_py(PyObject * _pymsg, void * ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * cocoax_interfaces__srv__cocoa_x_enable__response__convert_to_py(void * raw_ros_message);
+
+
+ROSIDL_GENERATOR_C_IMPORT
+const rosidl_message_type_support_t *
+ROSIDL_GET_MSG_TYPE_SUPPORT(cocoax_interfaces, srv, CocoaXEnable_Response);
+
+int8_t
+_register_msg_type__srv__cocoa_x_enable__response(PyObject * pymodule)
+{
+  int8_t err;
+
+  PyObject * pyobject_create_ros_message = NULL;
+  pyobject_create_ros_message = PyCapsule_New(
+    (void *)&cocoax_interfaces__srv__cocoa_x_enable__response__create_ros_message,
+    NULL, NULL);
+  if (!pyobject_create_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "create_ros_message_msg__srv__cocoa_x_enable__response",
+    pyobject_create_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_create_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_destroy_ros_message = NULL;
+  pyobject_destroy_ros_message = PyCapsule_New(
+    (void *)&cocoax_interfaces__srv__cocoa_x_enable__response__destroy_ros_message,
+    NULL, NULL);
+  if (!pyobject_destroy_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "destroy_ros_message_msg__srv__cocoa_x_enable__response",
+    pyobject_destroy_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_destroy_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_from_py = NULL;
+  pyobject_convert_from_py = PyCapsule_New(
+    (void *)&cocoax_interfaces__srv__cocoa_x_enable__response__convert_from_py,
+    NULL, NULL);
+  if (!pyobject_convert_from_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_from_py_msg__srv__cocoa_x_enable__response",
+    pyobject_convert_from_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_from_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_to_py = NULL;
+  pyobject_convert_to_py = PyCapsule_New(
+    (void *)&cocoax_interfaces__srv__cocoa_x_enable__response__convert_to_py,
+    NULL, NULL);
+  if (!pyobject_convert_to_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_to_py_msg__srv__cocoa_x_enable__response",
+    pyobject_convert_to_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_to_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_type_support = NULL;
+  pyobject_type_support = PyCapsule_New(
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(cocoax_interfaces, srv, CocoaXEnable_Response),
+    NULL, NULL);
+  if (!pyobject_type_support) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "type_support_msg__srv__cocoa_x_enable__response",
+    pyobject_type_support);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_type_support);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+  return 0;
+}
+
+ROSIDL_GENERATOR_C_IMPORT
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, cocoax_interfaces, srv, CocoaXEnable)();
+
+int8_t
+_register_srv_type__srv__cocoa_x_enable(PyObject * pymodule)
+{
+  int8_t err;
+  PyObject * pyobject_type_support = NULL;
+  pyobject_type_support = PyCapsule_New(
+    (void *)ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, cocoax_interfaces, srv, CocoaXEnable)(),
+    NULL, NULL);
+  if (!pyobject_type_support) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "type_support_srv__srv__cocoa_x_enable",
+    pyobject_type_support);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_type_support);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+  return 0;
+}
+
 PyMODINIT_FUNC
 PyInit_cocoax_interfaces_s__rosidl_typesupport_c(void)
 {
@@ -920,13 +1091,7 @@ PyInit_cocoax_interfaces_s__rosidl_typesupport_c(void)
   }
   int8_t err;
 
-  err = _register_msg_type__msg__cocoa_test(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
-  err = _register_msg_type__msg__cocoa_ximu(pymodule);
+  err = _register_msg_type__msg__cocoa_control_ref(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
@@ -963,6 +1128,24 @@ PyInit_cocoax_interfaces_s__rosidl_typesupport_c(void)
   }
 
   err = _register_srv_type__srv__cocoa_xfk(pymodule);
+  if (err) {
+    Py_XDECREF(pymodule);
+    return NULL;
+  }
+
+  err = _register_msg_type__srv__cocoa_x_enable__request(pymodule);
+  if (err) {
+    Py_XDECREF(pymodule);
+    return NULL;
+  }
+
+  err = _register_msg_type__srv__cocoa_x_enable__response(pymodule);
+  if (err) {
+    Py_XDECREF(pymodule);
+    return NULL;
+  }
+
+  err = _register_srv_type__srv__cocoa_x_enable(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;

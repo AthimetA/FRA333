@@ -40,8 +40,8 @@ find_package(sensor_msgs)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/CocoaXIK.srv"
   "srv/CocoaXFK.srv"
-  "msg/CocoaTest.msg"
-  "msg/CocoaXIMU.msg"
+  "srv/CocoaXEnable.srv"
+  "msg/CocoaControlRef.msg"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
   DEPENDENCIES sensor_msgs
