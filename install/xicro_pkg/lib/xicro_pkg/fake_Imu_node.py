@@ -1,1 +1,0 @@
-/home/azthorax/fra333_ws/src/Xicro/xicro_pkg/scripts/fake_Imu_node.py

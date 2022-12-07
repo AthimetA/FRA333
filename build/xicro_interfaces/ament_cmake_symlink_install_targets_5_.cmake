@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/azthorax/fra333_ws/build/xicro_interfaces/rosidl_generator_py/xicro_interfaces/libxicro_interfaces__python.so" "TARGETS" "xicro_interfaces__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

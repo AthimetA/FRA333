@@ -1,1 +1,0 @@
-/home/azthorax/fra333_ws/build/cocoa_kinematics_interfaces/rosidl_cmake/srv/CocoaFK_Request.msg

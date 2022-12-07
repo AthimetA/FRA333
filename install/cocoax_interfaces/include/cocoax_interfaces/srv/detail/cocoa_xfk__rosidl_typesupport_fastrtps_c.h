@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_fastrtps_c.h

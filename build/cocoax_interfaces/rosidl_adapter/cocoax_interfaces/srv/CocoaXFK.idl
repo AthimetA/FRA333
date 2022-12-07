@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from cocoax_interfaces/srv/CocoaXFK.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "sensor_msgs/msg/JointState.idl"
+
+module cocoax_interfaces {
+  module srv {
+    struct CocoaXFK_Request {
+      sensor_msgs::msg::JointState jointstate;
+    };
+    struct CocoaXFK_Response {
+      geometry_msgs::msg::Point positionendeffector;
+    };
+  };
+};

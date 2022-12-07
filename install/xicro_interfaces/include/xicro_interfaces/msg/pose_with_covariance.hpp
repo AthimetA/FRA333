@@ -1,1 +1,0 @@
-/home/azthorax/fra333_ws/build/xicro_interfaces/rosidl_generator_cpp/xicro_interfaces/msg/pose_with_covariance.hpp

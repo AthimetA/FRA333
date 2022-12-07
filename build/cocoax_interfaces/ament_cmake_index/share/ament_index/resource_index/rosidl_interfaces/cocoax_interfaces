@@ -1,0 +1,12 @@
+msg/CocoaTest.idl
+msg/CocoaTest.msg
+msg/CocoaXIMU.idl
+msg/CocoaXIMU.msg
+srv/CocoaXFK.idl
+srv/CocoaXFK.srv
+srv/CocoaXFK_Request.msg
+srv/CocoaXFK_Response.msg
+srv/CocoaXIK.idl
+srv/CocoaXIK.srv
+srv/CocoaXIK_Request.msg
+srv/CocoaXIK_Response.msg

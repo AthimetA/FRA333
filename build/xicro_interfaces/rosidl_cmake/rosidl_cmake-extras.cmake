@@ -1,4 +1,0 @@
-# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
-
-set(xicro_interfaces_IDL_FILES "msg/Bool.idl;msg/Uint8.idl;msg/Uint16.idl;msg/Uint32.idl;msg/Uint64.idl;msg/Int8.idl;msg/Int16.idl;msg/Int32.idl;msg/Int64.idl;msg/Float32.idl;msg/Imu.idl;msg/BatteryState.idl;msg/JointState.idl;msg/Temperature.idl;msg/Point.idl;msg/Pose.idl;msg/PoseWithCovariance.idl;msg/Quaternion.idl;msg/Pose2D.idl;msg/Twist.idl;msg/DemoInput.idl;msg/DemoOutput.idl;msg/Vector3.idl;msg/Time.idl;msg/Header.idl")
-set(xicro_interfaces_INTERFACE_FILES "msg/Bool.msg;msg/Uint8.msg;msg/Uint16.msg;msg/Uint32.msg;msg/Uint64.msg;msg/Int8.msg;msg/Int16.msg;msg/Int32.msg;msg/Int64.msg;msg/Float32.msg;msg/Imu.msg;msg/BatteryState.msg;msg/JointState.msg;msg/Temperature.msg;msg/Point.msg;msg/Pose.msg;msg/PoseWithCovariance.msg;msg/Quaternion.msg;msg/Pose2D.msg;msg/Twist.msg;msg/DemoInput.msg;msg/DemoOutput.msg;msg/Vector3.msg;msg/Time.msg;msg/Header.msg")

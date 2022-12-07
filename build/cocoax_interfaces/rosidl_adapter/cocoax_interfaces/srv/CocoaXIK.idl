@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from cocoax_interfaces/srv/CocoaXIK.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "sensor_msgs/msg/JointState.idl"
+
+module cocoax_interfaces {
+  module srv {
+    typedef int32 int32__2[2];
+    struct CocoaXIK_Request {
+      geometry_msgs::msg::Point position;
+
+      @default (value="(1, 1)")
+      int32__2 r;
+    };
+    struct CocoaXIK_Response {
+      sensor_msgs::msg::JointState jointstate;
+
+      boolean flag;
+    };
+  };
+};

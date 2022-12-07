@@ -1,1 +1,0 @@
-/home/azthorax/fra333_ws/src/fra333_lab1_25_v1/fra333_lab1_25/scripts/noise_generator.py

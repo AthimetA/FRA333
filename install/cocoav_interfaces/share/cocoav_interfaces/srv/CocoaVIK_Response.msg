@@ -1,1 +1,0 @@
-/home/azthorax/fra333_ws/build/cocoav_interfaces/rosidl_cmake/srv/CocoaVIK_Response.msg

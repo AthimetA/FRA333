@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.c.o"
+  "CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.c.o"
+  "CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.c.o"
+  "CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support.c.o"
+  "libcocoax_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "libcocoax_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test__type_support.c"
+  "rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_ximu__type_support.c"
+  "rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.c"
+  "rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

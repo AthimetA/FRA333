@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cocoax_interfaces/msg/CocoaXIMU.msg
+// generated code does not contain a copyright notice
+
+
+module cocoax_interfaces {
+  module msg {
+    typedef float float__3[3];
+    struct CocoaXIMU {
+      int64 time_ms;
+
+      float__3 angular_velocity;
+
+      float__3 linear_acceleration;
+    };
+  };
+};

@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cocoax_interfaces/msg/CocoaTest.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float64.idl"
+
+module cocoax_interfaces {
+  module msg {
+    struct CocoaTest {
+      std_msgs::msg::Float64 check;
+    };
+  };
+};
