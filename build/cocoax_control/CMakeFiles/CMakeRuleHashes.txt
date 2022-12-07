@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+f294afe64558c2f4d08026dc2e6bdbeb CMakeFiles/cocoax_control_uninstall

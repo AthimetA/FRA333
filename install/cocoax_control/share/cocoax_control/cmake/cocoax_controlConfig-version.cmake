@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/build/cocoax_control/ament_cmake_core/cocoax_controlConfig-version.cmake

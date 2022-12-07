@@ -1,0 +1,4 @@
+source;share/cocoax_control/local_setup.bash
+source;share/cocoax_control/local_setup.dsv
+source;share/cocoax_control/local_setup.sh
+source;share/cocoax_control/local_setup.zsh

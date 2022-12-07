@@ -1,0 +1,11 @@
+source;share/cocoax_control/hook/cmake_prefix_path.ps1
+source;share/cocoax_control/hook/cmake_prefix_path.dsv
+source;share/cocoax_control/hook/cmake_prefix_path.sh
+source;share/cocoax_control/hook/pythonpath.ps1
+source;share/cocoax_control/hook/pythonpath.dsv
+source;share/cocoax_control/hook/pythonpath.sh
+source;share/cocoax_control/local_setup.bash
+source;share/cocoax_control/local_setup.dsv
+source;share/cocoax_control/local_setup.ps1
+source;share/cocoax_control/local_setup.sh
+source;share/cocoax_control/local_setup.zsh

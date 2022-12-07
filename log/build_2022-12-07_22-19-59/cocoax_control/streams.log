@@ -1,0 +1,69 @@
+[0.041s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoax_control
+[0.134s] -- The C compiler identification is GNU 9.4.0
+[0.197s] -- The CXX compiler identification is GNU 9.4.0
+[0.202s] -- Check for working C compiler: /usr/bin/cc
+[0.279s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.280s] -- Detecting C compiler ABI info
+[0.342s] -- Detecting C compiler ABI info - done
+[0.354s] -- Detecting C compile features
+[0.354s] -- Detecting C compile features - done
+[0.357s] -- Check for working CXX compiler: /usr/bin/c++
+[0.433s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.435s] -- Detecting CXX compiler ABI info
+[0.530s] -- Detecting CXX compiler ABI info - done
+[0.547s] -- Detecting CXX compile features
+[0.548s] -- Detecting CXX compile features - done
+[0.551s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.584s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.584s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.803s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.836s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.894s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.903s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.007s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.040s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.129s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.195s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.197s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.198s] -- Looking for pthread.h
+[1.288s] -- Looking for pthread.h - found
+[1.288s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.362s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.363s] -- Looking for pthread_create in pthreads
+[1.425s] -- Looking for pthread_create in pthreads - not found
+[1.425s] -- Looking for pthread_create in pthread
+[1.500s] -- Looking for pthread_create in pthread - found
+[1.501s] -- Found Threads: TRUE  
+[1.680s] -- Found rclpy: 1.0.11 (/opt/ros/foxy/share/rclpy/cmake)
+[1.779s] -- Configuring done
+[1.781s] -- Generating done
+[1.782s] -- Build files have been written to: /home/azthorax/fra333_ws/build/cocoax_control
+[1.793s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoax_control
+[1.796s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoax_control -- -j12 -l12
+[1.843s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoax_control -- -j12 -l12
+[1.877s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoax_control
+[1.889s] -- Install configuration: ""
+[1.889s] -- Execute custom install script
+[1.889s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/pythonpath.sh
+[1.900s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/pythonpath.dsv
+[1.913s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/lib/python3.8/site-packages/cocoax_control/__init__.py
+[1.917s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/lib/cocoax_control/tracker.py
+[1.926s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/launch/control_cocoax.launch.py
+[1.934s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/ament_index/resource_index/package_run_dependencies/cocoax_control
+[1.943s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/ament_index/resource_index/parent_prefix_path/cocoax_control
+[1.952s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/ament_prefix_path.sh
+[1.960s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/ament_prefix_path.dsv
+[1.973s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/path.sh
+[1.985s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/path.dsv
+[1.998s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/local_setup.bash
+[2.006s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/local_setup.sh
+[2.014s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/local_setup.zsh
+[2.021s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/local_setup.dsv
+[2.029s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/package.dsv
+[2.039s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/ament_index/resource_index/packages/cocoax_control
+[2.047s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/cmake/cocoax_controlConfig.cmake
+[2.055s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/cmake/cocoax_controlConfig-version.cmake
+[2.068s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/package.xml
+[2.104s] Listing '/home/azthorax/fra333_ws/install/cocoax_control/lib/python3.8/site-packages/cocoax_control'...
+[2.104s] Compiling '/home/azthorax/fra333_ws/install/cocoax_control/lib/python3.8/site-packages/cocoax_control/__init__.py'...
+[2.110s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoax_control
