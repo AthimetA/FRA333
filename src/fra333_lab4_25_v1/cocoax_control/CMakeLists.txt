@@ -27,13 +27,15 @@ ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
 install(PROGRAMS
-  scripts/tracker.py
+  scripts/cocoax_tracker.py
+  scripts/cocoax_generator.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
 ################ INSTALL LAUNCH, ETC #################
 install(DIRECTORY
   launch
+  config
   DESTINATION share/${PROJECT_NAME})
 
 ament_package()

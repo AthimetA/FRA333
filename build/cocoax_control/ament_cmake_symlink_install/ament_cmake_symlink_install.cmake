@@ -319,11 +319,11 @@ ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v
 # install(DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control/cocoax_control/" "DESTINATION" "lib/python3.8/site-packages/cocoax_control" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control" DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control/cocoax_control/" "DESTINATION" "lib/python3.8/site-packages/cocoax_control" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install(PROGRAMS "scripts/tracker.py" "DESTINATION" "lib/cocoax_control")
-ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control" PROGRAMS "scripts/tracker.py" "DESTINATION" "lib/cocoax_control")
+# install(PROGRAMS "scripts/cocoax_tracker.py" "scripts/cocoax_generator.py" "DESTINATION" "lib/cocoax_control")
+ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control" PROGRAMS "scripts/cocoax_tracker.py" "scripts/cocoax_generator.py" "DESTINATION" "lib/cocoax_control")
 
-# install(DIRECTORY "launch" "DESTINATION" "share/cocoax_control")
-ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control" DIRECTORY "launch" "DESTINATION" "share/cocoax_control")
+# install(DIRECTORY "launch" "config" "DESTINATION" "share/cocoax_control")
+ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control" DIRECTORY "launch" "config" "DESTINATION" "share/cocoax_control")
 
 # install(FILES "/home/azthorax/fra333_ws/build/cocoax_control/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cocoax_control" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control" FILES "/home/azthorax/fra333_ws/build/cocoax_control/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cocoax_control" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

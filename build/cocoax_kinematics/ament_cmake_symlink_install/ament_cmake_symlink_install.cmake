@@ -319,8 +319,8 @@ ament_cmake_symlink_install_files("/home/azthorax/fra333_ws/src/fra333_lab4_25_v
 # install(DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_kinematics/cocoax_kinematics/" "DESTINATION" "lib/python3.8/site-packages/cocoax_kinematics" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_kinematics" DIRECTORY "/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_kinematics/cocoax_kinematics/" "DESTINATION" "lib/python3.8/site-packages/cocoax_kinematics" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install(PROGRAMS "scripts/fk_ik_server.py" "scripts/cocoav_imu_calibration.py" "scripts/cocoav_trajectory_generator.py" "scripts/cocoav_calibrator_findconfig.py" "scripts/testnode.py" "DESTINATION" "lib/cocoax_kinematics")
-ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_kinematics" PROGRAMS "scripts/fk_ik_server.py" "scripts/cocoav_imu_calibration.py" "scripts/cocoav_trajectory_generator.py" "scripts/cocoav_calibrator_findconfig.py" "scripts/testnode.py" "DESTINATION" "lib/cocoax_kinematics")
+# install(PROGRAMS "scripts/cocoax_kinematic.py" "DESTINATION" "lib/cocoax_kinematics")
+ament_cmake_symlink_install_programs("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_kinematics" PROGRAMS "scripts/cocoax_kinematic.py" "DESTINATION" "lib/cocoax_kinematics")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/cocoax_kinematics")
 ament_cmake_symlink_install_directory("/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_kinematics" DIRECTORY "launch" "DESTINATION" "share/cocoax_kinematics")

@@ -1,6 +1,0 @@
-Invoking command in '/home/azthorax/fra333_ws/build/cocoax_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoax_control
-Invoked command in '/home/azthorax/fra333_ws/build/cocoax_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoax_control
-Invoking command in '/home/azthorax/fra333_ws/build/cocoax_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoax_control -- -j12 -l12
-Invoked command in '/home/azthorax/fra333_ws/build/cocoax_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoax_control -- -j12 -l12
-Invoking command in '/home/azthorax/fra333_ws/build/cocoax_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoax_control
-Invoked command in '/home/azthorax/fra333_ws/build/cocoax_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoax_control
