@@ -120,17 +120,18 @@ class CocoaControl(Node):
             # Get current time
             self.velocity_controller_buffer.data = [0.1,0.1,0.1]
             self.velocity_controller_pub.publish(self.velocity_controller_buffer)
+            self.current_time = self.get_clock().now().to_msg().sec
+            self.get_logger().info('Time: ' + str(self.current_time))
+            Vx = self.joint_state_buffer.velocity.tolist()[0]
+            Vy = self.joint_state_buffer.velocity.tolist()[1]
+            Vz = self.joint_state_buffer.velocity.tolist()[2]
+            self.get_logger().info(f'Vx: {Vx:.4f}')
+            self.get_logger().info(f'Vy: {Vy:.4f}')
+            self.get_logger().info(f'Vz: {Vz:.4f}')
+            self.get_logger().info('---------------------------------')
         else:
             self.get_logger().info('Tracker status : Disabled')
-        self.current_time = self.get_clock().now().to_msg().sec
-        self.get_logger().info('Time: ' + str(self.current_time))
-        Vx = self.joint_state_buffer.velocity.tolist()[0]
-        Vy = self.joint_state_buffer.velocity.tolist()[1]
-        Vz = self.joint_state_buffer.velocity.tolist()[2]
-        self.get_logger().info(f'Vx: {Vx:.4f}')
-        self.get_logger().info(f'Vy: {Vy:.4f}')
-        self.get_logger().info(f'Vz: {Vz:.4f}')
-        self.get_logger().info('---------------------------------')
+
         
         
 

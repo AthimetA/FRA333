@@ -17,6 +17,22 @@ def generate_launch_description():
     # Launch Description
     launch_description = LaunchDescription()
     
+    # Add the description and the gazebo node
+    description_package_name = 'cocoax_description'
+    description_sub_folder = 'launch' 
+    description_file_name = 'cocoax_display_wih_gazebo.launch.py'
+    cocoax_description = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            PathJoinSubstitution([
+                FindPackageShare(description_package_name),
+                description_sub_folder,
+                description_file_name
+            ])
+        ])
+    )
+    launch_description.add_action(cocoax_description)
+    
+    
     # Add the tracker node
     control_package_name = 'cocoax_control'
     
@@ -48,6 +64,7 @@ def generate_launch_description():
         namespace="cocoax_tracker",
         arguments=[pid_kp,pid_ki],)
     launch_description.add_action(cocoax_control)
+
     
     # launch_description.add_action(srv_call_set_joint)
     return launch_description

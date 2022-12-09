@@ -19,20 +19,6 @@ def generate_launch_description():
     
     # Create the launch description 
     launch_description = LaunchDescription()
-
-    control_package_name = 'cocoax_control'
-    control_sub_folder = 'launch' 
-    control_file_name = 'control_cocoax.launch.py'
-    cocoax_control = IncludeLaunchDescription(
-         PythonLaunchDescriptionSource([
-            PathJoinSubstitution([
-                FindPackageShare(control_package_name),
-                control_sub_folder,
-                control_file_name
-            ])
-        ])
-    )
-    launch_description.add_action(cocoax_control)
     
     # Add Robot description
     description_package_name = 'cocoax_description'

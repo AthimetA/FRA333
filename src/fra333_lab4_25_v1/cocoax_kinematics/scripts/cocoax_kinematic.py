@@ -14,16 +14,18 @@ class CocoaVKinematic(Node):
         super().__init__('cocoav_kinematic')
         
         # Parameters
-        self.get_logger().info('-'*50)
+        self.get_logger().info('*'*50)
         if len(sys.argv)>=2: 
             # 1st argument is the type of kinematic
             # "forward" or "inverse
+            print(str(sys.argv))
             self.knimatic_type = sys.argv[1]
         else:
             # default type of kinematic
             self.knimatic_type = 'forward'
         self.get_logger().info('Kinematic type loaded')
-        self.get_logger().info(self.get_node_names()[0] +' Type: '+str(self.knimatic_type))
+        self.get_logger().info( 'Type: '+str(self.knimatic_type))
+        self.get_logger().info('*'*50)
         
         # define publisher rate
         self.rate = 10
@@ -36,8 +38,36 @@ class CocoaVKinematic(Node):
         # Create a timer to update the robot state
         self.timer = self.create_timer(1/self.rate, self.timer_callback)
         
+        # Forward Kinematic
+        if self.knimatic_type == 'forward':
+            # NOT DONEEEEEEEEEEEEEEEEEEEEE
+            # Subscribers
+            self.joint_state_buffer = JointState()
+            self.joint_state_subscriber = self.create_subscription(JointState, '/joint_states', self.joint_state_callback, qos_profile)
+            
+            # Publishers
+            self.forward_kinematic_buffer = JointState()
+            self.forward_kinematic_pub = self.create_publisher(JointState, '/cocoax_end_effector_states', qos_profile)
+        # Inverse Kinematic
+        elif self.knimatic_type == 'inverse':
+            # NOT DONEEEEEEEEEEEEEEEEEEEEE
+            # Subscribers
+            self.end_effector_state_buffer = JointState()
+            self.end_effector_state_subscriber = self.create_subscription(JointState, '/cocoax_end_effector_states', self.joint_state_callback, qos_profile)
+            
+            # Publishers
+            self.joint_state_buffer = JointState()
+            self.joint_state_pub = self.create_publisher(JointState, '/joint_states', qos_profile)
+        
     def timer_callback(self):
         pass
+    
+    
+    def joint_state_callback(self, msg: JointState):
+        self.joint_state_buffer = msg
+        # self.get_logger().info('Joint State Received')
+        # self.get_logger().info(str(self.joint_state_buffer))
+        # self.forward_kinematic()
     
     def cocoax_jacobian_matrix(self, q=[0.0,0.0,0.0]):
         '''

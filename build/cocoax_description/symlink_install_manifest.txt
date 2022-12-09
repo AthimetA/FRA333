@@ -11,7 +11,7 @@
 /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/robot/cocoax_gazebo.xacro
 /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/robot/cocoax_include.xacro
 /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/robot/cocoax_robot.urdf.xacro
-/home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/launch/display_gazebo_cocoax.launch.py
+/home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/launch/cocoax_display_wih_gazebo.launch.py
 /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/config/cocoax.rviz
 /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/config/cocoax_controller.yaml
 /home/azthorax/fra333_ws/install/cocoax_description/share/ament_index/resource_index/package_run_dependencies/cocoax_description

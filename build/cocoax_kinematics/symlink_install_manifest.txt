@@ -2,7 +2,7 @@
 /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/environment/pythonpath.dsv
 /home/azthorax/fra333_ws/install/cocoax_kinematics/lib/python3.8/site-packages/cocoax_kinematics/__init__.py
 /home/azthorax/fra333_ws/install/cocoax_kinematics/lib/cocoax_kinematics/cocoax_kinematic.py
-/home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/launch/display_with_kinematic.launch.py
+/home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/launch/cocoax_kinematic.launch.py
 /home/azthorax/fra333_ws/install/cocoax_kinematics/share/ament_index/resource_index/package_run_dependencies/cocoax_kinematics
 /home/azthorax/fra333_ws/install/cocoax_kinematics/share/ament_index/resource_index/parent_prefix_path/cocoax_kinematics
 /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/environment/ament_prefix_path.sh
