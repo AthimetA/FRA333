@@ -21,14 +21,11 @@ from pathlib import Path
 import yaml
 from yaml.loader import SafeLoader
 
-import rospkg 
-
 class CocoaControl(Node):
     def __init__(self):
         super().__init__('cocoax_tracker_node')
         
         # Node Status
-        self.pkg = rospkg.RosPack()
         self.node_enable_status = False
         
         # Parameters

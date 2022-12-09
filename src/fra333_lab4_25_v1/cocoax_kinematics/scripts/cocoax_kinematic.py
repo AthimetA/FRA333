@@ -12,6 +12,19 @@ np.set_printoptions(precision=4, suppress=True)
 class CocoaVKinematic(Node):
     def __init__(self):
         super().__init__('cocoav_kinematic')
+        
+        # Parameters
+        self.get_logger().info('-'*50)
+        if len(sys.argv)>=2: 
+            # 1st argument is the type of kinematic
+            # "forward" or "inverse
+            self.knimatic_type = sys.argv[1]
+        else:
+            # default type of kinematic
+            self.knimatic_type = 'forward'
+        self.get_logger().info('Kinematic type loaded')
+        self.get_logger().info(self.get_node_names()[0] +' Type: '+str(self.knimatic_type))
+        
         # define publisher rate
         self.rate = 10
         qos_profile = QoSProfile(depth=10)
@@ -22,26 +35,6 @@ class CocoaVKinematic(Node):
 
         # Create a timer to update the robot state
         self.timer = self.create_timer(1/self.rate, self.timer_callback)
-    
-        R, P = self.cocoax_forward_kinematic(self.test_config)
-        J_e = self.cocoax_jacobian_matrix(self.test_config)
-        test = self.cocoax_jacobian_check_singularity(J_e)
-        # print('R0_1 = \n', R[:,:,0])
-        # print('*'*50)
-        # print('R0_2 = \n', R[:,:,1])
-        # print('*'*50)
-        # print('R0_3 = \n', R[:,:,2])
-        # print('*'*50)
-        # print('R0_e = \n', R[:,:,3])
-        # print('*'*50)
-        # print('P0_1 = \n', P[:,0])
-        # print('*'*50)
-        # print('P0_2 = \n', P[:,1])
-        # print('*'*50)
-        # print('P0_3 = \n', P[:,2])
-        # print('*'*50)
-        # print('P0_e = \n', P[:,3])
-        
         
     def timer_callback(self):
         pass
@@ -203,6 +196,46 @@ class CocoaVKinematic(Node):
 
     def rotateY(self,theta):
         return np.matrix([[np.cos(theta), 0, np.sin(theta), 0], [0, 1, 0, 0], [-np.sin(theta), 0, np.cos(theta), 0], [0, 0, 0, 1]])
+    
+    def check_IK_solution_exist(self, x, y, z, r1, r2):
+        [l1,l2,l3] = self.link_length
+        A0 = (x**2)+(y**2)+(z**2)+(l1**2)
+        A1 = 2*z*l1
+        A = A0-A1
+        if (l2-l3) <= np.sqrt(A) <= (l2+l3) and A >= 0:  
+            return True
+        self.get_logger().info('IK solution does not exist')
+        return False
+    
+    def check_IK_joint_limit(self, q1, q2, q3):
+        if (-np.pi<= q1 <= np.pi) and (-np.pi/6 <= q2 <= np.pi/6) and (-np.pi/3 <= q3 <= np.pi/2):
+            return True
+        self.get_logger().info('IK joint limit exceed')
+        return False
+    
+    def cocoax_inverse_kinematic(self, pos=[0.0,0.0,0.0],r = [1.0,1.0], Lastconfig=[0.0,0.0,0.0]):
+        [l1,l2,l3] = self.link_length
+        [x,y,z] = pos
+        [r1,r2] = r # r1 = 1 or -1, r2 = 1 or -1
+        if(self.check_IK_solution_exist(x, y, z, r1, r2)):
+            # input: [x,y,z] in meter
+            # solve for q1
+            q1 = np.arctan2(y/r1,x/r1)
+            # solve for q3
+            sin_q3 = (((z-l1)**2) + (x*x)+(y*y) - (l2*l2) - (l3*l3))/(2*l2*l3)
+            cos_q3 = r2*np.sqrt(1-(sin_q3**2))
+            q3 = np.arctan2(sin_q3,cos_q3)
+            # solve for q2
+            sin_q2 = ((l3*(z-l1)*np.cos(q3)) - (r1*np.sqrt(x**2+y**2)*(l2+l3*np.sin(q3))))
+            cos_q2 = ((-l1*l2)-(l1*l3*np.sin(q3))+(l2*z)+(l3*r1*np.sqrt(x**2+y**2)*np.cos(q3))+(l3*z*np.sin(q3)))
+            q2 = np.arctan2(sin_q2,cos_q2)
+            if(self.check_IK_joint_limit(q1, q2, q3)):
+                config = [q1,q2,q3]
+                status = True
+                return config, status
+        status = False
+        config = Lastconfig
+        return config, status
         
 def main(args=None):
     rclpy.init(args=args)

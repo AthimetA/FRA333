@@ -43,7 +43,7 @@ def generate_launch_description():
     
     cocoax_control = Node(
         package=control_package_name,
-        executable="tracker.py",
+        executable="cocoax_tracker.py",
         name="cocoax_tracker_node",
         namespace="cocoax_tracker",
         arguments=[pid_kp,pid_ki],)
