@@ -14,7 +14,6 @@ class CocoaVKinematic(Node):
         super().__init__('cocoav_kinematic')
         
         # Parameters
-        self.get_logger().info('*'*50)
         if len(sys.argv)>=2: 
             # 1st argument is the type of kinematic
             # "forward" or "inverse
@@ -23,9 +22,7 @@ class CocoaVKinematic(Node):
         else:
             # default type of kinematic
             self.knimatic_type = 'forward'
-        self.get_logger().info('Kinematic type loaded')
         self.get_logger().info( 'Type: '+str(self.knimatic_type))
-        self.get_logger().info('*'*50)
         
         # define publisher rate
         self.rate = 10
@@ -37,6 +34,7 @@ class CocoaVKinematic(Node):
         # Create a timer to update the robot state
         self.timer = self.create_timer(1/self.rate, self.timer_callback)
         
+        '''
         # Test procedure
         #############################################################################
         self.test_config = [1.0,0.1,1.0] # [q1,q2,q3]
@@ -53,7 +51,7 @@ class CocoaVKinematic(Node):
         X_dot = self.cocoax_forward_velocity_kinematic(q=q,q_dot=qdot)
         print('X_dot: \n', X_dot)
         #############################################################################
-        
+        '''
         
     def joint_state_callback(self, msg: JointState):
         self.joint_state_buffer = msg
@@ -66,13 +64,10 @@ class CocoaVKinematic(Node):
 
     def cocoax_inverse_velocity_kinematic(self, X=[0.0,0.0,0.0], X_dot=[0.0,0.0,0.0]):
         # Get Joint position configuration
-        q, s = self.cocoax_inverse_position_kinematic(X)
-        R, P, R0_e, P0_e = self.cocoax_forward_position_kinematic(q) 
-        print('*'*50)
-        print('Check Position')
-        print('X   : ', X    , '  q:', str(self.test_config))
-        print('P0_e: ', P0_e , '  q:', str(q))
-        print('*'*50)
+        q, status = self.cocoax_inverse_position_kinematic(X)
+        # If Inverse Kinematic is not possible
+        if status == False:
+            return None, None
         '''
             X_dot =[[Vx],       q_dot = [[q1_dot],
                     [Vy],                [q2_dot],
@@ -83,17 +78,12 @@ class CocoaVKinematic(Node):
         '''
         # Get Jacobian Matrix
         J_e = self.cocoax_jacobian_matrix(q)
-        print('Jacobian Matrix(linear velocity only)')
         J_v = J_e[3:6,:]
-        print('J_v: \n', J_v)
-        print('*'*50)
         # Check the Jacobian singularity
         threshold = 0.001
         if np.abs(np.linalg.det(J_v)) < threshold:
-            print('Jacobian is singular')
-            print(np.abs(np.linalg.det(J_v)))
             self.get_logger().info('Jacobian is singular')
-            return None
+            return None, None
         # Get Matrix
         qMatrix = np.matrix([q]).T
         X_dotMatrix = np.matrix([X_dot]).T
