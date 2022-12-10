@@ -84,7 +84,7 @@ class CocoaTracker(Node):
         
         # Compute error
         error = setpoint - measurements
-        self.get_logger().info('Error: '+str(error))
+        # self.get_logger().info('Error: '+str(error))
         
         # Compute PID terms
         pid_proportional = (self.Kp * error)
