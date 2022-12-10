@@ -34,7 +34,7 @@ class CocoaVKinematic(Node):
         # Create a timer to update the robot state
         self.timer = self.create_timer(1/self.rate, self.timer_callback)
         
-        # Forward Kinematic
+        # Kinematic Buffer
         self.joint_state_sub_buffer = JointState()
         self.joint_state_pub_buffer = JointState()
         
