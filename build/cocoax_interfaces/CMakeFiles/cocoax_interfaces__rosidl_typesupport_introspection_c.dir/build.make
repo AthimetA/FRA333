@@ -68,6 +68,7 @@ rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosid
 rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h: rosidl_adapter/cocoax_interfaces/srv/CocoaXIK.idl
 rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h: rosidl_adapter/cocoax_interfaces/srv/CocoaXFK.idl
 rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h: rosidl_adapter/cocoax_interfaces/srv/CocoaXEnable.idl
+rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h: rosidl_adapter/cocoax_interfaces/srv/CocoaXGenerator.idl
 rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h: rosidl_adapter/cocoax_interfaces/msg/CocoaControlRef.idl
 rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
@@ -167,6 +168,9 @@ rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__rosid
 rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_introspection_c.h
 
@@ -178,6 +182,9 @@ rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_
 
 rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c
+
+rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c
 
 rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c
@@ -221,9 +228,22 @@ CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_type
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c -o CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.s
 
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c.o: CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c.o: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c.o   -c /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c
+
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c > CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c.i
+
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c -o CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c.s
+
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.o: CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.o: rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.o   -c /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c
 
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.i: cmake_force
@@ -239,6 +259,7 @@ cocoax_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support.c.o" \
 "CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.c.o" \
 "CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.o" \
+"CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c.o" \
 "CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.o"
 
 # External object files for target cocoax_interfaces__rosidl_typesupport_introspection_c
@@ -247,6 +268,7 @@ cocoax_interfaces__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 libcocoax_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support.c.o
 libcocoax_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.c.o
 libcocoax_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.o
+libcocoax_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c.o
 libcocoax_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.o
 libcocoax_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/build.make
 libcocoax_interfaces__rosidl_typesupport_introspection_c.so: libcocoax_interfaces__rosidl_generator_c.so
@@ -278,7 +300,7 @@ libcocoax_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/l
 libcocoax_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libcocoax_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librcutils.so
 libcocoax_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libcocoax_interfaces__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library libcocoax_interfaces__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -293,10 +315,12 @@ CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/clean:
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_introspection_c.h
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_introspection_c.h
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__rosidl_typesupport_introspection_c.h
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_introspection_c.h
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support.c
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.c
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c
 	cd /home/azthorax/fra333_ws/build/cocoax_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces /home/azthorax/fra333_ws/build/cocoax_interfaces /home/azthorax/fra333_ws/build/cocoax_interfaces /home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/depend

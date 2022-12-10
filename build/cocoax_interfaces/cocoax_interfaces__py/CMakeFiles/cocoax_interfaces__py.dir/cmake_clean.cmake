@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/cocoax_interfaces/srv/__init__.py"
   "../rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable.py"
   "../rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c"
+  "../rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_generator.py"
+  "../rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_generator_s.c"
   "../rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk.py"
   "../rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk_s.c"
   "../rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xik.py"

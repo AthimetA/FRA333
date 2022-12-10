@@ -1,0 +1,31 @@
+[0.040s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoax_control -- -j12 -l12
+[0.079s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoax_control -- -j12 -l12
+[0.120s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoax_control
+[0.131s] -- Install configuration: ""
+[0.131s] -- Execute custom install script
+[0.131s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/pythonpath.sh
+[0.131s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/pythonpath.dsv
+[0.133s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/lib/python3.8/site-packages/cocoax_control/__init__.py
+[0.133s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/lib/cocoax_control/cocoax_tracker.py
+[0.133s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/lib/cocoax_control/cocoax_generator.py
+[0.133s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/lib/cocoax_control/cocoax_scheduler.py
+[0.133s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/launch/cocoax_control.launch.py
+[0.133s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/launch/test.launch.py
+[0.134s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/config/cocoax_pid_param.yaml
+[0.134s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/ament_index/resource_index/package_run_dependencies/cocoax_control
+[0.134s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/ament_index/resource_index/parent_prefix_path/cocoax_control
+[0.134s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/ament_prefix_path.sh
+[0.134s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/ament_prefix_path.dsv
+[0.134s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/path.sh
+[0.134s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/path.dsv
+[0.134s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/local_setup.bash
+[0.134s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/local_setup.sh
+[0.135s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/local_setup.zsh
+[0.135s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/local_setup.dsv
+[0.135s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/package.dsv
+[0.152s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/ament_index/resource_index/packages/cocoax_control
+[0.152s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/cmake/cocoax_controlConfig.cmake
+[0.152s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/cmake/cocoax_controlConfig-version.cmake
+[0.153s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/package.xml
+[0.181s] Listing '/home/azthorax/fra333_ws/install/cocoax_control/lib/python3.8/site-packages/cocoax_control'...
+[0.191s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoax_control

@@ -1,0 +1,38 @@
+[0.037s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoax_description -- -j12 -l12
+[0.088s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoax_description -- -j12 -l12
+[0.114s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoax_description
+[0.129s] -- Install configuration: ""
+[0.129s] -- Execute custom install script
+[0.129s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/environment/pythonpath.sh
+[0.130s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/environment/pythonpath.dsv
+[0.130s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/lib/python3.8/site-packages/cocoax_description/__init__.py
+[0.131s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/meshes/end_effector.stl
+[0.131s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/meshes/link_0.stl
+[0.131s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/meshes/link_1.stl
+[0.131s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/meshes/link_1c.stl
+[0.132s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/meshes/link_2.stl
+[0.132s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/meshes/link_3.stl
+[0.132s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/meshes/link_3c.stl
+[0.133s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/robot/cocoax_gazebo.xacro
+[0.133s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/robot/cocoax_include.xacro
+[0.133s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/robot/cocoax_robot.urdf.xacro
+[0.134s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/launch/cocoax_display_wih_gazebo.launch.py
+[0.134s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/config/cocoax.rviz
+[0.134s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/config/cocoax_controller.yaml
+[0.134s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/ament_index/resource_index/package_run_dependencies/cocoax_description
+[0.134s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/ament_index/resource_index/parent_prefix_path/cocoax_description
+[0.135s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/environment/ament_prefix_path.sh
+[0.135s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/environment/ament_prefix_path.dsv
+[0.135s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/environment/path.sh
+[0.135s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/environment/path.dsv
+[0.136s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/local_setup.bash
+[0.136s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/local_setup.sh
+[0.136s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/local_setup.zsh
+[0.137s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/local_setup.dsv
+[0.137s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/package.dsv
+[0.150s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/ament_index/resource_index/packages/cocoax_description
+[0.151s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/cmake/cocoax_descriptionConfig.cmake
+[0.151s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/cmake/cocoax_descriptionConfig-version.cmake
+[0.152s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_description/share/cocoax_description/package.xml
+[0.184s] Listing '/home/azthorax/fra333_ws/install/cocoax_description/lib/python3.8/site-packages/cocoax_description'...
+[0.199s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoax_description

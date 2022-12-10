@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp" "/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.o"
   "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp" "/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.o"
+  "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_generator__type_support.cpp" "/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_generator__type_support.cpp.o"
   "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xfk__type_support.cpp" "/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xfk__type_support.cpp.o"
   "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xik__type_support.cpp" "/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xik__type_support.cpp.o"
   )
@@ -29,6 +30,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp" "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xik__type_support.cpp"
   "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp" "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xik__type_support.cpp"
+  "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_generator__type_support.cpp" "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xik__type_support.cpp"
   "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xfk__type_support.cpp" "/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xik__type_support.cpp"
   )
 

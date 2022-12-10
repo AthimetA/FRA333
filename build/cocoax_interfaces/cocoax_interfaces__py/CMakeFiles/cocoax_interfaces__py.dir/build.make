@@ -59,12 +59,14 @@ cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py: rosidl_generator_py/coco
 cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xik.py
 cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk.py
 cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable.py
+cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_generator.py
 cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref.py
 cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/__init__.py
 cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/msg/__init__.py
 cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xik_s.c
 cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk_s.c
 cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c
+cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_generator_s.c
 cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c
 
 
@@ -84,6 +86,7 @@ rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport
 rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/cocoax_interfaces/srv/CocoaXIK.idl
 rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/cocoax_interfaces/srv/CocoaXFK.idl
 rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/cocoax_interfaces/srv/CocoaXEnable.idl
+rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/cocoax_interfaces/srv/CocoaXGenerator.idl
 rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/cocoax_interfaces/msg/CocoaControlRef.idl
 rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
@@ -192,6 +195,9 @@ rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk.py: rosidl_generator_py/coc
 rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable.py: rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable.py
 
+rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_generator.py: rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_generator.py
+
 rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref.py: rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref.py
 
@@ -210,6 +216,9 @@ rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk_s.c: rosidl_generator_py/co
 rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c: rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c
 
+rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_generator_s.c: rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_generator_s.c
+
 rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c: rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c
 
@@ -220,12 +229,14 @@ cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_
 cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xik.py
 cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk.py
 cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable.py
+cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_generator.py
 cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref.py
 cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/__init__.py
 cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/msg/__init__.py
 cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xik_s.c
 cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk_s.c
 cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c
+cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_generator_s.c
 cocoax_interfaces__py: rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c
 cocoax_interfaces__py: cocoax_interfaces__py/CMakeFiles/cocoax_interfaces__py.dir/build.make
 

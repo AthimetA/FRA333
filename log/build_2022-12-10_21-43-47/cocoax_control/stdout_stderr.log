@@ -1,0 +1,27 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/pythonpath.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/lib/python3.8/site-packages/cocoax_control/__init__.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/lib/cocoax_control/cocoax_tracker.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/lib/cocoax_control/cocoax_generator.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/lib/cocoax_control/cocoax_scheduler.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/launch/cocoax_control.launch.py
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/launch/test.launch.py
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/config/cocoax_pid_param.yaml
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/ament_index/resource_index/package_run_dependencies/cocoax_control
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/ament_index/resource_index/parent_prefix_path/cocoax_control
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/path.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/environment/path.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/local_setup.bash
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/local_setup.sh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/local_setup.zsh
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/local_setup.dsv
+-- Symlinking: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/package.dsv
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/ament_index/resource_index/packages/cocoax_control
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/cmake/cocoax_controlConfig.cmake
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/cmake/cocoax_controlConfig-version.cmake
+-- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/package.xml
+Listing '/home/azthorax/fra333_ws/install/cocoax_control/lib/python3.8/site-packages/cocoax_control'...

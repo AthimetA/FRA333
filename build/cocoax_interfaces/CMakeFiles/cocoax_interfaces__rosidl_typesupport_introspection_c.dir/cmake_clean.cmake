@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.o"
   "CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.o"
+  "CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c.o"
   "CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.c.o"
   "CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support.c.o"
   "libcocoax_interfaces__rosidl_typesupport_introspection_c.pdb"
@@ -9,6 +10,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c"
   "rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c"
+  "rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c"
   "rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.c"
   "rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h"

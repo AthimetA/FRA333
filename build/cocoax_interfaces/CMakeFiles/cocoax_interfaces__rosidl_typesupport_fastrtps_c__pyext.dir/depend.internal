@@ -108,6 +108,9 @@ CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_ge
  rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.h
  rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.h
  rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.h
+ rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_generator__functions.h
+ rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_generator__struct.h
+ rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.h
  rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xfk__functions.h
  rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xfk__struct.h
  rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.h

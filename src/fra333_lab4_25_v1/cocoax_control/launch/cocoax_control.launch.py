@@ -64,9 +64,23 @@ def generate_launch_description():
         namespace="cocoax_tracker",
         arguments=[pid_kp,pid_ki],)
     launch_description.add_action(cocoax_control)
-
     
-    # launch_description.add_action(srv_call_set_joint)
+    cocoax_generator = Node(
+        package='cocoax_control',
+        executable='cocoax_generator.py',
+        name='cocoax_generator_node',
+        namespace='cocoax_generator',
+    )
+    launch_description.add_action(cocoax_generator)
+    
+    cocoax_scheduler = Node(
+        package='cocoax_control',
+        executable='cocoax_scheduler.py',
+        name='cocoax_scheduler_node',
+        namespace='cocoax_scheduler',
+    )
+    launch_description.add_action(cocoax_scheduler)
+
     return launch_description
 
 def main(args=None):

@@ -36,6 +36,20 @@ rcutils/allocator.h
 rosidl_runtime_c/string_functions.h
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/srv/detail/rosidl_runtime_c/string_functions.h
 
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_generator__functions.c
+cocoax_interfaces/srv/detail/cocoa_x_generator__functions.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoax_interfaces/srv/detail/cocoa_x_generator__functions.h
+assert.h
+-
+stdbool.h
+-
+stdlib.h
+-
+string.h
+-
+rcutils/allocator.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/srv/detail/rcutils/allocator.h
+
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xfk__functions.c
 cocoax_interfaces/srv/detail/cocoa_xfk__functions.h
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoax_interfaces/srv/detail/cocoa_xfk__functions.h
@@ -249,6 +263,26 @@ stdint.h
 -
 rosidl_runtime_c/string.h
 rosidl_generator_c/cocoax_interfaces/srv/detail/rosidl_runtime_c/string.h
+
+rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_generator__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/cocoax_interfaces/srv/detail/rosidl_runtime_c/visibility_control.h
+cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/cocoax_interfaces/srv/detail/cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
+cocoax_interfaces/srv/detail/cocoa_x_generator__struct.h
+rosidl_generator_c/cocoax_interfaces/srv/detail/cocoax_interfaces/srv/detail/cocoa_x_generator__struct.h
+
+rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_generator__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
 
 rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xfk__functions.h
 stdbool.h

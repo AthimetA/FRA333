@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_cmake/srv/CocoaXGenerator_Request.msg

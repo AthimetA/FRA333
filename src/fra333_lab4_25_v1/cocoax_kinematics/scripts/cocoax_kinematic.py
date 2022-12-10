@@ -5,8 +5,9 @@ import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
 from sensor_msgs.msg import JointState
-from trajectory_msgs.msg import JointTrajectoryPoint
 import numpy as np
+
+from cocoax_interfaces.msg import CocoaControlRef
 
 np.set_printoptions(precision=4, suppress=True)
 
@@ -26,7 +27,7 @@ class CocoaVKinematic(Node):
         self.get_logger().info( 'Type: '+str(self.knimatic_type))
         
         # define publisher rate
-        self.rate = 10
+        self.rate = 1000
         qos_profile = QoSProfile(depth=10)
         # Cocoa link length in meter
         self.link_length = [0.1360,0.26179,0.200]
@@ -37,23 +38,19 @@ class CocoaVKinematic(Node):
         
         # Kinematic Buffer
         self.joint_state_sub_buffer = JointState()
-        self.joint_state_pub_buffer = JointTrajectoryPoint()
+        self.joint_state_pub_buffer = CocoaControlRef()
         
         if self.knimatic_type == 'forward':
             # Create a subscriber to get joint state
             self.states_subscriber = self.create_subscription(JointState,'/joint_states',self.joint_state_callback,qos_profile)
             # Create a publisher to publish end-effector pose
-            self.states_publisher = self.create_publisher(JointTrajectoryPoint, "/cocoax/end_effector_states", qos_profile)
+            self.states_publisher = self.create_publisher(CocoaControlRef, "/cocoax/end_effector_joint_states", qos_profile)
         elif self.knimatic_type == 'inverse':
             # Create a subscriber to get end-effector pose
-            self.states_subscriber = self.create_subscription(JointState,'/cocoax/end_effector_states',self.joint_state_callback,qos_profile)
+            self.states_subscriber = self.create_subscription(JointState,'/cocoax/end_effector_joint_states',self.joint_state_callback,qos_profile)
             # Create a publisher to publish joint state
-            self.states_publisher = self.create_publisher(JointTrajectoryPoint, "/cocoax/cocoax_control_ref", qos_profile)
-            
-        self.test_config = [1.0,0.1,1.0] # [q1,q2,q3]
-        R, P, R0_e, P0_e = self.cocoax_forward_position_kinematic(self.home_config) 
-        self.test_pos = P0_e.tolist()
-        self.test_vel = [0.1,0.2,0.1]
+            self.states_publisher = self.create_publisher(CocoaControlRef, "/cocoax/cocoax_control_ref", qos_profile)
+        
         '''
         # Test procedure
         #############################################################################
@@ -84,27 +81,24 @@ class CocoaVKinematic(Node):
                 R, P, R0_e, P0_e = self.cocoax_forward_position_kinematic(q)
                 X_dot = self.cocoax_forward_velocity_kinematic(q=q,q_dot=q_dot)
                 # Publish end-effector pose
-                self.joint_state_pub_buffer = JointTrajectoryPoint()
-                self.joint_state_pub_buffer.positions = P0_e.tolist()
-                self.joint_state_pub_buffer.velocities = X_dot
+                self.joint_state_pub_buffer = CocoaControlRef()
+                self.joint_state_pub_buffer.reference_position = P0_e.tolist()
+                self.joint_state_pub_buffer.reference_velocity = X_dot
                 self.states_publisher.publish(self.joint_state_pub_buffer)
         elif self.knimatic_type == 'inverse':
-            ###############test################
-            self.joint_state_sub_buffer.position = self.test_pos
-            self.joint_state_sub_buffer.velocity = [0.0,0.0,0.0]
-            ###############test################
             X = self.joint_state_sub_buffer.position.tolist()
             X_dot = self.joint_state_sub_buffer.velocity.tolist()
             if X!=[] and X_dot!=[]:
                 q, q_dot = self.cocoax_inverse_velocity_kinematic(X=X,X_dot=X_dot)
                 # Publish joint state
                 if q!=[] and q_dot!=[]:
-                    self.joint_state_pub_buffer = JointTrajectoryPoint()
-                    self.joint_state_pub_buffer.positions = q
-                    self.joint_state_pub_buffer.velocities = q_dot
+                    self.joint_state_pub_buffer = CocoaControlRef()
+                    self.joint_state_pub_buffer.reference_position = q
+                    self.joint_state_pub_buffer.reference_velocity = q_dot
                     self.states_publisher.publish(self.joint_state_pub_buffer)
                 else:
-                    self.get_logger().info('Inverse Velocity Kinematic is not possible')
+                    self.states_publisher.publish(self.joint_state_pub_buffer)
+                    # self.get_logger().info('Inverse Velocity Kinematic is not possible')
         
     def cocoax_inverse_velocity_kinematic(self, X=[0.0,0.0,0.0], X_dot=[0.0,0.0,0.0]):
         # Get Joint position configuration
@@ -126,7 +120,7 @@ class CocoaVKinematic(Node):
         # Check the Jacobian singularity
         threshold = 0.001
         if np.abs(np.linalg.det(J_v)) < threshold:
-            self.get_logger().info('Jacobian is singular')
+            # self.get_logger().info('Jacobian is singular')
             return [], []
         # Get Matrix
         qMatrix = np.matrix([q]).T
@@ -321,13 +315,13 @@ class CocoaVKinematic(Node):
         A = A0-A1
         if (l2-l3) <= np.sqrt(A) <= (l2+l3) and A >= 0:  
             return True
-        self.get_logger().info('IK solution does not exist')
+        # self.get_logger().info('IK solution does not exist')
         return False
     
     def check_IK_position_joint_limit(self, q1, q2, q3):
         if (-np.pi<= q1 <= np.pi) and (-np.pi/6 <= q2 <= np.pi/6) and (-np.pi/3 <= q3 <= np.pi/2):
             return True
-        self.get_logger().info('IK joint limit exceed')
+        # self.get_logger().info('IK joint limit exceed')
         return False
     
     def cocoax_inverse_position_kinematic(self, X=[0.0,0.0,0.0],r = [1.0,1.0], Lastconfig=[0.0,0.0,0.0]):

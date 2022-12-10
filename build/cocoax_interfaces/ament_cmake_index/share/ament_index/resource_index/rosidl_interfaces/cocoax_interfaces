@@ -8,6 +8,10 @@ srv/CocoaXFK.idl
 srv/CocoaXFK.srv
 srv/CocoaXFK_Request.msg
 srv/CocoaXFK_Response.msg
+srv/CocoaXGenerator.idl
+srv/CocoaXGenerator.srv
+srv/CocoaXGenerator_Request.msg
+srv/CocoaXGenerator_Response.msg
 srv/CocoaXIK.idl
 srv/CocoaXIK.srv
 srv/CocoaXIK_Request.msg

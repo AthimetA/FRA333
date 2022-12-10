@@ -1,0 +1,142 @@
+[0.036s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoax_interfaces -- -j12 -l12
+[0.088s] [ 10%] Built target cocoax_interfaces__rosidl_generator_c
+[0.092s] [ 12%] Built target cocoax_interfaces__cpp
+[0.117s] [ 23%] Built target cocoax_interfaces__rosidl_typesupport_introspection_cpp
+[0.117s] [ 43%] Built target cocoax_interfaces__rosidl_typesupport_cpp
+[0.118s] [ 45%] Built target cocoax_interfaces__rosidl_typesupport_c
+[0.120s] [ 56%] Built target cocoax_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.120s] [ 67%] Built target cocoax_interfaces__rosidl_typesupport_introspection_c
+[0.146s] [ 78%] Built target cocoax_interfaces__rosidl_typesupport_fastrtps_c
+[0.177s] [ 78%] Built target cocoax_interfaces
+[0.209s] [ 80%] Built target cocoax_interfaces__py
+[0.248s] [ 89%] Built target cocoax_interfaces__python
+[0.274s] [ 92%] Built target cocoax_interfaces__rosidl_typesupport_c__pyext
+[0.275s] [ 96%] Built target cocoax_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.278s] [100%] Built target cocoax_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.289s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoax_interfaces -- -j12 -l12
+[0.390s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoax_interfaces
+[0.404s] -- Install configuration: ""
+[0.404s] -- Execute custom install script
+[0.404s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/ament_index/resource_index/rosidl_interfaces/cocoax_interfaces
+[0.405s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/cocoa_control_ref.h
+[0.405s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.h
+[0.405s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h
+[0.405s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.h
+[0.406s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.406s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_x_enable.h
+[0.406s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_xfk.h
+[0.406s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_xik.h
+[0.406s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.h
+[0.407s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.h
+[0.407s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.h
+[0.407s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__functions.h
+[0.407s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__struct.h
+[0.408s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.h
+[0.408s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__functions.h
+[0.408s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__struct.h
+[0.409s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__type_support.h
+[0.409s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/library_path.sh
+[0.409s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/library_path.dsv
+[0.409s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_fastrtps_c.h
+[0.409s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.410s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_fastrtps_c.h
+[0.410s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_fastrtps_c.h
+[0.410s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h
+[0.410s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.410s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_fastrtps_cpp.hpp
+[0.411s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.411s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_fastrtps_cpp.hpp
+[0.411s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_fastrtps_cpp.hpp
+[0.411s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_cpp.hpp
+[0.411s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.412s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_introspection_c.h
+[0.412s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.412s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_introspection_c.h
+[0.412s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_introspection_c.h
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/cocoa_control_ref.hpp
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__builder.hpp
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.hpp
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__traits.hpp
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_x_enable.hpp
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_xfk.hpp
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_xik.hpp
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__builder.hpp
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.hpp
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__traits.hpp
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__builder.hpp
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__struct.hpp
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__traits.hpp
+[0.413s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__builder.hpp
+[0.414s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__struct.hpp
+[0.414s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__traits.hpp
+[0.414s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_introspection_cpp.hpp
+[0.414s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_introspection_cpp.hpp
+[0.414s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_introspection_cpp.hpp
+[0.414s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_cpp.hpp
+[0.414s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/pythonpath.sh
+[0.415s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/pythonpath.dsv
+[0.415s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/__init__.py
+[0.415s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/srv/__init__.py
+[0.415s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/srv/_cocoa_x_enable.py
+[0.416s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/srv/_cocoa_xfk.py
+[0.416s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/srv/_cocoa_xik.py
+[0.416s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/msg/__init__.py
+[0.416s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/msg/_cocoa_control_ref.py
+[0.417s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/cocoax_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[0.417s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/cocoax_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[0.417s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/cocoax_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[0.417s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__python.so
+[0.418s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXIK.idl
+[0.418s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXFK.idl
+[0.418s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXEnable.idl
+[0.418s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/msg/CocoaControlRef.idl
+[0.419s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXIK.srv
+[0.419s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXIK_Request.msg
+[0.419s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXIK_Response.msg
+[0.419s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXFK.srv
+[0.419s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXFK_Request.msg
+[0.420s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXFK_Response.msg
+[0.420s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXEnable.srv
+[0.420s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXEnable_Request.msg
+[0.420s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXEnable_Response.msg
+[0.420s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/msg/CocoaControlRef.msg
+[0.420s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/ament_index/resource_index/package_run_dependencies/cocoax_interfaces
+[0.421s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/ament_index/resource_index/parent_prefix_path/cocoax_interfaces
+[0.421s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/ament_prefix_path.sh
+[0.421s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/ament_prefix_path.dsv
+[0.421s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/path.sh
+[0.422s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/path.dsv
+[0.422s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/local_setup.bash
+[0.422s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/local_setup.sh
+[0.422s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/local_setup.zsh
+[0.422s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/local_setup.dsv
+[0.423s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/package.dsv
+[0.435s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/ament_index/resource_index/packages/cocoax_interfaces
+[0.435s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.436s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.436s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.437s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.437s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.438s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.439s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.439s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfacesConfig.cmake
+[0.439s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfacesConfig-version.cmake
+[0.440s] -- Up-to-date symlink: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/package.xml
+[0.441s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_generator_c.so
+[0.442s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_introspection_c.so
+[0.443s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_c.so
+[0.443s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.443s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_cpp.so
+[0.477s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_generator_cExport.cmake
+[0.477s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_generator_cExport-noconfig.cmake
+[0.478s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.478s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.479s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_cExport.cmake
+[0.479s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[0.479s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_generator_cppExport.cmake
+[0.479s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.479s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.479s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_cppExport.cmake
+[0.479s] -- Up-to-date: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[0.487s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoax_interfaces

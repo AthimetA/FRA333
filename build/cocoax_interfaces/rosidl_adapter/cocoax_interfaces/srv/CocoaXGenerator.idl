@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from cocoax_interfaces/srv/CocoaXGenerator.srv
+// generated code does not contain a copyright notice
+
+
+module cocoax_interfaces {
+  module srv {
+    typedef double double__3[3];
+    struct CocoaXGenerator_Request {
+      double__3 position_initial;
+
+      double__3 position_final;
+
+      double duration;
+    };
+    struct CocoaXGenerator_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

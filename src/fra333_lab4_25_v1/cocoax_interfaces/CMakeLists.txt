@@ -41,6 +41,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/CocoaXIK.srv"
   "srv/CocoaXFK.srv"
   "srv/CocoaXEnable.srv"
+  "srv/CocoaXGenerator.srv"
   "msg/CocoaControlRef.msg"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
