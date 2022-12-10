@@ -29,6 +29,7 @@ ament_python_install_package(${PROJECT_NAME})
 install(PROGRAMS
   scripts/cocoax_tracker.py
   scripts/cocoax_generator.py
+  scripts/cocoax_scheduler.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

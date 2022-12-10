@@ -8,6 +8,7 @@ import numpy as np
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
 from rclpy.clock import Clock
+from sensor_msgs.msg import JointState
 
 np.set_printoptions(precision=4, suppress=True)
 
@@ -20,32 +21,50 @@ class CocoaGenerator(Node):
         self.node_star_bool = False
         
         # define rate
-        self.rate = 1
+        self.rate = 10
         qos_profile = QoSProfile(depth=10)
         
         # Parameters
         self.time_rate = 1/self.rate 
         
-        ########## Test ##########
-        [xi,yi,zi,xf,yf,zf] = [0,0,0,1,1,1]
-        [Ax,Ay,Az] = self.cocoax_quintic_trajectory_generator([xi,yi,zi],[xf,yf,zf],5)
-        self.get_logger().info('Ax: \n'+str(Ax))
-        self.get_logger().info('Ay: \n'+str(Ay))
-        self.get_logger().info('Az: \n'+str(Az))
+        # Publishers
+        self.trajectory_publisher = self.create_publisher(JointState,'/cocoax/end_effector_states', qos_profile)
         
-        [xc,yc,zc,vxc,vyc,vzc] = self.cocoax_quintic_trajectory_evaluator([Ax,Ay,Az],1)
-        self.get_logger().info('xc: \n'+str(xc))
-        self.get_logger().info('yc: \n'+str(yc))
-        self.get_logger().info('zc: \n'+str(zc))
-        self.get_logger().info('vxc: \n'+str(vxc))
-        self.get_logger().info('vyc: \n'+str(vyc))
-        self.get_logger().info('vzc: \n'+str(vzc))
-        self.get_logger().info('-'*50)
+        # Timers
+        self.timer = self.create_timer(self.time_rate, self.timer_callback)
+        
         ########## Test ##########
+        A = self.cocoax_quintic_trajectory_generator(5)
+        time = [1,2,3,4,5]
+        for t in time:
+            print(self.cocoax_quintic_linear_interpolation_taskspace(A, [[0,0,0],[10,10,10]], t))
+        
+        ########## Test ##########
+    
+    def timer_callback(self):
+        pass
+    
+    def cocoax_quintic_linear_interpolation_taskspace(self, traject_cof, pos, t):
+        
+        # Get the initial and final position
+        p_i = np.array(pos[0])
+        p_f = np.array(pos[1])
+        
+        # Get the trajectory and evaluate it
+        a_t = self.cocoax_quintic_trajectory_evaluator(traject_cof,t)
+        x_t = np.array(a_t[0:3])
+        v_t = np.array(a_t[3:6])
+        
+        # Linear interpolation
+        p_t = ((1-x_t)*p_i )+ (x_t*p_f)
+        p_dot_t = v_t*(p_f-p_i)
+        
+        # Return the position and velocity as a list
+        return [p_t.tolist() ,p_dot_t.tolist()]
 
-    def cocoax_quintic_trajectory_generator(self, pos_i, pos_f, T):
-        xi, yi, zi = pos_i
-        xf ,yf, zf = pos_f
+    def cocoax_quintic_trajectory_generator(self, T):
+        xi, yi, zi = [0.0,0.0,0.0]
+        xf ,yf, zf = [1.0,1.0,1.0]
         # Calculate the time to reach the final position
         ti = 0
         tf = T

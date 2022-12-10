@@ -3,6 +3,7 @@
 /home/azthorax/fra333_ws/install/cocoax_control/lib/python3.8/site-packages/cocoax_control/__init__.py
 /home/azthorax/fra333_ws/install/cocoax_control/lib/cocoax_control/cocoax_tracker.py
 /home/azthorax/fra333_ws/install/cocoax_control/lib/cocoax_control/cocoax_generator.py
+/home/azthorax/fra333_ws/install/cocoax_control/lib/cocoax_control/cocoax_scheduler.py
 /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/launch/cocoax_control.launch.py
 /home/azthorax/fra333_ws/install/cocoax_control/share/cocoax_control/config/cocoax_pid_param.yaml
 /home/azthorax/fra333_ws/install/cocoax_control/share/ament_index/resource_index/package_run_dependencies/cocoax_control
