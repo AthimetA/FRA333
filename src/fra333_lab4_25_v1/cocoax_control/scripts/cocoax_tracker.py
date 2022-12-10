@@ -21,7 +21,7 @@ from pathlib import Path
 import yaml
 from yaml.loader import SafeLoader
 
-class CocoaControl(Node):
+class CocoaTracker(Node):
     def __init__(self):
         super().__init__('cocoax_tracker_node')
         
@@ -42,7 +42,7 @@ class CocoaControl(Node):
         self.get_logger().info('-'*50)
         
         # define rate
-        self.rate = 1
+        self.rate = 10
         qos_profile = QoSProfile(depth=10)
         
         # Parameters
@@ -53,7 +53,7 @@ class CocoaControl(Node):
         self.joint_state_subscriber = self.create_subscription(JointState, '/joint_states', self.joint_state_callback, qos_profile)
         
         self.command_ref_buffer = JointTrajectoryPoint()
-        self.command_ref_subscriber = self.create_subscription(JointTrajectoryPoint, 'cocoax_control_ref', self.command_ref_callback, qos_profile)
+        self.command_ref_subscriber = self.create_subscription(JointTrajectoryPoint, '/cocoax/cocoax_control_ref', self.command_ref_callback, qos_profile)
         
         # Publishers
         self.velocity_controller_buffer = Float64MultiArray()
@@ -66,13 +66,24 @@ class CocoaControl(Node):
         self.tracker_timer = self.create_timer(self.time_rate, self.tracker_timer_callback)
         
         # PID Controller memory
-        self.pid_memory_last_error = 0.0
-        self.pid_memory_integral = 0.0
+        self.pid_memory_last_error = np.array([0.0,0.0,0.0])
+        self.pid_memory_integral = np.array([0.0,0.0,0.0])
         
         # log
         self.get_logger().info('Tracker status : Disabled')
         
-    def pid_controller_with_feedforward_velocity(self, setpoint, measurements, outputlimit, velocity):
+    def pid_controller_with_feedforward_velocity(self, setpoint, measurements, velocity, outputlimit= None):
+        '''
+            Setpoint: desired value [3x1]
+            Measurements: current value [3x1]
+            Velocity: current velocity [3x1]
+        '''
+        # Convert to numpy array
+        setpoint = np.array(setpoint)
+        measurements = np.array(measurements)
+        velocity = np.array(velocity)
+        
+        # Compute error
         error = setpoint - measurements
         
         # Compute PID terms
@@ -86,14 +97,18 @@ class CocoaControl(Node):
         pid_output = pid_output + velocity
         
         # Limit PID output
-        if pid_output > outputlimit[1]:
-            pid_output = outputlimit[1]
-        elif pid_output < outputlimit[0]:
-            pid_output = outputlimit[0]
+        if outputlimit != None:
+            if pid_output > outputlimit[1]:
+                pid_output = outputlimit[1]
+            elif pid_output < outputlimit[0]:
+                pid_output = outputlimit[0]
         
         # Update memory
         self.last_error = error
         self.pid_memory_integral = pid_integral
+        
+        # Convert to list
+        pid_output = pid_output.tolist()
         
         return pid_output
     
@@ -117,27 +132,33 @@ class CocoaControl(Node):
     
     def tracker_timer_callback(self):        
         if self.node_enable_status:
-            # Get current time
-            self.velocity_controller_buffer.data = [0.1,0.1,0.1]
+            self.get_logger().info('Command received')
+            self.get_logger().info(str(self.command_ref_buffer.positions.tolist()))
+            self.get_logger().info(str(self.command_ref_buffer.velocities.tolist()))
+            pidvel = self.pid_controller_with_feedforward_velocity(self.command_ref_buffer.positions,
+                                                                   self.joint_state_buffer.position,
+                                                                   self.command_ref_buffer.velocities)
+            self.get_logger().info(f'pidvelX: {pidvel}')
+            self.velocity_controller_buffer.data = pidvel
             self.velocity_controller_pub.publish(self.velocity_controller_buffer)
-            self.current_time = self.get_clock().now().to_msg().sec
-            self.get_logger().info('Time: ' + str(self.current_time))
-            Vx = self.joint_state_buffer.velocity.tolist()[0]
-            Vy = self.joint_state_buffer.velocity.tolist()[1]
-            Vz = self.joint_state_buffer.velocity.tolist()[2]
-            self.get_logger().info(f'Vx: {Vx:.4f}')
-            self.get_logger().info(f'Vy: {Vy:.4f}')
-            self.get_logger().info(f'Vz: {Vz:.4f}')
-            self.get_logger().info('---------------------------------')
         else:
-            self.get_logger().info('Tracker status : Disabled')
-
-        
-        
+            # # Get current time
+            # self.velocity_controller_buffer.data = [0.1,0.1,0.1]
+            # self.velocity_controller_pub.publish(self.velocity_controller_buffer)
+            # self.current_time = self.get_clock().now().to_msg().sec
+            # self.get_logger().info('Time: ' + str(self.current_time))
+            # Vx = self.joint_state_buffer.velocity.tolist()[0]
+            # Vy = self.joint_state_buffer.velocity.tolist()[1]
+            # Vz = self.joint_state_buffer.velocity.tolist()[2]
+            # self.get_logger().info(f'Vx: {Vx:.4f}')
+            # self.get_logger().info(f'Vy: {Vy:.4f}')
+            # self.get_logger().info(f'Vz: {Vz:.4f}')
+            # self.get_logger().info('---------------------------------')
+            pass
 
 def main(args=None):
     rclpy.init(args=args)
-    tracker_obj = CocoaControl()
+    tracker_obj = CocoaTracker()
     try:
         while rclpy.ok():
             rclpy.spin_once(tracker_obj)
