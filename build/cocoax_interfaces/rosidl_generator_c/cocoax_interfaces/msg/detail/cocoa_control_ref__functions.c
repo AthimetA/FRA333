@@ -17,8 +17,8 @@ cocoax_interfaces__msg__CocoaControlRef__init(cocoax_interfaces__msg__CocoaContr
   if (!msg) {
     return false;
   }
-  // reference_position
-  // reference_velocity
+  // reference_joint_position
+  // reference_joint_velocity
   return true;
 }
 
@@ -28,8 +28,8 @@ cocoax_interfaces__msg__CocoaControlRef__fini(cocoax_interfaces__msg__CocoaContr
   if (!msg) {
     return;
   }
-  // reference_position
-  // reference_velocity
+  // reference_joint_position
+  // reference_joint_velocity
 }
 
 bool
@@ -38,15 +38,15 @@ cocoax_interfaces__msg__CocoaControlRef__are_equal(const cocoax_interfaces__msg_
   if (!lhs || !rhs) {
     return false;
   }
-  // reference_position
+  // reference_joint_position
   for (size_t i = 0; i < 3; ++i) {
-    if (lhs->reference_position[i] != rhs->reference_position[i]) {
+    if (lhs->reference_joint_position[i] != rhs->reference_joint_position[i]) {
       return false;
     }
   }
-  // reference_velocity
+  // reference_joint_velocity
   for (size_t i = 0; i < 3; ++i) {
-    if (lhs->reference_velocity[i] != rhs->reference_velocity[i]) {
+    if (lhs->reference_joint_velocity[i] != rhs->reference_joint_velocity[i]) {
       return false;
     }
   }
@@ -61,13 +61,13 @@ cocoax_interfaces__msg__CocoaControlRef__copy(
   if (!input || !output) {
     return false;
   }
-  // reference_position
+  // reference_joint_position
   for (size_t i = 0; i < 3; ++i) {
-    output->reference_position[i] = input->reference_position[i];
+    output->reference_joint_position[i] = input->reference_joint_position[i];
   }
-  // reference_velocity
+  // reference_joint_velocity
   for (size_t i = 0; i < 3; ++i) {
-    output->reference_velocity[i] = input->reference_velocity[i];
+    output->reference_joint_velocity[i] = input->reference_joint_velocity[i];
   }
   return true;
 }

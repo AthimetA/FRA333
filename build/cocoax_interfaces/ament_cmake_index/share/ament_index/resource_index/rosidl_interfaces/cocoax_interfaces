@@ -1,7 +1,11 @@
 msg/CocoaControlRef.idl
 msg/CocoaControlRef.msg
-msg/CocoaPositionProximity.idl
-msg/CocoaPositionProximity.msg
+msg/CocoaJointSpace.idl
+msg/CocoaJointSpace.msg
+msg/CocoaTaskSpace.idl
+msg/CocoaTaskSpace.msg
+msg/CocoaTestMonitor.idl
+msg/CocoaTestMonitor.msg
 srv/CocoaXEnable.idl
 srv/CocoaXEnable.srv
 srv/CocoaXEnable_Request.msg

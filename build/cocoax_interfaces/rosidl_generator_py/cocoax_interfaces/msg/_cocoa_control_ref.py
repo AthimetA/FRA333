@@ -5,8 +5,8 @@
 
 # Import statements for member types
 
-# Member 'reference_position'
-# Member 'reference_velocity'
+# Member 'reference_joint_position'
+# Member 'reference_joint_velocity'
 import numpy  # noqa: E402, I100
 
 import rosidl_parser.definition  # noqa: E402, I100
@@ -57,13 +57,13 @@ class CocoaControlRef(metaclass=Metaclass_CocoaControlRef):
     """Message class 'CocoaControlRef'."""
 
     __slots__ = [
-        '_reference_position',
-        '_reference_velocity',
+        '_reference_joint_position',
+        '_reference_joint_velocity',
     ]
 
     _fields_and_field_types = {
-        'reference_position': 'double[3]',
-        'reference_velocity': 'double[3]',
+        'reference_joint_position': 'double[3]',
+        'reference_joint_velocity': 'double[3]',
     }
 
     SLOT_TYPES = (
@@ -75,16 +75,16 @@ class CocoaControlRef(metaclass=Metaclass_CocoaControlRef):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        if 'reference_position' not in kwargs:
-            self.reference_position = numpy.zeros(3, dtype=numpy.float64)
+        if 'reference_joint_position' not in kwargs:
+            self.reference_joint_position = numpy.zeros(3, dtype=numpy.float64)
         else:
-            self.reference_position = numpy.array(kwargs.get('reference_position'), dtype=numpy.float64)
-            assert self.reference_position.shape == (3, )
-        if 'reference_velocity' not in kwargs:
-            self.reference_velocity = numpy.zeros(3, dtype=numpy.float64)
+            self.reference_joint_position = numpy.array(kwargs.get('reference_joint_position'), dtype=numpy.float64)
+            assert self.reference_joint_position.shape == (3, )
+        if 'reference_joint_velocity' not in kwargs:
+            self.reference_joint_velocity = numpy.zeros(3, dtype=numpy.float64)
         else:
-            self.reference_velocity = numpy.array(kwargs.get('reference_velocity'), dtype=numpy.float64)
-            assert self.reference_velocity.shape == (3, )
+            self.reference_joint_velocity = numpy.array(kwargs.get('reference_joint_velocity'), dtype=numpy.float64)
+            assert self.reference_joint_velocity.shape == (3, )
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -115,9 +115,9 @@ class CocoaControlRef(metaclass=Metaclass_CocoaControlRef):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if all(self.reference_position != other.reference_position):
+        if all(self.reference_joint_position != other.reference_joint_position):
             return False
-        if all(self.reference_velocity != other.reference_velocity):
+        if all(self.reference_joint_velocity != other.reference_joint_velocity):
             return False
         return True
 
@@ -127,18 +127,18 @@ class CocoaControlRef(metaclass=Metaclass_CocoaControlRef):
         return copy(cls._fields_and_field_types)
 
     @property
-    def reference_position(self):
-        """Message field 'reference_position'."""
-        return self._reference_position
+    def reference_joint_position(self):
+        """Message field 'reference_joint_position'."""
+        return self._reference_joint_position
 
-    @reference_position.setter
-    def reference_position(self, value):
+    @reference_joint_position.setter
+    def reference_joint_position(self, value):
         if isinstance(value, numpy.ndarray):
             assert value.dtype == numpy.float64, \
-                "The 'reference_position' numpy.ndarray() must have the dtype of 'numpy.float64'"
+                "The 'reference_joint_position' numpy.ndarray() must have the dtype of 'numpy.float64'"
             assert value.size == 3, \
-                "The 'reference_position' numpy.ndarray() must have a size of 3"
-            self._reference_position = value
+                "The 'reference_joint_position' numpy.ndarray() must have a size of 3"
+            self._reference_joint_position = value
             return
         if __debug__:
             from collections.abc import Sequence
@@ -154,22 +154,22 @@ class CocoaControlRef(metaclass=Metaclass_CocoaControlRef):
                  len(value) == 3 and
                  all(isinstance(v, float) for v in value) and
                  True), \
-                "The 'reference_position' field must be a set or sequence with length 3 and each value of type 'float'"
-        self._reference_position = numpy.array(value, dtype=numpy.float64)
+                "The 'reference_joint_position' field must be a set or sequence with length 3 and each value of type 'float'"
+        self._reference_joint_position = numpy.array(value, dtype=numpy.float64)
 
     @property
-    def reference_velocity(self):
-        """Message field 'reference_velocity'."""
-        return self._reference_velocity
+    def reference_joint_velocity(self):
+        """Message field 'reference_joint_velocity'."""
+        return self._reference_joint_velocity
 
-    @reference_velocity.setter
-    def reference_velocity(self, value):
+    @reference_joint_velocity.setter
+    def reference_joint_velocity(self, value):
         if isinstance(value, numpy.ndarray):
             assert value.dtype == numpy.float64, \
-                "The 'reference_velocity' numpy.ndarray() must have the dtype of 'numpy.float64'"
+                "The 'reference_joint_velocity' numpy.ndarray() must have the dtype of 'numpy.float64'"
             assert value.size == 3, \
-                "The 'reference_velocity' numpy.ndarray() must have a size of 3"
-            self._reference_velocity = value
+                "The 'reference_joint_velocity' numpy.ndarray() must have a size of 3"
+            self._reference_joint_velocity = value
             return
         if __debug__:
             from collections.abc import Sequence
@@ -185,5 +185,5 @@ class CocoaControlRef(metaclass=Metaclass_CocoaControlRef):
                  len(value) == 3 and
                  all(isinstance(v, float) for v in value) and
                  True), \
-                "The 'reference_velocity' field must be a set or sequence with length 3 and each value of type 'float'"
-        self._reference_velocity = numpy.array(value, dtype=numpy.float64)
+                "The 'reference_joint_velocity' field must be a set or sequence with length 3 and each value of type 'float'"
+        self._reference_joint_velocity = numpy.array(value, dtype=numpy.float64)

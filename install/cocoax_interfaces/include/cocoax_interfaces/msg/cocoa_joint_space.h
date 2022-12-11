@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/msg/cocoa_joint_space.h

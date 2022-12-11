@@ -20,8 +20,8 @@ extern "C"
 // Struct defined in msg/CocoaControlRef in the package cocoax_interfaces.
 typedef struct cocoax_interfaces__msg__CocoaControlRef
 {
-  double reference_position[3];
-  double reference_velocity[3];
+  double reference_joint_position[3];
+  double reference_joint_velocity[3];
 } cocoax_interfaces__msg__CocoaControlRef;
 
 // Struct for a sequence of cocoax_interfaces__msg__CocoaControlRef.

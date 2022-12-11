@@ -3,4 +3,6 @@
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces:srv/CocoaXEnable.idl
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces:srv/CocoaXGenerator.idl
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces:msg/CocoaControlRef.idl
-/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces:msg/CocoaPositionProximity.idl
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces:msg/CocoaJointSpace.idl
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces:msg/CocoaTaskSpace.idl
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_adapter/cocoax_interfaces:msg/CocoaTestMonitor.idl

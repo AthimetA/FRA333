@@ -1,0 +1,1 @@
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_joint_space__rosidl_typesupport_introspection_cpp.hpp

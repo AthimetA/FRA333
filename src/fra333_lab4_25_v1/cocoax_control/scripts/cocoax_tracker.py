@@ -41,7 +41,7 @@ class CocoaTracker(Node):
         self.get_logger().info('-'*50)
         
         # define rate
-        self.rate = 1000
+        self.rate = 100
         qos_profile = QoSProfile(depth=10)
         
         # Parameters
@@ -141,13 +141,10 @@ class CocoaTracker(Node):
     
     def tracker_timer_callback(self):        
         if self.node_enable_status:
-            # self.get_logger().info('Tracker status : Enabled')
-            # self.get_logger().info('Command received')
-            # self.get_logger().info(str(self.command_ref_buffer.reference_position))
-            # self.get_logger().info(str(self.command_ref_buffer.reference_velocity))
-            pidvel = self.pid_controller_with_feedforward_velocity(self.command_ref_buffer.reference_position,
+
+            pidvel = self.pid_controller_with_feedforward_velocity(self.command_ref_buffer.reference_joint_position,
                                                                    self.joint_state_buffer.position,
-                                                                   self.command_ref_buffer.reference_velocity)
+                                                                   self.command_ref_buffer.reference_joint_velocity)
             # pidvel = self.pid_controller_with_feedforward_velocity([0.1296, 0.0263, 0.4705],
             #                                                     self.joint_state_buffer.position,
             #                                                     [0.0,0.0,0.0])
@@ -157,21 +154,6 @@ class CocoaTracker(Node):
         else:
             self.velocity_controller_buffer.data = [0.0,0.0,0.0]
             self.velocity_controller_pub.publish(self.velocity_controller_buffer)
-            # # Get current time
-            # self.velocity_controller_buffer.data = [0.1,0.1,0.1]
-            # self.velocity_controller_pub.publish(self.velocity_controller_buffer)
-            # self.current_time = self.get_clock().now().to_msg().sec
-            # self.get_logger().info('Time: ' + str(self.current_time))
-            # Vx = self.joint_state_buffer.velocity.tolist()[0]
-            # Vy = self.joint_state_buffer.velocity.tolist()[1]
-            # Vz = self.joint_state_buffer.velocity.tolist()[2]
-            # self.get_logger().info(f'Vx: {Vx:.4f}')
-            # self.get_logger().info(f'Vy: {Vy:.4f}')
-            # self.get_logger().info(f'Vz: {Vz:.4f}')
-            # self.get_logger().info('---------------------------------')
-            # self.get_logger().info('Tracker status : Disabled')
-        # self.get_logger().info('---------------------------------')
-        # self.get_logger().info('Output: ' + str(self.velocity_controller_buffer.data))
 
 def main(args=None):
     rclpy.init(args=args)

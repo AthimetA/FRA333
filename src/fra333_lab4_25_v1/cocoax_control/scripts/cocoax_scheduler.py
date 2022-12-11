@@ -11,7 +11,7 @@ from rclpy.clock import Clock
 from sensor_msgs.msg import JointState
 
 from cocoax_interfaces.srv import CocoaXGenerator, CocoaXEnable
-from cocoax_interfaces.msg import CocoaControlRef
+from cocoax_interfaces.msg import CocoaControlRef, CocoaJointSpace, CocoaTaskSpace
 
 np.set_printoptions(precision=4, suppress=True)
 
@@ -47,7 +47,7 @@ class CocoaScheduler(Node):
         # Subscribers
         self.proximity_position_buffer = [0.0,0.0,0.0]
         self.proximity_velocity_buffer = [0.0,0.0,0.0]
-        self.cocoax_proximity_position_subscriber = self.create_subscription(CocoaControlRef,
+        self.cocoax_proximity_position_subscriber = self.create_subscription(CocoaTaskSpace,
                                                                              "/cocoax/cocoax_proximity_endeff_position",
                                                                              self.cocoax_proximity_position_subscriber_callback,
                                                                              qos_profile)
@@ -177,9 +177,9 @@ class CocoaScheduler(Node):
         self.get_logger().info('/cocoax/trajectory_generator_generate_trajectory Service call success')
 
     # This function is called when the proximity position is published by the CocoaX_ForwardKinematics
-    def cocoax_proximity_position_subscriber_callback(self, msg : CocoaControlRef):
-        self.proximity_position_buffer = msg.reference_position
-        self.proximity_velocity_buffer = msg.reference_velocity
+    def cocoax_proximity_position_subscriber_callback(self, msg : CocoaTaskSpace):
+        self.proximity_position_buffer = msg.position
+        self.proximity_velocity_buffer = msg.velocity
     
     def via_point_duration_calculator(self, via_point):
         via_point_initial = via_point[0]
@@ -188,12 +188,17 @@ class CocoaScheduler(Node):
         overall_distance = np.sqrt((via_point_final[0]-via_point_initial[0])**2 + (via_point_final[1]-via_point_initial[1])**2 + (via_point_final[2]-via_point_initial[2])**2)
         print('overall_distance: ', overall_distance)
         
-        # jmax = 0.01
-        # amax = 0.01
-        # vmax = 0.1
-        jmax = 0.5
-        amax = 0.5
-        vmax = 1.0
+        jmax = 0.01
+        amax = 0.01
+        vmax = 0.1
+        # # Speed test
+        # jmax = 0.5
+        # amax = 0.5
+        # vmax = 1.0
+        # # mid test
+        # jmax = 0.05
+        # amax = 0.05
+        # vmax = 0.05
 
         via_point_duration = (amax/jmax) +(vmax/amax) + (overall_distance/vmax)
         print('via_point_duration: ', via_point_duration)

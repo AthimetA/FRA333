@@ -33,14 +33,14 @@ void CocoaControlRef__rosidl_typesupport_introspection_c__CocoaControlRef_fini_f
 
 static rosidl_typesupport_introspection_c__MessageMember CocoaControlRef__rosidl_typesupport_introspection_c__CocoaControlRef_message_member_array[2] = {
   {
-    "reference_position",  // name
+    "reference_joint_position",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array
     3,  // array size
     false,  // is upper bound
-    offsetof(cocoax_interfaces__msg__CocoaControlRef, reference_position),  // bytes offset in struct
+    offsetof(cocoax_interfaces__msg__CocoaControlRef, reference_joint_position),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -48,14 +48,14 @@ static rosidl_typesupport_introspection_c__MessageMember CocoaControlRef__rosidl
     NULL  // resize(index) function pointer
   },
   {
-    "reference_velocity",  // name
+    "reference_joint_velocity",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array
     3,  // array size
     false,  // is upper bound
-    offsetof(cocoax_interfaces__msg__CocoaControlRef, reference_velocity),  // bytes offset in struct
+    offsetof(cocoax_interfaces__msg__CocoaControlRef, reference_joint_velocity),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

@@ -7,9 +7,9 @@ module cocoax_interfaces {
   module msg {
     typedef double double__3[3];
     struct CocoaControlRef {
-      double__3 reference_position;
+      double__3 reference_joint_position;
 
-      double__3 reference_velocity;
+      double__3 reference_joint_velocity;
     };
   };
 };

@@ -49,17 +49,17 @@ static bool _CocoaControlRef__cdr_serialize(
     return false;
   }
   const _CocoaControlRef__ros_msg_type * ros_message = static_cast<const _CocoaControlRef__ros_msg_type *>(untyped_ros_message);
-  // Field name: reference_position
+  // Field name: reference_joint_position
   {
     size_t size = 3;
-    auto array_ptr = ros_message->reference_position;
+    auto array_ptr = ros_message->reference_joint_position;
     cdr.serializeArray(array_ptr, size);
   }
 
-  // Field name: reference_velocity
+  // Field name: reference_joint_velocity
   {
     size_t size = 3;
-    auto array_ptr = ros_message->reference_velocity;
+    auto array_ptr = ros_message->reference_joint_velocity;
     cdr.serializeArray(array_ptr, size);
   }
 
@@ -75,17 +75,17 @@ static bool _CocoaControlRef__cdr_deserialize(
     return false;
   }
   _CocoaControlRef__ros_msg_type * ros_message = static_cast<_CocoaControlRef__ros_msg_type *>(untyped_ros_message);
-  // Field name: reference_position
+  // Field name: reference_joint_position
   {
     size_t size = 3;
-    auto array_ptr = ros_message->reference_position;
+    auto array_ptr = ros_message->reference_joint_position;
     cdr.deserializeArray(array_ptr, size);
   }
 
-  // Field name: reference_velocity
+  // Field name: reference_joint_velocity
   {
     size_t size = 3;
-    auto array_ptr = ros_message->reference_velocity;
+    auto array_ptr = ros_message->reference_joint_velocity;
     cdr.deserializeArray(array_ptr, size);
   }
 
@@ -106,19 +106,19 @@ size_t get_serialized_size_cocoax_interfaces__msg__CocoaControlRef(
   (void)padding;
   (void)wchar_size;
 
-  // field.name reference_position
+  // field.name reference_joint_position
   {
     size_t array_size = 3;
-    auto array_ptr = ros_message->reference_position;
+    auto array_ptr = ros_message->reference_joint_position;
     (void)array_ptr;
     size_t item_size = sizeof(array_ptr[0]);
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name reference_velocity
+  // field.name reference_joint_velocity
   {
     size_t array_size = 3;
-    auto array_ptr = ros_message->reference_velocity;
+    auto array_ptr = ros_message->reference_joint_velocity;
     (void)array_ptr;
     size_t item_size = sizeof(array_ptr[0]);
     current_alignment += array_size * item_size +
@@ -148,14 +148,14 @@ size_t max_serialized_size_cocoax_interfaces__msg__CocoaControlRef(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: reference_position
+  // member: reference_joint_position
   {
     size_t array_size = 3;
 
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: reference_velocity
+  // member: reference_joint_velocity
   {
     size_t array_size = 3;
 

@@ -1,0 +1,69 @@
+[0.038s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_kinematics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_kinematics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoax_kinematics
+[0.090s] -- The C compiler identification is GNU 9.4.0
+[0.147s] -- The CXX compiler identification is GNU 9.4.0
+[0.153s] -- Check for working C compiler: /usr/bin/cc
+[0.217s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.218s] -- Detecting C compiler ABI info
+[0.284s] -- Detecting C compiler ABI info - done
+[0.296s] -- Detecting C compile features
+[0.297s] -- Detecting C compile features - done
+[0.300s] -- Check for working CXX compiler: /usr/bin/c++
+[0.378s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.379s] -- Detecting CXX compiler ABI info
+[0.471s] -- Detecting CXX compiler ABI info - done
+[0.486s] -- Detecting CXX compile features
+[0.487s] -- Detecting CXX compile features - done
+[0.489s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.519s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.519s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.711s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.740s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.779s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.784s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.874s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.911s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.004s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.070s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.071s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.072s] -- Looking for pthread.h
+[1.149s] -- Looking for pthread.h - found
+[1.149s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.227s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.227s] -- Looking for pthread_create in pthreads
+[1.296s] -- Looking for pthread_create in pthreads - not found
+[1.297s] -- Looking for pthread_create in pthread
+[1.382s] -- Looking for pthread_create in pthread - found
+[1.382s] -- Found Threads: TRUE  
+[1.525s] -- Found rclpy: 1.0.11 (/opt/ros/foxy/share/rclpy/cmake)
+[1.614s] -- Configuring done
+[1.616s] -- Generating done
+[1.618s] -- Build files have been written to: /home/azthorax/fra333_ws/build/cocoax_kinematics
+[1.628s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_kinematics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoax_kinematics
+[1.631s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_kinematics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoax_kinematics -- -j12 -l12
+[1.682s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoax_kinematics -- -j12 -l12
+[1.710s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_kinematics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoax_kinematics
+[1.719s] -- Install configuration: ""
+[1.719s] -- Execute custom install script
+[1.720s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/environment/pythonpath.sh
+[1.733s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/environment/pythonpath.dsv
+[1.741s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/lib/python3.8/site-packages/cocoax_kinematics/__init__.py
+[1.748s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/lib/cocoax_kinematics/cocoax_kinematic.py
+[1.756s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/launch/cocoax_kinematic.launch.py
+[1.766s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/ament_index/resource_index/package_run_dependencies/cocoax_kinematics
+[1.774s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/ament_index/resource_index/parent_prefix_path/cocoax_kinematics
+[1.781s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/environment/ament_prefix_path.sh
+[1.790s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/environment/ament_prefix_path.dsv
+[1.799s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/environment/path.sh
+[1.811s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/environment/path.dsv
+[1.818s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/local_setup.bash
+[1.829s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/local_setup.sh
+[1.837s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/local_setup.zsh
+[1.845s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/local_setup.dsv
+[1.852s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/package.dsv
+[1.859s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/ament_index/resource_index/packages/cocoax_kinematics
+[1.871s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/cmake/cocoax_kinematicsConfig.cmake
+[1.884s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/cmake/cocoax_kinematicsConfig-version.cmake
+[1.892s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_kinematics/share/cocoax_kinematics/package.xml
+[1.932s] Listing '/home/azthorax/fra333_ws/install/cocoax_kinematics/lib/python3.8/site-packages/cocoax_kinematics'...
+[1.932s] Compiling '/home/azthorax/fra333_ws/install/cocoax_kinematics/lib/python3.8/site-packages/cocoax_kinematics/__init__.py'...
+[1.963s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoax_kinematics

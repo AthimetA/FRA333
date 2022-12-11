@@ -20,15 +20,15 @@ namespace msg
 namespace builder
 {
 
-class Init_CocoaControlRef_reference_velocity
+class Init_CocoaControlRef_reference_joint_velocity
 {
 public:
-  explicit Init_CocoaControlRef_reference_velocity(::cocoax_interfaces::msg::CocoaControlRef & msg)
+  explicit Init_CocoaControlRef_reference_joint_velocity(::cocoax_interfaces::msg::CocoaControlRef & msg)
   : msg_(msg)
   {}
-  ::cocoax_interfaces::msg::CocoaControlRef reference_velocity(::cocoax_interfaces::msg::CocoaControlRef::_reference_velocity_type arg)
+  ::cocoax_interfaces::msg::CocoaControlRef reference_joint_velocity(::cocoax_interfaces::msg::CocoaControlRef::_reference_joint_velocity_type arg)
   {
-    msg_.reference_velocity = std::move(arg);
+    msg_.reference_joint_velocity = std::move(arg);
     return std::move(msg_);
   }
 
@@ -36,16 +36,16 @@ private:
   ::cocoax_interfaces::msg::CocoaControlRef msg_;
 };
 
-class Init_CocoaControlRef_reference_position
+class Init_CocoaControlRef_reference_joint_position
 {
 public:
-  Init_CocoaControlRef_reference_position()
+  Init_CocoaControlRef_reference_joint_position()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_CocoaControlRef_reference_velocity reference_position(::cocoax_interfaces::msg::CocoaControlRef::_reference_position_type arg)
+  Init_CocoaControlRef_reference_joint_velocity reference_joint_position(::cocoax_interfaces::msg::CocoaControlRef::_reference_joint_position_type arg)
   {
-    msg_.reference_position = std::move(arg);
-    return Init_CocoaControlRef_reference_velocity(msg_);
+    msg_.reference_joint_position = std::move(arg);
+    return Init_CocoaControlRef_reference_joint_velocity(msg_);
   }
 
 private:
@@ -63,7 +63,7 @@ template<>
 inline
 auto build<::cocoax_interfaces::msg::CocoaControlRef>()
 {
-  return cocoax_interfaces::msg::builder::Init_CocoaControlRef_reference_position();
+  return cocoax_interfaces::msg::builder::Init_CocoaControlRef_reference_joint_position();
 }
 
 }  // namespace cocoax_interfaces

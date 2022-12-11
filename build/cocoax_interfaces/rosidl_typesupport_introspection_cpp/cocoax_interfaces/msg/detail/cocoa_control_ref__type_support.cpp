@@ -37,40 +37,40 @@ void CocoaControlRef_fini_function(void * message_memory)
   typed_message->~CocoaControlRef();
 }
 
-size_t size_function__CocoaControlRef__reference_position(const void * untyped_member)
+size_t size_function__CocoaControlRef__reference_joint_position(const void * untyped_member)
 {
   (void)untyped_member;
   return 3;
 }
 
-const void * get_const_function__CocoaControlRef__reference_position(const void * untyped_member, size_t index)
+const void * get_const_function__CocoaControlRef__reference_joint_position(const void * untyped_member, size_t index)
 {
   const auto & member =
     *reinterpret_cast<const std::array<double, 3> *>(untyped_member);
   return &member[index];
 }
 
-void * get_function__CocoaControlRef__reference_position(void * untyped_member, size_t index)
+void * get_function__CocoaControlRef__reference_joint_position(void * untyped_member, size_t index)
 {
   auto & member =
     *reinterpret_cast<std::array<double, 3> *>(untyped_member);
   return &member[index];
 }
 
-size_t size_function__CocoaControlRef__reference_velocity(const void * untyped_member)
+size_t size_function__CocoaControlRef__reference_joint_velocity(const void * untyped_member)
 {
   (void)untyped_member;
   return 3;
 }
 
-const void * get_const_function__CocoaControlRef__reference_velocity(const void * untyped_member, size_t index)
+const void * get_const_function__CocoaControlRef__reference_joint_velocity(const void * untyped_member, size_t index)
 {
   const auto & member =
     *reinterpret_cast<const std::array<double, 3> *>(untyped_member);
   return &member[index];
 }
 
-void * get_function__CocoaControlRef__reference_velocity(void * untyped_member, size_t index)
+void * get_function__CocoaControlRef__reference_joint_velocity(void * untyped_member, size_t index)
 {
   auto & member =
     *reinterpret_cast<std::array<double, 3> *>(untyped_member);
@@ -79,33 +79,33 @@ void * get_function__CocoaControlRef__reference_velocity(void * untyped_member, 
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember CocoaControlRef_message_member_array[2] = {
   {
-    "reference_position",  // name
+    "reference_joint_position",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     true,  // is array
     3,  // array size
     false,  // is upper bound
-    offsetof(cocoax_interfaces::msg::CocoaControlRef, reference_position),  // bytes offset in struct
+    offsetof(cocoax_interfaces::msg::CocoaControlRef, reference_joint_position),  // bytes offset in struct
     nullptr,  // default value
-    size_function__CocoaControlRef__reference_position,  // size() function pointer
-    get_const_function__CocoaControlRef__reference_position,  // get_const(index) function pointer
-    get_function__CocoaControlRef__reference_position,  // get(index) function pointer
+    size_function__CocoaControlRef__reference_joint_position,  // size() function pointer
+    get_const_function__CocoaControlRef__reference_joint_position,  // get_const(index) function pointer
+    get_function__CocoaControlRef__reference_joint_position,  // get(index) function pointer
     nullptr  // resize(index) function pointer
   },
   {
-    "reference_velocity",  // name
+    "reference_joint_velocity",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     true,  // is array
     3,  // array size
     false,  // is upper bound
-    offsetof(cocoax_interfaces::msg::CocoaControlRef, reference_velocity),  // bytes offset in struct
+    offsetof(cocoax_interfaces::msg::CocoaControlRef, reference_joint_velocity),  // bytes offset in struct
     nullptr,  // default value
-    size_function__CocoaControlRef__reference_velocity,  // size() function pointer
-    get_const_function__CocoaControlRef__reference_velocity,  // get_const(index) function pointer
-    get_function__CocoaControlRef__reference_velocity,  // get(index) function pointer
+    size_function__CocoaControlRef__reference_joint_velocity,  // size() function pointer
+    get_const_function__CocoaControlRef__reference_joint_velocity,  // get_const(index) function pointer
+    get_function__CocoaControlRef__reference_joint_velocity,  // get(index) function pointer
     nullptr  // resize(index) function pointer
   }
 };

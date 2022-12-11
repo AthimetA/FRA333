@@ -37,42 +37,42 @@ struct CocoaControlRef_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      std::fill<typename std::array<double, 3>::iterator, double>(this->reference_position.begin(), this->reference_position.end(), 0.0);
-      std::fill<typename std::array<double, 3>::iterator, double>(this->reference_velocity.begin(), this->reference_velocity.end(), 0.0);
+      std::fill<typename std::array<double, 3>::iterator, double>(this->reference_joint_position.begin(), this->reference_joint_position.end(), 0.0);
+      std::fill<typename std::array<double, 3>::iterator, double>(this->reference_joint_velocity.begin(), this->reference_joint_velocity.end(), 0.0);
     }
   }
 
   explicit CocoaControlRef_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : reference_position(_alloc),
-    reference_velocity(_alloc)
+  : reference_joint_position(_alloc),
+    reference_joint_velocity(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      std::fill<typename std::array<double, 3>::iterator, double>(this->reference_position.begin(), this->reference_position.end(), 0.0);
-      std::fill<typename std::array<double, 3>::iterator, double>(this->reference_velocity.begin(), this->reference_velocity.end(), 0.0);
+      std::fill<typename std::array<double, 3>::iterator, double>(this->reference_joint_position.begin(), this->reference_joint_position.end(), 0.0);
+      std::fill<typename std::array<double, 3>::iterator, double>(this->reference_joint_velocity.begin(), this->reference_joint_velocity.end(), 0.0);
     }
   }
 
   // field types and members
-  using _reference_position_type =
+  using _reference_joint_position_type =
     std::array<double, 3>;
-  _reference_position_type reference_position;
-  using _reference_velocity_type =
+  _reference_joint_position_type reference_joint_position;
+  using _reference_joint_velocity_type =
     std::array<double, 3>;
-  _reference_velocity_type reference_velocity;
+  _reference_joint_velocity_type reference_joint_velocity;
 
   // setters for named parameter idiom
-  Type & set__reference_position(
+  Type & set__reference_joint_position(
     const std::array<double, 3> & _arg)
   {
-    this->reference_position = _arg;
+    this->reference_joint_position = _arg;
     return *this;
   }
-  Type & set__reference_velocity(
+  Type & set__reference_joint_velocity(
     const std::array<double, 3> & _arg)
   {
-    this->reference_velocity = _arg;
+    this->reference_joint_velocity = _arg;
     return *this;
   }
 
@@ -118,10 +118,10 @@ struct CocoaControlRef_
   // comparison operators
   bool operator==(const CocoaControlRef_ & other) const
   {
-    if (this->reference_position != other.reference_position) {
+    if (this->reference_joint_position != other.reference_joint_position) {
       return false;
     }
-    if (this->reference_velocity != other.reference_velocity) {
+    if (this->reference_joint_velocity != other.reference_joint_velocity) {
       return false;
     }
     return true;

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c.o"
-  "CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_position_proximity_s.c.o"
+  "CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_joint_space_s.c.o"
+  "CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_task_space_s.c.o"
+  "CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_monitor_s.c.o"
   "CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c.o"
   "CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_generator_s.c.o"
   "CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk_s.c.o"

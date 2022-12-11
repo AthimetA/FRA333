@@ -1,0 +1,357 @@
+[0.037s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoax_interfaces
+[0.092s] -- The C compiler identification is GNU 9.4.0
+[0.159s] -- The CXX compiler identification is GNU 9.4.0
+[0.167s] -- Check for working C compiler: /usr/bin/cc
+[0.237s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.237s] -- Detecting C compiler ABI info
+[0.303s] -- Detecting C compiler ABI info - done
+[0.316s] -- Detecting C compile features
+[0.316s] -- Detecting C compile features - done
+[0.319s] -- Check for working CXX compiler: /usr/bin/c++
+[0.417s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.417s] -- Detecting CXX compiler ABI info
+[0.501s] -- Detecting CXX compiler ABI info - done
+[0.517s] -- Detecting CXX compile features
+[0.518s] -- Detecting CXX compile features - done
+[0.520s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.545s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.545s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.750s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.770s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.846s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.850s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.857s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.984s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.012s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.086s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.116s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.204s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.305s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.498s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.814s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.961s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.987s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.990s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[2.017s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[2.017s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.018s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[2.018s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[2.041s] -- Found PythonExtra: .so  
+[2.151s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.152s] -- Added test 'lint_cmake' to check CMake code style
+[2.153s] -- Added test 'xmllint' to check XML markup files
+[2.161s] -- Configuring done
+[2.228s] -- Generating done
+[2.230s] -- Build files have been written to: /home/azthorax/fra333_ws/build/cocoax_interfaces
+[2.239s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/azthorax/fra333_ws/install/cocoax_interfaces
+[2.243s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoax_interfaces -- -j12 -l12
+[2.298s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.299s] [35m[1mScanning dependencies of target cocoax_interfaces__cpp[0m
+[2.317s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.810s] [  2%] Built target cocoax_interfaces__cpp
+[2.821s] [  3%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.823s] [  4%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.826s] [  5%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.918s] [35m[1mScanning dependencies of target cocoax_interfaces__rosidl_generator_c[0m
+[2.938s] [  6%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xik__functions.c.o[0m
+[2.938s] [  8%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test_monitor__functions.c.o[0m
+[2.939s] [  9%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_task_space__functions.c.o[0m
+[2.940s] [ 11%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.o[0m
+[2.940s] [ 11%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_generator__functions.c.o[0m
+[2.945s] [ 12%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xfk__functions.c.o[0m
+[2.947s] [ 14%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.o[0m
+[2.947s] [ 14%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_joint_space__functions.c.o[0m
+[3.050s] [ 16%] [32m[1mLinking C shared library libcocoax_interfaces__rosidl_generator_c.so[0m
+[3.104s] [ 16%] Built target cocoax_interfaces__rosidl_generator_c
+[3.118s] [ 17%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.123s] [ 18%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.249s] [35m[1mScanning dependencies of target cocoax_interfaces__rosidl_typesupport_cpp[0m
+[3.269s] [ 19%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_xik__type_support.cpp.o[0m
+[3.269s] [ 20%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.o[0m
+[3.269s] [ 21%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.o[0m
+[3.270s] [ 22%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_joint_space__type_support.cpp.o[0m
+[3.272s] [ 25%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_task_space__type_support.cpp.o[0m
+[3.273s] [ 25%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_xfk__type_support.cpp.o[0m
+[3.279s] [ 26%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_generator__type_support.cpp.o[0m
+[3.280s] [ 27%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test_monitor__type_support.cpp.o[0m
+[3.694s] [35m[1mScanning dependencies of target cocoax_interfaces__rosidl_typesupport_introspection_cpp[0m
+[3.717s] [35m[1mScanning dependencies of target cocoax_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[3.717s] [ 28%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_xik__type_support.cpp.o[0m
+[3.718s] [ 29%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.cpp.o[0m
+[3.721s] [ 31%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.cpp.o[0m
+[3.723s] [ 32%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.cpp.o[0m
+[3.728s] [ 33%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.cpp.o[0m
+[3.733s] [ 34%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_joint_space__type_support.cpp.o[0m
+[3.734s] [ 35%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_task_space__type_support.cpp.o[0m
+[3.765s] [ 36%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_xik__type_support.cpp.o[0m
+[3.783s] [ 37%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cocoax_interfaces/msg/detail/cocoa_test_monitor__type_support.cpp.o[0m
+[3.801s] [ 39%] [32m[1mLinking CXX shared library libcocoax_interfaces__rosidl_typesupport_cpp.so[0m
+[3.898s] [35m[1mScanning dependencies of target cocoax_interfaces__rosidl_typesupport_c[0m
+[3.952s] [ 40%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xik__type_support.cpp.o[0m
+[3.977s] [ 40%] Built target cocoax_interfaces__rosidl_typesupport_cpp
+[4.023s] [ 41%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xfk__type_support.cpp.o[0m
+[4.101s] [ 42%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.o[0m
+[4.127s] [ 43%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_generator__type_support.cpp.o[0m
+[4.172s] [35m[1mScanning dependencies of target cocoax_interfaces__rosidl_typesupport_introspection_c[0m
+[4.174s] [ 44%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.o[0m
+[4.175s] [ 45%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_joint_space__type_support.cpp.o[0m
+[4.181s] [ 47%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_xfk__type_support.cpp.o[0m
+[4.185s] [ 48%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_test_monitor__type_support.cpp.o[0m
+[4.188s] [ 49%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_enable__type_support.cpp.o[0m
+[4.190s] [ 50%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_task_space__type_support.cpp.o[0m
+[4.191s] [ 51%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/srv/detail/dds_fastrtps/cocoa_x_generator__type_support.cpp.o[0m
+[4.205s] [ 52%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support.c.o[0m
+[4.215s] [ 54%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_joint_space__type_support.cpp.o[0m
+[4.216s] [ 55%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.c.o[0m
+[4.218s] [ 56%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_control_ref__type_support.cpp.o[0m
+[4.231s] [ 57%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_task_space__type_support.cpp.o[0m
+[4.232s] [ 58%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.c.o[0m
+[4.244s] [ 59%] [32m[1mLinking CXX shared library libcocoax_interfaces__rosidl_typesupport_c.so[0m
+[4.270s] [ 60%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.c.o[0m
+[4.280s] [ 62%] [32m[1mLinking CXX shared library libcocoax_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[4.283s] [ 63%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.c.o[0m
+[4.294s] [ 64%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_joint_space__type_support.c.o[0m
+[4.322s] [ 64%] Built target cocoax_interfaces__rosidl_typesupport_c
+[4.333s] [ 66%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_test_monitor__type_support.c.o[0m
+[4.334s] [ 66%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cocoax_interfaces/msg/detail/cocoa_task_space__type_support.c.o[0m
+[4.339s] [ 67%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cocoax_interfaces/msg/detail/dds_fastrtps/cocoa_test_monitor__type_support.cpp.o[0m
+[4.375s] [ 68%] [32m[1mLinking C shared library libcocoax_interfaces__rosidl_typesupport_introspection_c.so[0m
+[4.414s] [ 68%] Built target cocoax_interfaces__rosidl_typesupport_introspection_c
+[4.420s] [ 68%] Built target cocoax_interfaces__rosidl_typesupport_introspection_cpp
+[4.757s] [ 70%] [32m[1mLinking CXX shared library libcocoax_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.865s] [ 70%] Built target cocoax_interfaces__rosidl_typesupport_fastrtps_cpp
+[4.881s] [ 71%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.328s] [35m[1mScanning dependencies of target cocoax_interfaces__rosidl_typesupport_fastrtps_c[0m
+[5.366s] [ 72%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support_c.cpp.o[0m
+[5.370s] [ 73%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support_c.cpp.o[0m
+[5.372s] [ 75%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_task_space__type_support_c.cpp.o[0m
+[5.373s] [ 75%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_test_monitor__type_support_c.cpp.o[0m
+[5.373s] [ 78%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xik__type_support_c.cpp.o[0m
+[5.374s] [ 78%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_xfk__type_support_c.cpp.o[0m
+[5.374s] [ 80%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/msg/detail/cocoa_joint_space__type_support_c.cpp.o[0m
+[5.374s] [ 80%] [32mBuilding CXX object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support_c.cpp.o[0m
+[5.831s] [ 81%] [32m[1mLinking CXX shared library libcocoax_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[5.932s] [ 81%] Built target cocoax_interfaces__rosidl_typesupport_fastrtps_c
+[5.944s] [35m[1mScanning dependencies of target cocoax_interfaces[0m
+[5.960s] [ 81%] Built target cocoax_interfaces
+[5.971s] [35m[1mScanning dependencies of target cocoax_interfaces__py[0m
+[5.990s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.954s] [ 82%] Built target cocoax_interfaces__py
+[6.966s] [35m[1mScanning dependencies of target cocoax_interfaces__python[0m
+[6.994s] [ 83%] [32mBuilding C object CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xik_s.c.o[0m
+[6.997s] [ 85%] [32mBuilding C object CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_test_monitor_s.c.o[0m
+[6.998s] [ 86%] [32mBuilding C object CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_joint_space_s.c.o[0m
+[6.998s] [ 87%] [32mBuilding C object CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c.o[0m
+[6.999s] [ 88%] [32mBuilding C object CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_generator_s.c.o[0m
+[6.999s] [ 89%] [32mBuilding C object CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_task_space_s.c.o[0m
+[7.000s] [ 91%] [32mBuilding C object CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/srv/_cocoa_xfk_s.c.o[0m
+[7.000s] [ 91%] [32mBuilding C object CMakeFiles/cocoax_interfaces__python.dir/rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c.o[0m
+[7.112s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/cocoax_interfaces/libcocoax_interfaces__python.so[0m
+[7.177s] [ 93%] Built target cocoax_interfaces__python
+[7.187s] [35m[1mScanning dependencies of target cocoax_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[7.190s] [35m[1mScanning dependencies of target cocoax_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[7.190s] [35m[1mScanning dependencies of target cocoax_interfaces__rosidl_typesupport_c__pyext[0m
+[7.206s] [ 94%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.209s] [ 95%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.215s] [ 96%] [32mBuilding C object CMakeFiles/cocoax_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/cocoax_interfaces/_cocoax_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[7.308s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/cocoax_interfaces/cocoax_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[7.315s] [ 98%] [32m[1mLinking CXX shared library rosidl_generator_py/cocoax_interfaces/cocoax_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[7.328s] [100%] [32m[1mLinking C shared library rosidl_generator_py/cocoax_interfaces/cocoax_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[7.355s] [100%] Built target cocoax_interfaces__rosidl_typesupport_introspection_c__pyext
+[7.367s] [100%] Built target cocoax_interfaces__rosidl_typesupport_c__pyext
+[7.396s] [100%] Built target cocoax_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[7.409s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/azthorax/fra333_ws/build/cocoax_interfaces -- -j12 -l12
+[7.628s] Invoking command in '/home/azthorax/fra333_ws/build/cocoax_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoax_interfaces
+[7.636s] -- Install configuration: ""
+[7.636s] -- Execute custom install script
+[7.636s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/ament_index/resource_index/rosidl_interfaces/cocoax_interfaces
+[7.651s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/cocoa_control_ref.h
+[7.659s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/cocoa_joint_space.h
+[7.672s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/cocoa_task_space.h
+[7.679s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/cocoa_test_monitor.h
+[7.693s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.h
+[7.700s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h
+[7.714s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.h
+[7.726s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_joint_space__functions.h
+[7.733s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_joint_space__struct.h
+[7.740s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_joint_space__type_support.h
+[7.748s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_task_space__functions.h
+[7.755s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_task_space__struct.h
+[7.762s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_task_space__type_support.h
+[7.770s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_test_monitor__functions.h
+[7.777s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_test_monitor__struct.h
+[7.785s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_test_monitor__type_support.h
+[7.801s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
+[7.809s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_x_enable.h
+[7.821s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_x_generator.h
+[7.828s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_xfk.h
+[7.842s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_xik.h
+[7.856s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.h
+[7.863s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.h
+[7.871s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__type_support.h
+[7.883s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_generator__functions.h
+[7.891s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_generator__struct.h
+[7.904s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_generator__type_support.h
+[7.911s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__functions.h
+[7.924s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__struct.h
+[7.932s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__type_support.h
+[7.939s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__functions.h
+[7.946s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__struct.h
+[7.953s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__type_support.h
+[7.961s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/library_path.sh
+[7.969s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/library_path.dsv
+[7.977s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_fastrtps_c.h
+[7.985s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_joint_space__rosidl_typesupport_fastrtps_c.h
+[7.993s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_task_space__rosidl_typesupport_fastrtps_c.h
+[8.000s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_test_monitor__rosidl_typesupport_fastrtps_c.h
+[8.007s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.015s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_fastrtps_c.h
+[8.022s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_generator__rosidl_typesupport_fastrtps_c.h
+[8.030s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_fastrtps_c.h
+[8.037s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h
+[8.052s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_fastrtps_c.so
+[8.066s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_fastrtps_cpp.hpp
+[8.074s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_joint_space__rosidl_typesupport_fastrtps_cpp.hpp
+[8.087s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_task_space__rosidl_typesupport_fastrtps_cpp.hpp
+[8.100s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_test_monitor__rosidl_typesupport_fastrtps_cpp.hpp
+[8.108s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.121s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_fastrtps_cpp.hpp
+[8.135s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_generator__rosidl_typesupport_fastrtps_cpp.hpp
+[8.142s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_fastrtps_cpp.hpp
+[8.156s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_cpp.hpp
+[8.163s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[8.178s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_introspection_c.h
+[8.186s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_joint_space__rosidl_typesupport_introspection_c.h
+[8.193s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_task_space__rosidl_typesupport_introspection_c.h
+[8.207s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_test_monitor__rosidl_typesupport_introspection_c.h
+[8.220s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.228s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_introspection_c.h
+[8.241s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_generator__rosidl_typesupport_introspection_c.h
+[8.253s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_introspection_c.h
+[8.260s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h
+[8.274s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/cocoa_control_ref.hpp
+[8.282s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/cocoa_joint_space.hpp
+[8.290s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/cocoa_task_space.hpp
+[8.297s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/cocoa_test_monitor.hpp
+[8.311s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__builder.hpp
+[8.326s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.hpp
+[8.338s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__traits.hpp
+[8.348s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_joint_space__builder.hpp
+[8.356s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_joint_space__struct.hpp
+[8.366s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_joint_space__traits.hpp
+[8.380s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_task_space__builder.hpp
+[8.387s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_task_space__struct.hpp
+[8.396s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_task_space__traits.hpp
+[8.403s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_test_monitor__builder.hpp
+[8.410s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_test_monitor__struct.hpp
+[8.418s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_test_monitor__traits.hpp
+[8.426s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_x_enable.hpp
+[8.437s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_x_generator.hpp
+[8.445s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_xfk.hpp
+[8.452s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_xik.hpp
+[8.459s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__builder.hpp
+[8.468s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.hpp
+[8.481s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__traits.hpp
+[8.493s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_generator__builder.hpp
+[8.500s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_generator__struct.hpp
+[8.507s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_generator__traits.hpp
+[8.515s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__builder.hpp
+[8.522s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__struct.hpp
+[8.529s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__traits.hpp
+[8.536s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__builder.hpp
+[8.544s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__struct.hpp
+[8.551s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__traits.hpp
+[8.560s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_introspection_cpp.hpp
+[8.568s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_joint_space__rosidl_typesupport_introspection_cpp.hpp
+[8.575s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_task_space__rosidl_typesupport_introspection_cpp.hpp
+[8.583s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_test_monitor__rosidl_typesupport_introspection_cpp.hpp
+[8.590s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_introspection_cpp.hpp
+[8.597s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_generator__rosidl_typesupport_introspection_cpp.hpp
+[8.605s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_introspection_cpp.hpp
+[8.612s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_cpp.hpp
+[8.620s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/pythonpath.sh
+[8.628s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/pythonpath.dsv
+[8.636s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/__init__.py
+[8.644s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/srv/__init__.py
+[8.652s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/srv/_cocoa_x_enable.py
+[8.659s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/srv/_cocoa_x_generator.py
+[8.667s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/srv/_cocoa_xfk.py
+[8.674s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/srv/_cocoa_xik.py
+[8.682s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/msg/__init__.py
+[8.690s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/msg/_cocoa_control_ref.py
+[8.698s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/msg/_cocoa_joint_space.py
+[8.705s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/msg/_cocoa_task_space.py
+[8.712s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/msg/_cocoa_test_monitor.py
+[8.724s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/cocoax_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[8.738s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/cocoax_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[8.746s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/cocoax_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[8.761s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__python.so
+[8.774s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXIK.idl
+[8.788s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXFK.idl
+[8.796s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXEnable.idl
+[8.804s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXGenerator.idl
+[8.819s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/msg/CocoaControlRef.idl
+[8.826s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/msg/CocoaJointSpace.idl
+[8.834s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/msg/CocoaTaskSpace.idl
+[8.842s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/msg/CocoaTestMonitor.idl
+[8.850s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXIK.srv
+[8.857s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXIK_Request.msg
+[8.865s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXIK_Response.msg
+[8.873s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXFK.srv
+[8.880s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXFK_Request.msg
+[8.889s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXFK_Response.msg
+[8.901s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXEnable.srv
+[8.909s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXEnable_Request.msg
+[8.916s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXEnable_Response.msg
+[8.924s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXGenerator.srv
+[8.931s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXGenerator_Request.msg
+[8.945s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXGenerator_Response.msg
+[8.960s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/msg/CocoaControlRef.msg
+[8.967s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/msg/CocoaJointSpace.msg
+[8.974s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/msg/CocoaTaskSpace.msg
+[8.982s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/msg/CocoaTestMonitor.msg
+[8.989s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/ament_index/resource_index/package_run_dependencies/cocoax_interfaces
+[8.997s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/ament_index/resource_index/parent_prefix_path/cocoax_interfaces
+[9.005s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/ament_prefix_path.sh
+[9.012s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/ament_prefix_path.dsv
+[9.024s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/path.sh
+[9.037s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/path.dsv
+[9.044s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/local_setup.bash
+[9.053s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/local_setup.sh
+[9.066s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/local_setup.zsh
+[9.073s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/local_setup.dsv
+[9.085s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/package.dsv
+[9.100s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/ament_index/resource_index/packages/cocoax_interfaces
+[9.108s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/rosidl_cmake-extras.cmake
+[9.122s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.129s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[9.144s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[9.153s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.168s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.182s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.195s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfacesConfig.cmake
+[9.202s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfacesConfig-version.cmake
+[9.210s] -- Symlinking: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/package.xml
+[9.222s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_generator_c.so
+[9.222s] -- Set runtime path of "/home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_generator_c.so" to ""
+[9.223s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_introspection_c.so
+[9.224s] -- Set runtime path of "/home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[9.224s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_c.so
+[9.224s] -- Set runtime path of "/home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_c.so" to ""
+[9.225s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_introspection_cpp.so
+[9.226s] -- Set runtime path of "/home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[9.226s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_cpp.so
+[9.227s] -- Set runtime path of "/home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_cpp.so" to ""
+[9.253s] Compiling '/home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/__init__.py'...
+[9.256s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_generator_cExport.cmake
+[9.256s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_generator_cExport-noconfig.cmake
+[9.256s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[9.257s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.257s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_cExport.cmake
+[9.257s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[9.257s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_generator_cppExport.cmake
+[9.258s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[9.258s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.258s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_cppExport.cmake
+[9.258s] -- Installing: /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/cmake/cocoax_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[9.268s] Invoked command in '/home/azthorax/fra333_ws/build/cocoax_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/azthorax/fra333_ws/build/cocoax_interfaces

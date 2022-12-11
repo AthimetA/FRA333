@@ -66,7 +66,9 @@ CMakeFiles/cocoax_interfaces: /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/coc
 CMakeFiles/cocoax_interfaces: rosidl_cmake/srv/CocoaXGenerator_Request.msg
 CMakeFiles/cocoax_interfaces: rosidl_cmake/srv/CocoaXGenerator_Response.msg
 CMakeFiles/cocoax_interfaces: /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/msg/CocoaControlRef.msg
-CMakeFiles/cocoax_interfaces: /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/msg/CocoaPositionProximity.msg
+CMakeFiles/cocoax_interfaces: /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/msg/CocoaJointSpace.msg
+CMakeFiles/cocoax_interfaces: /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/msg/CocoaTaskSpace.msg
+CMakeFiles/cocoax_interfaces: /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces/msg/CocoaTestMonitor.msg
 CMakeFiles/cocoax_interfaces: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/cocoax_interfaces: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/cocoax_interfaces: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl

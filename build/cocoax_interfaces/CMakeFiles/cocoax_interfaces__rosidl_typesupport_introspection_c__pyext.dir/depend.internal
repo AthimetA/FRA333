@@ -104,9 +104,15 @@ CMakeFiles/cocoax_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosi
  rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.h
  rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h
  rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.h
- rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.h
- rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__struct.h
- rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__type_support.h
+ rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_joint_space__functions.h
+ rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_joint_space__struct.h
+ rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_joint_space__type_support.h
+ rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_task_space__functions.h
+ rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_task_space__struct.h
+ rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_task_space__type_support.h
+ rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test_monitor__functions.h
+ rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test_monitor__struct.h
+ rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_test_monitor__type_support.h
  rosidl_generator_c/cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
  rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.h
  rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__struct.h

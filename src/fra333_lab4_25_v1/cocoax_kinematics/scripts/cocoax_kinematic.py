@@ -7,7 +7,7 @@ from rclpy.qos import QoSProfile
 from sensor_msgs.msg import JointState
 import numpy as np
 
-from cocoax_interfaces.msg import CocoaControlRef
+from cocoax_interfaces.msg import CocoaControlRef, CocoaTaskSpace, CocoaJointSpace
 
 np.set_printoptions(precision=4, suppress=True)
 
@@ -27,7 +27,7 @@ class CocoaVKinematic(Node):
         self.get_logger().info( 'Type: '+str(self.knimatic_type))
         
         # define publisher rate
-        self.rate = 1000
+        self.rate = 100
         qos_profile = QoSProfile(depth=10)
         # Cocoa link length in meter
         self.link_length = [0.1360,0.26179,0.200]
@@ -36,69 +36,71 @@ class CocoaVKinematic(Node):
         # Create a timer to update the robot state
         self.timer = self.create_timer(1/self.rate, self.timer_callback)
         
-        # Kinematic Buffer
-        self.joint_state_sub_buffer = JointState()
-        self.joint_state_pub_buffer = CocoaControlRef()
-        
         if self.knimatic_type == 'forward':
             # Create a subscriber to get joint state
-            self.states_subscriber = self.create_subscription(JointState,'/joint_states',self.joint_state_callback,qos_profile)
+            self.states_subscriber = self.create_subscription(JointState,
+                                                              '/joint_states',
+                                                              self.subscriber_callback,
+                                                              qos_profile)
             # Create a publisher to publish end-effector pose
-            self.states_publisher = self.create_publisher(CocoaControlRef, "/cocoax/cocoax_proximity_endeff_position", qos_profile)
+            self.states_publisher = self.create_publisher(CocoaTaskSpace,
+                                                          "/cocoax/cocoax_proximity_endeff_position",
+                                                          qos_profile)
+            # Create a buffer to store joint state
+            self.sub_buffer = JointState()
+            # Create a buffer to store CocoaTaskSpace
+            self.pub_buffer = CocoaTaskSpace()
+            
         elif self.knimatic_type == 'inverse':
             # Create a subscriber to get end-effector pose
-            self.states_subscriber = self.create_subscription(JointState,'/cocoax/end_effector_joint_states',self.joint_state_callback,qos_profile)
+            self.states_subscriber = self.create_subscription(CocoaTaskSpace,
+                                                              '/cocoax/end_effector_position_velocity_ref',
+                                                              self.subscriber_callback,
+                                                              qos_profile)
             # Create a publisher to publish joint state
-            self.states_publisher = self.create_publisher(CocoaControlRef, "/cocoax/cocoax_control_ref", qos_profile)
+            self.states_publisher = self.create_publisher(CocoaControlRef,
+                                                          "/cocoax/cocoax_control_ref",
+                                                          qos_profile)
+            # Create a buffer to store CocoaTaskSpace
+            self.sub_buffer = CocoaTaskSpace()
+            # Create a buffer to store CocoaControlRef
+            self.pub_buffer = CocoaControlRef()
         
-        '''
-        # Test procedure
-        #############################################################################
-        self.test_config = [1.0,0.1,1.0] # [q1,q2,q3]
-        R, P, R0_e, P0_e = self.cocoax_forward_position_kinematic(self.test_config) 
-        self.test_pos = P0_e
-        self.test_vel = [0.1,0.2,0.1]
-        
-        # Test IVK
-        q, qdot = self.cocoax_inverse_velocity_kinematic(X=self.test_pos,X_dot=self.test_vel)
-        print('q: \n', q)
-        print('qdot: \n', qdot)
-        
-        # Test FVK
-        X_dot = self.cocoax_forward_velocity_kinematic(q=q,q_dot=qdot)
-        print('X_dot: \n', X_dot)
-        #############################################################################
-        '''
-        
-    def joint_state_callback(self, msg: JointState):
-        self.joint_state_sub_buffer = msg
+    def subscriber_callback(self, msg):
+        self.sub_buffer = msg
     
     def timer_callback(self):
+        
         if self.knimatic_type == 'forward':
-            q = self.joint_state_sub_buffer.position.tolist()
-            q_dot = self.joint_state_sub_buffer.velocity.tolist()
+            # Subscribe joint state Type: JointState
+            q = self.sub_buffer.position.tolist()
+            q_dot = self.sub_buffer.velocity.tolist()
             if q!=[] and q_dot!=[]:
                 R, P, R0_e, P0_e = self.cocoax_forward_position_kinematic(q)
                 X_dot = self.cocoax_forward_velocity_kinematic(q=q,q_dot=q_dot)
                 # Publish end-effector pose
-                self.joint_state_pub_buffer = CocoaControlRef()
-                self.joint_state_pub_buffer.reference_position = P0_e.tolist()
-                self.joint_state_pub_buffer.reference_velocity = X_dot
-                self.states_publisher.publish(self.joint_state_pub_buffer)
+                self.pub_buffer = CocoaTaskSpace()
+                self.pub_buffer.position = P0_e.tolist()
+                self.pub_buffer.velocity = X_dot
+                self.states_publisher.publish(self.pub_buffer)
+                
         elif self.knimatic_type == 'inverse':
-            X = self.joint_state_sub_buffer.position.tolist()
-            X_dot = self.joint_state_sub_buffer.velocity.tolist()
+            # Subscribe end-effector pose Type: CocoaTaskSpace
+            X = self.sub_buffer.position
+            X_dot = self.sub_buffer.velocity
             if X!=[] and X_dot!=[]:
                 q, q_dot = self.cocoax_inverse_velocity_kinematic(X=X,X_dot=X_dot)
                 # Publish joint state
                 if q!=[] and q_dot!=[]:
-                    self.joint_state_pub_buffer = CocoaControlRef()
-                    self.joint_state_pub_buffer.reference_position = q
-                    self.joint_state_pub_buffer.reference_velocity = q_dot
-                    self.states_publisher.publish(self.joint_state_pub_buffer)
+                    self.pub_buffer = CocoaControlRef()
+                    self.pub_buffer.reference_joint_position = q
+                    self.pub_buffer.reference_joint_velocity = q_dot
+                    self.states_publisher.publish(self.pub_buffer)
                 else:
-                    self.states_publisher.publish(self.joint_state_pub_buffer)
-                    # self.get_logger().info('Inverse Velocity Kinematic is not possible')
+                    # self.get_logger().info('Inverse Kinematic is not possible')
+                    # self.get_logger().info('for Position: \n'+str(X))
+                    # self.get_logger().info('and Velocity: \n'+str(X_dot))
+                    self.states_publisher.publish(self.pub_buffer)
         
     def cocoax_inverse_velocity_kinematic(self, X=[0.0,0.0,0.0], X_dot=[0.0,0.0,0.0]):
         # Get Joint position configuration

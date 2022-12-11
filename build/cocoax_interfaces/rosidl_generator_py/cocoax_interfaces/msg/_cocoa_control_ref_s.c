@@ -53,8 +53,8 @@ bool cocoax_interfaces__msg__cocoa_control_ref__convert_from_py(PyObject * _pyms
     assert(strncmp("cocoax_interfaces.msg._cocoa_control_ref.CocoaControlRef", full_classname_dest, 56) == 0);
   }
   cocoax_interfaces__msg__CocoaControlRef * ros_message = _ros_message;
-  {  // reference_position
-    PyObject * field = PyObject_GetAttrString(_pymsg, "reference_position");
+  {  // reference_joint_position
+    PyObject * field = PyObject_GetAttrString(_pymsg, "reference_joint_position");
     if (!field) {
       return false;
     }
@@ -68,7 +68,7 @@ bool cocoax_interfaces__msg__cocoa_control_ref__convert_from_py(PyObject * _pyms
       assert(PyArray_NDIM(seq_field) == 1);
       assert(PyArray_TYPE(seq_field) == NPY_FLOAT64);
       Py_ssize_t size = 3;
-      double * dest = ros_message->reference_position;
+      double * dest = ros_message->reference_joint_position;
       for (Py_ssize_t i = 0; i < size; ++i) {
         double tmp = *(npy_float64 *)PyArray_GETPTR1(seq_field, i);
         memcpy(&dest[i], &tmp, sizeof(double));
@@ -77,8 +77,8 @@ bool cocoax_interfaces__msg__cocoa_control_ref__convert_from_py(PyObject * _pyms
     }
     Py_DECREF(field);
   }
-  {  // reference_velocity
-    PyObject * field = PyObject_GetAttrString(_pymsg, "reference_velocity");
+  {  // reference_joint_velocity
+    PyObject * field = PyObject_GetAttrString(_pymsg, "reference_joint_velocity");
     if (!field) {
       return false;
     }
@@ -92,7 +92,7 @@ bool cocoax_interfaces__msg__cocoa_control_ref__convert_from_py(PyObject * _pyms
       assert(PyArray_NDIM(seq_field) == 1);
       assert(PyArray_TYPE(seq_field) == NPY_FLOAT64);
       Py_ssize_t size = 3;
-      double * dest = ros_message->reference_velocity;
+      double * dest = ros_message->reference_joint_velocity;
       for (Py_ssize_t i = 0; i < size; ++i) {
         double tmp = *(npy_float64 *)PyArray_GETPTR1(seq_field, i);
         memcpy(&dest[i], &tmp, sizeof(double));
@@ -123,9 +123,9 @@ PyObject * cocoax_interfaces__msg__cocoa_control_ref__convert_to_py(void * raw_r
     }
   }
   cocoax_interfaces__msg__CocoaControlRef * ros_message = (cocoax_interfaces__msg__CocoaControlRef *)raw_ros_message;
-  {  // reference_position
+  {  // reference_joint_position
     PyObject * field = NULL;
-    field = PyObject_GetAttrString(_pymessage, "reference_position");
+    field = PyObject_GetAttrString(_pymessage, "reference_joint_position");
     if (!field) {
       return NULL;
     }
@@ -137,13 +137,13 @@ PyObject * cocoax_interfaces__msg__cocoa_control_ref__convert_to_py(void * raw_r
     assert(PyArray_TYPE(seq_field) == NPY_FLOAT64);
     assert(sizeof(npy_float64) == sizeof(double));
     npy_float64 * dst = (npy_float64 *)PyArray_GETPTR1(seq_field, 0);
-    double * src = &(ros_message->reference_position[0]);
+    double * src = &(ros_message->reference_joint_position[0]);
     memcpy(dst, src, 3 * sizeof(double));
     Py_DECREF(field);
   }
-  {  // reference_velocity
+  {  // reference_joint_velocity
     PyObject * field = NULL;
-    field = PyObject_GetAttrString(_pymessage, "reference_velocity");
+    field = PyObject_GetAttrString(_pymessage, "reference_joint_velocity");
     if (!field) {
       return NULL;
     }
@@ -155,7 +155,7 @@ PyObject * cocoax_interfaces__msg__cocoa_control_ref__convert_to_py(void * raw_r
     assert(PyArray_TYPE(seq_field) == NPY_FLOAT64);
     assert(sizeof(npy_float64) == sizeof(double));
     npy_float64 * dst = (npy_float64 *)PyArray_GETPTR1(seq_field, 0);
-    double * src = &(ros_message->reference_velocity[0]);
+    double * src = &(ros_message->reference_joint_velocity[0]);
     memcpy(dst, src, 3 * sizeof(double));
     Py_DECREF(field);
   }

@@ -32,13 +32,13 @@ cdr_serialize(
   const cocoax_interfaces::msg::CocoaControlRef & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: reference_position
+  // Member: reference_joint_position
   {
-    cdr << ros_message.reference_position;
+    cdr << ros_message.reference_joint_position;
   }
-  // Member: reference_velocity
+  // Member: reference_joint_velocity
   {
-    cdr << ros_message.reference_velocity;
+    cdr << ros_message.reference_joint_velocity;
   }
   return true;
 }
@@ -49,14 +49,14 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   cocoax_interfaces::msg::CocoaControlRef & ros_message)
 {
-  // Member: reference_position
+  // Member: reference_joint_position
   {
-    cdr >> ros_message.reference_position;
+    cdr >> ros_message.reference_joint_position;
   }
 
-  // Member: reference_velocity
+  // Member: reference_joint_velocity
   {
-    cdr >> ros_message.reference_velocity;
+    cdr >> ros_message.reference_joint_velocity;
   }
 
   return true;
@@ -75,17 +75,17 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: reference_position
+  // Member: reference_joint_position
   {
     size_t array_size = 3;
-    size_t item_size = sizeof(ros_message.reference_position[0]);
+    size_t item_size = sizeof(ros_message.reference_joint_position[0]);
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: reference_velocity
+  // Member: reference_joint_velocity
   {
     size_t array_size = 3;
-    size_t item_size = sizeof(ros_message.reference_velocity[0]);
+    size_t item_size = sizeof(ros_message.reference_joint_velocity[0]);
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -108,7 +108,7 @@ max_serialized_size_CocoaControlRef(
   (void)full_bounded;
 
 
-  // Member: reference_position
+  // Member: reference_joint_position
   {
     size_t array_size = 3;
 
@@ -116,7 +116,7 @@ max_serialized_size_CocoaControlRef(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Member: reference_velocity
+  // Member: reference_joint_velocity
   {
     size_t array_size = 3;
 

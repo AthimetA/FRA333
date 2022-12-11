@@ -15,8 +15,8 @@ CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/
  /opt/ros/foxy/include/rosidl_typesupport_cpp/visibility_control.h
  /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
  rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.hpp
-CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_position_proximity__type_support.cpp.o
- /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_position_proximity__type_support.cpp
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_joint_space__type_support.cpp.o
+ /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_joint_space__type_support.cpp
  /opt/ros/foxy/include/rosidl_runtime_c/message_initialization.h
  /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
  /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
@@ -28,7 +28,35 @@ CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/
  /opt/ros/foxy/include/rosidl_typesupport_cpp/message_type_support_dispatch.hpp
  /opt/ros/foxy/include/rosidl_typesupport_cpp/visibility_control.h
  /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
- rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_position_proximity__struct.hpp
+ rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_joint_space__struct.hpp
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_task_space__type_support.cpp.o
+ /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_task_space__type_support.cpp
+ /opt/ros/foxy/include/rosidl_runtime_c/message_initialization.h
+ /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
+ /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
+ /opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp
+ /opt/ros/foxy/include/rosidl_runtime_cpp/message_initialization.hpp
+ /opt/ros/foxy/include/rosidl_typesupport_c/type_support_map.h
+ /opt/ros/foxy/include/rosidl_typesupport_cpp/identifier.hpp
+ /opt/ros/foxy/include/rosidl_typesupport_cpp/message_type_support.hpp
+ /opt/ros/foxy/include/rosidl_typesupport_cpp/message_type_support_dispatch.hpp
+ /opt/ros/foxy/include/rosidl_typesupport_cpp/visibility_control.h
+ /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
+ rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_task_space__struct.hpp
+CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test_monitor__type_support.cpp.o
+ /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_cpp/cocoax_interfaces/msg/cocoa_test_monitor__type_support.cpp
+ /opt/ros/foxy/include/rosidl_runtime_c/message_initialization.h
+ /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
+ /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
+ /opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp
+ /opt/ros/foxy/include/rosidl_runtime_cpp/message_initialization.hpp
+ /opt/ros/foxy/include/rosidl_typesupport_c/type_support_map.h
+ /opt/ros/foxy/include/rosidl_typesupport_cpp/identifier.hpp
+ /opt/ros/foxy/include/rosidl_typesupport_cpp/message_type_support.hpp
+ /opt/ros/foxy/include/rosidl_typesupport_cpp/message_type_support_dispatch.hpp
+ /opt/ros/foxy/include/rosidl_typesupport_cpp/visibility_control.h
+ /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
+ rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_test_monitor__struct.hpp
 CMakeFiles/cocoax_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.o
  /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_cpp/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp
  /opt/ros/foxy/include/rosidl_runtime_c/message_initialization.h
