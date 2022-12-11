@@ -20,15 +20,15 @@ namespace srv
 namespace builder
 {
 
-class Init_CocoaXEnable_Request_setenable
+class Init_CocoaXEnable_Request_enable
 {
 public:
-  Init_CocoaXEnable_Request_setenable()
+  Init_CocoaXEnable_Request_enable()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::cocoax_interfaces::srv::CocoaXEnable_Request setenable(::cocoax_interfaces::srv::CocoaXEnable_Request::_setenable_type arg)
+  ::cocoax_interfaces::srv::CocoaXEnable_Request enable(::cocoax_interfaces::srv::CocoaXEnable_Request::_enable_type arg)
   {
-    msg_.setenable = std::move(arg);
+    msg_.enable = std::move(arg);
     return std::move(msg_);
   }
 
@@ -47,7 +47,7 @@ template<>
 inline
 auto build<::cocoax_interfaces::srv::CocoaXEnable_Request>()
 {
-  return cocoax_interfaces::srv::builder::Init_CocoaXEnable_Request_setenable();
+  return cocoax_interfaces::srv::builder::Init_CocoaXEnable_Request_enable();
 }
 
 }  // namespace cocoax_interfaces
@@ -62,15 +62,15 @@ namespace srv
 namespace builder
 {
 
-class Init_CocoaXEnable_Response_trackerstatus
+class Init_CocoaXEnable_Response_status
 {
 public:
-  Init_CocoaXEnable_Response_trackerstatus()
+  Init_CocoaXEnable_Response_status()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::cocoax_interfaces::srv::CocoaXEnable_Response trackerstatus(::cocoax_interfaces::srv::CocoaXEnable_Response::_trackerstatus_type arg)
+  ::cocoax_interfaces::srv::CocoaXEnable_Response status(::cocoax_interfaces::srv::CocoaXEnable_Response::_status_type arg)
   {
-    msg_.trackerstatus = std::move(arg);
+    msg_.status = std::move(arg);
     return std::move(msg_);
   }
 
@@ -89,7 +89,7 @@ template<>
 inline
 auto build<::cocoax_interfaces::srv::CocoaXEnable_Response>()
 {
-  return cocoax_interfaces::srv::builder::Init_CocoaXEnable_Response_trackerstatus();
+  return cocoax_interfaces::srv::builder::Init_CocoaXEnable_Response_status();
 }
 
 }  // namespace cocoax_interfaces

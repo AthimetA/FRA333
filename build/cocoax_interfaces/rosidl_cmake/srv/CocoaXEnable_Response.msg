@@ -1,2 +1,2 @@
 
-string trackerstatus
+string status

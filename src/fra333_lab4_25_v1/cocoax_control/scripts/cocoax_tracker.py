@@ -49,17 +49,25 @@ class CocoaTracker(Node):
         
         # Subscribers
         self.joint_state_buffer = JointState()
-        self.joint_state_subscriber = self.create_subscription(JointState, '/joint_states', self.joint_state_callback, qos_profile)
+        self.joint_state_subscriber = self.create_subscription(JointState,
+                                                               '/joint_states', self.joint_state_callback,
+                                                               qos_profile)
         
         self.command_ref_buffer = CocoaControlRef()
-        self.command_ref_subscriber = self.create_subscription(CocoaControlRef, '/cocoax/cocoax_control_ref', self.command_ref_callback, qos_profile)
+        self.command_ref_subscriber = self.create_subscription(CocoaControlRef,
+                                                               '/cocoax/cocoax_control_ref',
+                                                               self.command_ref_callback, qos_profile)
         
         # Publishers
         self.velocity_controller_buffer = Float64MultiArray()
-        self.velocity_controller_pub = self.create_publisher(Float64MultiArray, '/cocoax_joint_group_VelocityController/commands', qos_profile)
+        self.velocity_controller_pub = self.create_publisher(Float64MultiArray,
+                                                             '/cocoax_joint_group_VelocityController/commands',
+                                                             qos_profile)
         
         # Services Server
-        self.enable_service = self.create_service(CocoaXEnable, '/cocoax/enable', self.enable_tracker_callback)
+        self.enable_service = self.create_service(CocoaXEnable,
+                                                  '/cocoax/tracker_enable',
+                                                  self.enable_tracker_callback)
         
         # Timer
         self.tracker_timer = self.create_timer(self.time_rate, self.tracker_timer_callback)
@@ -113,16 +121,16 @@ class CocoaTracker(Node):
         return pid_output
     
     def enable_tracker_callback(self, request: CocoaXEnable.Request, response:CocoaXEnable.Response):
-        if request.setenable:
-            response.trackerstatus = "Status : Enabled"
+        if request.enable:
+            response.status = "Status : Enabled"
             self.node_enable_status = True
         else:
-            response.trackerstatus = "Status : Disabled"
+            response.status = "Status : Disabled"
             self.node_enable_status = False
             # Once it is disabled, the node should publish a message that corresponds to "stop" to"[controller_name]/commands" topic only once.
             self.velocity_controller_buffer.data = [0.0,0.0,0.0]
             self.velocity_controller_pub.publish(self.velocity_controller_buffer)
-        self.get_logger().info(response.trackerstatus)
+        self.get_logger().info(response.status)
         return response
     
     def command_ref_callback(self, msg:CocoaControlRef):
@@ -137,12 +145,12 @@ class CocoaTracker(Node):
             # self.get_logger().info('Command received')
             # self.get_logger().info(str(self.command_ref_buffer.reference_position))
             # self.get_logger().info(str(self.command_ref_buffer.reference_velocity))
-            # pidvel = self.pid_controller_with_feedforward_velocity(self.command_ref_buffer.reference_position,
-            #                                                        self.joint_state_buffer.position,
-            #                                                        self.command_ref_buffer.reference_velocity)
-            pidvel = self.pid_controller_with_feedforward_velocity([0.1296, 0.0263, 0.4705],
-                                                                self.joint_state_buffer.position,
-                                                                [0.0,0.0,0.0])
+            pidvel = self.pid_controller_with_feedforward_velocity(self.command_ref_buffer.reference_position,
+                                                                   self.joint_state_buffer.position,
+                                                                   self.command_ref_buffer.reference_velocity)
+            # pidvel = self.pid_controller_with_feedforward_velocity([0.1296, 0.0263, 0.4705],
+            #                                                     self.joint_state_buffer.position,
+            #                                                     [0.0,0.0,0.0])
             # self.get_logger().info(f'pidvelX: {pidvel}')
             self.velocity_controller_buffer.data = pidvel
             self.velocity_controller_pub.publish(self.velocity_controller_buffer)

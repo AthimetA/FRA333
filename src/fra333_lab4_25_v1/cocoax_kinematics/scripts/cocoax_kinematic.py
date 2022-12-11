@@ -44,7 +44,7 @@ class CocoaVKinematic(Node):
             # Create a subscriber to get joint state
             self.states_subscriber = self.create_subscription(JointState,'/joint_states',self.joint_state_callback,qos_profile)
             # Create a publisher to publish end-effector pose
-            self.states_publisher = self.create_publisher(CocoaControlRef, "/cocoax/end_effector_joint_states", qos_profile)
+            self.states_publisher = self.create_publisher(CocoaControlRef, "/cocoax/cocoax_proximity_endeff_position", qos_profile)
         elif self.knimatic_type == 'inverse':
             # Create a subscriber to get end-effector pose
             self.states_subscriber = self.create_subscription(JointState,'/cocoax/end_effector_joint_states',self.joint_state_callback,qos_profile)

@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/cocoax_interfaces/msg/__init__.py"
   "../rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref.py"
   "../rosidl_generator_py/cocoax_interfaces/msg/_cocoa_control_ref_s.c"
+  "../rosidl_generator_py/cocoax_interfaces/msg/_cocoa_position_proximity.py"
+  "../rosidl_generator_py/cocoax_interfaces/msg/_cocoa_position_proximity_s.c"
   "../rosidl_generator_py/cocoax_interfaces/srv/__init__.py"
   "../rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable.py"
   "../rosidl_generator_py/cocoax_interfaces/srv/_cocoa_x_enable_s.c"

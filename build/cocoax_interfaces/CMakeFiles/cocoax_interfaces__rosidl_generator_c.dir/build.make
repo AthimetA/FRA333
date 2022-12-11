@@ -75,6 +75,7 @@ rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h: rosidl_adapter/cocoax_inte
 rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h: rosidl_adapter/cocoax_interfaces/srv/CocoaXEnable.idl
 rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h: rosidl_adapter/cocoax_interfaces/srv/CocoaXGenerator.idl
 rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h: rosidl_adapter/cocoax_interfaces/msg/CocoaControlRef.idl
+rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h: rosidl_adapter/cocoax_interfaces/msg/CocoaPositionProximity.idl
 rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -224,6 +225,18 @@ rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h: ros
 rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.h: rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.h
 
+rosidl_generator_c/cocoax_interfaces/msg/cocoa_position_proximity.h: rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoax_interfaces/msg/cocoa_position_proximity.h
+
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.h: rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.h
+
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__struct.h: rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__struct.h
+
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__type_support.h: rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__type_support.h
+
 rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xik__functions.c: rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xik__functions.c
 
@@ -238,6 +251,9 @@ rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_generator__functions.c: 
 
 rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c: rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c
+
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c: rosidl_generator_c/cocoax_interfaces/srv/cocoa_xik.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c
 
 CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xik__functions.c.o: CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xik__functions.c.o: rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xik__functions.c
@@ -304,13 +320,27 @@ CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_i
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c -o CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.s
 
+CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c.o: CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c.o: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c.o   -c /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c
+
+CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c > CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c.i
+
+CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c -o CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c.s
+
 # Object files for target cocoax_interfaces__rosidl_generator_c
 cocoax_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xik__functions.c.o" \
 "CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xfk__functions.c.o" \
 "CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.o" \
 "CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_generator__functions.c.o" \
-"CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.o"
+"CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.o" \
+"CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c.o"
 
 # External object files for target cocoax_interfaces__rosidl_generator_c
 cocoax_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -320,6 +350,7 @@ libcocoax_interfaces__rosidl_generator_c.so: CMakeFiles/cocoax_interfaces__rosid
 libcocoax_interfaces__rosidl_generator_c.so: CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c.o
 libcocoax_interfaces__rosidl_generator_c.so: CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_generator__functions.c.o
 libcocoax_interfaces__rosidl_generator_c.so: CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c.o
+libcocoax_interfaces__rosidl_generator_c.so: CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c.o
 libcocoax_interfaces__rosidl_generator_c.so: CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/build.make
 libcocoax_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 libcocoax_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
@@ -349,7 +380,7 @@ libcocoax_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_runtime
 libcocoax_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librcpputils.so
 libcocoax_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librcutils.so
 libcocoax_interfaces__rosidl_generator_c.so: CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library libcocoax_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C shared library libcocoax_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -381,11 +412,16 @@ CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/
 CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.h
 CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h
 CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.h
+CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoax_interfaces/msg/cocoa_position_proximity.h
+CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.h
+CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__struct.h
+CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__type_support.h
 CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xik__functions.c
 CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_xfk__functions.c
 CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c
 CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_generator__functions.c
 CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.c
+CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c
 	cd /home/azthorax/fra333_ws/build/cocoax_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces /home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_interfaces /home/azthorax/fra333_ws/build/cocoax_interfaces /home/azthorax/fra333_ws/build/cocoax_interfaces /home/azthorax/fra333_ws/build/cocoax_interfaces/CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cocoax_interfaces__rosidl_generator_c.dir/depend
 

@@ -1,8 +1,12 @@
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/ament_index/resource_index/rosidl_interfaces/cocoax_interfaces
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/cocoa_control_ref.h
+/home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/cocoa_position_proximity.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__functions.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__type_support.h
+/home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.h
+/home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_position_proximity__struct.h
+/home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_position_proximity__type_support.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_x_enable.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_x_generator.h
@@ -23,6 +27,7 @@
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/library_path.sh
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/library_path.dsv
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_fastrtps_c.h
+/home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_position_proximity__rosidl_typesupport_fastrtps_c.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_fastrtps_c.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_generator__rosidl_typesupport_fastrtps_c.h
@@ -30,6 +35,7 @@
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_c.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_fastrtps_c.so
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_fastrtps_cpp.hpp
+/home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_position_proximity__rosidl_typesupport_fastrtps_cpp.hpp
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_fastrtps_cpp.hpp
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_generator__rosidl_typesupport_fastrtps_cpp.hpp
@@ -37,15 +43,20 @@
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_fastrtps_cpp.hpp
 /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/libcocoax_interfaces__rosidl_typesupport_fastrtps_cpp.so
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_introspection_c.h
+/home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_position_proximity__rosidl_typesupport_introspection_c.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_introspection_c.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_generator__rosidl_typesupport_introspection_c.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_introspection_c.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__rosidl_typesupport_introspection_c.h
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/cocoa_control_ref.hpp
+/home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/cocoa_position_proximity.hpp
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__builder.hpp
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.hpp
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__traits.hpp
+/home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_position_proximity__builder.hpp
+/home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_position_proximity__struct.hpp
+/home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_position_proximity__traits.hpp
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_x_enable.hpp
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_x_generator.hpp
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/cocoa_xfk.hpp
@@ -63,6 +74,7 @@
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__struct.hpp
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xik__traits.hpp
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_control_ref__rosidl_typesupport_introspection_cpp.hpp
+/home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/msg/detail/cocoa_position_proximity__rosidl_typesupport_introspection_cpp.hpp
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_enable__rosidl_typesupport_introspection_cpp.hpp
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_x_generator__rosidl_typesupport_introspection_cpp.hpp
 /home/azthorax/fra333_ws/install/cocoax_interfaces/include/cocoax_interfaces/srv/detail/cocoa_xfk__rosidl_typesupport_introspection_cpp.hpp
@@ -77,6 +89,7 @@
 /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/srv/_cocoa_xik.py
 /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/msg/__init__.py
 /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/msg/_cocoa_control_ref.py
+/home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/msg/_cocoa_position_proximity.py
 /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/cocoax_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
 /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/cocoax_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
 /home/azthorax/fra333_ws/install/cocoax_interfaces/lib/python3.8/site-packages/cocoax_interfaces/cocoax_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
@@ -86,6 +99,7 @@
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXEnable.idl
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXGenerator.idl
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/msg/CocoaControlRef.idl
+/home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/msg/CocoaPositionProximity.idl
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXIK.srv
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXIK_Request.msg
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXIK_Response.msg
@@ -99,6 +113,7 @@
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXGenerator_Request.msg
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/srv/CocoaXGenerator_Response.msg
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/msg/CocoaControlRef.msg
+/home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/msg/CocoaPositionProximity.msg
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/ament_index/resource_index/package_run_dependencies/cocoax_interfaces
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/ament_index/resource_index/parent_prefix_path/cocoax_interfaces
 /home/azthorax/fra333_ws/install/cocoax_interfaces/share/cocoax_interfaces/environment/ament_prefix_path.sh

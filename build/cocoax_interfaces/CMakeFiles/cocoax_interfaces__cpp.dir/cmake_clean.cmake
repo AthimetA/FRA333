@@ -1,9 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cocoax_interfaces__cpp"
   "rosidl_generator_cpp/cocoax_interfaces/msg/cocoa_control_ref.hpp"
+  "rosidl_generator_cpp/cocoax_interfaces/msg/cocoa_position_proximity.hpp"
   "rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__builder.hpp"
   "rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.hpp"
   "rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_control_ref__traits.hpp"
+  "rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_position_proximity__builder.hpp"
+  "rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_position_proximity__struct.hpp"
+  "rosidl_generator_cpp/cocoax_interfaces/msg/detail/cocoa_position_proximity__traits.hpp"
   "rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_x_enable.hpp"
   "rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_x_generator.hpp"
   "rosidl_generator_cpp/cocoax_interfaces/srv/cocoa_xfk.hpp"

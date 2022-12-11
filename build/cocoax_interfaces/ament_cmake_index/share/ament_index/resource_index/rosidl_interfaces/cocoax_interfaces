@@ -1,5 +1,7 @@
 msg/CocoaControlRef.idl
 msg/CocoaControlRef.msg
+msg/CocoaPositionProximity.idl
+msg/CocoaPositionProximity.msg
 srv/CocoaXEnable.idl
 srv/CocoaXEnable.srv
 srv/CocoaXEnable_Request.msg

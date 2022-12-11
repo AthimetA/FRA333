@@ -20,7 +20,7 @@ extern "C"
 // Struct defined in srv/CocoaXEnable in the package cocoax_interfaces.
 typedef struct cocoax_interfaces__srv__CocoaXEnable_Request
 {
-  bool setenable;
+  bool enable;
 } cocoax_interfaces__srv__CocoaXEnable_Request;
 
 // Struct for a sequence of cocoax_interfaces__srv__CocoaXEnable_Request.
@@ -37,13 +37,13 @@ typedef struct cocoax_interfaces__srv__CocoaXEnable_Request__Sequence
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'trackerstatus'
+// Member 'status'
 #include "rosidl_runtime_c/string.h"
 
 // Struct defined in srv/CocoaXEnable in the package cocoax_interfaces.
 typedef struct cocoax_interfaces__srv__CocoaXEnable_Response
 {
-  rosidl_runtime_c__String trackerstatus;
+  rosidl_runtime_c__String status;
 } cocoax_interfaces__srv__CocoaXEnable_Response;
 
 // Struct for a sequence of cocoax_interfaces__srv__CocoaXEnable_Response.

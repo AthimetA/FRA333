@@ -26,6 +26,26 @@ rosidl_typesupport_c/visibility_control.h
 rosidl_typesupport_interface/macros.h
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/msg/rosidl_typesupport_interface/macros.h
 
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_position_proximity__type_support.cpp
+cstddef
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/msg/cstddef
+rosidl_runtime_c/message_type_support_struct.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/msg/rosidl_runtime_c/message_type_support_struct.h
+cocoax_interfaces/msg/rosidl_typesupport_c__visibility_control.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/msg/cocoax_interfaces/msg/rosidl_typesupport_c__visibility_control.h
+cocoax_interfaces/msg/detail/cocoa_position_proximity__struct.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/msg/cocoax_interfaces/msg/detail/cocoa_position_proximity__struct.h
+rosidl_typesupport_c/identifier.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/msg/rosidl_typesupport_c/identifier.h
+rosidl_typesupport_c/message_type_support_dispatch.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/msg/rosidl_typesupport_c/message_type_support_dispatch.h
+rosidl_typesupport_c/type_support_map.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/msg/rosidl_typesupport_c/type_support_map.h
+rosidl_typesupport_c/visibility_control.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/msg/rosidl_typesupport_c/visibility_control.h
+rosidl_typesupport_interface/macros.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/msg/rosidl_typesupport_interface/macros.h
+
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp
 cstddef
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_typesupport_c/cocoax_interfaces/srv/cstddef
@@ -217,6 +237,14 @@ rosidl_runtime_c/string.h
 /opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/string.h
 
 rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__struct.h
 stdbool.h
 -
 stddef.h

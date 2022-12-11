@@ -49,9 +49,9 @@ static bool _CocoaXEnable_Request__cdr_serialize(
     return false;
   }
   const _CocoaXEnable_Request__ros_msg_type * ros_message = static_cast<const _CocoaXEnable_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: setenable
+  // Field name: enable
   {
-    cdr << (ros_message->setenable ? true : false);
+    cdr << (ros_message->enable ? true : false);
   }
 
   return true;
@@ -66,11 +66,11 @@ static bool _CocoaXEnable_Request__cdr_deserialize(
     return false;
   }
   _CocoaXEnable_Request__ros_msg_type * ros_message = static_cast<_CocoaXEnable_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: setenable
+  // Field name: enable
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message->setenable = tmp ? true : false;
+    ros_message->enable = tmp ? true : false;
   }
 
   return true;
@@ -90,9 +90,9 @@ size_t get_serialized_size_cocoax_interfaces__srv__CocoaXEnable_Request(
   (void)padding;
   (void)wchar_size;
 
-  // field.name setenable
+  // field.name enable
   {
-    size_t item_size = sizeof(ros_message->setenable);
+    size_t item_size = sizeof(ros_message->enable);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -120,7 +120,7 @@ size_t max_serialized_size_cocoax_interfaces__srv__CocoaXEnable_Request(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: setenable
+  // member: enable
   {
     size_t array_size = 1;
 
@@ -201,8 +201,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // trackerstatus
-#include "rosidl_runtime_c/string_functions.h"  // trackerstatus
+#include "rosidl_runtime_c/string.h"  // status
+#include "rosidl_runtime_c/string_functions.h"  // status
 
 // forward declare type support functions
 
@@ -218,9 +218,9 @@ static bool _CocoaXEnable_Response__cdr_serialize(
     return false;
   }
   const _CocoaXEnable_Response__ros_msg_type * ros_message = static_cast<const _CocoaXEnable_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: trackerstatus
+  // Field name: status
   {
-    const rosidl_runtime_c__String * str = &ros_message->trackerstatus;
+    const rosidl_runtime_c__String * str = &ros_message->status;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -244,18 +244,18 @@ static bool _CocoaXEnable_Response__cdr_deserialize(
     return false;
   }
   _CocoaXEnable_Response__ros_msg_type * ros_message = static_cast<_CocoaXEnable_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: trackerstatus
+  // Field name: status
   {
     std::string tmp;
     cdr >> tmp;
-    if (!ros_message->trackerstatus.data) {
-      rosidl_runtime_c__String__init(&ros_message->trackerstatus);
+    if (!ros_message->status.data) {
+      rosidl_runtime_c__String__init(&ros_message->status);
     }
     bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->trackerstatus,
+      &ros_message->status,
       tmp.c_str());
     if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'trackerstatus'\n");
+      fprintf(stderr, "failed to assign string into field 'status'\n");
       return false;
     }
   }
@@ -277,10 +277,10 @@ size_t get_serialized_size_cocoax_interfaces__srv__CocoaXEnable_Response(
   (void)padding;
   (void)wchar_size;
 
-  // field.name trackerstatus
+  // field.name status
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->trackerstatus.size + 1);
+    (ros_message->status.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -305,7 +305,7 @@ size_t max_serialized_size_cocoax_interfaces__srv__CocoaXEnable_Response(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: trackerstatus
+  // member: status
   {
     size_t array_size = 1;
 

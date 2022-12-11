@@ -53,11 +53,11 @@ class CocoaXEnable_Request(metaclass=Metaclass_CocoaXEnable_Request):
     """Message class 'CocoaXEnable_Request'."""
 
     __slots__ = [
-        '_setenable',
+        '_enable',
     ]
 
     _fields_and_field_types = {
-        'setenable': 'boolean',
+        'enable': 'boolean',
     }
 
     SLOT_TYPES = (
@@ -68,7 +68,7 @@ class CocoaXEnable_Request(metaclass=Metaclass_CocoaXEnable_Request):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.setenable = kwargs.get('setenable', bool())
+        self.enable = kwargs.get('enable', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -99,7 +99,7 @@ class CocoaXEnable_Request(metaclass=Metaclass_CocoaXEnable_Request):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.setenable != other.setenable:
+        if self.enable != other.enable:
             return False
         return True
 
@@ -109,17 +109,17 @@ class CocoaXEnable_Request(metaclass=Metaclass_CocoaXEnable_Request):
         return copy(cls._fields_and_field_types)
 
     @property
-    def setenable(self):
-        """Message field 'setenable'."""
-        return self._setenable
+    def enable(self):
+        """Message field 'enable'."""
+        return self._enable
 
-    @setenable.setter
-    def setenable(self, value):
+    @enable.setter
+    def enable(self, value):
         if __debug__:
             assert \
                 isinstance(value, bool), \
-                "The 'setenable' field must be of type 'bool'"
-        self._setenable = value
+                "The 'enable' field must be of type 'bool'"
+        self._enable = value
 
 
 # Import statements for member types
@@ -173,11 +173,11 @@ class CocoaXEnable_Response(metaclass=Metaclass_CocoaXEnable_Response):
     """Message class 'CocoaXEnable_Response'."""
 
     __slots__ = [
-        '_trackerstatus',
+        '_status',
     ]
 
     _fields_and_field_types = {
-        'trackerstatus': 'string',
+        'status': 'string',
     }
 
     SLOT_TYPES = (
@@ -188,7 +188,7 @@ class CocoaXEnable_Response(metaclass=Metaclass_CocoaXEnable_Response):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.trackerstatus = kwargs.get('trackerstatus', str())
+        self.status = kwargs.get('status', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -219,7 +219,7 @@ class CocoaXEnable_Response(metaclass=Metaclass_CocoaXEnable_Response):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.trackerstatus != other.trackerstatus:
+        if self.status != other.status:
             return False
         return True
 
@@ -229,17 +229,17 @@ class CocoaXEnable_Response(metaclass=Metaclass_CocoaXEnable_Response):
         return copy(cls._fields_and_field_types)
 
     @property
-    def trackerstatus(self):
-        """Message field 'trackerstatus'."""
-        return self._trackerstatus
+    def status(self):
+        """Message field 'status'."""
+        return self._status
 
-    @trackerstatus.setter
-    def trackerstatus(self, value):
+    @status.setter
+    def status(self, value):
         if __debug__:
             assert \
                 isinstance(value, str), \
-                "The 'trackerstatus' field must be of type 'str'"
-        self._trackerstatus = value
+                "The 'status' field must be of type 'str'"
+        self._status = value
 
 
 class Metaclass_CocoaXEnable(type):

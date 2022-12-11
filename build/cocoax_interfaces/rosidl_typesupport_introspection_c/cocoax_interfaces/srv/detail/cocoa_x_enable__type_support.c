@@ -33,14 +33,14 @@ void CocoaXEnable_Request__rosidl_typesupport_introspection_c__CocoaXEnable_Requ
 
 static rosidl_typesupport_introspection_c__MessageMember CocoaXEnable_Request__rosidl_typesupport_introspection_c__CocoaXEnable_Request_message_member_array[1] = {
   {
-    "setenable",  // name
+    "enable",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(cocoax_interfaces__srv__CocoaXEnable_Request, setenable),  // bytes offset in struct
+    offsetof(cocoax_interfaces__srv__CocoaXEnable_Request, enable),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -99,7 +99,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 
 
 // Include directives for member types
-// Member `trackerstatus`
+// Member `status`
 #include "rosidl_runtime_c/string_functions.h"
 
 #ifdef __cplusplus
@@ -123,14 +123,14 @@ void CocoaXEnable_Response__rosidl_typesupport_introspection_c__CocoaXEnable_Res
 
 static rosidl_typesupport_introspection_c__MessageMember CocoaXEnable_Response__rosidl_typesupport_introspection_c__CocoaXEnable_Response_message_member_array[1] = {
   {
-    "trackerstatus",  // name
+    "status",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(cocoax_interfaces__srv__CocoaXEnable_Response, trackerstatus),  // bytes offset in struct
+    offsetof(cocoax_interfaces__srv__CocoaXEnable_Response, status),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

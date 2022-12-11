@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp.o"
+  "CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_position_proximity__type_support.cpp.o"
   "CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp.o"
   "CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_generator__type_support.cpp.o"
   "CMakeFiles/cocoax_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xfk__type_support.cpp.o"
@@ -7,6 +8,7 @@ file(REMOVE_RECURSE
   "libcocoax_interfaces__rosidl_typesupport_c.pdb"
   "libcocoax_interfaces__rosidl_typesupport_c.so"
   "rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_control_ref__type_support.cpp"
+  "rosidl_typesupport_c/cocoax_interfaces/msg/cocoa_position_proximity__type_support.cpp"
   "rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_enable__type_support.cpp"
   "rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_x_generator__type_support.cpp"
   "rosidl_typesupport_c/cocoax_interfaces/srv/cocoa_xfk__type_support.cpp"

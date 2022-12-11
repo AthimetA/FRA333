@@ -6,10 +6,10 @@
 module cocoax_interfaces {
   module srv {
     struct CocoaXEnable_Request {
-      boolean setenable;
+      boolean enable;
     };
     struct CocoaXEnable_Response {
-      string trackerstatus;
+      string status;
     };
   };
 };

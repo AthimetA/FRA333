@@ -16,7 +16,7 @@ cocoax_interfaces__srv__CocoaXEnable_Request__init(cocoax_interfaces__srv__Cocoa
   if (!msg) {
     return false;
   }
-  // setenable
+  // enable
   return true;
 }
 
@@ -26,7 +26,7 @@ cocoax_interfaces__srv__CocoaXEnable_Request__fini(cocoax_interfaces__srv__Cocoa
   if (!msg) {
     return;
   }
-  // setenable
+  // enable
 }
 
 bool
@@ -35,8 +35,8 @@ cocoax_interfaces__srv__CocoaXEnable_Request__are_equal(const cocoax_interfaces_
   if (!lhs || !rhs) {
     return false;
   }
-  // setenable
-  if (lhs->setenable != rhs->setenable) {
+  // enable
+  if (lhs->enable != rhs->enable) {
     return false;
   }
   return true;
@@ -50,8 +50,8 @@ cocoax_interfaces__srv__CocoaXEnable_Request__copy(
   if (!input || !output) {
     return false;
   }
-  // setenable
-  output->setenable = input->setenable;
+  // enable
+  output->enable = input->enable;
   return true;
 }
 
@@ -231,7 +231,7 @@ cocoax_interfaces__srv__CocoaXEnable_Request__Sequence__copy(
 
 
 // Include directives for member types
-// Member `trackerstatus`
+// Member `status`
 #include "rosidl_runtime_c/string_functions.h"
 
 bool
@@ -240,8 +240,8 @@ cocoax_interfaces__srv__CocoaXEnable_Response__init(cocoax_interfaces__srv__Coco
   if (!msg) {
     return false;
   }
-  // trackerstatus
-  if (!rosidl_runtime_c__String__init(&msg->trackerstatus)) {
+  // status
+  if (!rosidl_runtime_c__String__init(&msg->status)) {
     cocoax_interfaces__srv__CocoaXEnable_Response__fini(msg);
     return false;
   }
@@ -254,8 +254,8 @@ cocoax_interfaces__srv__CocoaXEnable_Response__fini(cocoax_interfaces__srv__Coco
   if (!msg) {
     return;
   }
-  // trackerstatus
-  rosidl_runtime_c__String__fini(&msg->trackerstatus);
+  // status
+  rosidl_runtime_c__String__fini(&msg->status);
 }
 
 bool
@@ -264,9 +264,9 @@ cocoax_interfaces__srv__CocoaXEnable_Response__are_equal(const cocoax_interfaces
   if (!lhs || !rhs) {
     return false;
   }
-  // trackerstatus
+  // status
   if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->trackerstatus), &(rhs->trackerstatus)))
+      &(lhs->status), &(rhs->status)))
   {
     return false;
   }
@@ -281,9 +281,9 @@ cocoax_interfaces__srv__CocoaXEnable_Response__copy(
   if (!input || !output) {
     return false;
   }
-  // trackerstatus
+  // status
   if (!rosidl_runtime_c__String__copy(
-      &(input->trackerstatus), &(output->trackerstatus)))
+      &(input->status), &(output->status)))
   {
     return false;
   }

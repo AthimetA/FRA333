@@ -37,7 +37,7 @@ struct CocoaXEnable_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->setenable = false;
+      this->enable = false;
     }
   }
 
@@ -47,20 +47,20 @@ struct CocoaXEnable_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->setenable = false;
+      this->enable = false;
     }
   }
 
   // field types and members
-  using _setenable_type =
+  using _enable_type =
     bool;
-  _setenable_type setenable;
+  _enable_type enable;
 
   // setters for named parameter idiom
-  Type & set__setenable(
+  Type & set__enable(
     const bool & _arg)
   {
-    this->setenable = _arg;
+    this->enable = _arg;
     return *this;
   }
 
@@ -106,7 +106,7 @@ struct CocoaXEnable_Request_
   // comparison operators
   bool operator==(const CocoaXEnable_Request_ & other) const
   {
-    if (this->setenable != other.setenable) {
+    if (this->enable != other.enable) {
       return false;
     }
     return true;
@@ -151,30 +151,30 @@ struct CocoaXEnable_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->trackerstatus = "";
+      this->status = "";
     }
   }
 
   explicit CocoaXEnable_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : trackerstatus(_alloc)
+  : status(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->trackerstatus = "";
+      this->status = "";
     }
   }
 
   // field types and members
-  using _trackerstatus_type =
+  using _status_type =
     std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
-  _trackerstatus_type trackerstatus;
+  _status_type status;
 
   // setters for named parameter idiom
-  Type & set__trackerstatus(
+  Type & set__status(
     const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
   {
-    this->trackerstatus = _arg;
+    this->status = _arg;
     return *this;
   }
 
@@ -220,7 +220,7 @@ struct CocoaXEnable_Response_
   // comparison operators
   bool operator==(const CocoaXEnable_Response_ & other) const
   {
-    if (this->trackerstatus != other.trackerstatus) {
+    if (this->status != other.status) {
       return false;
     }
     return true;

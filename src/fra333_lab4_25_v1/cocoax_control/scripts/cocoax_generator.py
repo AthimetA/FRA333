@@ -18,12 +18,11 @@ class CocoaGenerator(Node):
     def __init__(self):
         super().__init__('cocoax_generator_node')
         
-        # Cocoax time 
+        # Cocoax time Global
         self.cocoa_time_ms = 0
         self.cocoa_time = 0
         self.cocoa_timer = self.create_timer(1/1000, self.cocoa_timer_callback)
         self.cocoa_trajectory_time_start = 0
-        self.cocoa_trajectory_enable = False
         
         # define rate
         self.rate = 1000
@@ -33,10 +32,20 @@ class CocoaGenerator(Node):
         self.time_rate = 1/self.rate 
         
         # Publishers
-        self.trajectory_publisher = self.create_publisher(JointState,'/cocoax/end_effector_joint_states', qos_profile)
+        self.trajectory_publisher = self.create_publisher(JointState,
+                                                          '/cocoax/end_effector_joint_states',
+                                                          qos_profile)
         
-        # Services
-        self.trajectory_service = self.create_service(CocoaXGenerator, '/cocoax/trajectory_generator', self.trajectory_service_callback)
+        # Services Server
+        self.trajectory_service = self.create_service(CocoaXGenerator,
+                                                      '/cocoax/trajectory_generator_generate_trajectory',
+                                                      self.trajectory_service_callback)
+        
+        # Service Client
+        # Trajectory Generator # Enable Trajectory Generator
+        self.cocoa_trajectory_eval_enable = False 
+        self.trajectory_service_cilent = self.create_client(CocoaXEnable,
+                                                    '/cocoax/trajectory_generator_finish_trajectory')
         
         # Timers
         self.timer = self.create_timer(self.time_rate, self.timer_callback)
@@ -47,24 +56,23 @@ class CocoaGenerator(Node):
         self.position_final = []
         self.duration = 0 
         
-        
-        # Test Service Call 
-        self.proximity_service_cilent = self.create_client(CocoaXEnable, '/cocoax/proximity_detect')
-        
-    def proximity_service_cilent_call(self, enable):
-        while not self.proximity_service_cilent.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('/cocoax/proximity_detect service not available, waiting again...')
+    def trajectory_service_cilent_call(self, enable):
+        while not self.trajectory_service_cilent.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('/cocoax/trajectory_generator_finish_trajectory service not available, waiting again...')
         request = CocoaXEnable.Request()
-        request.setenable = enable
-        future = self.proximity_service_cilent.call_async(request)
-        self.get_logger().info('cocoax/proximity_detect Service call success')
+        request.enable = enable
+        future = self.trajectory_service_cilent.call_async(request)
+        self.get_logger().info('cocoax/trajectory_generator_finish_trajectory Service call success')
             
 
     def trajectory_service_callback(self, request: CocoaXGenerator, response: CocoaXGenerator):
-        self.position_initial = request.position_initial
-        self.position_final = request.position_final
-        self.duration = request.duration
+        # This function is called when the trajectory service is called by scheduler
+        self.position_initial = request.position_initial # Initial position
+        self.position_final = request.position_final # Final position
+        self.duration = request.duration # Duration
+        # Generate trajectory
         self.trajecotry_param = self.cocoax_quintic_trajectory_generator(self.duration)
+        # Print trajectory information
         self.get_logger().info('Trajectory generated')
         self.get_logger().info('Initial position: {}'.format(self.position_initial))
         self.get_logger().info('Final position: {}'.format(self.position_final))
@@ -76,23 +84,23 @@ class CocoaGenerator(Node):
         self.get_logger().info(f'{Ay[1,0]:.3f}t + {Ay[2,0]:.3f}t^2 + {Ay[3,0]:.3f}t^3 + {Ay[4,0]:.3f}t^4 + {Ay[5,0]:.3f}t^5')
         self.get_logger().info(f'Trajectory Polynomial (z-axis):')
         self.get_logger().info(f'{Az[1,0]:.3f}t + {Az[2,0]:.3f}t^2 + {Az[3,0]:.3f}t^3 + {Az[4,0]:.3f}t^4 + {Az[5,0]:.3f}t^5')
-        self.cocoa_trajectory_time_start = self.cocoa_time
-        self.cocoa_trajectory_enable = True
+        # Enable trajectory evaluation
+        self.cocoa_trajectory_time_start = self.cocoa_time # set start time for trajectory evaluation
+        self.cocoa_trajectory_eval_enable = True # Enable trajectory evaluation
+        # Call service to Scheduler when trajectory is start (eval_enable = True)
+        self.trajectory_service_cilent_call(self.cocoa_trajectory_eval_enable)
         return response
     
     def timer_callback(self):
-        # self.get_logger().info(str(self.cocoa_trajectory_enable))
-        if self.cocoa_trajectory_enable:
+        if self.cocoa_trajectory_eval_enable:
             time = self.cocoa_time - self.cocoa_trajectory_time_start
             if time > self.duration:
-                self.cocoa_trajectory_enable = False
+                self.cocoa_trajectory_eval_enable = False
                 self.get_logger().info('Trajectory finished')
-                self.proximity_service_cilent_call(True)
+                # Call service to Scheduler when trajectory is finished (eval_enable = False)
+                self.trajectory_service_cilent_call(self.cocoa_trajectory_eval_enable)
             else:
-                # self.get_logger().info('Time: {}'.format(time))
                 [p, p_dot] = self.cocoax_quintic_linear_interpolation_taskspace(self.trajecotry_param, [self.position_initial, self.position_final], time)
-                # self.get_logger().info('Position: {}'.format(p))
-                # self.get_logger().info('Velocity: {}'.format(p_dot))
                 msg = JointState()
                 msg.header.stamp = self.get_clock().now().to_msg()
                 msg.name = ['x','y','z']

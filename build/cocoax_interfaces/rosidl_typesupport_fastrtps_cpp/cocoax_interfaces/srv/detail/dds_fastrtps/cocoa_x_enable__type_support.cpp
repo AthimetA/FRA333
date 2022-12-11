@@ -32,8 +32,8 @@ cdr_serialize(
   const cocoax_interfaces::srv::CocoaXEnable_Request & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: setenable
-  cdr << (ros_message.setenable ? true : false);
+  // Member: enable
+  cdr << (ros_message.enable ? true : false);
   return true;
 }
 
@@ -43,11 +43,11 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   cocoax_interfaces::srv::CocoaXEnable_Request & ros_message)
 {
-  // Member: setenable
+  // Member: enable
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message.setenable = tmp ? true : false;
+    ros_message.enable = tmp ? true : false;
   }
 
   return true;
@@ -66,9 +66,9 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: setenable
+  // Member: enable
   {
-    size_t item_size = sizeof(ros_message.setenable);
+    size_t item_size = sizeof(ros_message.enable);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -91,7 +91,7 @@ max_serialized_size_CocoaXEnable_Request(
   (void)full_bounded;
 
 
-  // Member: setenable
+  // Member: enable
   {
     size_t array_size = 1;
 
@@ -220,8 +220,8 @@ cdr_serialize(
   const cocoax_interfaces::srv::CocoaXEnable_Response & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: trackerstatus
-  cdr << ros_message.trackerstatus;
+  // Member: status
+  cdr << ros_message.status;
   return true;
 }
 
@@ -231,8 +231,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   cocoax_interfaces::srv::CocoaXEnable_Response & ros_message)
 {
-  // Member: trackerstatus
-  cdr >> ros_message.trackerstatus;
+  // Member: status
+  cdr >> ros_message.status;
 
   return true;
 }
@@ -250,10 +250,10 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: trackerstatus
+  // Member: status
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.trackerstatus.size() + 1);
+    (ros_message.status.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -273,7 +273,7 @@ max_serialized_size_CocoaXEnable_Response(
   (void)full_bounded;
 
 
-  // Member: trackerstatus
+  // Member: status
   {
     size_t array_size = 1;
 

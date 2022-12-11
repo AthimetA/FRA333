@@ -1,1 +1,0 @@
-/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_description/launch/display_gazebo_cocoax.launch.py

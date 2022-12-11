@@ -20,6 +20,20 @@ string.h
 rcutils/allocator.h
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/msg/detail/rcutils/allocator.h
 
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.c
+cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/msg/detail/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.h
+assert.h
+-
+stdbool.h
+-
+stdlib.h
+-
+string.h
+-
+rcutils/allocator.h
+/home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/msg/detail/rcutils/allocator.h
+
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.c
 cocoax_interfaces/srv/detail/cocoa_x_enable__functions.h
 /home/azthorax/fra333_ws/build/cocoax_interfaces/rosidl_generator_c/cocoax_interfaces/srv/detail/cocoax_interfaces/srv/detail/cocoa_x_enable__functions.h
@@ -233,6 +247,26 @@ cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h
 rosidl_generator_c/cocoax_interfaces/msg/detail/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h
 
 rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_control_ref__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/cocoax_interfaces/msg/detail/rosidl_runtime_c/visibility_control.h
+cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoax_interfaces/msg/rosidl_generator_c__visibility_control.h
+cocoax_interfaces/msg/detail/cocoa_position_proximity__struct.h
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoax_interfaces/msg/detail/cocoa_position_proximity__struct.h
+
+rosidl_generator_c/cocoax_interfaces/msg/detail/cocoa_position_proximity__struct.h
 stdbool.h
 -
 stddef.h

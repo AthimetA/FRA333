@@ -50,13 +50,13 @@ bool cocoax_interfaces__srv__cocoa_x_enable__request__convert_from_py(PyObject *
     assert(strncmp("cocoax_interfaces.srv._cocoa_x_enable.CocoaXEnable_Request", full_classname_dest, 58) == 0);
   }
   cocoax_interfaces__srv__CocoaXEnable_Request * ros_message = _ros_message;
-  {  // setenable
-    PyObject * field = PyObject_GetAttrString(_pymsg, "setenable");
+  {  // enable
+    PyObject * field = PyObject_GetAttrString(_pymsg, "enable");
     if (!field) {
       return false;
     }
     assert(PyBool_Check(field));
-    ros_message->setenable = (Py_True == field);
+    ros_message->enable = (Py_True == field);
     Py_DECREF(field);
   }
 
@@ -81,11 +81,11 @@ PyObject * cocoax_interfaces__srv__cocoa_x_enable__request__convert_to_py(void *
     }
   }
   cocoax_interfaces__srv__CocoaXEnable_Request * ros_message = (cocoax_interfaces__srv__CocoaXEnable_Request *)raw_ros_message;
-  {  // setenable
+  {  // enable
     PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->setenable ? 1 : 0);
+    field = PyBool_FromLong(ros_message->enable ? 1 : 0);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "setenable", field);
+      int rc = PyObject_SetAttrString(_pymessage, "enable", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -148,8 +148,8 @@ bool cocoax_interfaces__srv__cocoa_x_enable__response__convert_from_py(PyObject 
     assert(strncmp("cocoax_interfaces.srv._cocoa_x_enable.CocoaXEnable_Response", full_classname_dest, 59) == 0);
   }
   cocoax_interfaces__srv__CocoaXEnable_Response * ros_message = _ros_message;
-  {  // trackerstatus
-    PyObject * field = PyObject_GetAttrString(_pymsg, "trackerstatus");
+  {  // status
+    PyObject * field = PyObject_GetAttrString(_pymsg, "status");
     if (!field) {
       return false;
     }
@@ -159,7 +159,7 @@ bool cocoax_interfaces__srv__cocoa_x_enable__response__convert_from_py(PyObject 
       Py_DECREF(field);
       return false;
     }
-    rosidl_runtime_c__String__assign(&ros_message->trackerstatus, PyBytes_AS_STRING(encoded_field));
+    rosidl_runtime_c__String__assign(&ros_message->status, PyBytes_AS_STRING(encoded_field));
     Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
@@ -185,17 +185,17 @@ PyObject * cocoax_interfaces__srv__cocoa_x_enable__response__convert_to_py(void 
     }
   }
   cocoax_interfaces__srv__CocoaXEnable_Response * ros_message = (cocoax_interfaces__srv__CocoaXEnable_Response *)raw_ros_message;
-  {  // trackerstatus
+  {  // status
     PyObject * field = NULL;
     field = PyUnicode_DecodeUTF8(
-      ros_message->trackerstatus.data,
-      strlen(ros_message->trackerstatus.data),
+      ros_message->status.data,
+      strlen(ros_message->status.data),
       "strict");
     if (!field) {
       return NULL;
     }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "trackerstatus", field);
+      int rc = PyObject_SetAttrString(_pymessage, "status", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

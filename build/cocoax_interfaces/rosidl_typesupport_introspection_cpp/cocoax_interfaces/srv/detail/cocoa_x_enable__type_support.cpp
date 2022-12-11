@@ -39,14 +39,14 @@ void CocoaXEnable_Request_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember CocoaXEnable_Request_message_member_array[1] = {
   {
-    "setenable",  // name
+    "enable",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(cocoax_interfaces::srv::CocoaXEnable_Request, setenable),  // bytes offset in struct
+    offsetof(cocoax_interfaces::srv::CocoaXEnable_Request, enable),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -156,14 +156,14 @@ void CocoaXEnable_Response_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember CocoaXEnable_Response_message_member_array[1] = {
   {
-    "trackerstatus",  // name
+    "status",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(cocoax_interfaces::srv::CocoaXEnable_Response, trackerstatus),  // bytes offset in struct
+    offsetof(cocoax_interfaces::srv::CocoaXEnable_Response, status),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
