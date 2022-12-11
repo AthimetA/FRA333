@@ -20,6 +20,8 @@ from pathlib import Path
 import yaml
 from yaml.loader import SafeLoader
 
+from simple_pid import PID
+
 class CocoaTracker(Node):
     def __init__(self):
         super().__init__('cocoax_tracker_node')
@@ -78,6 +80,10 @@ class CocoaTracker(Node):
         
         # log
         self.get_logger().info('Tracker status : Disabled')
+        
+        # Test Pid
+        self.test_pid  = PID(Kp=self.Kp, Ki=self.Ki, Kd=0.0,
+                             setpoint=0.0, sample_time=self.time_rate)
         
     def pid_controller_with_feedforward_velocity(self, setpoint, measurements, velocity, outputlimit= None):
         '''
