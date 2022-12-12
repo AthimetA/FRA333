@@ -92,10 +92,6 @@ class CocoaTracker(Node):
         # log
         self.get_logger().info('Tracker status : Disabled')
         
-        # Test Pid
-        self.test_pid  = PID(Kp=self.Kp, Ki=self.Ki, Kd=0.0,
-                             setpoint=0.0, sample_time=self.time_rate)
-        
     def pid_controller_with_feedforward_velocity(self, setpoint, measurements, velocity, outputlimit= None):
         '''
             Setpoint: desired value [3x1]
@@ -169,18 +165,14 @@ class CocoaTracker(Node):
     
     def tracker_timer_callback(self):        
         if self.node_enable_status:
-
             pidvel = self.pid_controller_with_feedforward_velocity(self.command_ref_buffer.reference_joint_position,
                                                                    self.joint_state_buffer.position,
                                                                    self.command_ref_buffer.reference_joint_velocity)
+            ## Static Test
             # pidvel = self.pid_controller_with_feedforward_velocity([0.1296, 0.0263, 0.4705],
             #                                                     self.joint_state_buffer.position,
             #                                                     [0.0,0.0,0.0])
-            # self.get_logger().info(f'pidvelX: {pidvel}')
             self.velocity_controller_buffer.data = pidvel
-            self.velocity_controller_pub.publish(self.velocity_controller_buffer)
-        else:
-            self.velocity_controller_buffer.data = [0.0,0.0,0.0]
             self.velocity_controller_pub.publish(self.velocity_controller_buffer)
 
 def main(args=None):

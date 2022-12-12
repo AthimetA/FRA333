@@ -53,11 +53,16 @@ class CocoaScheduler(Node):
                                                                              qos_profile)
         
         # Test Via Point
-        self.via_point = [[0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],
-                          [0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],
-                          [0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],
-                          [0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],
-                          [0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],]
+        ## Sigularity Test
+        # self.via_point = [[0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],
+        #                   [0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],
+        #                   [0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],
+        #                   [0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],
+        #                   [0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],]
+        # Non-Sigularity Test
+        self.home_pos = [0.2, 0.0, 0.3978]
+        self.via_point = [[0.2, 0.0, 0.3978], [-0.0258, 0.1983, 0.3978],
+                          [0.2, 0.0, 0.3978], [-0.0258, 0.1983, 0.3978],]
         self.via_point_iteration = 0
         self.via_point_max_iteration = len(self.via_point)-2
         self.via_point_initial = self.via_point[self.via_point_iteration]
@@ -76,10 +81,12 @@ class CocoaScheduler(Node):
         self.tcount = 0
     
     def cocoax_state_timer_callback(self):
-        # self.get_logger().info('State: {}'.format(self.cocoax_state))
+        
+        # Delay on start
         if self.cocoax_state == 'sleep':
-            # zzz delay on start
             pass
+        
+        # Enable Tracker
         elif self.cocoax_state == 'start':
             
             # Tracker enable
@@ -88,7 +95,8 @@ class CocoaScheduler(Node):
             
             # Change state
             self.cocoax_state = 'trajectoryGenerate'
-    
+            
+        # Trajectory Generation
         elif self.cocoax_state == 'trajectoryGenerate':
             
             # Generate trajectory
@@ -105,28 +113,21 @@ class CocoaScheduler(Node):
             self.get_logger().info('------------------------------------')        
             self.get_logger().info(f'Via point iteration   : {self.via_point_iteration}')
 
-            
+        # Trajectory Evaluation
         elif self.cocoax_state == 'trajectoryExecute':
             
             # Check if trajectory is finished and proximity is detected
             proximity_status = self.proximity_detection()
             
-            # self.get_logger().info(f'Proximity status      : {proximity_status}')
-            # self.get_logger().info(f'Trajectory eval status: {self.trajectory_eval_status_is_active}')
-            # self.get_logger().info(f'------------------------------------')
-            
-            # if proximity_status == True and self.trajectory_eval_status_is_active == False:
-            if self.trajectory_eval_status_is_active == False:
+            if proximity_status == True and self.trajectory_eval_status_is_active == False:
                 if self.via_point_iteration < self.via_point_max_iteration:
                     self.via_point_iteration += 1
                     self.cocoax_state = 'awaiting'
                     self.tcount = 0
                 else:
                     self.cocoax_state = 'stop'
-            else:
-                # self.get_logger().info('CocoaX is not reching the via point')
-                pass
-            
+        
+        # Disable Tracker
         elif self.cocoax_state == 'stop':
             # Disable tracker
             self.tracker_service_call(False)
@@ -134,16 +135,17 @@ class CocoaScheduler(Node):
             # Change state
             self.cocoax_state = 'idle'
             
-        elif self.cocoax_state == 'idle':
-            self.get_logger().info('Idle')
-            
         elif self.cocoax_state == 'awaiting':
             self.get_logger().info('Awaiting') 
             
-            if self.tcount > 50:
+            # Wait for 1 seconds
+            if self.tcount > 10: 
                 self.cocoax_state = 'trajectoryGenerate'
             else:
                 self.tcount += 1   
+                
+        elif self.cocoax_state == 'idle':
+            self.get_logger().info('Idle')
             
         else:
             self.get_logger().info('Unknown state')
@@ -155,9 +157,15 @@ class CocoaScheduler(Node):
         
         # Check if current position is within tolerance
         if np.all(np.abs(current_position - reference_position) < self.proximity_tolerance):
+            self.get_logger().info(f'====================================')
             self.get_logger().info('Proximity detected')
+            self.get_logger().info(f'====================================')
             return True
         else:
+            self.get_logger().info(f'Current position      : {current_position}')
+            self.get_logger().info(f'Reference position    : {reference_position}')
+            self.get_logger().info(f'Error                 : {np.abs(current_position - reference_position)}')
+            self.get_logger().info(f'------------------------------------')
             return False
         
     # This function is called when the trajectory service is called by the CocoaX_Generator    
@@ -200,11 +208,11 @@ class CocoaScheduler(Node):
         overall_distance = np.sqrt((via_point_final[0]-via_point_initial[0])**2 + (via_point_final[1]-via_point_initial[1])**2 + (via_point_final[2]-via_point_initial[2])**2)
         print('overall_distance: ', overall_distance)
         
-        # # Slow test        
+        # Slow test        
         jmax = 0.01
         amax = 0.01
         vmax = 0.1
-        # # Speed test
+        # Speed test
         # jmax = 0.5
         # amax = 0.5
         # vmax = 1.0

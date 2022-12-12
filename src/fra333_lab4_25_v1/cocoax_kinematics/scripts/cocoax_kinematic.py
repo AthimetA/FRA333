@@ -63,8 +63,16 @@ class CocoaVKinematic(Node):
                                                           qos_profile)
             # Create a buffer to store CocoaTaskSpace
             self.sub_buffer = CocoaTaskSpace()
+            self.sub_buffer.position = [0.2, 0.0, 0.3978] #  Home position
+            self.sub_buffer.velocity = [0.0, 0.0, 0.0] #  Home velocity
             # Create a buffer to store CocoaControlRef
             self.pub_buffer = CocoaControlRef()
+        
+        # Status of the node
+        self.calculate_status = 'Normal'
+        
+        R, P, R0_e, P0_e = self.cocoax_forward_position_kinematic([1.7,0.0,0.0])
+        print('P0_e: ',P0_e)
         
     def subscriber_callback(self, msg):
         self.sub_buffer = msg
@@ -86,21 +94,26 @@ class CocoaVKinematic(Node):
                 
         elif self.knimatic_type == 'inverse':
             # Subscribe end-effector pose Type: CocoaTaskSpace
+            self.get_logger().info('X: '+str(self.sub_buffer.position))
             X = self.sub_buffer.position
             X_dot = self.sub_buffer.velocity
             if X!=[] and X_dot!=[]:
                 q, q_dot = self.cocoax_inverse_velocity_kinematic(X=X,X_dot=X_dot)
                 # Publish joint state
-                if q!=[] and q_dot!=[]:
+                if self.calculate_status == 'Normal':
                     self.pub_buffer = CocoaControlRef()
                     self.pub_buffer.reference_joint_position = q
                     self.pub_buffer.reference_joint_velocity = q_dot
                     self.states_publisher.publish(self.pub_buffer)
-                else:
-                    # self.get_logger().info('Inverse Kinematic is not possible')
-                    # self.get_logger().info('for Position: \n'+str(X))
-                    # self.get_logger().info('and Velocity: \n'+str(X_dot))
+                elif self.calculate_status == 'Singularity':
+                    self.get_logger().info(str(self.calculate_status))
+                    self.pub_buffer = CocoaControlRef()
+                    self.pub_buffer.reference_joint_position = q
+                    self.pub_buffer.reference_joint_velocity = [0.0,0.0,0.0] # No velocity Reference for feedforward
                     self.states_publisher.publish(self.pub_buffer)
+                else:
+                    self.get_logger().info(str(self.calculate_status))
+                    self.states_publisher.publish(self.pub_buffer) # Publish the last reference            
         
     def cocoax_inverse_velocity_kinematic(self, X=[0.0,0.0,0.0], X_dot=[0.0,0.0,0.0]):
         # Get Joint position configuration
@@ -123,7 +136,8 @@ class CocoaVKinematic(Node):
         threshold = 0.001
         if np.abs(np.linalg.det(J_v)) < threshold:
             # self.get_logger().info('Jacobian is singular')
-            return [], []
+            self.calculate_status = 'Singularity'
+            return q, []
         # Get Matrix
         qMatrix = np.matrix([q]).T
         X_dotMatrix = np.matrix([X_dot]).T
@@ -134,6 +148,7 @@ class CocoaVKinematic(Node):
         q_dot = np.matmul(J_v_inv,X_dotMatrix)
         q_dot = np.array(q_dot.T)[0].tolist()
         # Return joint velocity as [q1_dot,q2_dot,q3_dot]
+        self.calculate_status = 'Normal'
         return q , q_dot
     
     def cocoax_forward_velocity_kinematic(self, q=[0.0,0.0,0.0], q_dot=[0.0,0.0,0.0]):
@@ -317,13 +332,11 @@ class CocoaVKinematic(Node):
         A = A0-A1
         if (l2-l3) <= np.sqrt(A) <= (l2+l3) and A >= 0:  
             return True
-        # self.get_logger().info('IK solution does not exist')
         return False
     
     def check_IK_position_joint_limit(self, q1, q2, q3):
         if (-np.pi<= q1 <= np.pi) and (-np.pi/6 <= q2 <= np.pi/6) and (-np.pi/3 <= q3 <= np.pi/2):
             return True
-        # self.get_logger().info('IK joint limit exceed')
         return False
     
     def cocoax_inverse_position_kinematic(self, X=[0.0,0.0,0.0],r = [1.0,1.0], Lastconfig=[0.0,0.0,0.0]):
@@ -343,9 +356,13 @@ class CocoaVKinematic(Node):
             cos_q2 = ((-l1*l2)-(l1*l3*np.sin(q3))+(l2*z)+(l3*r1*np.sqrt(x**2+y**2)*np.cos(q3))+(l3*z*np.sin(q3)))
             q2 = np.arctan2(sin_q2,cos_q2)
             if(self.check_IK_position_joint_limit(q1, q2, q3)):
+                self.calculate_status = 'Normal'
                 config = [q1,q2,q3]
                 status = True
                 return config, status
+            else:
+                self.calculate_status = 'IKjointlimitexceed'
+        self.calculate_status = 'IKsolutiondoesnotexist'
         status = False
         config = Lastconfig
         return config, status
