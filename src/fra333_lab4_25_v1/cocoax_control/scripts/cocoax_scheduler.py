@@ -71,6 +71,7 @@ class CocoaScheduler(Node):
         self.get_logger().info(f'Via point iteration : {self.via_point_max_iteration}')
         
         # Proximity
+        self.proximity_status = False
         tol = 0.001
         self.proximity_tolerance = [tol, tol, tol]
         
@@ -103,29 +104,33 @@ class CocoaScheduler(Node):
             self.via_point_initial = self.via_point[self.via_point_iteration] # Initial via point
             self.via_point_final = self.via_point[self.via_point_iteration+1] # Final via point
             
-            self.get_logger().info(f'Starting trajectory of via point {self.via_point_initial} to {self.via_point_final}')
             # Service call for trajectory generation to CocoaX_Generator
-            self.trajectory_service_call(self.via_point_initial, self.via_point_final)
+            self.trajectory_service_call(self.via_point_initial, self.via_point_final)        
                         
             # Change state
             self.cocoax_state = 'trajectoryExecute'
-            
-            self.get_logger().info('------------------------------------')        
-            self.get_logger().info(f'Via point iteration   : {self.via_point_iteration}')
 
         # Trajectory Evaluation
         elif self.cocoax_state == 'trajectoryExecute':
             
             # Check if trajectory is finished and proximity is detected
-            proximity_status = self.proximity_detection()
+            if self.proximity_status == False:
+                self.proximity_status = self.proximity_detection()
             
-            if proximity_status == True and self.trajectory_eval_status_is_active == False:
+            if self.proximity_status == True and self.trajectory_eval_status_is_active == False:
+                self.proximity_status = True
                 if self.via_point_iteration < self.via_point_max_iteration:
                     self.via_point_iteration += 1
                     self.cocoax_state = 'awaiting'
                     self.tcount = 0
                 else:
+                    self.via_point_iteration += 1
                     self.cocoax_state = 'stop'
+                self.get_logger().info(f'-------------------Completed----------------------')
+                self.get_logger().info(f'                       |                          ')
+                self.get_logger().info(f'Via Point {self.via_point_iteration} {self.via_point_initial} to {self.via_point_final}')
+                self.get_logger().info(f'                       |                          ')
+                self.get_logger().info(f'--------------------------------------------------')
         
         # Disable Tracker
         elif self.cocoax_state == 'stop':
@@ -133,11 +138,11 @@ class CocoaScheduler(Node):
             self.tracker_service_call(False)
             
             # Change state
+            self.get_logger().info('All Via Points Completed : CocoaX is Idle :)')
             self.cocoax_state = 'idle'
             
         elif self.cocoax_state == 'awaiting':
-            self.get_logger().info('Awaiting') 
-            
+
             # Wait for 1 seconds
             if self.tcount > 10: 
                 self.cocoax_state = 'trajectoryGenerate'
@@ -145,7 +150,7 @@ class CocoaScheduler(Node):
                 self.tcount += 1   
                 
         elif self.cocoax_state == 'idle':
-            self.get_logger().info('Idle')
+            pass
             
         else:
             self.get_logger().info('Unknown state')
@@ -157,15 +162,15 @@ class CocoaScheduler(Node):
         
         # Check if current position is within tolerance
         if np.all(np.abs(current_position - reference_position) < self.proximity_tolerance):
-            self.get_logger().info(f'====================================')
-            self.get_logger().info('Proximity detected')
-            self.get_logger().info(f'====================================')
+            self.get_logger().info(f'************************************')
+            self.get_logger().info('Proximity detected (Waiting for trajectory to finish)')
+            self.get_logger().info(f'************************************')
             return True
         else:
-            self.get_logger().info(f'Current position      : {current_position}')
-            self.get_logger().info(f'Reference position    : {reference_position}')
-            self.get_logger().info(f'Error                 : {np.abs(current_position - reference_position)}')
-            self.get_logger().info(f'------------------------------------')
+            # self.get_logger().info(f'Current position      : {current_position}')
+            # self.get_logger().info(f'Reference position    : {reference_position}')
+            # self.get_logger().info(f'Error                 : {np.abs(current_position - reference_position)}')
+            # self.get_logger().info(f'------------------------------------')
             return False
         
     # This function is called when the trajectory service is called by the CocoaX_Generator    

@@ -70,12 +70,6 @@ class CocoaVKinematic(Node):
         
         # Status of the node
         self.calculate_status = 'Normal'
-        
-        R, P, R0_e, P0_e = self.cocoax_forward_position_kinematic([1.7,0.0,0.0])
-        print('P0_e: ',P0_e)
-        
-    def subscriber_callback(self, msg):
-        self.sub_buffer = msg
     
     def timer_callback(self):
         
@@ -94,7 +88,6 @@ class CocoaVKinematic(Node):
                 
         elif self.knimatic_type == 'inverse':
             # Subscribe end-effector pose Type: CocoaTaskSpace
-            self.get_logger().info('X: '+str(self.sub_buffer.position))
             X = self.sub_buffer.position
             X_dot = self.sub_buffer.velocity
             if X!=[] and X_dot!=[]:
@@ -116,11 +109,6 @@ class CocoaVKinematic(Node):
                     self.states_publisher.publish(self.pub_buffer) # Publish the last reference            
         
     def cocoax_inverse_velocity_kinematic(self, X=[0.0,0.0,0.0], X_dot=[0.0,0.0,0.0]):
-        # Get Joint position configuration
-        q, status = self.cocoax_inverse_position_kinematic(X)
-        # If Inverse Kinematic is not possible
-        if status == False:
-            return [], []
         '''
             X_dot =[[Vx],       q_dot = [[q1_dot],
                     [Vy],                [q2_dot],
@@ -129,6 +117,11 @@ class CocoaVKinematic(Node):
         Inverse Velocity Kinematic can be calculated by using Jacobian Inverse
                     q_dot = J_v_inv * X_dot
         '''
+        # Get Joint position configuration
+        q, status = self.cocoax_inverse_position_kinematic(X)
+        # If Inverse Kinematic is not possible
+        if status == False:
+            return [], []
         # Get Jacobian Matrix
         J_e = self.cocoax_jacobian_matrix(q)
         J_v = J_e[3:6,:]
@@ -174,7 +167,6 @@ class CocoaVKinematic(Node):
         J_e = self.cocoax_jacobian_matrix(q)
         J_v = J_e[3:6,:]
         # Get Matrix
-        qMatrix = np.matrix([q]).T
         q_dotMatrix = np.matrix([q_dot]).T
         J_vMatrix = np.matrix(J_v)
         # Calculate Twist
@@ -194,28 +186,7 @@ class CocoaVKinematic(Node):
         # R_e = Rotation matrix of end effector via GlobalFrame [3x3]
         # P_e = Position of end effector via GlobalFrame [3x1]
         R, P, R0_e, P0_e = self.cocoax_forward_position_kinematic(q)        
-        
-        '''
-        R = 
-            [
-            [[111. 211. 311. 411.]
-            [112. 212. 312. 412.]
-            [113. 213. 313. 413.]]
-
-            [[121. 221. 321. 421.]
-            [122. 222. 322. 422.]
-            [123. 223. 323. 423.]]
-
-            [[131. 231. 331. 431.]
-            [132. 232. 332. 432.]
-            [133. 233. 333. 433.]]
-            ]
-        
-        R0_1 = 
-            [[111. 112. 113.]
-            [121. 122. 123.]
-            [131. 132. 133.]]
-        '''    
+         
         # Pick the rotation matrix and postion of each joint (Frame[i]) via GlobalFrame
         R0_1 = R[:,:,0] # Frame[1] via GlobalFrame
         R0_2 = R[:,:,1] # Frame[2] via GlobalFrame
@@ -247,15 +218,6 @@ class CocoaVKinematic(Node):
         # Stack the linear velocity Jacobian of each joint to form the Jacobian matrix of linear velocity for End Effector [3x3]
         JV = np.concatenate((JV0_1,JV0_2,JV0_3),axis=1)
             
-        '''
-            return format list 6x3
-            [ [i_11, i_12, i_13],
-            [i_21, i_22, i_23],
-            [i_31, i_32, i_33],
-            [i_41, i_42, i_43],
-            [i_51, i_52, i_53],
-            [i_61, i_62, i_63] ]
-        '''
         # Stack the Jacobian matrix of angular velocity and linear velocity to form the Jacobian matrix of End Effector [6x3]
         J_e = np.concatenate((JW,JV),axis=0)
         return J_e
@@ -366,6 +328,9 @@ class CocoaVKinematic(Node):
         status = False
         config = Lastconfig
         return config, status
+    
+    def subscriber_callback(self, msg):
+        self.sub_buffer = msg
         
 def main(args=None):
     rclpy.init(args=args)

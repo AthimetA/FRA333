@@ -46,11 +46,12 @@ class CocoaTracker(Node):
             self.Ki = np.array([0.0, 0.0, 0.0])
             self.Kp = np.array([0.0, 0.0, 0.0])
             self.Kd = np.array([0.0, 0.0, 0.0])
-        self.get_logger().info('PID parameters loaded')
+        self.get_logger().info('='*50)
+        self.get_logger().info('Tracker Node PID parameters loaded')
         self.get_logger().info('Kp: '+str(self.Kp))
         self.get_logger().info('Ki: '+str(self.Ki))
         self.get_logger().info('Kd: '+str(self.Kd))
-        self.get_logger().info('-'*50)
+        self.get_logger().info('='*50)
         
         # define rate
         self.rate = 100
