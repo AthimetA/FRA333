@@ -132,17 +132,6 @@ class CocoaTracker(Node):
         # Convert to list
         pid_output = pid_output.tolist()
         
-        # self.get_logger().info('='*50)
-        # self.get_logger().info('Setpoint: '+str(setpoint))
-        # self.get_logger().info('Measurements: '+str(measurements))
-        # self.get_logger().info('Current Error: '+str(error))
-        # self.get_logger().info('PID Proportional: '+str(pid_proportional))
-        # self.get_logger().info('PID Integral: '+str(self.pid_memory_integral))
-        # self.get_logger().info('PID Derivative: '+str(pid_derivative))
-        # self.get_logger().info('Velocity Ref: '+str(velocity))
-        # self.get_logger().info('PID Output: '+str(pid_output))
-        # self.get_logger().info('='*50)
-        
         return pid_output
     
     def enable_tracker_callback(self, request: CocoaXEnable.Request, response:CocoaXEnable.Response):
@@ -169,10 +158,6 @@ class CocoaTracker(Node):
             pidvel = self.pid_controller_with_feedforward_velocity(self.command_ref_buffer.reference_joint_position,
                                                                    self.joint_state_buffer.position,
                                                                    self.command_ref_buffer.reference_joint_velocity)
-            ## Static Test
-            # pidvel = self.pid_controller_with_feedforward_velocity([0.1296, 0.0263, 0.4705],
-            #                                                     self.joint_state_buffer.position,
-            #                                                     [0.0,0.0,0.0])
             self.velocity_controller_buffer.data = pidvel
             self.velocity_controller_pub.publish(self.velocity_controller_buffer)
 

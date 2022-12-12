@@ -86,21 +86,6 @@ def generate_launch_description():
         namespace='cocoax_scheduler',
     )
     launch_description.add_action(cocoax_scheduler)
-    
-    
-    package_name = 'cocoax_description'
-    path_to_package = get_package_share_directory(package_name)
-    sub_folder = 'config'
-    file_name = 'cocoax.rviz'
-    rviz_file_path = os.path.join(path_to_package,sub_folder,file_name) 
-    print(rviz_file_path)
-    rviz = Node(
-       package='rviz2',
-       executable='rviz2',
-       name='rviz',
-       arguments=['-d', rviz_file_path],
-       output='screen')
-    launch_description.add_action(rviz)
 
     return launch_description
 

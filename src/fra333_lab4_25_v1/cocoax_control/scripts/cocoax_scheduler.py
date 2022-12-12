@@ -13,6 +13,9 @@ from sensor_msgs.msg import JointState
 from cocoax_interfaces.srv import CocoaXGenerator, CocoaXEnable
 from cocoax_interfaces.msg import CocoaControlRef, CocoaJointSpace, CocoaTaskSpace
 
+from visualization_msgs.msg import Marker
+from visualization_msgs.msg import MarkerArray
+
 np.set_printoptions(precision=4, suppress=True)
 
 class CocoaScheduler(Node):
@@ -52,21 +55,52 @@ class CocoaScheduler(Node):
                                                                              self.cocoax_proximity_position_subscriber_callback,
                                                                              qos_profile)
         
-        # Test Via Point
-        ## Sigularity Test
-        # self.via_point = [[0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],
-        #                   [0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],
-        #                   [0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],
-        #                   [0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],
-        #                   [0.2, 0.0, 0.3978],[-0.0153, -0.0084, 0.534],]
-        # Non-Sigularity Test
+        # Marker
+        self.marker_array_buffer = MarkerArray()
+        self.marker_id = 0
+        self.marker_publisher = self.create_publisher(MarkerArray, 'visualization_marker_array', qos_profile)
+        self.marker_pub_msg = self.create_publisher(Marker, '/cocoax/marker', qos_profile)
+        
         self.home_pos = [0.2, 0.0, 0.3978]
-        self.via_point = [[0.2, 0.0, 0.3978], [-0.0258, 0.1983, 0.3978],
-                          [0.2, 0.0, 0.3978], [-0.0258, 0.1983, 0.3978],]
+        self.xplane = 0.2
+        self.yplane = 0.0
+        self.zplane = 0.4
+        self.step = 0.05
+        self.via_point = [  {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},
+                            {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},
+                            # Draw a 'F'
+                            {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + (-1*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + (-1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+                            # Draw a 'I'
+                            {'Position': [self.xplane, self.yplane + ( 0*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + ( 0*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenUp'},
+                            # Draw a 'B
+                            {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + ( 2*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + ( 2*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+                            # Draw a 'O'
+                            {'Position': [self.xplane, self.yplane + ( 3*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + ( 4*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + ( 4*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + ( 3*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
+                            {'Position': [self.xplane, self.yplane + ( 3*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+                            # Move out of the way
+                            {'Position': [self.xplane, self.yplane + (-3*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+                           ]
+
+                          
         self.via_point_iteration = 0
         self.via_point_max_iteration = len(self.via_point)-2
-        self.via_point_initial = self.via_point[self.via_point_iteration]
-        self.via_point_final = self.via_point[self.via_point_iteration+1]
+        self.via_point_pen_type = self.via_point[self.via_point_iteration]['Pentype']
+        self.via_point_initial = self.via_point[self.via_point_iteration]['Position']
+        self.via_point_final = self.via_point[self.via_point_iteration+1]['Position']
         
         self.get_logger().info(f'Via point iteration : {self.via_point_max_iteration}')
         
@@ -80,6 +114,29 @@ class CocoaScheduler(Node):
         self.cocoax_state_timer = self.create_timer(self.time_rate, self.cocoax_state_timer_callback)
         
         self.tcount = 0
+        
+    def cocoax_marker(self):
+        if self.via_point_pen_type == 'PenDown':
+            current_position = np.array(self.proximity_position_buffer)
+            marker = Marker()
+            marker.header.frame_id = 'world'
+            marker.header.stamp = self.get_clock().now().to_msg()
+            # set shape, Arrow: 0; Cube: 1 ; Sphere: 2 ; Cylinder: 3
+            marker.type = 2
+            marker.id = self.marker_id
+            self.marker_id += 1
+            marker.scale.x = 0.01
+            marker.scale.y = 0.01
+            marker.scale.z = 0.01
+            marker.color.r = 0.0
+            marker.color.g = 1.0
+            marker.color.b = 0.0
+            marker.color.a = 1.0
+            marker.pose.position.x = current_position[0]
+            marker.pose.position.y = current_position[1]
+            marker.pose.position.z = current_position[2]
+            self.marker_pub_msg.publish(marker)
+            self.marker_array_buffer.markers.append(marker)
     
     def cocoax_state_timer_callback(self):
         
@@ -101,8 +158,14 @@ class CocoaScheduler(Node):
         elif self.cocoax_state == 'trajectoryGenerate':
             
             # Generate trajectory
-            self.via_point_initial = self.via_point[self.via_point_iteration] # Initial via point
-            self.via_point_final = self.via_point[self.via_point_iteration+1] # Final via point
+            self.via_point_pen_type = self.via_point[self.via_point_iteration]['Pentype']
+            self.via_point_initial = self.via_point[self.via_point_iteration]['Position'] # Initial via point
+            self.via_point_final = self.via_point[self.via_point_iteration+1]['Position'] # Final via point
+            
+            self.get_logger().info(f'Via point iteration : {self.via_point_iteration}')
+            self.get_logger().info(f'Via point initial : {self.via_point_initial}')
+            self.get_logger().info(f'Via point final : {self.via_point_final}')
+            self.get_logger().info(f'Via point pen type : {self.via_point_pen_type}')
             
             # Service call for trajectory generation to CocoaX_Generator
             self.trajectory_service_call(self.via_point_initial, self.via_point_final)        
@@ -112,6 +175,8 @@ class CocoaScheduler(Node):
 
         # Trajectory Evaluation
         elif self.cocoax_state == 'trajectoryExecute':
+            
+            self.cocoax_marker()
             
             # Check if trajectory is finished and proximity is detected
             if self.proximity_status == False:
@@ -191,7 +256,7 @@ class CocoaScheduler(Node):
     # This function is called when scheduler generate trajectory for CocoaX_Generator    
     def trajectory_service_call(self, position_initial, position_final):
         # Calculate duration from via point final and via point initial
-        duration = self.via_point_duration_calculator(self.via_point)
+        duration = self.via_point_duration_calculator(self.via_point_initial, self.via_point_final)
         while not self.trajectory_client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('/cocoax/trajectory_generator_generate_trajectory service not available, waiting again...')
         request = CocoaXGenerator.Request()
@@ -206,25 +271,25 @@ class CocoaScheduler(Node):
         self.proximity_position_buffer = msg.position
         self.proximity_velocity_buffer = msg.velocity
     
-    def via_point_duration_calculator(self, via_point):
-        via_point_initial = via_point[0]
-        via_point_final = via_point[1]
+    def via_point_duration_calculator(self, via_point_initial, via_point_final):
+        via_point_initial = via_point_initial
+        via_point_final = via_point_final
         
         overall_distance = np.sqrt((via_point_final[0]-via_point_initial[0])**2 + (via_point_final[1]-via_point_initial[1])**2 + (via_point_final[2]-via_point_initial[2])**2)
         print('overall_distance: ', overall_distance)
         
         # Slow test        
-        jmax = 0.01
-        amax = 0.01
-        vmax = 0.1
+        # jmax = 0.01
+        # amax = 0.01
+        # vmax = 0.1
         # Speed test
-        # jmax = 0.5
-        # amax = 0.5
-        # vmax = 1.0
+        jmax = 0.5
+        amax = 0.5
+        vmax = 1.0
         # # mid test
         # jmax = 0.05
         # amax = 0.05
-        # vmax = 0.05
+        # vmax = 0.5
         # jmax = 0.001
         # amax = 0.001
         # vmax = 0.01

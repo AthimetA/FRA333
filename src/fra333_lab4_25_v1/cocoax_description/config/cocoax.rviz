@@ -8,9 +8,10 @@ Panels:
         - /Status1
         - /TF1
         - /TF1/Frames1
-        - /TF1/Frames1/end_effector1
-        - /TF1/Frames1/end_effector1/Position1
         - /RobotModel1/Description Topic1
+        - /Grid2
+        - /Grid2/Offset1
+        - /Marker1
       Splitter Ratio: 0.5
     Tree Height: 787
   - Class: rviz_common/Selection
@@ -24,6 +25,7 @@ Panels:
   - Class: rviz_common/Views
     Expanded:
       - /Current View1
+      - /Current View1/Focal Point1
     Name: Views
     Splitter Ratio: 0.5
 Visualization Manager:
@@ -64,7 +66,7 @@ Visualization Manager:
           Value: true
         world:
           Value: true
-      Marker Scale: 0.6000000238418579
+      Marker Scale: 0.30000001192092896
       Name: TF
       Show Arrows: true
       Show Axes: true
@@ -131,6 +133,36 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Alpha: 0.5
+      Cell Size: 0.05000000074505806
+      Class: rviz_default_plugins/Grid
+      Color: 233; 185; 110
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0.20000000298023224
+        Y: 0
+        Z: 0.4000000059604645
+      Plane: YZ
+      Plane Cell Count: 60
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: Marker
+      Namespaces:
+        "": true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /cocoax/marker
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -174,25 +206,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 1.4071557521820068
+      Distance: 0.7514122724533081
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.08247468620538712
-        Y: -0.003718949854373932
-        Z: 0.07031066715717316
+        X: 0.035323746502399445
+        Y: -0.03762849420309067
+        Z: 0.3549812138080597
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.7653980255126953
+      Pitch: 0.34999993443489075
       Target Frame: <Fixed Frame>
-      Value: Orbit (rviz)
-      Yaw: 0.8503979444503784
+      Value: Orbit (rviz_default_plugins)
+      Yaw: 0.524999737739563
     Saved: ~
 Window Geometry:
   Displays:
