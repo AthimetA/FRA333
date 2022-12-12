@@ -14,7 +14,9 @@ from cocoax_interfaces.srv import CocoaXGenerator, CocoaXEnable
 from cocoax_interfaces.msg import CocoaControlRef, CocoaJointSpace, CocoaTaskSpace
 
 from visualization_msgs.msg import Marker
-from visualization_msgs.msg import MarkerArray
+
+import yaml
+import os
 
 np.set_printoptions(precision=4, suppress=True)
 
@@ -56,45 +58,19 @@ class CocoaScheduler(Node):
                                                                              qos_profile)
         
         # Marker
-        self.marker_array_buffer = MarkerArray()
         self.marker_id = 0
-        self.marker_publisher = self.create_publisher(MarkerArray, 'visualization_marker_array', qos_profile)
         self.marker_pub_msg = self.create_publisher(Marker, '/cocoax/marker', qos_profile)
-        
-        self.home_pos = [0.2, 0.0, 0.3978]
-        self.xplane = 0.2
-        self.yplane = 0.0
-        self.zplane = 0.4
-        self.step = 0.05
-        self.via_point = [  {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},
-                            {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},
-                            # Draw a 'F'
-                            {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + (-1*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + (-1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
-                            # Draw a 'I'
-                            {'Position': [self.xplane, self.yplane + ( 0*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + ( 0*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenUp'},
-                            # Draw a 'B
-                            {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + ( 2*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + ( 2*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
-                            # Draw a 'O'
-                            {'Position': [self.xplane, self.yplane + ( 3*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + ( 4*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + ( 4*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + ( 3*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
-                            {'Position': [self.xplane, self.yplane + ( 3*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
-                            # Move out of the way
-                            {'Position': [self.xplane, self.yplane + (-3*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
-                           ]
-
+    
+        viapointparampath = '/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control/config/cocoax_viapoint.yaml'
+        with open(viapointparampath, "r") as stream:
+            try:
+                data = yaml.safe_load(stream)
+                self.via_point = data
+                print('Via point loaded from file')
+            except yaml.YAMLError as exc:
+                self.via_point = [  {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},
+                                    {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},]
+                print("Error in configuration file:", exc) 
                           
         self.via_point_iteration = 0
         self.via_point_max_iteration = len(self.via_point)-2
@@ -136,7 +112,6 @@ class CocoaScheduler(Node):
             marker.pose.position.y = current_position[1]
             marker.pose.position.z = current_position[2]
             self.marker_pub_msg.publish(marker)
-            self.marker_array_buffer.markers.append(marker)
     
     def cocoax_state_timer_callback(self):
         
