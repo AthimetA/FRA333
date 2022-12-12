@@ -6,6 +6,7 @@ from launch.actions import IncludeLaunchDescription,ExecuteProcess,DeclareLaunch
 from launch.substitutions import PathJoinSubstitution
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
+from ament_index_python.packages import get_package_share_directory
 
 import sys
 
@@ -45,6 +46,7 @@ def generate_launch_description():
             data = yaml.safe_load(stream)
             Kp = data['Kp'][0]
             Ki = data['Ki'][0]
+            Kd = data['Kd'][0]
             print('PID parameters loaded')
         except yaml.YAMLError as exc:
             print("Error in configuration file:", exc) 
@@ -57,12 +59,16 @@ def generate_launch_description():
     pid_ki_launch_arg = DeclareLaunchArgument('Ki',default_value=str(Ki))
     launch_description.add_action(pid_ki_launch_arg)
     
+    pid_kd = LaunchConfiguration('Kd')
+    pid_kd_launch_arg = DeclareLaunchArgument('Kd',default_value=str(Kd))
+    launch_description.add_action(pid_kd_launch_arg)
+    
     cocoax_control = Node(
         package=control_package_name,
         executable="cocoax_tracker.py",
         name="cocoax_tracker_node",
         namespace="cocoax_tracker",
-        arguments=[pid_kp,pid_ki],)
+        arguments=[pid_kp,pid_ki,pid_kd],)
     launch_description.add_action(cocoax_control)
     
     cocoax_generator = Node(
@@ -80,6 +86,21 @@ def generate_launch_description():
         namespace='cocoax_scheduler',
     )
     launch_description.add_action(cocoax_scheduler)
+    
+    
+    package_name = 'cocoax_description'
+    path_to_package = get_package_share_directory(package_name)
+    sub_folder = 'config'
+    file_name = 'cocoax.rviz'
+    rviz_file_path = os.path.join(path_to_package,sub_folder,file_name) 
+    print(rviz_file_path)
+    rviz = Node(
+       package='rviz2',
+       executable='rviz2',
+       name='rviz',
+       arguments=['-d', rviz_file_path],
+       output='screen')
+    launch_description.add_action(rviz)
 
     return launch_description
 

@@ -32,14 +32,24 @@ class CocoaTracker(Node):
         # Parameters
         self.get_logger().info('-'*50)
         if len(sys.argv)>=2: 
-            self.Ki = float(sys.argv[1])
-            self.Kp = float(sys.argv[2])
+            # self.Ki = float(sys.argv[1])
+            self.Kp = np.array([float(sys.argv[1]), # joint_rev_0_1
+                                float(sys.argv[1]), # joint_rev_0_2
+                                float(sys.argv[1])]) # joint_rev_0_3
+            self.Ki = np.array([float(sys.argv[2]), # joint_rev_0_1
+                                float(sys.argv[2]), # joint_rev_0_2
+                                float(sys.argv[2])]) # joint_rev_0_3
+            self.Kd = np.array([float(sys.argv[3]), # joint_rev_0_1
+                                float(sys.argv[3]), # joint_rev_0_2
+                                float(sys.argv[3])]) # joint_rev_0_3
         else:
-            self.Ki = 0.0
-            self.Kp = 0.0
+            self.Ki = np.array([0.0, 0.0, 0.0])
+            self.Kp = np.array([0.0, 0.0, 0.0])
+            self.Kd = np.array([0.0, 0.0, 0.0])
         self.get_logger().info('PID parameters loaded')
         self.get_logger().info('Kp: '+str(self.Kp))
         self.get_logger().info('Ki: '+str(self.Ki))
+        self.get_logger().info('Kd: '+str(self.Kd))
         self.get_logger().info('-'*50)
         
         # define rate
@@ -76,6 +86,7 @@ class CocoaTracker(Node):
         
         # PID Controller memory
         self.pid_memory_last_error = np.array([0.0,0.0,0.0])
+        self.pid_memory_diff_error = np.array([0.0,0.0,0.0])
         self.pid_memory_integral = np.array([0.0,0.0,0.0])
         
         # log
@@ -95,17 +106,17 @@ class CocoaTracker(Node):
         setpoint = np.array(setpoint).astype(np.float64)
         measurements = np.array(measurements).astype(np.float64)
         velocity = np.array(velocity).astype(np.float64)
-        
+
         # Compute error
         error = setpoint - measurements
-        # self.get_logger().info('Error: '+str(error))
         
         # Compute PID terms
         pid_proportional = (self.Kp * error)
-        pid_integral = self.pid_memory_integral + (self.Ki * error)
+        self.pid_memory_integral += (self.Ki * error)
+        pid_derivative = (self.Kd * (self.pid_memory_diff_error))
         
         # Compute PID output
-        pid_output = pid_proportional + pid_integral
+        pid_output = pid_proportional + self.pid_memory_integral + pid_derivative
         
         # FeedForward
         pid_output = pid_output + velocity
@@ -118,11 +129,22 @@ class CocoaTracker(Node):
                 pid_output = outputlimit[0]
         
         # Update memory
+        self.pid_memory_diff_error = error - self.pid_memory_last_error
         self.last_error = error
-        self.pid_memory_integral = pid_integral
         
         # Convert to list
         pid_output = pid_output.tolist()
+        
+        # self.get_logger().info('='*50)
+        # self.get_logger().info('Setpoint: '+str(setpoint))
+        # self.get_logger().info('Measurements: '+str(measurements))
+        # self.get_logger().info('Current Error: '+str(error))
+        # self.get_logger().info('PID Proportional: '+str(pid_proportional))
+        # self.get_logger().info('PID Integral: '+str(self.pid_memory_integral))
+        # self.get_logger().info('PID Derivative: '+str(pid_derivative))
+        # self.get_logger().info('Velocity Ref: '+str(velocity))
+        # self.get_logger().info('PID Output: '+str(pid_output))
+        # self.get_logger().info('='*50)
         
         return pid_output
     

@@ -72,6 +72,8 @@ class CocoaScheduler(Node):
         # State Machine
         self.cocoax_state = 'sleep'
         self.cocoax_state_timer = self.create_timer(self.time_rate, self.cocoax_state_timer_callback)
+        
+        self.tcount = 0
     
     def cocoax_state_timer_callback(self):
         # self.get_logger().info('State: {}'.format(self.cocoax_state))
@@ -117,7 +119,8 @@ class CocoaScheduler(Node):
             if self.trajectory_eval_status_is_active == False:
                 if self.via_point_iteration < self.via_point_max_iteration:
                     self.via_point_iteration += 1
-                    self.cocoax_state = 'trajectoryGenerate'
+                    self.cocoax_state = 'awaiting'
+                    self.tcount = 0
                 else:
                     self.cocoax_state = 'stop'
             else:
@@ -133,6 +136,15 @@ class CocoaScheduler(Node):
             
         elif self.cocoax_state == 'idle':
             self.get_logger().info('Idle')
+            
+        elif self.cocoax_state == 'awaiting':
+            self.get_logger().info('Awaiting') 
+            
+            if self.tcount > 50:
+                self.cocoax_state = 'trajectoryGenerate'
+            else:
+                self.tcount += 1   
+            
         else:
             self.get_logger().info('Unknown state')
             
@@ -188,6 +200,7 @@ class CocoaScheduler(Node):
         overall_distance = np.sqrt((via_point_final[0]-via_point_initial[0])**2 + (via_point_final[1]-via_point_initial[1])**2 + (via_point_final[2]-via_point_initial[2])**2)
         print('overall_distance: ', overall_distance)
         
+        # # Slow test        
         jmax = 0.01
         amax = 0.01
         vmax = 0.1
@@ -199,6 +212,9 @@ class CocoaScheduler(Node):
         # jmax = 0.05
         # amax = 0.05
         # vmax = 0.05
+        # jmax = 0.001
+        # amax = 0.001
+        # vmax = 0.01
 
         via_point_duration = (amax/jmax) +(vmax/amax) + (overall_distance/vmax)
         print('via_point_duration: ', via_point_duration)
