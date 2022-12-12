@@ -151,6 +151,7 @@ class CocoaScheduler(Node):
         # Trajectory Evaluation
         elif self.cocoax_state == 'trajectoryExecute':
             
+            # Add marker to RVIZ
             self.cocoax_marker()
             
             # Check if trajectory is finished and proximity is detected
@@ -207,10 +208,6 @@ class CocoaScheduler(Node):
             self.get_logger().info(f'************************************')
             return True
         else:
-            # self.get_logger().info(f'Current position      : {current_position}')
-            # self.get_logger().info(f'Reference position    : {reference_position}')
-            # self.get_logger().info(f'Error                 : {np.abs(current_position - reference_position)}')
-            # self.get_logger().info(f'------------------------------------')
             return False
         
     # This function is called when the trajectory service is called by the CocoaX_Generator    
@@ -249,28 +246,11 @@ class CocoaScheduler(Node):
     def via_point_duration_calculator(self, via_point_initial, via_point_final):
         via_point_initial = via_point_initial
         via_point_final = via_point_final
-        
         overall_distance = np.sqrt((via_point_final[0]-via_point_initial[0])**2 + (via_point_final[1]-via_point_initial[1])**2 + (via_point_final[2]-via_point_initial[2])**2)
-        print('overall_distance: ', overall_distance)
-        
-        # Slow test        
-        # jmax = 0.01
-        # amax = 0.01
-        # vmax = 0.1
-        # Speed test
         jmax = 0.5
         amax = 0.5
         vmax = 1.0
-        # # mid test
-        # jmax = 0.05
-        # amax = 0.05
-        # vmax = 0.5
-        # jmax = 0.001
-        # amax = 0.001
-        # vmax = 0.01
-
         via_point_duration = (amax/jmax) +(vmax/amax) + (overall_distance/vmax)
-        print('via_point_duration: ', via_point_duration)
         return via_point_duration
     
     def node_start_timer_callback(self):

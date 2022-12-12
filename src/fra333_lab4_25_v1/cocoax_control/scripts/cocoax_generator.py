@@ -37,10 +37,6 @@ class CocoaGenerator(Node):
                                                           '/cocoax/end_effector_position_velocity_ref',
                                                           qos_profile)
         
-        self.testmonitor_publisher = self.create_publisher(CocoaTestMonitor,
-                                                           '/cocoax/test_monitor',
-                                                           qos_profile)
-        
         # Services Server
         self.trajectory_service = self.create_service(CocoaXGenerator,
                                                       '/cocoax/trajectory_generator_generate_trajectory',
@@ -112,15 +108,6 @@ class CocoaGenerator(Node):
                 msg.position = p
                 msg.velocity = p_dot
                 self.trajectory_publisher.publish(msg)
-                
-                testmsg = CocoaTestMonitor()
-                testmsg.posx = p[0]
-                testmsg.posy = p[1]
-                testmsg.posz = p[2]
-                testmsg.velx = p_dot[0]
-                testmsg.vely = p_dot[1]
-                testmsg.velz = p_dot[2]
-                self.testmonitor_publisher.publish(testmsg)
     
     def cocoax_quintic_linear_interpolation_taskspace(self, traject_cof, pos, t):
         
@@ -188,8 +175,6 @@ class CocoaGenerator(Node):
     def cocoa_timer_callback(self):
         self.cocoa_time_ms += 1 
         self.cocoa_time = self.cocoa_time_ms/1000
-        # print('time: ', self.cocoa_time)
-        # print('node_time: ', self.get_clock().now().to_msg().sec - self.node_star_time)
     
 def main(args=None):
     rclpy.init(args=args)
