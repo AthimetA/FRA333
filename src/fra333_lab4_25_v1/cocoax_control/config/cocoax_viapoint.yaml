@@ -5,9 +5,14 @@
   - 0.3978
 - Pentype: PenUp
   Position:
-  - 0.2
+  - 0.18000000000000002
   - 0.0
   - 0.3978
+- Pentype: PenUp
+  Position:
+  - 0.18000000000000002
+  - -0.1
+  - 0.35000000000000003
 - Pentype: PenDown
   Position:
   - 0.2
@@ -23,6 +28,16 @@
   - 0.2
   - -0.05
   - 0.45
+- Pentype: PenUp
+  Position:
+  - 0.18000000000000002
+  - -0.05
+  - 0.45
+- Pentype: PenUp
+  Position:
+  - 0.18000000000000002
+  - -0.05
+  - 0.4
 - Pentype: PenDown
   Position:
   - 0.2
@@ -33,6 +48,16 @@
   - 0.2
   - -0.1
   - 0.4
+- Pentype: PenUp
+  Position:
+  - 0.18000000000000002
+  - -0.1
+  - 0.4
+- Pentype: PenUp
+  Position:
+  - 0.18000000000000002
+  - -0.0125
+  - 0.45
 - Pentype: PenDown
   Position:
   - 0.2
@@ -43,6 +68,16 @@
   - 0.2
   - 0.0125
   - 0.45
+- Pentype: PenUp
+  Position:
+  - 0.18000000000000002
+  - 0.0125
+  - 0.45
+- Pentype: PenUp
+  Position:
+  - 0.18000000000000002
+  - 0.0125
+  - 0.35000000000000003
 - Pentype: PenDown
   Position:
   - 0.2
@@ -62,6 +97,16 @@
   Position:
   - 0.2
   - 0.0
+  - 0.45
+- Pentype: PenUp
+  Position:
+  - 0.18000000000000002
+  - 0.0
+  - 0.45
+- Pentype: PenUp
+  Position:
+  - 0.18000000000000002
+  - 0.05
   - 0.45
 - Pentype: PenDown
   Position:
@@ -123,6 +168,16 @@
   - 0.2
   - 0.05
   - 0.45
+- Pentype: PenUp
+  Position:
+  - 0.18000000000000002
+  - 0.05
+  - 0.45
+- Pentype: PenUp
+  Position:
+  - 0.18000000000000002
+  - 0.125
+  - 0.44000000000000006
 - Pentype: PenDown
   Position:
   - 0.2

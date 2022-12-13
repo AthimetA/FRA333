@@ -72,25 +72,35 @@ class CocoaScheduler(Node):
                                     {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},]
                 print("Error in configuration file:", exc)
         # self.xplane = 0.2
+        # self.xplanepenup = 0.2-0.02
         # self.yplane = 0.0
         # self.zplane = 0.4
         # self.step = 0.05 
         # self.via_point = [  {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},
-        #             {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},
+        #             {'Position': [0.2-0.02, 0.0, 0.3978], 'Pentype': 'PenUp'},
         #             # Draw a 'F'
+        #             {'Position': [self.xplanepenup, self.yplane + (-2*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenUp'},
         #             {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
         #             {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
         #             {'Position': [self.xplane, self.yplane + (-1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+        #             {'Position': [self.xplanepenup, self.yplane + (-1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+        #             {'Position': [self.xplanepenup, self.yplane + (-1*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenUp'},
         #             {'Position': [self.xplane, self.yplane + (-1*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenDown'},
         #             {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenUp'},
+        #             {'Position': [self.xplanepenup, self.yplane + (-2*self.step), self.zplane + (0*self.step)], 'Pentype': 'PenUp'},
         #             # Draw a 'I'
+        #             {'Position': [self.xplanepenup, self.yplane + ( -0.25*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
         #             {'Position': [self.xplane, self.yplane + ( -0.25*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
         #             {'Position': [self.xplane, self.yplane + ( 0.25*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+        #             {'Position': [self.xplanepenup, self.yplane + ( 0.25*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+        #             {'Position': [self.xplanepenup, self.yplane + ( 0.25*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenUp'},
         #             {'Position': [self.xplane, self.yplane + ( 0.25*self.step), self.zplane + ( -1*self.step)], 'Pentype': 'PenDown'},
         #             {'Position': [self.xplane, self.yplane + ( -0.25*self.step), self.zplane + ( -1*self.step)], 'Pentype': 'PenDown'},
         #             {'Position': [self.xplane, self.yplane + ( 0*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
         #             {'Position': [self.xplane, self.yplane + ( 0*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+        #             {'Position': [self.xplanepenup, self.yplane + ( 0*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
         #             # Draw a 'B
+        #             {'Position': [self.xplanepenup, self.yplane + ( 1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
         #             {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
         #             {'Position': [self.xplane, self.yplane + ( 1.75*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
         #             {'Position': [self.xplane, self.yplane + ( 2*self.step), self.zplane + ( 0.8*self.step)], 'Pentype': 'PenDown'},
@@ -103,7 +113,9 @@ class CocoaScheduler(Node):
         #             {'Position': [self.xplane, self.yplane + ( 1.75*self.step), self.zplane + ( -1*self.step)], 'Pentype': 'PenDown'},
         #             {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + ( -1*self.step)], 'Pentype': 'PenDown'},
         #             {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+        #             {'Position': [self.xplanepenup, self.yplane + ( 1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
         #             # Draw a 'O'
+        #             {'Position': [self.xplanepenup, self.yplane + ( 2.5*self.step), self.zplane + ( 0.8*self.step)], 'Pentype': 'PenUp'},
         #             {'Position': [self.xplane, self.yplane + ( 2.5*self.step), self.zplane + ( 0.8*self.step)], 'Pentype': 'PenDown'},
         #             {'Position': [self.xplane, self.yplane + ( 2.7*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
         #             {'Position': [self.xplane, self.yplane + ( 3.3*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
@@ -230,8 +242,8 @@ class CocoaScheduler(Node):
             
         elif self.cocoax_state == 'awaiting':
 
-            # Wait for 1 seconds
-            if self.tcount > 10: 
+            # Wait for 0.5 seconds
+            if self.tcount > 5: 
                 self.cocoax_state = 'trajectoryGenerate'
             else:
                 self.tcount += 1   
