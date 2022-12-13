@@ -58,7 +58,7 @@
       <geometry>
         <mesh filename="file:///$(find cocoax_description)/meshes/link_1.stl"/>
       </geometry>
-      <material name="Orange"/>
+      <material name="White"/>
     </visual>
 
     <collision>
@@ -143,7 +143,7 @@
   <joint name="joint_eff" type="fixed">
     <parent link="link_3"/>
     <child link="end_effector"/>
-    <origin rpy="-1.5708 0 -1.5708" xyz="0 -0.200 0"/>
+    <origin rpy="-1.5708 0 -1.5708" xyz="0 -0.245 0"/>
     <axis xyz="0 0 1"/>
   </joint>
 
@@ -153,7 +153,7 @@
       <geometry>
         <mesh filename="file:///$(find cocoax_description)/meshes/end_effector.stl"/>
       </geometry>
-      <material name="Blue"/>
+      <material name="White"/>
     </visual>
   </link>
 </robot>

@@ -68,16 +68,17 @@ class CocoaScheduler(Node):
                 self.via_point = data
                 print('Via point loaded from file')
             except yaml.YAMLError as exc:
-                self.via_point = [  {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},
-                                    {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},]
+                self.via_point = [  {'Position': [0.245, 0.0, 0.3978], 'Pentype': 'PenUp'},
+                                    {'Position': [0.245, 0.0, 0.3978], 'Pentype': 'PenUp'},]
                 print("Error in configuration file:", exc)
         # self.xplane = 0.2
         # self.xplanepenup = 0.2-0.02
         # self.yplane = 0.0
         # self.zplane = 0.4
         # self.step = 0.05 
-        # self.via_point = [  {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},
-        #             {'Position': [0.2-0.02, 0.0, 0.3978], 'Pentype': 'PenUp'},
+        # self.via_point = [ 
+        #             {'Position': [0.245, 0.0, 0.3978], 'Pentype': 'PenUp'}, # Home position
+        #             {'Position': [self.xplanepenup, self.yplane , self.zplane], 'Pentype': 'PenUp'}, # Ready position
         #             # Draw a 'F'
         #             {'Position': [self.xplanepenup, self.yplane + (-2*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenUp'},
         #             {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
@@ -126,7 +127,7 @@ class CocoaScheduler(Node):
         #             {'Position': [self.xplane, self.yplane + ( 2.5*self.step), self.zplane + (-0.8*self.step)], 'Pentype': 'PenDown'},
         #             {'Position': [self.xplane, self.yplane + ( 2.5*self.step), self.zplane + ( 0.8*self.step)], 'Pentype': 'PenUp'},
         #             # Move out of the way
-        #             {'Position': [0.0, self.yplane + (-3*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+        #             {'Position': [0.15, 0.0, 0.4], 'Pentype': 'PenUp'}, # Cocoax idle position :)
         #             ]
         # yaml.dump(self.via_point, open('/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control/config/cocoax_viapoint.yaml', 'w'))
                           
@@ -162,9 +163,9 @@ class CocoaScheduler(Node):
             marker.scale.x = 0.01
             marker.scale.y = 0.01
             marker.scale.z = 0.01            
-            marker.color.r = 0.0
-            marker.color.g = 1.0
-            marker.color.b = 0.0
+            marker.color.r = 1.0
+            marker.color.g = 0.423529411765
+            marker.color.b = 0.0392156862745
             marker.color.a = 1.0
             marker.pose.position.x = current_position[0]
             marker.pose.position.y = current_position[1]

@@ -30,7 +30,7 @@ class CocoaVKinematic(Node):
         self.rate = 100
         qos_profile = QoSProfile(depth=10)
         # Cocoa link length in meter
-        self.link_length = [0.1360,0.26179,0.200]
+        self.link_length = [0.1360,0.26179,0.245]
         self.home_config = [0.0,0.0,0.0] # [q1,q2,q3]
 
         # Create a timer to update the robot state
@@ -63,7 +63,7 @@ class CocoaVKinematic(Node):
                                                           qos_profile)
             # Create a buffer to store CocoaTaskSpace
             self.sub_buffer = CocoaTaskSpace()
-            self.sub_buffer.position = [0.2, 0.0, 0.3978] #  Home position
+            self.sub_buffer.position = [0.245, 0.0, 0.3978] #  Home position
             self.sub_buffer.velocity = [0.0, 0.0, 0.0] #  Home velocity
             # Create a buffer to store CocoaControlRef
             self.pub_buffer = CocoaControlRef()

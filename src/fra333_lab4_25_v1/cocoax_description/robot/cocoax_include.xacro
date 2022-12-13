@@ -24,6 +24,18 @@
     <color rgba="1.0 0.0 0.0 1.0"/>      
     </material>
 
+    <material name="Black">
+        <color rgba="0.0 0.0 0.0 0.6"/>      
+    </material>
+
+    <material name="White">
+        <color rgba="1.0 1.0 1.0 1.0"/>      
+    </material>
+
+    <material name="DarkBlue">
+        <color rgba="0.0 0.0 0.3764 0.6"/>      
+    </material>
+
     <xacro:property name="link_0_c_offset_x" value="0.0"/>
     <xacro:property name="link_0_c_offset_y" value="0.0"/>
     <xacro:property name="link_0_c_offset_z" value="0.009962"/>
