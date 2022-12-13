@@ -70,7 +70,53 @@ class CocoaScheduler(Node):
             except yaml.YAMLError as exc:
                 self.via_point = [  {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},
                                     {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},]
-                print("Error in configuration file:", exc) 
+                print("Error in configuration file:", exc)
+        # self.xplane = 0.2
+        # self.yplane = 0.0
+        # self.zplane = 0.4
+        # self.step = 0.05 
+        # self.via_point = [  {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},
+        #             {'Position': [0.2, 0.0, 0.3978], 'Pentype': 'PenUp'},
+        #             # Draw a 'F'
+        #             {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + (-1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+        #             {'Position': [self.xplane, self.yplane + (-1*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + (-2*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenUp'},
+        #             # Draw a 'I'
+        #             {'Position': [self.xplane, self.yplane + ( -0.25*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 0.25*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+        #             {'Position': [self.xplane, self.yplane + ( 0.25*self.step), self.zplane + ( -1*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( -0.25*self.step), self.zplane + ( -1*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 0*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 0*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+        #             # Draw a 'B
+        #             {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 1.75*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 2*self.step), self.zplane + ( 0.8*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 2*self.step), self.zplane + ( 0.2*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 1.75*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 1.75*self.step), self.zplane + ( 0*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 2*self.step), self.zplane + (-0.2*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 2*self.step), self.zplane + (-0.8*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 1.75*self.step), self.zplane + ( -1*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + ( -1*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 1*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+        #             # Draw a 'O'
+        #             {'Position': [self.xplane, self.yplane + ( 2.5*self.step), self.zplane + ( 0.8*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 2.7*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 3.3*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 3.5*self.step), self.zplane + ( 0.8*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 3.5*self.step), self.zplane + (-0.8*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 3.2*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 2.7*self.step), self.zplane + (-1*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 2.5*self.step), self.zplane + (-0.8*self.step)], 'Pentype': 'PenDown'},
+        #             {'Position': [self.xplane, self.yplane + ( 2.5*self.step), self.zplane + ( 0.8*self.step)], 'Pentype': 'PenUp'},
+        #             # Move out of the way
+        #             {'Position': [0.0, self.yplane + (-3*self.step), self.zplane + ( 1*self.step)], 'Pentype': 'PenUp'},
+        #             ]
+        # yaml.dump(self.via_point, open('/home/azthorax/fra333_ws/src/fra333_lab4_25_v1/cocoax_control/config/cocoax_viapoint.yaml', 'w'))
                           
         self.via_point_iteration = 0
         self.via_point_max_iteration = len(self.via_point)-2
@@ -103,7 +149,7 @@ class CocoaScheduler(Node):
             self.marker_id += 1
             marker.scale.x = 0.01
             marker.scale.y = 0.01
-            marker.scale.z = 0.01
+            marker.scale.z = 0.01            
             marker.color.r = 0.0
             marker.color.g = 1.0
             marker.color.b = 0.0
@@ -247,9 +293,9 @@ class CocoaScheduler(Node):
         via_point_initial = via_point_initial
         via_point_final = via_point_final
         overall_distance = np.sqrt((via_point_final[0]-via_point_initial[0])**2 + (via_point_final[1]-via_point_initial[1])**2 + (via_point_final[2]-via_point_initial[2])**2)
-        jmax = 0.5
-        amax = 0.5
-        vmax = 1.0
+        jmax = 0.5*2
+        amax = 0.5*2
+        vmax = 1.0*2
         via_point_duration = (amax/jmax) +(vmax/amax) + (overall_distance/vmax)
         return via_point_duration
     

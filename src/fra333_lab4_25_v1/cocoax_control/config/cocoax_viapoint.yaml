@@ -17,21 +17,6 @@
   Position:
   - 0.2
   - -0.1
-  - 0.4
-- Pentype: PenDown
-  Position:
-  - 0.2
-  - -0.05
-  - 0.4
-- Pentype: PenDown
-  Position:
-  - 0.2
-  - -0.1
-  - 0.4
-- Pentype: PenDown
-  Position:
-  - 0.2
-  - -0.1
   - 0.45
 - Pentype: PenUp
   Position:
@@ -41,13 +26,43 @@
 - Pentype: PenDown
   Position:
   - 0.2
-  - 0.0
+  - -0.05
+  - 0.4
+- Pentype: PenUp
+  Position:
+  - 0.2
+  - -0.1
+  - 0.4
+- Pentype: PenDown
+  Position:
+  - 0.2
+  - -0.0125
   - 0.45
 - Pentype: PenUp
   Position:
   - 0.2
+  - 0.0125
+  - 0.45
+- Pentype: PenDown
+  Position:
+  - 0.2
+  - 0.0125
+  - 0.35000000000000003
+- Pentype: PenDown
+  Position:
+  - 0.2
+  - -0.0125
+  - 0.35000000000000003
+- Pentype: PenDown
+  Position:
+  - 0.2
   - 0.0
   - 0.35000000000000003
+- Pentype: PenUp
+  Position:
+  - 0.2
+  - 0.0
+  - 0.45
 - Pentype: PenDown
   Position:
   - 0.2
@@ -56,8 +71,23 @@
 - Pentype: PenDown
   Position:
   - 0.2
-  - 0.1
+  - 0.08750000000000001
   - 0.45
+- Pentype: PenDown
+  Position:
+  - 0.2
+  - 0.1
+  - 0.44000000000000006
+- Pentype: PenDown
+  Position:
+  - 0.2
+  - 0.1
+  - 0.41000000000000003
+- Pentype: PenDown
+  Position:
+  - 0.2
+  - 0.08750000000000001
+  - 0.4
 - Pentype: PenDown
   Position:
   - 0.2
@@ -66,7 +96,22 @@
 - Pentype: PenDown
   Position:
   - 0.2
+  - 0.08750000000000001
+  - 0.4
+- Pentype: PenDown
+  Position:
+  - 0.2
   - 0.1
+  - 0.39
+- Pentype: PenDown
+  Position:
+  - 0.2
+  - 0.1
+  - 0.36
+- Pentype: PenDown
+  Position:
+  - 0.2
+  - 0.08750000000000001
   - 0.35000000000000003
 - Pentype: PenDown
   Position:
@@ -81,30 +126,50 @@
 - Pentype: PenDown
   Position:
   - 0.2
-  - 0.15000000000000002
+  - 0.125
+  - 0.44000000000000006
+- Pentype: PenDown
+  Position:
+  - 0.2
+  - 0.135
   - 0.45
 - Pentype: PenDown
   Position:
   - 0.2
-  - 0.2
+  - 0.165
   - 0.45
 - Pentype: PenDown
   Position:
   - 0.2
+  - 0.17500000000000002
+  - 0.44000000000000006
+- Pentype: PenDown
+  Position:
   - 0.2
+  - 0.17500000000000002
+  - 0.36
+- Pentype: PenDown
+  Position:
+  - 0.2
+  - 0.16000000000000003
   - 0.35000000000000003
 - Pentype: PenDown
   Position:
   - 0.2
-  - 0.15000000000000002
+  - 0.135
   - 0.35000000000000003
+- Pentype: PenDown
+  Position:
+  - 0.2
+  - 0.125
+  - 0.36
 - Pentype: PenUp
   Position:
   - 0.2
-  - 0.15000000000000002
-  - 0.45
+  - 0.125
+  - 0.44000000000000006
 - Pentype: PenUp
   Position:
-  - 0.2
+  - 0.0
   - -0.15000000000000002
   - 0.45
